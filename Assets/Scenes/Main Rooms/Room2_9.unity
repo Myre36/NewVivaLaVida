@@ -2559,7 +2559,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3694110888022399015, guid: bc29346653880de458760774721b9699, type: 3}
       propertyPath: enemyNum
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7793298037032126722, guid: bc29346653880de458760774721b9699, type: 3}
       propertyPath: m_Name

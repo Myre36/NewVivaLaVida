@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
     {
         Keyboard, Controller
     }
-    private InputMode currentInputMode;
+    public InputMode currentInputMode;
 
     private void Awake()
     {
@@ -194,6 +194,47 @@ public class GameManager : MonoBehaviour
             {
                 return InputMode.Keyboard;
             }
+        }
+
+        if(Input.anyKey)
+        {
+            //Unity will only recognise Input.anyKey for keyboard presses
+            if(Input.GetAxisRaw("Horizontal") != 0)
+            {
+                return InputMode.Keyboard;
+            }
+            if (Input.GetAxisRaw("Vertical") != 0)
+            {
+                return InputMode.Keyboard;
+            }
+        }
+
+        //If the horizontals are not keyboard keys, it will return the controller
+        if (Input.GetAxisRaw("Horizontal") != 0)
+        {
+            return InputMode.Controller;
+        }
+        if (Input.GetAxisRaw("Vertical") != 0)
+        {
+            return InputMode.Controller;
+        }
+
+        if (Input.GetAxisRaw("Horizontal2") != 0)
+        {
+            return InputMode.Controller;
+        }
+        if (Input.GetAxisRaw("Vertical2") != 0)
+        {
+            return InputMode.Controller;
+        }
+
+        if (Input.GetAxisRaw("HorizontalD") != 0)
+        {
+            return InputMode.Controller;
+        }
+        if (Input.GetAxisRaw("VerticalD") != 0)
+        {
+            return InputMode.Controller;
         }
 
         return currentInputMode; 

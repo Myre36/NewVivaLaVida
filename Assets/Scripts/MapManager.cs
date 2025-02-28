@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MapManager : MonoBehaviour
@@ -8,7 +7,6 @@ public class MapManager : MonoBehaviour
     [SerializeField] private GameObject FirstFloorMap;
     [SerializeField] private GameObject SecondFloorMap;
     [SerializeField] private Transform player;
-    [SerializeField] private List<GameObject> roomMaps;
 
     public bool IsMapOpen { get; private set; }
 

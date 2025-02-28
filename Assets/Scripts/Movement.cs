@@ -157,7 +157,7 @@ public class Movement : MonoBehaviour
         if (Input.GetMouseButton(1) || Input.GetKey(KeyCode.JoystickButton6))
         {
             aiming = true;
-            rotationSpeed = 200;
+            rotationSpeed = 50;
             gun.GetComponent<Renderer>().enabled = true;
             gunShaft.GetComponent<Renderer>().enabled = true;
         }
@@ -229,11 +229,6 @@ public class Movement : MonoBehaviour
     private void MovePlayer()
     {
         //moveDirection = (cam.transform.forward * verticalInput) + (cam.transform.right * horizontalInput);
-
-        if(aiming && gameManager.currentInputMode == GameManager.InputMode.Keyboard)
-        {
-            Debug.Log("Killing you");
-        }
 
         //Calculate the movement direction
         moveDirection = (Vector3.forward * verticalInput) + (Vector3.right * horizontalInput);

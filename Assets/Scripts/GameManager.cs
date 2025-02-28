@@ -63,8 +63,16 @@ public class GameManager : MonoBehaviour
     public bool planetSolved;
     public bool combinationSolved;
 
+    public enum InputMode
+    {
+        Keyboard, Controller
+    }
+    private InputMode currentInputMode;
+
     private void Awake()
     {
+        currentInputMode = InputMode.Keyboard;
+
         //This code is used to make sure there are never more than one game manager
         if(instance == null)
         {
@@ -78,6 +86,8 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        currentInputMode = ProcessInputMode();
+
         Scene currentScene = SceneManager.GetActiveScene();
 
         if (currentScene.name == "TutorialScene")
@@ -88,5 +98,104 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+    }
+
+    private InputMode ProcessInputMode()
+    {
+        if(Input.GetJoystickNames().Length == 0)
+        {
+            //If there are no controllers plugged in, it automatically sets it to keyboard
+            return InputMode.Keyboard;
+        }
+
+        if(Input.anyKeyDown)
+        {
+            if(Input.GetKeyDown(KeyCode.JoystickButton0))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton1))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton2))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton3))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton4))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton5))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton6))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton7))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton8))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton9))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton10))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton11))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton12))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton13))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton14))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton15))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton16))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton17))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton18))
+            {
+                return InputMode.Controller;
+            }
+            else if (Input.GetKeyDown(KeyCode.JoystickButton19))
+            {
+                return InputMode.Controller;
+            }
+            else
+            {
+                return InputMode.Keyboard;
+            }
+        }
+
+        return currentInputMode;
     }
 }

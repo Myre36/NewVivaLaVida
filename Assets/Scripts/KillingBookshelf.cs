@@ -36,7 +36,7 @@ public class KillingBookshelf : MonoBehaviour
 
     private void Update()
     {
-        if (isPlayerNearby && !wasTriggered && Input.GetKeyDown(KeyCode.E) || isPlayerNearby && !wasTriggered && Input.GetKeyDown(KeyCode.Joystick1Button1))
+        if ((isPlayerNearby && !wasTriggered && Input.GetKeyDown(KeyCode.E)) || (isPlayerNearby && !wasTriggered && Input.GetKeyDown(KeyCode.JoystickButton1)))
         {
             wasTriggered = true;
             ActivateBookshelf();
@@ -53,7 +53,6 @@ public class KillingBookshelf : MonoBehaviour
 
         Vector3 forceToApply = directionToTarget * forceMagnitude;
         rb.AddForce(forceToApply, ForceMode.Impulse);
-
     }
 
 }

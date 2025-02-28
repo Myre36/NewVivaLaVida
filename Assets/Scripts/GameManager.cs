@@ -126,19 +126,19 @@ public class GameManager : MonoBehaviour
             {
                 return InputMode.Controller;
             }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton4))
+            else if (Input.GetKey(KeyCode.JoystickButton4))
             {
                 return InputMode.Controller;
             }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton5))
+            else if (Input.GetKey(KeyCode.JoystickButton5))
             {
                 return InputMode.Controller;
             }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton6))
+            else if (Input.GetKey(KeyCode.JoystickButton6))
             {
                 return InputMode.Controller;
             }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton7))
+            else if (Input.GetKey(KeyCode.JoystickButton7))
             {
                 return InputMode.Controller;
             }

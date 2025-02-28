@@ -20,6 +20,8 @@ public class Movement : MonoBehaviour
     public float sprintSpeed;
     //The maximum speed that the player can reach
     public float maxSpeed;
+    //The speed at which the player rotates
+    private int rotationSpeed;
 
     public float playerHeight;
     public LayerMask whatIsGround;
@@ -94,7 +96,7 @@ public class Movement : MonoBehaviour
     }
 
     //A refrence to the game manager
-    public GameObject gameManager;
+    public GameManager gameManager;
 
     private void Start()
     {
@@ -115,7 +117,7 @@ public class Movement : MonoBehaviour
         //If the game manager is set to null, the script will find it and assign it
         if (gameManager == null)
         {
-            gameManager = GameObject.Find("GameManager");
+            gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         }
     }
 
@@ -152,9 +154,10 @@ public class Movement : MonoBehaviour
         }
 
         //When the player holds down the RMB, the gun appears and the player starts aiming
-        if (Input.GetMouseButton(1) || Input.GetKey(KeyCode.Joystick1Button6))
+        if (Input.GetMouseButton(1) || Input.GetKey(KeyCode.JoystickButton6))
         {
             aiming = true;
+            rotationSpeed = 200;
             gun.GetComponent<Renderer>().enabled = true;
             gunShaft.GetComponent<Renderer>().enabled = true;
         }
@@ -162,11 +165,12 @@ public class Movement : MonoBehaviour
         else
         {
             aiming = false;
+            rotationSpeed = 500;
             gun.GetComponent<Renderer>().enabled = false;
             gunShaft.GetComponent<Renderer>().enabled = false;
         }
         //Pressing the Tab key either opens the inventory screen, or closes it, depending on what its status is
-        if(Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.Joystick1Button13) || Input.GetKeyDown(KeyCode.Tab))
+        if(Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.JoystickButton13) || Input.GetKeyDown(KeyCode.Tab))
         {
             if(inventoryScreen.activeSelf == false)
             {
@@ -195,7 +199,7 @@ public class Movement : MonoBehaviour
     private void StateHandler()
     {
         //Holding down left shift means the player is sprinting, meaning they move faster
-        if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.Joystick1Button4))
+        if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.JoystickButton4))
         {
             state = MovementState.sprinting;
             moveSpeed = sprintSpeed;
@@ -226,6 +230,11 @@ public class Movement : MonoBehaviour
     {
         //moveDirection = (cam.transform.forward * verticalInput) + (cam.transform.right * horizontalInput);
 
+        if(aiming && gameManager.currentInputMode == GameManager.InputMode.Keyboard)
+        {
+            Debug.Log("Killing you");
+        }
+
         //Calculate the movement direction
         moveDirection = (Vector3.forward * verticalInput) + (Vector3.right * horizontalInput);
 
@@ -234,14 +243,7 @@ public class Movement : MonoBehaviour
 
             Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
 
-            if(!aiming)
-            {
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 500 * Time.deltaTime);
-            }
-            else
-            {
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 200 * Time.deltaTime);
-            }
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
 
         //Player can only move if they are not aiming their gun

@@ -1,50 +1,54 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MapManager : MonoBehaviour
 {
-    public static MapManager instance;
+    [SerializeField] private GameObject firstFloorMap;
+    [SerializeField] private GameObject secondFloorMap;
 
-    [SerializeField] private GameObject FirstFloorMap;
-    [SerializeField] private GameObject SecondFloorMap;
-    [SerializeField] private Transform player;
+    private GameObject currentMap;
 
-    public bool IsMapOpen { get; private set; }
+    private bool mapIsOpen;
 
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        CloseFirstFloorMap();
-    }
+    public bool firstFloor;
 
 
     private void Update()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        if (currentScene.name == "Room1_1")
+        {
+            currentMap = firstFloorMap;
+        }
+        if (currentScene.name == "Room2_1")
+        {
+            currentMap = secondFloorMap;
+        }
+
         if (Input.GetKeyDown(KeyCode.M))
         {
-            if (IsMapOpen)
+            if (mapIsOpen)
             {
-                OpenMap();
+                CloseMap();
             }
             else
             {
-                CloseFirstFloorMap();
+                OpenMap();
             }
         }
     }
 
     private void OpenMap()
     {
-        FirstFloorMap.SetActive(true);
-        IsMapOpen = true;
+        currentMap.SetActive(true);
+        mapIsOpen = true;
     }
 
 
-    private void CloseFirstFloorMap()
+    private void CloseMap()
     {
-        FirstFloorMap.SetActive(false);
-        IsMapOpen = false;
+        currentMap.SetActive(false);
+        mapIsOpen = false;
     }
 }

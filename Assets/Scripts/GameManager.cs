@@ -196,6 +196,6 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        return currentInputMode;
+        return currentInputMode; 
     }
 }

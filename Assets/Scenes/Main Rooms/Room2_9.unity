@@ -1243,6 +1243,7 @@ MonoBehaviour:
   playerInRange: 0
   lineNumber: 0
   outlineEneabled: 1
+  isBook: 0
 --- !u!114 &174284741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1581,6 +1582,7 @@ MonoBehaviour:
   playerInRange: 0
   lineNumber: 0
   outlineEneabled: 1
+  isBook: 0
 --- !u!114 &439906414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2547,6 +2549,67 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371128514}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1393974492
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3694110888022399015, guid: bc29346653880de458760774721b9699, type: 3}
+      propertyPath: enemyNum
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7793298037032126722, guid: bc29346653880de458760774721b9699, type: 3}
+      propertyPath: m_Name
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883629356378105674, guid: bc29346653880de458760774721b9699, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.341659
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883629356378105674, guid: bc29346653880de458760774721b9699, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883629356378105674, guid: bc29346653880de458760774721b9699, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -152.47046
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883629356378105674, guid: bc29346653880de458760774721b9699, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883629356378105674, guid: bc29346653880de458760774721b9699, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883629356378105674, guid: bc29346653880de458760774721b9699, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883629356378105674, guid: bc29346653880de458760774721b9699, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883629356378105674, guid: bc29346653880de458760774721b9699, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883629356378105674, guid: bc29346653880de458760774721b9699, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883629356378105674, guid: bc29346653880de458760774721b9699, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bc29346653880de458760774721b9699, type: 3}
 --- !u!1001 &1405331948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3653,6 +3716,7 @@ MonoBehaviour:
   playerInRange: 0
   lineNumber: 0
   outlineEneabled: 1
+  isBook: 0
 --- !u!114 &1556500404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4047,6 +4111,7 @@ MonoBehaviour:
   playerInRange: 0
   lineNumber: 0
   outlineEneabled: 1
+  isBook: 0
 --- !u!65 &1684067150
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4470,6 +4535,7 @@ MonoBehaviour:
   playerInRange: 0
   lineNumber: 0
   outlineEneabled: 1
+  isBook: 0
 --- !u!114 &1916712821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4639,6 +4705,7 @@ MonoBehaviour:
   playerInRange: 0
   lineNumber: 0
   outlineEneabled: 1
+  isBook: 0
 --- !u!114 &1961697117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5028,3 +5095,4 @@ SceneRoots:
   - {fileID: 1723831316}
   - {fileID: 1595028649}
   - {fileID: 85426899}
+  - {fileID: 1393974492}

@@ -12,10 +12,20 @@ public class DialougeScript : MonoBehaviour
 
     public bool outlineEneabled = false;
 
+    public bool isBook;
+
     private void Start()
     {
-        dialougeBox = GameObject.Find("DialougeBox");
-        dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
+        if(isBook)
+        {
+            dialougeBox = GameObject.Find("UIBook");
+            dialougeText = GameObject.Find("UIBookText").GetComponent<TMP_Text>();
+        }
+        else
+        {
+            dialougeBox = GameObject.Find("DialougeBox");
+            dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
+        }
     }
 
     // Update is called once per frame

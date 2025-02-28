@@ -8,6 +8,7 @@ public class LockedDoorScript : MonoBehaviour
     private GameManager gameManager;
     public Movement player;
 
+    public bool onSecondFloor;
     public GameObject dialougeBox;
     public TMP_Text dialougeText;
     public bool playerInRange = false;

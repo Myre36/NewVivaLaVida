@@ -36,6 +36,8 @@ public class PickupObject : MonoBehaviour
 
     private bool inDialouge;
 
+    private AudioSource pickupSound;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -166,7 +168,7 @@ public class PickupObject : MonoBehaviour
                     if(inDialouge)
                     {
                         gameManager.hallwayKey = true;
-                        CLoseDialouge();
+                        CloseDialouge();
                         Destroy(gameObject);
                     }
                     else
@@ -180,7 +182,7 @@ public class PickupObject : MonoBehaviour
                     if (inDialouge)
                     {
                         gameManager.tunnelKey = true;
-                        CLoseDialouge();
+                        CloseDialouge();
                         Destroy(gameObject);
                     }
                     else
@@ -194,7 +196,7 @@ public class PickupObject : MonoBehaviour
                     if (inDialouge)
                     {
                         gameManager.servantsKey = true;
-                        CLoseDialouge();
+                        CloseDialouge();
                         Destroy(gameObject);
                     }
                     else
@@ -208,7 +210,7 @@ public class PickupObject : MonoBehaviour
                     if (inDialouge)
                     {
                         gameManager.basementKey = true;
-                        CLoseDialouge();
+                        CloseDialouge();
                         Destroy(gameObject);
                     }
                     else
@@ -222,7 +224,7 @@ public class PickupObject : MonoBehaviour
                     if (inDialouge)
                     {
                         gameManager.secondFloorKey = true;
-                        CLoseDialouge();
+                        CloseDialouge();
                         Destroy(gameObject);
                     }
                     else
@@ -236,7 +238,7 @@ public class PickupObject : MonoBehaviour
                     if (inDialouge)
                     {
                         gameManager.planetariumKey = true;
-                        CLoseDialouge();
+                        CloseDialouge();
                         Destroy(gameObject);
                     }
                     else
@@ -250,7 +252,7 @@ public class PickupObject : MonoBehaviour
                     if (inDialouge)
                     {
                         gameManager.meetingKey = true;
-                        CLoseDialouge();
+                        CloseDialouge();
                         Destroy(gameObject);
                     }
                     else
@@ -264,7 +266,7 @@ public class PickupObject : MonoBehaviour
                     if (inDialouge)
                     {
                         gameManager.coinOne = true;
-                        CLoseDialouge();
+                        CloseDialouge();
                         Destroy(gameObject);
                     }
                     else
@@ -278,7 +280,7 @@ public class PickupObject : MonoBehaviour
                     if (inDialouge)
                     {
                         gameManager.coinTwo = true;
-                        CLoseDialouge();
+                        CloseDialouge();
                         Destroy(gameObject);
                     }
                     else
@@ -292,7 +294,7 @@ public class PickupObject : MonoBehaviour
                     if (inDialouge)
                     {
                         gameManager.coinThree = true;
-                        CLoseDialouge();
+                        CloseDialouge();
                         Destroy(gameObject);
                     }
                     else
@@ -306,7 +308,7 @@ public class PickupObject : MonoBehaviour
                     if (inDialouge)
                     {
                         gameManager.kingsKeyOne = true;
-                        CLoseDialouge();
+                        CloseDialouge();
                         Destroy(gameObject);
                     }
                     else
@@ -320,7 +322,7 @@ public class PickupObject : MonoBehaviour
                     if (inDialouge)
                     {
                         gameManager.kingsKeyTwo = true;
-                        CLoseDialouge();
+                        CloseDialouge();
                         Destroy(gameObject);
                     }
                     else
@@ -334,7 +336,7 @@ public class PickupObject : MonoBehaviour
                     if (inDialouge)
                     {
                         gameManager.clothPile = true;
-                        CLoseDialouge();
+                        CloseDialouge();
                         Destroy(gameObject);
                     }
                     else
@@ -348,7 +350,7 @@ public class PickupObject : MonoBehaviour
                     if (inDialouge)
                     {
                         gameManager.sword = true;
-                        CLoseDialouge();
+                        CloseDialouge();
                         Destroy(gameObject);
                     }
                     else
@@ -362,7 +364,7 @@ public class PickupObject : MonoBehaviour
                     if (inDialouge)
                     {
                         gameManager.book = true;
-                        CLoseDialouge();
+                        CloseDialouge();
                         Destroy(gameObject);
                     }
                     else
@@ -395,7 +397,7 @@ public class PickupObject : MonoBehaviour
         }
     }
 
-    void CLoseDialouge()
+    void CloseDialouge()
     {
         player.enabled = true;
         dialougeBox.GetComponent<RawImage>().enabled = false;

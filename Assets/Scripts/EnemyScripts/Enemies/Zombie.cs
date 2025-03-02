@@ -7,7 +7,7 @@ public class Zombie : Enemy
         AttackRange = 4f;
     }
     private void OnCollisionEnter(Collision collision) {
-        if (collision.collider.CompareTag("KillableEnviremoent")) {
+        if (collision.collider.CompareTag("KillableEnviorment")) {
             Damage(10f);
         }
     }

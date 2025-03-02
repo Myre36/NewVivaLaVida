@@ -46,6 +46,7 @@ public class PickupObject : MonoBehaviour
         player = GameObject.Find("Player").GetComponent<Movement>();
         dialougeBox = GameObject.Find("DialougeBox");
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
+        pickupSound = GetComponent<AudioSource>();
         if(hallwayKey)
         {
             if (gameManager.hallwayKey)
@@ -399,6 +400,7 @@ public class PickupObject : MonoBehaviour
 
     void CloseDialouge()
     {
+        pickupSound.Play();
         player.enabled = true;
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;

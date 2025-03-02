@@ -20,15 +20,6 @@ public class RoomEntryCheck : MonoBehaviour
 
     public float timeToFade;
 
-
-    //Objects
-    public Transform objectOne;
-    public Transform objectTwo;
-
-    //Object bools
-    public bool isObjectOne;
-    public bool isObjectTwo;
-
     //Enemies
     public GameObject enemyOne;
     public GameObject enemyTwo;
@@ -71,16 +62,6 @@ public class RoomEntryCheck : MonoBehaviour
         fadeScreen = GameObject.Find("FadeScreen").GetComponent<CanvasGroup>();
 
         StartCoroutine(MovePlayer());
-
-        //Sets the object positions
-        if (isObjectOne)
-        {
-            objectOne.position = gameManager.GetComponent<GameManager>().objectOnePosition;
-        }
-        if(isObjectTwo)
-        {
-            objectTwo.position = gameManager.GetComponent<GameManager>().objectTwoPosition;
-        }
 
         //Sets the status of the enemies
         if(isEnemyOne)
@@ -195,18 +176,6 @@ public class RoomEntryCheck : MonoBehaviour
                     fadeOut = false;
                 }
             }
-        }
-    }
-
-    public void SaveObjectPositions()
-    {
-        if(isObjectOne)
-        {
-            gameManager.GetComponent<GameManager>().objectOnePosition = objectOne.position;
-        }
-        if(isObjectTwo)
-        {
-            gameManager.GetComponent<GameManager>().objectTwoPosition = objectTwo.position;
         }
     }
 

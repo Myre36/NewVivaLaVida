@@ -86,7 +86,6 @@ public class DoorScript : MonoBehaviour
     //A function that loads the next scene
     public IEnumerator OpenDoor()
     {
-        roomCheck.GetComponent<RoomEntryCheck>().SaveObjectPositions();
         Debug.Log("Loading next scene");
         player.GetComponent<Movement>().enabled = false;
         fadeIn = true; 

@@ -22,6 +22,17 @@ public class GameManager : MonoBehaviour
     public bool enemyOneDead = false;
     public bool enemyTwoDead = false;
     public bool enemyThreeDead = false;
+    public bool enemyFourDead = false;
+    public bool enemyFiveDead = false;
+    public bool enemySixDead = false;
+    public bool enemySevenDead = false;
+    public bool enemyEightDead = false;
+    public bool enemyNineDead = false;
+    public bool enemyTenDead = false;
+    public bool enemyElevenDead = false;
+    public bool enemyTwelveDead = false;
+    public bool enemyThirteenDead = false;
+    public bool enemyFourteenDead = false;
 
     public bool coinOne;
     public bool coinTwo;

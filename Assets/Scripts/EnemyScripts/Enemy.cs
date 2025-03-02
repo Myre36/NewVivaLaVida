@@ -114,18 +114,66 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
 
     #region DeathController
 
-    public void KillEnemy() {
-        if (enemyNum == 1) {
+    public void KillEnemy()
+    {
+        if (enemyNum == 1)
+        {
             gameManager.GetComponent<GameManager>().enemyOneDead = true;
         }
-        else if (enemyNum == 2) {
+        else if (enemyNum == 2)
+        {
             gameManager.GetComponent<GameManager>().enemyTwoDead = true;
         }
-        else if (enemyNum == 3) {
+        else if (enemyNum == 3)
+        {
             gameManager.GetComponent<GameManager>().enemyThreeDead = true;
+        }
+        else if (enemyNum == 4)
+        {
+            gameManager.GetComponent<GameManager>().enemyFourDead = true;
+        }
+        else if (enemyNum == 5)
+        {
+            gameManager.GetComponent<GameManager>().enemyFiveDead = true;
+        }
+        else if (enemyNum == 6)
+        {
+            gameManager.GetComponent<GameManager>().enemySixDead = true;
+        }
+        else if (enemyNum == 7)
+        {
+            gameManager.GetComponent<GameManager>().enemySevenDead = true;
+        }
+        else if (enemyNum == 8)
+        {
+            gameManager.GetComponent<GameManager>().enemyEightDead = true;
+        }
+        else if (enemyNum == 9)
+        {
+            gameManager.GetComponent<GameManager>().enemyNineDead = true;
+        }
+        else if (enemyNum == 10)
+        {
+            gameManager.GetComponent<GameManager>().enemyTenDead = true;
+        }
+        else if (enemyNum == 11)
+        {
+            gameManager.GetComponent<GameManager>().enemyElevenDead = true;
+        }
+        else if (enemyNum == 12)
+        {
+            gameManager.GetComponent<GameManager>().enemyTwelveDead = true;
+        }
+        else if (enemyNum == 13)
+        {
+            gameManager.GetComponent<GameManager>().enemyThirteenDead = true;
+        }
+        else if (enemyNum == 14)
+        {
+            gameManager.GetComponent<GameManager>().enemyFourteenDead = true;
         }
         Destroy(gameObject);
     }
 
-        #endregion
+    #endregion
 }

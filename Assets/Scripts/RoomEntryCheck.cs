@@ -33,11 +33,33 @@ public class RoomEntryCheck : MonoBehaviour
     public GameObject enemyOne;
     public GameObject enemyTwo;
     public GameObject enemyThree;
+    public GameObject enemyFour;
+    public GameObject enemyFive;
+    public GameObject enemySix;
+    public GameObject enemySeven;
+    public GameObject enemyEight;
+    public GameObject enemyNine;
+    public GameObject enemyTen;
+    public GameObject enemyEleven;
+    public GameObject enemyTwelve;
+    public GameObject enemyThirteen;
+    public GameObject enemyFourteen;
 
     //Enemy bools
     public bool isEnemyOne;
     public bool isEnemyTwo;
     public bool isEnemyThree;
+    public bool isEnemyFour;
+    public bool isEnemyFive;
+    public bool isEnemySix;
+    public bool isEnemySeven;
+    public bool isEnemyEight;
+    public bool isEnemyNine;
+    public bool isEnemyTen;
+    public bool isEnemyEleven;
+    public bool isEnemyTwelve;
+    public bool isEnemyThirteen;
+    public bool isEnemyFourteen;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -82,7 +104,83 @@ public class RoomEntryCheck : MonoBehaviour
                 Destroy(enemyThree);
             }
         }
-        
+        if (isEnemyFour)
+        {
+            if (gameManager.GetComponent<GameManager>().enemyFourDead == true)
+            {
+                Destroy(enemyFour);
+            }
+        }
+        if (isEnemyFive)
+        {
+            if (gameManager.GetComponent<GameManager>().enemyFiveDead == true)
+            {
+                Destroy(enemyFive);
+            }
+        }
+        if (isEnemySix)
+        {
+            if (gameManager.GetComponent<GameManager>().enemySixDead == true)
+            {
+                Destroy(enemySix);
+            }
+        }
+        if (isEnemySeven)
+        {
+            if (gameManager.GetComponent<GameManager>().enemySevenDead == true)
+            {
+                Destroy(enemySeven);
+            }
+        }
+        if (isEnemyEight)
+        {
+            if (gameManager.GetComponent<GameManager>().enemyEightDead == true)
+            {
+                Destroy(enemyEight);
+            }
+        }
+        if (isEnemyNine)
+        {
+            if (gameManager.GetComponent<GameManager>().enemyNineDead == true)
+            {
+                Destroy(enemyNine);
+            }
+        }
+        if (isEnemyTen)
+        {
+            if (gameManager.GetComponent<GameManager>().enemyTenDead == true)
+            {
+                Destroy(enemyTen);
+            }
+        }
+        if (isEnemyEleven)
+        {
+            if (gameManager.GetComponent<GameManager>().enemyElevenDead == true)
+            {
+                Destroy(enemyEleven);
+            }
+        }
+        if (isEnemyTwelve)
+        {
+            if (gameManager.GetComponent<GameManager>().enemyTwelveDead == true)
+            {
+                Destroy(enemyTwelve);
+            }
+        }
+        if (isEnemyThirteen)
+        {
+            if (gameManager.GetComponent<GameManager>().enemyThirteenDead == true)
+            {
+                Destroy(enemyThirteen);
+            }
+        }
+        if (isEnemyFourteen)
+        {
+            if (gameManager.GetComponent<GameManager>().enemyFourteenDead == true)
+            {
+                Destroy(enemyFourteen);
+            }
+        }
     }
 
     private void Update()

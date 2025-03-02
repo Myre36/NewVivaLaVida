@@ -2231,14 +2231,14 @@ PrefabInstance:
     - target: {fileID: 8907324268955526472, guid: 8484f0f22a0529541bb12dab3d1de8a6, type: 3}
       propertyPath: enemyThree
       value: 
-      objectReference: {fileID: 196211141}
+      objectReference: {fileID: 0}
     - target: {fileID: 8907324268955526472, guid: 8484f0f22a0529541bb12dab3d1de8a6, type: 3}
       propertyPath: isObjectOne
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8907324268955526472, guid: 8484f0f22a0529541bb12dab3d1de8a6, type: 3}
       propertyPath: isEnemyThree
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8907324268955526472, guid: 8484f0f22a0529541bb12dab3d1de8a6, type: 3}
       propertyPath: entryPoints.Array.size

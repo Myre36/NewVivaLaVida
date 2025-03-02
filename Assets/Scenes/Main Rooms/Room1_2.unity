@@ -317,16 +317,16 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 19d0ffde6c9ed3c4aa367294ce634848, type: 3}
+  m_Resource: {fileID: 8300000, guid: 19d0ffde6c9ed3c4aa367294ce634848, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.05
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 175
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -33348,54 +33348,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1061967058}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!1 &1840266569
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1840266571}
-  - component: {fileID: 1840266570}
-  m_Layer: 0
-  m_Name: SoundManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1840266570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840266569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c20e083a6fa3e0b43ac4fe3639214143, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bgmSource: {fileID: 10114873}
-  sfxSource: {fileID: 10114873}
-  backgroundMusic: {fileID: 8300000, guid: 19d0ffde6c9ed3c4aa367294ce634848, type: 3}
-  soundEffects: []
---- !u!4 &1840266571
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840266569}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.627298, y: -12.905217, z: -104.42379}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1881489447
 GameObject:
   m_ObjectHideFlags: 0
@@ -40511,5 +40463,4 @@ SceneRoots:
   - {fileID: 673391337}
   - {fileID: 1241668742}
   - {fileID: 1999965690}
-  - {fileID: 1840266571}
   - {fileID: 10114874}

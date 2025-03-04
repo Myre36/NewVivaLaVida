@@ -687,7 +687,7 @@ MonoBehaviour:
   - He sure loves his own posture.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!65 &77289530
 BoxCollider:
@@ -3440,7 +3440,7 @@ MonoBehaviour:
   - Aside from trigonometry, all of this looks like giberish to you.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!65 &582414829
 BoxCollider:
@@ -5424,7 +5424,7 @@ MonoBehaviour:
   - Couldn't understand a word even if you read them all.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!65 &1223509078
 BoxCollider:

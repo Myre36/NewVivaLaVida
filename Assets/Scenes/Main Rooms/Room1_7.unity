@@ -737,7 +737,7 @@ MonoBehaviour:
   - Why is it left out on the table like this?
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!65 &153752844
 BoxCollider:
@@ -2822,7 +2822,7 @@ MonoBehaviour:
   - There must have been a party recently.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!1001 &857657869
 PrefabInstance:
@@ -9409,7 +9409,7 @@ MonoBehaviour:
   - The king definetly has the wealth to afford all this.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!65 &1983414606
 BoxCollider:

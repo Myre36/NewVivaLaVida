@@ -4376,7 +4376,7 @@ MonoBehaviour:
   - A small dip into it wouldn't hurt, right?
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

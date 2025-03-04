@@ -4207,7 +4207,7 @@ MonoBehaviour:
   - You don't have time to read right now.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!1 &760544220
 GameObject:

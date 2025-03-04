@@ -8,18 +8,13 @@ public class MenuScript : MonoBehaviour
         SceneManager.LoadScene("Room1_1");
     }
 
-    public void LoadPlanet()
-    {
-        SceneManager.LoadScene("SolarSystemTest");
-    }
-
-    public void LoadCombination()
-    {
-        SceneManager.LoadScene("CombinationPuzzle");
-    }
-
     public void LoadMenu()
     {
         SceneManager.LoadScene("TutorialScene");
+    }
+
+    public void LoadIntro()
+    {
+        SceneManager.LoadScene("Introduction");
     }
 }

@@ -1390,7 +1390,7 @@ MonoBehaviour:
   - The queen's face is covered by a veil.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!1001 &239735973
 PrefabInstance:
@@ -2373,7 +2373,7 @@ MonoBehaviour:
   - If it wasn't for the circumstances, you could sleep here for hours.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!1001 &869612985
 PrefabInstance:
@@ -4257,7 +4257,7 @@ MonoBehaviour:
   - Maybe the king is a fan of scultures?
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!65 &1451630787
 BoxCollider:

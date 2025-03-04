@@ -2630,7 +2630,7 @@ MonoBehaviour:
   - Reading them reminds you of the harshness of daily life.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!65 &1061738160
 BoxCollider:
@@ -3542,7 +3542,7 @@ MonoBehaviour:
   - Some date back two centuries.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!65 &1370845789
 BoxCollider:

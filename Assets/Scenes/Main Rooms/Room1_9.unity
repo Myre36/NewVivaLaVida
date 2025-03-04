@@ -493,7 +493,7 @@ MonoBehaviour:
   - The firplace is burnt out
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!1 &101952029
 GameObject:
@@ -793,7 +793,7 @@ MonoBehaviour:
   - How small we are in this big world.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!65 &369121112
 BoxCollider:
@@ -1246,7 +1246,7 @@ MonoBehaviour:
   - Seems a bit bloated.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!65 &525958483
 BoxCollider:
@@ -2481,7 +2481,7 @@ MonoBehaviour:
   - Maybe later you can sneak some of these out with you.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!65 &939662779
 BoxCollider:
@@ -6494,7 +6494,7 @@ MonoBehaviour:
   - Or perhaps they hope to one day regain it.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!65 &2106766814
 BoxCollider:

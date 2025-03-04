@@ -2099,8 +2099,83 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8698081835559011744, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 981982937}
+    - targetCorrespondingSourceObject: {fileID: 8698081835559011744, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 981982939}
+    - targetCorrespondingSourceObject: {fileID: 8698081835559011744, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 981982938}
   m_SourcePrefab: {fileID: 100100000, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
+--- !u!1 &981982936 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8698081835559011744, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
+  m_PrefabInstance: {fileID: 981982935}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &981982937
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981982936}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4724509, y: 0.97579277, z: 1.1276957}
+  m_Center: {x: 1.107173, y: 1.3301865, z: -0.9511569}
+--- !u!114 &981982938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981982936}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &981982939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981982936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca762171fbce39d42bb655084dc20f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialougeBox: {fileID: 0}
+  dialougeText: {fileID: 0}
+  dialouge:
+  - A fancy looking toilet.
+  - A corpse is slanted dead up against it.
+  - What did he need in the toilet?
+  playerInRange: 0
+  lineNumber: 0
+  outlineEneabled: 0
+  isBook: 0
 --- !u!43 &1025066153
 Mesh:
   m_ObjectHideFlags: 0
@@ -3028,7 +3103,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1815564316}
   - {fileID: 708688432}
   - {fileID: 2091329072}
   - {fileID: 1331674810}
@@ -3281,11 +3355,11 @@ Transform:
   m_GameObject: {fileID: 1815564312}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.598318, y: -2.924, z: 4.625656}
+  m_LocalPosition: {x: 16.55, y: 0.4720161, z: -152.31}
   m_LocalScale: {x: 0.3238, y: 1, z: 0.1028}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1593021053}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1815564317
 BoxCollider:
@@ -4228,8 +4302,82 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7063674888562401926, guid: ef04112b146b5af48b06184847d3d9f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6020031020136198514}
+    - targetCorrespondingSourceObject: {fileID: 7063674888562401926, guid: ef04112b146b5af48b06184847d3d9f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6020031020136198516}
+    - targetCorrespondingSourceObject: {fileID: 7063674888562401926, guid: ef04112b146b5af48b06184847d3d9f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6020031020136198515}
   m_SourcePrefab: {fileID: 100100000, guid: ef04112b146b5af48b06184847d3d9f7, type: 3}
+--- !u!1 &6020031020136198513 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7063674888562401926, guid: ef04112b146b5af48b06184847d3d9f7, type: 3}
+  m_PrefabInstance: {fileID: 6020031020136198512}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &6020031020136198514
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6020031020136198513}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.7560325, y: 0.78900325, z: 0.82705724}
+  m_Center: {x: -0.14246324, y: -0.4014832, z: -0.46988633}
+--- !u!114 &6020031020136198515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6020031020136198513}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &6020031020136198516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6020031020136198513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca762171fbce39d42bb655084dc20f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialougeBox: {fileID: 0}
+  dialougeText: {fileID: 0}
+  dialouge:
+  - Someone forgot to drain the water.
+  - A small dip into it wouldn't hurt, right?
+  playerInRange: 0
+  lineNumber: 0
+  outlineEneabled: 0
+  isBook: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -4245,3 +4393,4 @@ SceneRoots:
   - {fileID: 1645832368}
   - {fileID: 792076630}
   - {fileID: 981982935}
+  - {fileID: 1815564316}

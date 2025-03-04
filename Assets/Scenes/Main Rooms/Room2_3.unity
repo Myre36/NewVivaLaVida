@@ -1427,13 +1427,87 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1176151096816020426, guid: 6bef39bc6b916e741816aedf3fb6b5d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 420524769}
+    - targetCorrespondingSourceObject: {fileID: 1176151096816020426, guid: 6bef39bc6b916e741816aedf3fb6b5d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 420524771}
+    - targetCorrespondingSourceObject: {fileID: 1176151096816020426, guid: 6bef39bc6b916e741816aedf3fb6b5d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 420524770}
   m_SourcePrefab: {fileID: 100100000, guid: 6bef39bc6b916e741816aedf3fb6b5d5, type: 3}
 --- !u!4 &420524767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1515270644305213510, guid: 6bef39bc6b916e741816aedf3fb6b5d5, type: 3}
   m_PrefabInstance: {fileID: 420524766}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &420524768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1176151096816020426, guid: 6bef39bc6b916e741816aedf3fb6b5d5, type: 3}
+  m_PrefabInstance: {fileID: 420524766}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &420524769
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420524768}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.3841205, y: 11.284698, z: 2.8014562}
+  m_Center: {x: 0.3668119, y: 2.7826157, z: 0.04072942}
+--- !u!114 &420524770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420524768}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &420524771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420524768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca762171fbce39d42bb655084dc20f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialougeBox: {fileID: 0}
+  dialougeText: {fileID: 0}
+  dialouge:
+  - This is where the king sits during meetings.
+  - Directly across the room is a painting of him.
+  playerInRange: 0
+  lineNumber: 0
+  outlineEneabled: 0
+  isBook: 0
 --- !u!1001 &502912827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1615,7 +1689,9 @@ GameObject:
   - component: {fileID: 542833627}
   - component: {fileID: 542833626}
   - component: {fileID: 542833625}
-  - component: {fileID: 542833624}
+  - component: {fileID: 542833628}
+  - component: {fileID: 542833630}
+  - component: {fileID: 542833629}
   m_Layer: 0
   m_Name: Picture
   m_TagString: Untagged
@@ -1623,28 +1699,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &542833624
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 542833623}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &542833625
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1708,11 +1762,71 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.0000005644145, y: -0.7071062, z: 0.7071074, w: 0.0000006885729}
   m_LocalPosition: {x: 3.9867992, y: -1.5034375, z: 10.268234}
-  m_LocalScale: {x: 0.56, y: 1, z: 0.47}
+  m_LocalScale: {x: 0.70168, y: 1, z: 0.47}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1841564493}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
+--- !u!65 &542833628
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542833623}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.999999, y: 1.3975983, z: 9.999997}
+  m_Center: {x: 0.000002038695, y: 0.36794958, z: -6.524754e-14}
+--- !u!114 &542833629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542833623}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &542833630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542833623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca762171fbce39d42bb655084dc20f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialougeBox: {fileID: 0}
+  dialougeText: {fileID: 0}
+  dialouge:
+  - A map of the known world.
+  - Denmark appears so small on this thing.
+  playerInRange: 0
+  lineNumber: 0
+  outlineEneabled: 0
+  isBook: 0
 --- !u!1 &560997945
 GameObject:
   m_ObjectHideFlags: 0

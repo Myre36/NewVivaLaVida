@@ -2347,13 +2347,87 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8245329324663669096, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1219559883}
+    - targetCorrespondingSourceObject: {fileID: 8245329324663669096, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1219559882}
+    - targetCorrespondingSourceObject: {fileID: 8245329324663669096, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1219559881}
   m_SourcePrefab: {fileID: 100100000, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
 --- !u!4 &1219559879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5081944567532709056, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
   m_PrefabInstance: {fileID: 1219559878}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1219559880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8245329324663669096, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
+  m_PrefabInstance: {fileID: 1219559878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1219559881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219559880}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &1219559882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219559880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca762171fbce39d42bb655084dc20f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialougeBox: {fileID: 0}
+  dialougeText: {fileID: 0}
+  dialouge:
+  - There are stacks of books about religion.
+  - You lose interest quickly.
+  playerInRange: 0
+  lineNumber: 0
+  outlineEneabled: 0
+  isBook: 0
+--- !u!65 &1219559883
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219559880}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.3842547, y: 1, z: 0.6}
+  m_Center: {x: -0.41287223, y: 0, z: 4.460311e-16}
 --- !u!43 &1260018534
 Mesh:
   m_ObjectHideFlags: 0
@@ -4953,13 +5027,88 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8245329324663669096, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2136353336}
+    - targetCorrespondingSourceObject: {fileID: 8245329324663669096, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2136353335}
+    - targetCorrespondingSourceObject: {fileID: 8245329324663669096, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2136353334}
   m_SourcePrefab: {fileID: 100100000, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
 --- !u!4 &2136353332 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5081944567532709056, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
   m_PrefabInstance: {fileID: 2136353331}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2136353333 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8245329324663669096, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
+  m_PrefabInstance: {fileID: 2136353331}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2136353334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136353333}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &2136353335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136353333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca762171fbce39d42bb655084dc20f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialougeBox: {fileID: 0}
+  dialougeText: {fileID: 0}
+  dialouge:
+  - You find some books about plants and nature.
+  - You have a feeling these are owned by the queen.
+  - The king doesn't strike you as a nature lover.
+  playerInRange: 0
+  lineNumber: 0
+  outlineEneabled: 0
+  isBook: 0
+--- !u!65 &2136353336
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136353333}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.3842547, y: 1, z: 0.6}
+  m_Center: {x: -0.41287223, y: 0, z: 4.460311e-16}
 --- !u!1 &2141604881
 GameObject:
   m_ObjectHideFlags: 0

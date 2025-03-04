@@ -4126,13 +4126,89 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8245329324663669096, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 719736872}
+    - targetCorrespondingSourceObject: {fileID: 8245329324663669096, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 719736874}
+    - targetCorrespondingSourceObject: {fileID: 8245329324663669096, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 719736873}
   m_SourcePrefab: {fileID: 100100000, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
 --- !u!4 &719736870 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5081944567532709056, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
   m_PrefabInstance: {fileID: 719736869}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &719736871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8245329324663669096, guid: 573ee7b7a5ca550458b864253b220722, type: 3}
+  m_PrefabInstance: {fileID: 719736869}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &719736872
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719736871}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.91, y: 1.26, z: 1.49}
+  m_Center: {x: 0, y: 0.000000059604645, z: 0}
+--- !u!114 &719736873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719736871}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &719736874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719736871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca762171fbce39d42bb655084dc20f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialougeBox: {fileID: 0}
+  dialougeText: {fileID: 0}
+  dialouge:
+  - Dozens upon dozens of books.
+  - 'One stands out to you: "Todd''s guide to the galaxy".'
+  - Might be some astronomy book.
+  - You don't have time to read right now.
+  playerInRange: 0
+  lineNumber: 0
+  outlineEneabled: 0
+  isBook: 0
 --- !u!1 &760544220
 GameObject:
   m_ObjectHideFlags: 0

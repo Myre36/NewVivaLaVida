@@ -245,7 +245,7 @@ MonoBehaviour:
   - Hope it'll all be fine.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!65 &989283
 BoxCollider:
@@ -455,7 +455,7 @@ MonoBehaviour:
   - You're almost tempted to just take a bath right there.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!1 &37899507
 GameObject:
@@ -7307,7 +7307,7 @@ MonoBehaviour:
   - A fancy looking toilet.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!65 &2075168724027018536
 BoxCollider:

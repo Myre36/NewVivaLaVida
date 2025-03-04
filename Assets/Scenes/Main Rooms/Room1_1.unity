@@ -438,7 +438,7 @@ MonoBehaviour:
   - How boring.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!1 &29970105
 GameObject:
@@ -7072,7 +7072,7 @@ MonoBehaviour:
   - Maybe you really shouldn't be here.
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!1 &413059772
 GameObject:

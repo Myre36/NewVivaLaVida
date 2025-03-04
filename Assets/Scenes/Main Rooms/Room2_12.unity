@@ -25661,7 +25661,7 @@ MonoBehaviour:
   - Maybe you could sleep here once this is all over?
   playerInRange: 0
   lineNumber: 0
-  outlineEneabled: 0
+  outlineEneabled: 1
   isBook: 0
 --- !u!1001 &1765891353
 PrefabInstance:

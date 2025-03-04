@@ -150,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 5734510}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -18.08, y: 25.964901, z: -114.41}
+  m_LocalPosition: {x: -18.08, y: 25.964901, z: -114.273}
   m_LocalScale: {x: 1.3433003, y: 4.0111656, z: 2.6732605}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -189,8 +189,7 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   dialouge:
-  - The king stares back at you with dead eyes
-  - The paint appears alive
+  - He sure loves paintings of himself
   playerInRange: 0
   lineNumber: 0
   outlineEneabled: 1
@@ -1099,7 +1098,7 @@ Transform:
   m_GameObject: {fileID: 145259958}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -23.06, y: 25.964901, z: -114.41}
+  m_LocalPosition: {x: -23.06, y: 25.964901, z: -114.206}
   m_LocalScale: {x: 1.3433003, y: 4.0111656, z: 2.6732605}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1138,8 +1137,7 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   dialouge:
-  - The king stares back at you with dead eyes
-  - The paint appears alive
+  - If only he was here now...
   playerInRange: 0
   lineNumber: 0
   outlineEneabled: 1
@@ -15878,7 +15876,6 @@ GameObject:
   - component: {fileID: 768130399}
   - component: {fileID: 768130405}
   - component: {fileID: 768130404}
-  - component: {fileID: 768130400}
   m_Layer: 0
   m_Name: chessboard (1)
   m_TagString: Untagged
@@ -15895,30 +15892,12 @@ Transform:
   m_GameObject: {fileID: 768130398}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.180611, y: 23.47, z: -116.03003}
-  m_LocalScale: {x: 1.9261643, y: 1.1103345, z: 1.694879}
+  m_LocalPosition: {x: 0, y: -0.56525177, z: 0}
+  m_LocalScale: {x: 1.0177001, y: 1.9930639, z: 1.0176998}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1061967058}
+  m_Father: {fileID: 1630464045}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &768130400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 768130398}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.9547169, g: 0.9220408, b: 0.23597719, a: 1}
-  outlineWidth: 2.26
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!23 &768130404
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28273,7 +28252,6 @@ Transform:
   - {fileID: 145259959}
   - {fileID: 1495136736}
   - {fileID: 1630464045}
-  - {fileID: 768130399}
   - {fileID: 851866496}
   - {fileID: 30271562}
   - {fileID: 1818991830}
@@ -31295,7 +31273,7 @@ Transform:
   m_GameObject: {fileID: 1495136735}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -27.83, y: 25.964901, z: -114.41}
+  m_LocalPosition: {x: -27.83, y: 25.964901, z: -114.28}
   m_LocalScale: {x: 1.3433003, y: 4.0111656, z: 2.6732605}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31334,8 +31312,7 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   dialouge:
-  - The king stares back at you with dead eyes
-  - The paint appears alive
+  - The high king.
   playerInRange: 0
   lineNumber: 0
   outlineEneabled: 1
@@ -31882,7 +31859,8 @@ Transform:
   m_LocalPosition: {x: -8.180611, y: 23.7849, z: -116.03003}
   m_LocalScale: {x: 1.8926642, y: 0.55709934, z: 1.6654016}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 768130399}
   m_Father: {fileID: 1061967058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1649557469
@@ -33128,8 +33106,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5274789, y: 1.1461952, z: 2.5320985}
-  m_Center: {x: 0.020906644, y: 0.055738978, z: -0.4870765}
+  m_Size: {x: 1.5274789, y: 1.1461953, z: 3.277649}
+  m_Center: {x: 0.020906653, y: 0.055738974, z: -0.11429985}
 --- !u!65 &1818991827
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33213,7 +33191,7 @@ Transform:
   m_GameObject: {fileID: 1818991823}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 43.139393, y: 25.7749, z: -84.47003}
+  m_LocalPosition: {x: 43.139393, y: 25.7749, z: -84.28}
   m_LocalScale: {x: 6.7471285, y: 4.1898623, z: 0.7859125}
   m_ConstrainProportionsScale: 0
   m_Children: []

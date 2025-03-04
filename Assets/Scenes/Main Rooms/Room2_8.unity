@@ -3179,27 +3179,24 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   dialouge:
-  - Astronomies always had a fascination for the outer planets, but people never
-    believed in anything they said, and they used to call them madmans.
-  - They never gave up, they worked hard towards their research, found old sources
-    and created many more. Some stood out to the rich people, and so, systems of
-    planets have been installed to entertains the big houses.
-  - Each planet had a name, both a greek and a roman name, each having an unique
-    explanation. (short list is at the end)
-  - The warmest of them all, the sun, was called Helios.
-  - The colossus was Jupiter, named after Zeus, the god of the sky.
-  - Right after Jupiter was Saturn, who gained its named due to its slow movement,
-    Kronos.
-  - Uranus comes next, which was named after the father of Saturn, Ouranos.
-  - Neptune gained its name due to the blue deep color, representing the sea god,
-    Poseidon.
-  - Our little planet, Earth, was named Gaia, which means "ground" and "soil".
-  - Venus was bright and beautiful, therefore named Aphrodite.
-  - Mars was named after the god of war, Ares, due to its blood-like color.
-  - Mercury moves so quick, winning its name after the fleet-of-food messenger god,
-    Hermes.
-  - Helios = Sol (Sun) Hermes = Mercury Aphrodite = Venus Gaia = Terra (Earth) Ares
-    = Mars Zeus = Jupiter Kronos = Saturn Ouranos = Uranus
+  - The book of Roman and Greek gods
+  - The Roman pantheon has always been an interest to researchers throughout history.
+  - What made the Romans special was how thet syncrhonised foreign gods with their
+    own.
+  - The most well kown example of this are how they treated the Greek gods.
+  - Zeus, the king of the gods, was syncronised with their own sky god, Jupiter.
+  - Gaia, the earth itself and mother of all Titans, was turned into Terra, which
+    is just the Latin word for "earth"
+  - Aphrodite was syncronised with their own love godess, Venus, and was given the
+    role of a minor war godess as well.
+  - Hermes was called Mercury, which is also the name of a metal.
+  - Ares, god of war, was called Mars.
+  - Kronos, god of time, got renamed to Saturn.
+  - Helios, god of the sun, was renamed to Sol, which is the latin word for Sun.
+  - Another notable legacy of the Romans is the names of the planets.
+  - Many dots that cover our night sky bear the names of Roman gods.
+  - One exception is the newly discovered Uranus, which bears the name of the Greek
+    god of the sky.
   playerInRange: 0
   lineNumber: 0
   outlineEneabled: 1

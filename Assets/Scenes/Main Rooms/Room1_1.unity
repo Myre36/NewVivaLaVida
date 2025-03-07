@@ -11514,6 +11514,7 @@ MonoBehaviour:
   basementKey: 0
   kingsKeyOne: 0
   kingsKeyTwo: 0
+  isKeyItem: 0
   isBullet: 1
   bullet1: 1
 --- !u!82 &884090076
@@ -17360,6 +17361,7 @@ MonoBehaviour:
   basementKey: 0
   kingsKeyOne: 0
   kingsKeyTwo: 0
+  isKeyItem: 1
   isBullet: 0
   bullet1: 0
 --- !u!23 &1143453807

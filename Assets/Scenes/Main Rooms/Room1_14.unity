@@ -3340,6 +3340,9 @@ MonoBehaviour:
   basementKey: 0
   kingsKeyOne: 0
   kingsKeyTwo: 0
+  isKeyItem: 1
+  isBullet: 0
+  bullet1: 0
 --- !u!23 &986580076
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -426,6 +426,7 @@ public class PickupObject : MonoBehaviour
         pickupSound.Play();
         player.enabled = true;
         dialougeBox.GetComponent<RawImage>().enabled = false;
+        dialougeText.text = "You are not supposed to see this";
         dialougeText.enabled = false;
         inDialouge = false;
         Destroy(gameObject);

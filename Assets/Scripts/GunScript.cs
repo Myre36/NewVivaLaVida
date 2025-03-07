@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using TMPro;
+using UnityEngine.UI;
 
 public class GunScript : MonoBehaviour
 {
@@ -31,12 +32,16 @@ public class GunScript : MonoBehaviour
 
     public TMP_Text ammoText;
 
+    public RawImage ammoInImage;
+    public RawImage noAmmoInInImage;
+
     private void Awake()
     {
         //Make sure that the player is able to shoot
         readyToShoot = true;
         canShoot = true;
         ammoCount = 3;
+        ammoInChamber = true;
     }
 
     private void Update()
@@ -45,6 +50,17 @@ public class GunScript : MonoBehaviour
         MyInput();
 
         ammoText.text = ammoCount.ToString();
+
+        if(ammoInChamber)
+        {
+            ammoInImage.enabled = true;
+            noAmmoInInImage.enabled = false;
+        }
+        else
+        {
+            noAmmoInInImage.enabled = true;
+            ammoInImage.enabled = false;
+        }
     }
 
     //A method for shooting. If the player has ammo, presses the LMB, and they are currently aiming, the Shoot method is called

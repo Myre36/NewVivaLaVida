@@ -223,6 +223,7 @@ public class PlanetPickerScript : MonoBehaviour
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         player.enabled = true;
+        player.inventorySpace--;
     }
 
     public void PlaceMercury()
@@ -235,6 +236,7 @@ public class PlanetPickerScript : MonoBehaviour
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         player.enabled = true;
+        player.inventorySpace--;
     }
 
     public void PlaceVenus()
@@ -247,6 +249,7 @@ public class PlanetPickerScript : MonoBehaviour
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         player.enabled = true;
+        player.inventorySpace--;
     }
 
     public void PlaceEarth()
@@ -259,6 +262,7 @@ public class PlanetPickerScript : MonoBehaviour
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         player.enabled = true;
+        player.inventorySpace--;
     }
 
     public void PlaceMars()
@@ -271,6 +275,7 @@ public class PlanetPickerScript : MonoBehaviour
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         player.enabled = true;
+        player.inventorySpace--;
     }
 
     public void PlaceJupiter()
@@ -283,6 +288,7 @@ public class PlanetPickerScript : MonoBehaviour
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         player.enabled = true;
+        player.inventorySpace--;
     }
 
     public void PlaceSaturn()
@@ -295,6 +301,7 @@ public class PlanetPickerScript : MonoBehaviour
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         player.enabled = true;
+        player.inventorySpace--;
     }
 
     public void PlaceUranus()
@@ -307,5 +314,6 @@ public class PlanetPickerScript : MonoBehaviour
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         player.enabled = true;
+        player.inventorySpace--;
     }
 }

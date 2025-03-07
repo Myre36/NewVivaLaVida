@@ -198,6 +198,7 @@ public class UnlockItem : MonoBehaviour
     private void PlaceItem()
     {
         player.enabled = true;
+        player.inventorySpace--;
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         inDialouge = false;

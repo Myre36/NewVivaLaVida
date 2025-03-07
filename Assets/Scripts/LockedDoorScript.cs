@@ -398,6 +398,7 @@ public class LockedDoorScript : MonoBehaviour
     void UnlockDoor()
     {
         player.enabled = true;
+        player.inventorySpace--;
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         inDialouge = false;

@@ -74,6 +74,8 @@ public class GameManager : MonoBehaviour
     public bool planetSolved;
     public bool combinationSolved;
 
+    public bool bullet1;
+
     public enum InputMode
     {
         Keyboard, Controller

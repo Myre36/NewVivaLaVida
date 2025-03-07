@@ -26,7 +26,6 @@ public class GunScript : MonoBehaviour
     public float reloadTime;
 
     public int ammoCount;
-    public int gunpowderCount;
     private bool ammoInChamber;
 
     private void Awake()
@@ -35,7 +34,6 @@ public class GunScript : MonoBehaviour
         readyToShoot = true;
         canShoot = true;
         ammoCount = 3;
-        gunpowderCount = 3;
     }
 
     private void Update()
@@ -54,7 +52,7 @@ public class GunScript : MonoBehaviour
             Shoot();
         }
 
-        if((Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.JoystickButton7)) && ammoCount > 0 && gunpowderCount > 0 && !ammoInChamber)
+        if((Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.JoystickButton7)) && ammoCount > 0 && !ammoInChamber)
         {
             StartCoroutine(ReloadGun());
         }
@@ -83,7 +81,6 @@ public class GunScript : MonoBehaviour
     {
         Debug.Log("Start reload");
         ammoCount--;
-        gunpowderCount--;
         yield return new WaitForSeconds(reloadTime);
         canShoot = true;
         ammoInChamber = true;

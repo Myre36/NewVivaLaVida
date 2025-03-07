@@ -26301,6 +26301,9 @@ MonoBehaviour:
   basementKey: 0
   kingsKeyOne: 0
   kingsKeyTwo: 1
+  isKeyItem: 1
+  isBullet: 0
+  bullet1: 0
 --- !u!82 &2091246820
 AudioSource:
   m_ObjectHideFlags: 0

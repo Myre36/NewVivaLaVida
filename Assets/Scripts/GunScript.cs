@@ -21,6 +21,8 @@ public class GunScript : MonoBehaviour
     //Refrence to the point that the bullet fires towards
     public Transform shootPoint;
 
+    public bool canShoot;
+
     private void Awake()
     {
         //Make sure that the player is able to shoot

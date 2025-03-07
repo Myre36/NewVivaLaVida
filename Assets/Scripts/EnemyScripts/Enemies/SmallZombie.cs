@@ -14,6 +14,6 @@ public class SmallZombie : Enemy
     private void OnCollisionEnter(Collision collision) {
          if (collision.collider.CompareTag("KillableEnviorment")) {
             KillEnemy();
-        }
+         }
     }
 }

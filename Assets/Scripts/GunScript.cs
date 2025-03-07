@@ -1,5 +1,5 @@
 using UnityEngine;
-using TMPro;
+using System.Collections;
 
 public class GunScript : MonoBehaviour
 {
@@ -21,12 +21,15 @@ public class GunScript : MonoBehaviour
     //Refrence to the point that the bullet fires towards
     public Transform shootPoint;
 
-    public bool canShoot;
+    private bool canShoot;
+
+    public float reloadTime;
 
     private void Awake()
     {
         //Make sure that the player is able to shoot
         readyToShoot = true;
+        canShoot = true;
     }
 
     private void Update()
@@ -40,15 +43,22 @@ public class GunScript : MonoBehaviour
     {
         shooting = Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.JoystickButton7);
 
-        if (readyToShoot == true && shooting == true && player.GetComponent<Movement>().aiming == true)
+        if (readyToShoot == true && shooting == true && player.GetComponent<Movement>().aiming == true && canShoot == true)
         {
             Shoot();
+        }
+
+        if(Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.JoystickButton7))
+        {
+            StartCoroutine(ReloadGun());
         }
     }
 
     //A method that handles shooting
     private void Shoot()
     {
+        canShoot = false;
+
         //Calculate direction the bullet flies towards
         Vector3 direction = shootPoint.position - bulletSpawn.position;
 
@@ -59,5 +69,11 @@ public class GunScript : MonoBehaviour
 
         //Add forces to bullet
         currentBullet.GetComponent<Rigidbody>().AddForce(direction.normalized * shootForce, ForceMode.Impulse);
+    }
+
+    IEnumerator ReloadGun()
+    {
+        yield return new WaitForSeconds(reloadTime);
+        canShoot = true;
     }
 }

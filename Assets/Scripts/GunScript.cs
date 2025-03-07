@@ -25,11 +25,17 @@ public class GunScript : MonoBehaviour
 
     public float reloadTime;
 
+    public int ammoCount;
+    public int gunpowderCount;
+    private bool ammoInChamber;
+
     private void Awake()
     {
         //Make sure that the player is able to shoot
         readyToShoot = true;
         canShoot = true;
+        ammoCount = 3;
+        gunpowderCount = 3;
     }
 
     private void Update()
@@ -43,12 +49,12 @@ public class GunScript : MonoBehaviour
     {
         shooting = Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.JoystickButton7);
 
-        if (readyToShoot == true && shooting == true && player.GetComponent<Movement>().aiming == true && canShoot == true)
+        if (readyToShoot && shooting && player.GetComponent<Movement>().aiming && canShoot)
         {
             Shoot();
         }
 
-        if(Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.JoystickButton7))
+        if((Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.JoystickButton7)) && ammoCount > 0 && gunpowderCount > 0 && !ammoInChamber)
         {
             StartCoroutine(ReloadGun());
         }
@@ -58,6 +64,8 @@ public class GunScript : MonoBehaviour
     private void Shoot()
     {
         canShoot = false;
+
+        ammoInChamber = false;
 
         //Calculate direction the bullet flies towards
         Vector3 direction = shootPoint.position - bulletSpawn.position;
@@ -73,7 +81,12 @@ public class GunScript : MonoBehaviour
 
     IEnumerator ReloadGun()
     {
+        Debug.Log("Start reload");
+        ammoCount--;
+        gunpowderCount--;
         yield return new WaitForSeconds(reloadTime);
         canShoot = true;
+        ammoInChamber = true;
+        Debug.Log("End reload");
     }
 }

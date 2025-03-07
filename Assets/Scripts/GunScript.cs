@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using TMPro;
 
 public class GunScript : MonoBehaviour
 {
@@ -28,6 +29,8 @@ public class GunScript : MonoBehaviour
     public int ammoCount;
     private bool ammoInChamber;
 
+    public TMP_Text ammoText;
+
     private void Awake()
     {
         //Make sure that the player is able to shoot
@@ -40,6 +43,8 @@ public class GunScript : MonoBehaviour
     {
         //Calling the input method
         MyInput();
+
+        ammoText.text = ammoCount.ToString();
     }
 
     //A method for shooting. If the player has ammo, presses the LMB, and they are currently aiming, the Shoot method is called
@@ -65,6 +70,8 @@ public class GunScript : MonoBehaviour
 
         ammoInChamber = false;
 
+        ammoCount--;
+
         //Calculate direction the bullet flies towards
         Vector3 direction = shootPoint.position - bulletSpawn.position;
 
@@ -80,7 +87,6 @@ public class GunScript : MonoBehaviour
     IEnumerator ReloadGun()
     {
         Debug.Log("Start reload");
-        ammoCount--;
         yield return new WaitForSeconds(reloadTime);
         canShoot = true;
         ammoInChamber = true;

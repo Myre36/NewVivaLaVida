@@ -38,6 +38,8 @@ public class Movement : MonoBehaviour
     //A bool which will be used to check if the player is aiming
     public bool aiming;
 
+    public int inventorySpace;
+
     public MovementState state;
 
     //This defines the health changed events and handler delagating
@@ -119,6 +121,7 @@ public class Movement : MonoBehaviour
         {
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         }
+        inventorySpace++;
     }
 
     // Update is called once per frame

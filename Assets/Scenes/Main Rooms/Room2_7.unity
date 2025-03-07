@@ -10267,6 +10267,9 @@ MonoBehaviour:
   basementKey: 1
   kingsKeyOne: 0
   kingsKeyTwo: 0
+  isKeyItem: 1
+  isBullet: 0
+  bullet1: 0
 --- !u!114 &1562242498
 MonoBehaviour:
   m_ObjectHideFlags: 0

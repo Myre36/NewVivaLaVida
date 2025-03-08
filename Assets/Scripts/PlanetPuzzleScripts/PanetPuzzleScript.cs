@@ -4,24 +4,27 @@ using UnityEngine.UI;
 
 public class PanetPuzzleScript : MonoBehaviour
 {
+    //A bool that checks if the stand has the correct planet enebaled
     public bool hasCorrectPlanet;
-
-    public GameObject correctPlanet;
-
-    public GameObject currentlyEnabledPlanet;
-
-    public GameObject[] planets;
-
+    //A bool to check if the player is in dialouge
+    public bool inDialouge;
+    //A bool to check if the player has solved the puzzle
+    public bool puzzleOver = false;
+    //A bool to check if the player is in range of the stand
     public bool playerInRange;
 
+    //A refrence to the correct planet that this stand needs to solve the puzzle
+    public GameObject correctPlanet;
+    //A refrence to the planet that is currently on the stand
+    public GameObject currentlyEnabledPlanet;
+    //An array of all the planets
+    public GameObject[] planets;
+    //A refrence to the dialouge box
     public GameObject dialougeBox;
+    //A refrence to the planet picker object
+    public PlanetPickerScript planetPicker;
+
     public TMP_Text dialougeText;
-
-    public GameObject planetPicker;
-
-    public bool inDialouge;
-
-    public bool puzzleOver = false;
 
     public Movement player;
 
@@ -31,7 +34,7 @@ public class PanetPuzzleScript : MonoBehaviour
     {
         dialougeBox = GameObject.Find("DialougeBox");
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
-        planetPicker = GameObject.Find("PlanetPicker");
+        planetPicker = GameObject.Find("PlanetPicker").GetComponent<PlanetPickerScript>();
         player = GameObject.Find("Player").GetComponent<Movement>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
@@ -66,7 +69,7 @@ public class PanetPuzzleScript : MonoBehaviour
                     if (currentlyEnabledPlanet == null)
                     {
                         dialougeText.text = "Which planet do you want to place here?";
-                        planetPicker.GetComponent<PlanetPickerScript>().buttonMenuOpen = true;
+                        planetPicker.buttonMenuOpen = true;
                     }
                     else
                     {
@@ -80,35 +83,35 @@ public class PanetPuzzleScript : MonoBehaviour
                             dialougeText.text = "You picked up " + currentlyEnabledPlanet.name;
                             if (currentlyEnabledPlanet.name == "Sun")
                             {
-                                planetPicker.GetComponent<PlanetPickerScript>().hasSun = true;
+                                planetPicker.hasSun = true;
                             }
                             else if (currentlyEnabledPlanet.name == "Mercury")
                             {
-                                planetPicker.GetComponent<PlanetPickerScript>().hasMercury = true;
+                                planetPicker.hasMercury = true;
                             }
                             else if (currentlyEnabledPlanet.name == "Venus")
                             {
-                                planetPicker.GetComponent<PlanetPickerScript>().hasVenus = true;
+                                planetPicker.hasVenus = true;
                             }
                             else if (currentlyEnabledPlanet.name == "Earth")
                             {
-                                planetPicker.GetComponent<PlanetPickerScript>().hasEarth = true;
+                                planetPicker.hasEarth = true;
                             }
                             else if (currentlyEnabledPlanet.name == "Mars")
                             {
-                                planetPicker.GetComponent<PlanetPickerScript>().hasMars = true;
+                                planetPicker.hasMars = true;
                             }
                             else if (currentlyEnabledPlanet.name == "Jupiter")
                             {
-                                planetPicker.GetComponent<PlanetPickerScript>().hasJupiter = true;
+                                planetPicker.hasJupiter = true;
                             }
                             else if (currentlyEnabledPlanet.name == "Saturn")
                             {
-                                planetPicker.GetComponent<PlanetPickerScript>().hasSaturn = true;
+                                planetPicker.hasSaturn = true;
                             }
                             else if (currentlyEnabledPlanet.name == "Uranus")
                             {
-                                planetPicker.GetComponent<PlanetPickerScript>().hasUranus = true;
+                                planetPicker.hasUranus = true;
                             }
                             else
                             {
@@ -130,7 +133,7 @@ public class PanetPuzzleScript : MonoBehaviour
                     dialougeBox.GetComponent<RawImage>().enabled = false;
                     dialougeText.enabled = false;
                     inDialouge = false;
-                    planetPicker.GetComponent<PlanetPickerScript>().buttonMenuOpen = false;
+                    planetPicker.buttonMenuOpen = false;
                 }
             }
             if(GetComponent<Outline>() == enabled)
@@ -154,7 +157,7 @@ public class PanetPuzzleScript : MonoBehaviour
             if (other.CompareTag("Player"))
             {
                 playerInRange = true;
-                planetPicker.GetComponent<PlanetPickerScript>().currentStand = this.gameObject;
+                planetPicker.currentStand = this.gameObject;
             }
         }
     }
@@ -166,7 +169,7 @@ public class PanetPuzzleScript : MonoBehaviour
             if (other.CompareTag("Player"))
             {
                 playerInRange = false;
-                planetPicker.GetComponent<PlanetPickerScript>().currentStand = null;
+                planetPicker.currentStand = null;
             }
         }
     }

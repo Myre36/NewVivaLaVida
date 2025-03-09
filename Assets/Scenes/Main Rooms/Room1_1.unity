@@ -437,9 +437,9 @@ MonoBehaviour:
   - It also has a chapter about the noble families of Norway and Iceland.
   - How boring.
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!1 &29970105
 GameObject:
   m_ObjectHideFlags: 0
@@ -4526,9 +4526,9 @@ MonoBehaviour:
   - His Mejasty
   - The painting exaggerates his posture.
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!65 &188980124
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6935,9 +6935,9 @@ MonoBehaviour:
   - It's far past midnight.
   - Maybe you really shouldn't be here.
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!1 &413059772
 GameObject:
   m_ObjectHideFlags: 0
@@ -12350,9 +12350,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
---- !u!1 &1003096501 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6010848117408199773, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+--- !u!4 &1003096508 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1439286263002396067, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
   m_PrefabInstance: {fileID: 1003096500}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1004128125
@@ -21928,9 +21928,9 @@ MonoBehaviour:
   - The king of the golden ages.
   - How far we have fallen...
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!65 &1400929416
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26637,9 +26637,9 @@ MonoBehaviour:
   dialouge:
   - High King Filip III
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!65 &1920618135
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28476,7 +28476,7 @@ PrefabInstance:
     - target: {fileID: 4232964553878461502, guid: f1be4bf64473e954a8de213d109461aa, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1003096501}
+      objectReference: {fileID: 1003096508}
     - target: {fileID: 8069179711372027059, guid: f1be4bf64473e954a8de213d109461aa, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -29208,9 +29208,9 @@ MonoBehaviour:
   dialouge:
   - The door is locked
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 0
   isBook: 0
+  lineNumber: 0
 --- !u!114 &6968752819897744508
 MonoBehaviour:
   m_ObjectHideFlags: 0

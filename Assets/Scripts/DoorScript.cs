@@ -15,29 +15,30 @@ public class DoorScript : MonoBehaviour
 
     //A bool to help check if the player is by the door
     public bool playerInDoor = false;
-
-    public GameObject roomCheck;
-
-    public CanvasGroup fadeScreen;
-
+    //A bool to tell if it should fade out now
     private bool fadeIn = false;
 
+    //Refrence to the player's movement
+    public Movement player;
+
+    //A refrence to the black screen that fades in
+    public CanvasGroup fadeScreen;
+
+    //The anount of time it takes for the screen to fade
     public float timeToFade;
 
-    public GameObject player;
 
     private void Start()
     {
-        //Assigning the game manager
+        //Assigning refrences
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        roomCheck = GameObject.Find("RoomEntryCheck");
         fadeScreen = GameObject.Find("FadeScreen").GetComponent<CanvasGroup>();
-        player = GameObject.Find("Player");
+        player = GameObject.Find("Player").GetComponent<Movement>();
     }
 
     private void Update()
     {
-        //If the player is by the door and press E
+        //If the player is by the door and press the interact key
         if(playerInDoor)
         {
             if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.JoystickButton1))
@@ -48,6 +49,7 @@ public class DoorScript : MonoBehaviour
                 StartCoroutine(OpenDoor());
             }
         }
+        //If the fade in is activated, the black screen will slowly fade in
         if (fadeIn)
         {
             if (fadeScreen.alpha < 1)
@@ -61,22 +63,18 @@ public class DoorScript : MonoBehaviour
         }
     }
 
-    //Code to check when the player enters the door trigger
+    //Code to check when the player enters the door trigger, it will register it
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Player in door");
-
         if (other.CompareTag("Player"))
         {
             playerInDoor = true;
         }
     }
 
-    //Code to check when the player exits the door trigger
+    //Code to check when the player exits the door trigger, it will register that
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("Player exiting door");
-
         if (other.CompareTag("Player"))
         {
             playerInDoor = false;
@@ -87,9 +85,9 @@ public class DoorScript : MonoBehaviour
     public IEnumerator OpenDoor()
     {
         Debug.Log("Loading next scene");
-        player.GetComponent<Movement>().enabled = false;
+        player.enabled = false;
         fadeIn = true; 
-        player.GetComponent<Movement>().enabled = false;
+        player.enabled = false;
         yield return new WaitForSeconds(timeToFade + 0.2f);
         SceneManager.LoadScene(sceneName);
     }

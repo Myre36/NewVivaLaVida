@@ -11,6 +11,7 @@ public class DontDestroyOnLoad : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
+    //Destroys the object if it enters certain scenes
     private void Update()
     {
         Scene currentScene = SceneManager.GetActiveScene();

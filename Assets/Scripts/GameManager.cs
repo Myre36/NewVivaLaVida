@@ -6,19 +6,10 @@ public class GameManager : MonoBehaviour
     //This is something used to make sure there is never more than one game manager
     private static GameManager instance;
 
-    //Object refrences
-    public GameObject player;
-    public GameObject canvas;
-    public GameObject playerCamera;
-
     //The number used to spawn the player in the correct location when entering a room
     public int entryNumber;
 
-    //Objects in the rooms
-    public Vector3 objectOnePosition;
-    public Vector3 objectTwoPosition;
-
-    //Enemies in the room
+    //Bools for if all the enemies are dead
     public bool enemyOneDead = false;
     public bool enemyTwoDead = false;
     public bool enemyThreeDead = false;
@@ -34,18 +25,22 @@ public class GameManager : MonoBehaviour
     public bool enemyThirteenDead = false;
     public bool enemyFourteenDead = false;
 
+    //Bools for if the player has all the coins
     public bool coinOne;
     public bool coinTwo;
     public bool coinThree;
 
+    //Bools for non-key objects
     public bool sword;
     public bool clothPile;
     public bool book;
 
+    //Bools for if the player has solved certain puzzles
     public bool toiletClogged;
     public bool swordPlaced;
     public bool bookPlaced;
 
+    //Bools for if teh player has certain keys
     public bool hallwayKey;
     public bool planetariumKey;
     public bool meetingKey;
@@ -53,10 +48,12 @@ public class GameManager : MonoBehaviour
     public bool servantsKey;
     public bool tunnelKey;
 
+    //Bools for if the player has the endgame keys
     public bool basementKey;
     public bool kingsKeyOne;
     public bool kingsKeyTwo;
 
+    //Bools for if the player has unlocked certain doors
     public bool hallwayUnlocked;
     public bool tunnelUnlocked;
     public bool servantsUnlocked;
@@ -71,21 +68,15 @@ public class GameManager : MonoBehaviour
     public bool statueRoomUnlocked;
     public bool diningUnlocked;
 
+    //Bools for if the player has solved certain puzzles
     public bool planetSolved;
     public bool combinationSolved;
 
+    //Bools for all the bullets in the game
     public bool bullet1;
-
-    public enum InputMode
-    {
-        Keyboard, Controller
-    }
-    public InputMode currentInputMode;
 
     private void Awake()
     {
-        currentInputMode = InputMode.Keyboard;
-
         //This code is used to make sure there are never more than one game manager
         if(instance == null)
         {
@@ -99,8 +90,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        currentInputMode = ProcessInputMode();
-
+        //The below code is to make sure that the game manager destroys itself if it enters certain scenes
         Scene currentScene = SceneManager.GetActiveScene();
 
         if (currentScene.name == "TutorialScene")
@@ -111,145 +101,5 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-    }
-
-    private InputMode ProcessInputMode()
-    {
-        if(Input.GetJoystickNames().Length == 0)
-        {
-            //If there are no controllers plugged in, it automatically sets it to keyboard
-            return InputMode.Keyboard;
-        }
-
-        if(Input.anyKeyDown)
-        {
-            if(Input.GetKeyDown(KeyCode.JoystickButton0))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton1))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton2))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton3))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKey(KeyCode.JoystickButton4))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKey(KeyCode.JoystickButton5))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKey(KeyCode.JoystickButton6))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKey(KeyCode.JoystickButton7))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton8))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton9))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton10))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton11))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton12))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton13))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton14))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton15))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton16))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton17))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton18))
-            {
-                return InputMode.Controller;
-            }
-            else if (Input.GetKeyDown(KeyCode.JoystickButton19))
-            {
-                return InputMode.Controller;
-            }
-            else
-            {
-                return InputMode.Keyboard;
-            }
-        }
-
-        if(Input.anyKey)
-        {
-            //Unity will only recognise Input.anyKey for keyboard presses
-            if(Input.GetAxisRaw("Horizontal") != 0)
-            {
-                return InputMode.Keyboard;
-            }
-            if (Input.GetAxisRaw("Vertical") != 0)
-            {
-                return InputMode.Keyboard;
-            }
-        }
-
-        //If the horizontals are not keyboard keys, it will return the controller
-        if (Input.GetAxisRaw("Horizontal") != 0)
-        {
-            return InputMode.Controller;
-        }
-        if (Input.GetAxisRaw("Vertical") != 0)
-        {
-            return InputMode.Controller;
-        }
-
-        if (Input.GetAxisRaw("Horizontal2") != 0)
-        {
-            return InputMode.Controller;
-        }
-        if (Input.GetAxisRaw("Vertical2") != 0)
-        {
-            return InputMode.Controller;
-        }
-
-        if (Input.GetAxisRaw("HorizontalD") != 0)
-        {
-            return InputMode.Controller;
-        }
-        if (Input.GetAxisRaw("VerticalD") != 0)
-        {
-            return InputMode.Controller;
-        }
-
-        return currentInputMode; 
     }
 }

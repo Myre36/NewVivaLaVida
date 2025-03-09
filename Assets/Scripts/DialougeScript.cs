@@ -19,6 +19,8 @@ public class DialougeScript : MonoBehaviour
     public bool outlineEneabled = false;
     //A bool for if the object is a book or not
     public bool isBook;
+    //A bool for if the player is in dialouge
+    private bool inDialouge;
 
     //The current line in the dialouge
     public int lineNumber;
@@ -57,6 +59,7 @@ public class DialougeScript : MonoBehaviour
                 {
                     dialougeBox.enabled = false;
                     dialougeText.enabled = false;
+                    inDialouge = false;
                     lineNumber = 0;
                 }
             }
@@ -84,6 +87,11 @@ public class DialougeScript : MonoBehaviour
             playerInRange = false;
             dialougeBox.enabled = false;
             dialougeText.enabled = false;
+            if(lineNumber > 0 && inDialouge)
+            {
+                lineNumber--;
+                inDialouge = false;
+            }
             if (outlineEneabled)
             {
                 GetComponent<Outline>().enabled = false;
@@ -94,6 +102,7 @@ public class DialougeScript : MonoBehaviour
     //A function for displaying the next dialouge line
     void NextLine()
     {
+        inDialouge = true;
         dialougeBox.enabled = true;
         dialougeText.enabled = true;
         dialougeText.text = dialouge[lineNumber];

@@ -4,15 +4,18 @@ using UnityEngine.UI;
 
 public class DialougeScript : MonoBehaviour
 {
+    //
     public GameObject dialougeBox;
+
     public TMP_Text dialougeText;
+
     public string[] dialouge;
+
     public bool playerInRange = false;
-    public int lineNumber;
-
     public bool outlineEneabled = false;
-
     public bool isBook;
+
+    public int lineNumber;
 
     private void Start()
     {

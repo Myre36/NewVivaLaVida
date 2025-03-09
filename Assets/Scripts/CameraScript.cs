@@ -3,22 +3,26 @@ using UnityEngine.SceneManagement;
 
 public class CameraScript : MonoBehaviour
 {
+    //To make sure there are never more than two cameras
     private static CameraScript instance;
 
-    public GameObject player;
+    //A refrence to the player's transform
+    public Transform player;
 
+    //A value for the speed which the camera moves at
     public float smoothSpeed = 5f;
-
-    public Vector3 offset;
-
+    //The offset values of the camera to the player
     public float cameraZOffsetMin = -5.58f;
     public float cameraZOffsetMax = -8.25f;
+    //For getting the vertical input of the player
+    private float verticalInput;
 
+    //The offset of the camera compared to the player
+    public Vector3 offset;
+    //The minimum and maximum camera positions possible
     public Vector3 minCamPosition;
     public Vector3 maxCamPosition;
 
-    //Input values
-    private float verticalInput;
 
     private void Awake()
     {
@@ -35,8 +39,10 @@ public class CameraScript : MonoBehaviour
 
     private void Update()
     {
+        //Gets the vertical input
         verticalInput = Input.GetAxisRaw("Vertical");
 
+        //The below code is to make sure the camera gets destroyed in certain scenes
         Scene currentScene = SceneManager.GetActiveScene();
 
         if (currentScene.name == "TutorialScene")
@@ -48,6 +54,7 @@ public class CameraScript : MonoBehaviour
             Destroy(this.gameObject);
         }
 
+        //When the player is going towards the camera, the camera will move away from them until it hits the maximum distance to the player
         if (verticalInput < 0)
         {
             if(offset.z > cameraZOffsetMax)
@@ -55,6 +62,7 @@ public class CameraScript : MonoBehaviour
                 offset.z -= 2f * Time.deltaTime;
             }
         }
+        //When the player is moving away from the camera, the camera will move towards the camera until it hits the minimum distance to the player
         else if(verticalInput > 0)
         {
             if (offset.z < cameraZOffsetMin)
@@ -64,17 +72,23 @@ public class CameraScript : MonoBehaviour
         }
     }
 
+    //Code for moving the camera. The reason its in LateUpdate is because we want the camera to be a little bit behind the player
     private void LateUpdate()
     {
-        Vector3 desiredPosition = player.transform.position + offset;
+        //Gets the offset position from the player
+        Vector3 desiredPosition = player.position + offset;
 
+        //Clamps the position of the camera
         Vector3 clampedPosition = new Vector3(Mathf.Clamp(desiredPosition.x, minCamPosition.x, maxCamPosition.x), Mathf.Clamp(desiredPosition.y, minCamPosition.y, maxCamPosition.y), Mathf.Clamp(desiredPosition.z, minCamPosition.z, maxCamPosition.z));
 
+        //Smoothly moves the camera to where it is supposed to be
         Vector3 smoothPosition = Vector3.Lerp(transform.position, clampedPosition, smoothSpeed * Time.deltaTime);
 
+        //Moves the camera to the desired position
         transform.position = smoothPosition;
     }
 
+    //This is old code, kept here for the sake of showing at the end of the project
     /*public float cameraMaximumZPosition;
 
     private float cameraOffsetValueMinimum;

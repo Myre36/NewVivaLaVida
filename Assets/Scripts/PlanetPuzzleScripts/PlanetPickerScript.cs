@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class PlanetPickerScript : MonoBehaviour
 {
+    //This is to make sure there is only one planet picker
     private static PlanetPickerScript instance;
 
+    //Bools for if the player is holding all the planets
     public bool hasSun;
     public bool hasMercury;
     public bool hasVenus;
@@ -15,7 +17,10 @@ public class PlanetPickerScript : MonoBehaviour
     public bool hasJupiter;
     public bool hasSaturn;
     public bool hasUranus;
+    //A bool that tells the scrip if the button menu is open or not
+    public bool buttonMenuOpen;
 
+    //Refrences to the buttons
     private Image noneButton;
     private TMP_Text noneText;
     private Image sunButton;
@@ -35,13 +40,15 @@ public class PlanetPickerScript : MonoBehaviour
     private Image uranusButton;
     private TMP_Text uranusText;
 
-    public bool buttonMenuOpen;
-
+    //A refrence to the current stand that the player is interacting with
     public GameObject currentStand;
-
+    //Refrence to the dialouge box
     private GameObject dialougeBox;
+
+    //Refrence to the dialouge text
     private TMP_Text dialougeText;
 
+    //Refrence to the player's movement script
     public Movement player;
 
     private void Start()
@@ -56,8 +63,10 @@ public class PlanetPickerScript : MonoBehaviour
             Destroy(gameObject);
         }
 
+        //Makes sure that this object does not destroy when a new scene is loaded
         DontDestroyOnLoad(this.gameObject);
 
+        //Assigning all the buttons
         noneButton = GameObject.Find("NoneButton").GetComponent<Image>();
         noneText = GameObject.Find("NoneButton").GetComponentInChildren<TMP_Text>();
 
@@ -88,11 +97,13 @@ public class PlanetPickerScript : MonoBehaviour
         dialougeBox = GameObject.Find("DialougeBox");
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
 
+        //Assigning the player
         player = GameObject.Find("Player").GetComponent<Movement>();
     }
 
     private void Update()
     {
+        //Code for checking what scene the player is in. This is to make sure this doesn't go into forbidden scenes
         Scene currentScene = SceneManager.GetActiveScene();
 
         if (currentScene.name == "TutorialScene")
@@ -104,106 +115,86 @@ public class PlanetPickerScript : MonoBehaviour
             Destroy(this.gameObject);
         }
 
+        //If the button menu is open, certain buttons will appear depending on what planets the player is currently holding
         if (buttonMenuOpen)
         {
             noneButton.enabled = true;
             noneText.enabled = true;
+
+            if(hasSun)
+            {
+                sunButton.enabled = true;
+                sunText.enabled = true;
+            }
+            if(hasMercury)
+            {
+                mercuryButton.enabled = true;
+                mercuryText.enabled = true;
+            }
+            if(hasVenus)
+            {
+                venusButton.enabled = true;
+                venusText.enabled = true;
+            }
+            if(hasEarth)
+            {
+                earthButton.enabled = true;
+                earthText.enabled = true;
+            }
+            if(hasMars)
+            {
+                marsButton.enabled = true;
+                marsText.enabled = true;
+            }
+            if(hasJupiter)
+            {
+                jupiterButton.enabled = true;
+                jupiterText.enabled = true;
+            }
+            if(hasSaturn)
+            {
+                saturnButton.enabled = true;
+                saturnText.enabled = true;
+            }
+            if(hasUranus)
+            {
+                uranusButton.enabled = true;
+                uranusText.enabled = true;
+            }
         }
+        //If the button menu is not open, all buttons will disapear
         else
         {
             noneButton.enabled = false;
             noneText.enabled = false;
-        }
 
-        if (hasSun && buttonMenuOpen)
-        {
-            sunButton.enabled = true;
-            sunText.enabled = true;
-        }
-        else if(buttonMenuOpen == false)
-        {
             sunButton.enabled = false;
             sunText.enabled = false;
-        }
 
-        if (hasMercury && buttonMenuOpen)
-        {
-            mercuryButton.enabled = true;
-            mercuryText.enabled = true;
-        }
-        else if(buttonMenuOpen == false)
-        {
             mercuryButton.enabled = false;
             mercuryText.enabled = false;
-        }
 
-        if (hasVenus && buttonMenuOpen)
-        {
-            venusButton.enabled = true;
-            venusText.enabled = true;
-        }
-        else if (buttonMenuOpen == false)
-        {
             venusButton.enabled = false;
             venusText.enabled = false;
-        }
 
-        if (hasEarth && buttonMenuOpen)
-        {
-            earthButton.enabled = true;
-            earthText.enabled = true;
-        }
-        else if (buttonMenuOpen == false)
-        {
             earthButton.enabled = false;
             earthText.enabled = false;
-        }
 
-        if (hasMars && buttonMenuOpen)
-        {
-            marsButton.enabled = true;
-            marsText.enabled = true;
-        }
-        else if (buttonMenuOpen == false)
-        {
             marsButton.enabled = false;
             marsText.enabled = false;
-        }
 
-        if (hasJupiter && buttonMenuOpen)
-        {
-            jupiterButton.enabled = true;
-            jupiterText.enabled = true;
-        }
-        else if (buttonMenuOpen == false)
-        {
             jupiterButton.enabled = false;
             jupiterText.enabled = false;
-        }
 
-        if (hasSaturn && buttonMenuOpen)
-        {
-            saturnButton.enabled = true;
-            saturnText.enabled = true;
-        }
-        else if (buttonMenuOpen == false)
-        {
             saturnButton.enabled = false;
             saturnText.enabled = false;
-        }
 
-        if (hasUranus && buttonMenuOpen)
-        {
-            uranusButton.enabled = true;
-            uranusText.enabled = true;
-        }
-        else if (buttonMenuOpen == false)
-        {
             uranusButton.enabled = false;
             uranusText.enabled = false;
         }
     }
 
+    //A function for placing nothing on the currently selected stand
     public void PlaceNone()
     {
         currentStand.GetComponent<PanetPuzzleScript>().inDialouge = false;
@@ -213,104 +204,83 @@ public class PlanetPickerScript : MonoBehaviour
         player.enabled = true;
     }
 
+    //A function for placing the sun on the currently selected stand
     public void PlaceSun()
     {
         currentStand.GetComponent<PanetPuzzleScript>().planets[0].SetActive(true);
         currentStand.GetComponent<PanetPuzzleScript>().currentlyEnabledPlanet = currentStand.GetComponent<PanetPuzzleScript>().planets[0];
-        currentStand.GetComponent<PanetPuzzleScript>().inDialouge = false;
-        buttonMenuOpen = false;
         hasSun = false;
-        dialougeBox.GetComponent<RawImage>().enabled = false;
-        dialougeText.enabled = false;
-        player.enabled = true;
-        player.inventorySpace--;
+        CloseButtonMenu();
     }
 
+    //A function for placing Mercury on the currently selected stand
     public void PlaceMercury()
     {
         currentStand.GetComponent<PanetPuzzleScript>().planets[1].SetActive(true);
         currentStand.GetComponent<PanetPuzzleScript>().currentlyEnabledPlanet = currentStand.GetComponent<PanetPuzzleScript>().planets[1];
-        currentStand.GetComponent<PanetPuzzleScript>().inDialouge = false;
-        buttonMenuOpen = false;
         hasMercury = false;
-        dialougeBox.GetComponent<RawImage>().enabled = false;
-        dialougeText.enabled = false;
-        player.enabled = true;
-        player.inventorySpace--;
+        CloseButtonMenu();
     }
 
+    //A function for placing Venus on the currently selected stand
     public void PlaceVenus()
     {
         currentStand.GetComponent<PanetPuzzleScript>().planets[2].SetActive(true);
         currentStand.GetComponent<PanetPuzzleScript>().currentlyEnabledPlanet = currentStand.GetComponent<PanetPuzzleScript>().planets[2];
-        currentStand.GetComponent<PanetPuzzleScript>().inDialouge = false;
-        buttonMenuOpen = false;
         hasVenus = false;
-        dialougeBox.GetComponent<RawImage>().enabled = false;
-        dialougeText.enabled = false;
-        player.enabled = true;
-        player.inventorySpace--;
+        CloseButtonMenu();
     }
 
+    //A function for placing Earth on the currently selected stand
     public void PlaceEarth()
     {
         currentStand.GetComponent<PanetPuzzleScript>().planets[3].SetActive(true);
         currentStand.GetComponent<PanetPuzzleScript>().currentlyEnabledPlanet = currentStand.GetComponent<PanetPuzzleScript>().planets[3];
-        currentStand.GetComponent<PanetPuzzleScript>().inDialouge = false;
-        buttonMenuOpen = false;
         hasEarth = false;
-        dialougeBox.GetComponent<RawImage>().enabled = false;
-        dialougeText.enabled = false;
-        player.enabled = true;
-        player.inventorySpace--;
+        CloseButtonMenu();
     }
 
+    //A function for placing Mars on the currently selected stand
     public void PlaceMars()
     {
         currentStand.GetComponent<PanetPuzzleScript>().planets[4].SetActive(true);
         currentStand.GetComponent<PanetPuzzleScript>().currentlyEnabledPlanet = currentStand.GetComponent<PanetPuzzleScript>().planets[4];
-        currentStand.GetComponent<PanetPuzzleScript>().inDialouge = false;
-        buttonMenuOpen = false;
         hasMars = false;
-        dialougeBox.GetComponent<RawImage>().enabled = false;
-        dialougeText.enabled = false;
-        player.enabled = true;
-        player.inventorySpace--;
+        CloseButtonMenu();
     }
 
+    //A function for placing Jupiter on the currently selected stand
     public void PlaceJupiter()
     {
         currentStand.GetComponent<PanetPuzzleScript>().planets[5].SetActive(true);
         currentStand.GetComponent<PanetPuzzleScript>().currentlyEnabledPlanet = currentStand.GetComponent<PanetPuzzleScript>().planets[5];
-        currentStand.GetComponent<PanetPuzzleScript>().inDialouge = false;
-        buttonMenuOpen = false;
         hasJupiter = false;
-        dialougeBox.GetComponent<RawImage>().enabled = false;
-        dialougeText.enabled = false;
-        player.enabled = true;
-        player.inventorySpace--;
+        CloseButtonMenu();
     }
 
+    //A function for placing Saturn on the currently selected stand
     public void PlaceSaturn()
     {
         currentStand.GetComponent<PanetPuzzleScript>().planets[6].SetActive(true);
         currentStand.GetComponent<PanetPuzzleScript>().currentlyEnabledPlanet = currentStand.GetComponent<PanetPuzzleScript>().planets[6];
-        currentStand.GetComponent<PanetPuzzleScript>().inDialouge = false;
-        buttonMenuOpen = false;
         hasSaturn = false;
-        dialougeBox.GetComponent<RawImage>().enabled = false;
-        dialougeText.enabled = false;
-        player.enabled = true;
-        player.inventorySpace--;
+        CloseButtonMenu();
     }
 
+    //A function for placing Uranus on the currently selected stand
     public void PlaceUranus()
     {
         currentStand.GetComponent<PanetPuzzleScript>().planets[7].SetActive(true);
         currentStand.GetComponent<PanetPuzzleScript>().currentlyEnabledPlanet = currentStand.GetComponent<PanetPuzzleScript>().planets[7];
+        hasUranus = false;
+        CloseButtonMenu();
+    }
+
+    //A function for closing the button menu
+    private void CloseButtonMenu()
+    {
         currentStand.GetComponent<PanetPuzzleScript>().inDialouge = false;
         buttonMenuOpen = false;
-        hasUranus = false;
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         player.enabled = true;

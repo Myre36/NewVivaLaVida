@@ -7,9 +7,9 @@ public class GunScript : MonoBehaviour
 {
     //Refrence to the bullet prefab
     public GameObject bullet;
-
     //Refrence to the player
     public GameObject player;
+    public GameObject reloadingText;
 
     //The speed at which the bullet fires
     public float shootForce;
@@ -103,7 +103,9 @@ public class GunScript : MonoBehaviour
     IEnumerator ReloadGun()
     {
         Debug.Log("Start reload");
+        reloadingText.SetActive(true);
         yield return new WaitForSeconds(reloadTime);
+        reloadingText.SetActive(false);
         canShoot = true;
         ammoInChamber = true;
         Debug.Log("End reload");

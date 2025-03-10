@@ -40,6 +40,11 @@ public class PickupObject : MonoBehaviour
 
     public bool isBullet;
     public bool bullet1;
+    public bool bullet2;
+    public bool bullet3;
+    public bool bullet4;
+    public bool bullet5;
+    public bool bullet6;
 
     private AudioSource pickupSound;
 
@@ -165,6 +170,41 @@ public class PickupObject : MonoBehaviour
             if (bullet1)
             {
                 if (gameManager.bullet1)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            if (bullet2)
+            {
+                if (gameManager.bullet2)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            if (bullet3)
+            {
+                if (gameManager.bullet3)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            if (bullet4)
+            {
+                if (gameManager.bullet4)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            if (bullet5)
+            {
+                if (gameManager.bullet5)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            if (bullet6)
+            {
+                if (gameManager.bullet6)
                 {
                     Destroy(gameObject);
                 }
@@ -402,6 +442,26 @@ public class PickupObject : MonoBehaviour
                             if (bullet1)
                             {
                                 gameManager.bullet1 = true;
+                            }
+                            if (bullet2)
+                            {
+                                gameManager.bullet2 = true;
+                            }
+                            if (bullet3)
+                            {
+                                gameManager.bullet3 = true;
+                            }
+                            if (bullet4)
+                            {
+                                gameManager.bullet4 = true;
+                            }
+                            if (bullet5)
+                            {
+                                gameManager.bullet5 = true;
+                            }
+                            if (bullet6)
+                            {
+                                gameManager.bullet6 = true;
                             }
                             CloseDialouge();
                         }

@@ -74,6 +74,11 @@ public class GameManager : MonoBehaviour
 
     //Bools for all the bullets in the game
     public bool bullet1;
+    public bool bullet2;
+    public bool bullet3;
+    public bool bullet4;
+    public bool bullet5;
+    public bool bullet6;
 
     private void Awake()
     {

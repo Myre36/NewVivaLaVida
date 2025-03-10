@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -221.6, y: -212}
-  m_SizeDelta: {x: 181.21, y: 170.34}
+  m_AnchoredPosition: {x: -221.6, y: -267.26}
+  m_SizeDelta: {x: 181.21, y: 280.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1093029442
 MonoBehaviour:
@@ -185,18 +185,21 @@ MonoBehaviour:
     LMB while aiming: Shoot gun
 
 
-    E:
-    Interact/Open door
+    R:
+    Reload Gun
+
+
+    E: Interact/Open door
 
 
     I: Inventory
 
 
-    Hold left shift: Sprint
+    Hold left shift:
+    Sprint
 
 
-    M :
-    Open map
+    M : Open map
 
 
     (See GDD for controller tutorial)'

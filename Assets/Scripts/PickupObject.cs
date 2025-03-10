@@ -45,6 +45,10 @@ public class PickupObject : MonoBehaviour
     public bool bullet4;
     public bool bullet5;
     public bool bullet6;
+    public bool bullet7;
+    public bool bullet8;
+    public bool bullet9;
+    public bool bullet10;
 
     private AudioSource pickupSound;
 
@@ -205,6 +209,34 @@ public class PickupObject : MonoBehaviour
             if (bullet6)
             {
                 if (gameManager.bullet6)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            if (bullet7)
+            {
+                if (gameManager.bullet7)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            if (bullet8)
+            {
+                if (gameManager.bullet8)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            if (bullet9)
+            {
+                if (gameManager.bullet9)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            if (bullet10)
+            {
+                if (gameManager.bullet10)
                 {
                     Destroy(gameObject);
                 }
@@ -462,6 +494,22 @@ public class PickupObject : MonoBehaviour
                             if (bullet6)
                             {
                                 gameManager.bullet6 = true;
+                            }
+                            if (bullet7)
+                            {
+                                gameManager.bullet7 = true;
+                            }
+                            if (bullet8)
+                            {
+                                gameManager.bullet8 = true;
+                            }
+                            if (bullet9)
+                            {
+                                gameManager.bullet9 = true;
+                            }
+                            if (bullet10)
+                            {
+                                gameManager.bullet10 = true;
                             }
                             CloseDialouge();
                         }

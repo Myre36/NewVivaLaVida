@@ -1505,9 +1505,9 @@ MonoBehaviour:
   - This is where the king sits during meetings.
   - Directly across the room is a painting of him.
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!1001 &502912827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1824,9 +1824,9 @@ MonoBehaviour:
   - A map of the known world.
   - Denmark appears so small on this thing.
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!1 &560997945
 GameObject:
   m_ObjectHideFlags: 0
@@ -2250,6 +2250,15 @@ MonoBehaviour:
   isKeyItem: 1
   isBullet: 0
   bullet1: 0
+  bullet2: 0
+  bullet3: 0
+  bullet4: 0
+  bullet5: 0
+  bullet6: 0
+  bullet7: 0
+  bullet8: 0
+  bullet9: 0
+  bullet10: 0
 --- !u!114 &716645876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7471,6 +7480,71 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1748269640}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2122302606
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3888086650853885599, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_Name
+      value: Ammo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6753882101691638544, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.751154
+      objectReference: {fileID: 0}
+    - target: {fileID: 6753882101691638544, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5361435
+      objectReference: {fileID: 0}
+    - target: {fileID: 6753882101691638544, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -137.83328
+      objectReference: {fileID: 0}
+    - target: {fileID: 6753882101691638544, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6753882101691638544, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6753882101691638544, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6753882101691638544, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6753882101691638544, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6753882101691638544, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6753882101691638544, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914489664321408748, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: bullet1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914489664321408748, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: bullet9
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
 --- !u!1001 &2930578593723268670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7547,3 +7621,4 @@ SceneRoots:
   - {fileID: 1841564493}
   - {fileID: 783544092}
   - {fileID: 716813345}
+  - {fileID: 2122302606}

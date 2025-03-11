@@ -244,9 +244,9 @@ MonoBehaviour:
   - Your reflection stares back at you.
   - Hope it'll all be fine.
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!65 &989283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -454,9 +454,9 @@ MonoBehaviour:
   - A fancy looking bathtub.
   - You're almost tempted to just take a bath right there.
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!1 &37899507
 GameObject:
   m_ObjectHideFlags: 0
@@ -2146,7 +2146,7 @@ GameObject:
   - component: {fileID: 986580079}
   - component: {fileID: 986580080}
   m_Layer: 0
-  m_Name: HallwayKey
+  m_Name: Hallway Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3343,6 +3343,15 @@ MonoBehaviour:
   isKeyItem: 1
   isBullet: 0
   bullet1: 0
+  bullet2: 0
+  bullet3: 0
+  bullet4: 0
+  bullet5: 0
+  bullet6: 0
+  bullet7: 0
+  bullet8: 0
+  bullet9: 0
+  bullet10: 0
 --- !u!23 &986580076
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7309,9 +7318,9 @@ MonoBehaviour:
   dialouge:
   - A fancy looking toilet.
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!65 &2075168724027018536
 BoxCollider:
   m_ObjectHideFlags: 0

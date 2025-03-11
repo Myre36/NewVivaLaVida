@@ -1908,7 +1908,7 @@ GameObject:
   - component: {fileID: 444010184}
   - component: {fileID: 444010185}
   m_Layer: 0
-  m_Name: Second Floor Key
+  m_Name: Numbered Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -2146,7 +2146,7 @@ GameObject:
   - component: {fileID: 986580079}
   - component: {fileID: 986580080}
   m_Layer: 0
-  m_Name: Hallway Key
+  m_Name: Orange Citrine Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

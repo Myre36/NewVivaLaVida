@@ -130,7 +130,7 @@ public class LockedDoorScript : MonoBehaviour
                             gameManager.hallwayUnlocked = true;
                             for (int i = 0; i < player.inventoryTexts.Length; i++)
                             {
-                                if (player.inventoryTexts[i].text == "Hallway Key")
+                                if (player.inventoryTexts[i].text == "Orange Citrine Key")
                                 {
                                     player.inventoryTexts[i].text = "";
                                     break;

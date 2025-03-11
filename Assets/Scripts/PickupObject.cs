@@ -555,6 +555,14 @@ public class PickupObject : MonoBehaviour
         {
             pickupSound.Play();
             player.inventorySpace++;
+            for(int i = 0; i < player.inventoryTexts.Length; i++)
+            {
+                if (player.inventoryTexts[i].text == "")
+                {
+                    player.inventoryTexts[i].text = gameObject.name;
+                    break;
+                }
+            }
             Destroy(gameObject);
         }
     }

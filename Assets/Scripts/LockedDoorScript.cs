@@ -128,6 +128,14 @@ public class LockedDoorScript : MonoBehaviour
                         if(inDialouge)
                         {
                             gameManager.hallwayUnlocked = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "Hallway Key")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                    break;
+                                }
+                            }
                             UnlockDoor();
                         }
                         else

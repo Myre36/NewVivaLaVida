@@ -4529,7 +4529,7 @@ GameObject:
   - component: {fileID: 829823719}
   - component: {fileID: 829823720}
   m_Layer: 0
-  m_Name: Planettarium Key
+  m_Name: Sun Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

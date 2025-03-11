@@ -2282,7 +2282,7 @@ GameObject:
   - component: {fileID: 786493211}
   - component: {fileID: 786493218}
   m_Layer: 0
-  m_Name: MeetingKey
+  m_Name: Meeting Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2329,6 +2329,10 @@ MonoBehaviour:
   bullet4: 0
   bullet5: 0
   bullet6: 0
+  bullet7: 0
+  bullet8: 0
+  bullet9: 0
+  bullet10: 0
 --- !u!114 &786493212
 MonoBehaviour:
   m_ObjectHideFlags: 0

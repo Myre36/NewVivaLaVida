@@ -244,7 +244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &90215707
 Transform:
   m_ObjectHideFlags: 0
@@ -254,11 +254,11 @@ Transform:
   m_GameObject: {fileID: 90215706}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1183352, y: 1.4351, z: -0.793}
-  m_LocalScale: {x: 0.17268, y: 0.17268, z: 0.17268}
+  m_LocalPosition: {x: 14.055326, y: 1.1878157, z: -145.22253}
+  m_LocalScale: {x: 0.23089044, y: 0.22943974, z: 0.21177477}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1419450019}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &90215709
 MeshRenderer:
@@ -1203,9 +1203,9 @@ MonoBehaviour:
   dialouge:
   - A small tub for bathing
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!65 &372983678
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4489,10 +4489,7 @@ PrefabInstance:
     - {fileID: 1869352355767423289, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
     - {fileID: 7764355349258963414, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 3179830504527580877, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 90215707}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8698081835559011744, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
       insertIndex: -1
@@ -4570,11 +4567,6 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!4 &1419450019 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3179830504527580877, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
-  m_PrefabInstance: {fileID: 1419450014}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1650018848
 GameObject:
   m_ObjectHideFlags: 0
@@ -5741,9 +5733,9 @@ MonoBehaviour:
   - The door is locked
   - You see an outhouse through the small window
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 0
   isBook: 0
+  lineNumber: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -5765,3 +5757,4 @@ SceneRoots:
   - {fileID: 671560668}
   - {fileID: 1391096944}
   - {fileID: 1419450014}
+  - {fileID: 90215707}

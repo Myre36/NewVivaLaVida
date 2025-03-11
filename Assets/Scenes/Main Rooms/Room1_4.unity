@@ -5269,7 +5269,7 @@ GameObject:
   - component: {fileID: 1892491685}
   - component: {fileID: 1892491686}
   m_Layer: 0
-  m_Name: Painting
+  m_Name: Cloth Pile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5445,6 +5445,10 @@ MonoBehaviour:
   bullet4: 0
   bullet5: 0
   bullet6: 0
+  bullet7: 0
+  bullet8: 0
+  bullet9: 0
+  bullet10: 0
 --- !u!82 &1892491686
 AudioSource:
   m_ObjectHideFlags: 0

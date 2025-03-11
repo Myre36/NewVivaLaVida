@@ -12900,6 +12900,38 @@ PrefabInstance:
       propertyPath: inventoryScreen
       value: 
       objectReference: {fileID: 2019401547}
+    - target: {fileID: 5061211484470418040, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: inventoryTexts.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061211484470418040, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: 'inventoryTexts.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1170843134}
+    - target: {fileID: 5061211484470418040, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: 'inventoryTexts.Array.data[1]'
+      value: 
+      objectReference: {fileID: 491821134}
+    - target: {fileID: 5061211484470418040, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: 'inventoryTexts.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1377357811}
+    - target: {fileID: 5061211484470418040, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: 'inventoryTexts.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1925777047}
+    - target: {fileID: 5061211484470418040, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: 'inventoryTexts.Array.data[4]'
+      value: 
+      objectReference: {fileID: 242927479}
+    - target: {fileID: 5061211484470418040, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: 'inventoryTexts.Array.data[5]'
+      value: 
+      objectReference: {fileID: 2018966054}
+    - target: {fileID: 5061211484470418040, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: 'inventoryTexts.Array.data[6]'
+      value: 
+      objectReference: {fileID: 729902605}
     - target: {fileID: 6010848117408199773, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: m_Name
       value: Player

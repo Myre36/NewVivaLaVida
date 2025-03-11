@@ -736,9 +736,9 @@ MonoBehaviour:
   - A stack of fruits.
   - Why is it left out on the table like this?
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!65 &153752844
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2033,7 +2033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 10e92e87eac83c642a5567c6331d367c, type: 3}
       propertyPath: m_Name
-      value: sword
+      value: Sword
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2117,6 +2117,15 @@ MonoBehaviour:
   isKeyItem: 1
   isBullet: 0
   bullet1: 0
+  bullet2: 0
+  bullet3: 0
+  bullet4: 0
+  bullet5: 0
+  bullet6: 0
+  bullet7: 0
+  bullet8: 0
+  bullet9: 0
+  bullet10: 0
 --- !u!114 &737004847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2532,9 +2541,9 @@ MonoBehaviour:
   - Kitchenware is strewn around the table
   - It doesn't look like it's been cleaned in months
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!65 &780441141
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2824,9 +2833,9 @@ MonoBehaviour:
   - Some empty shelves.
   - There must have been a party recently.
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!1001 &857657869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9411,9 +9420,9 @@ MonoBehaviour:
   - A pumpkin and some pots.
   - The king definetly has the wealth to afford all this.
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!65 &1983414606
 BoxCollider:
   m_ObjectHideFlags: 0

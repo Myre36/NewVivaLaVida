@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Movement : MonoBehaviour
 {
@@ -39,6 +40,8 @@ public class Movement : MonoBehaviour
     public bool aiming;
 
     public int inventorySpace;
+
+    public TMP_Text[] inventoryTexts;
 
     public MovementState state;
 

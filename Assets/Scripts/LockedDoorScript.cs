@@ -164,6 +164,14 @@ public class LockedDoorScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.tunnelUnlocked = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "Horse Shaped Key")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                    break;
+                                }
+                            }
                             UnlockDoor();
                         }
                         else
@@ -192,6 +200,14 @@ public class LockedDoorScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.servantsUnlocked = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "S Shaped Key")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                    break;
+                                }
+                            }
                             UnlockDoor();
                         }
                         else
@@ -220,6 +236,14 @@ public class LockedDoorScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.basementUnlocked = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "Old Rusty Key")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                    break;
+                                }
+                            }
                             UnlockDoor();
                         }
                         else
@@ -248,6 +272,14 @@ public class LockedDoorScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.secondFloorUnlocked = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "Numbered Key")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                    break;
+                                }
+                            }
                             UnlockDoor();
                         }
                         else
@@ -276,6 +308,14 @@ public class LockedDoorScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.planetariumUnlocked = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "Sun Key")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                    break;
+                                }
+                            }
                             UnlockDoor();
                         }
                         else
@@ -304,6 +344,14 @@ public class LockedDoorScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.meetingUnlocked = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "Saphire Key")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                    break;
+                                }
+                            }
                             UnlockDoor();
                         }
                         else
@@ -332,6 +380,21 @@ public class LockedDoorScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.coinUnlocked = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "Copper Coin")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                }
+                                if (player.inventoryTexts[i].text == "Silver Coin")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                }
+                                if (player.inventoryTexts[i].text == "Gold Coin")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                }
+                            }
                             UnlockDoor();
                         }
                         else
@@ -360,6 +423,17 @@ public class LockedDoorScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.kingsUnlocked = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "Blue Crown Key")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                }
+                                if (player.inventoryTexts[i].text == "Red Crown Key")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                }
+                            }
                             UnlockDoor();
                         }
                         else

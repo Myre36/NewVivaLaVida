@@ -1966,6 +1966,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasCorrectPlanet: 0
+  inDialouge: 0
+  puzzleOver: 0
+  playerInRange: 0
   correctPlanet: {fileID: 397966793}
   currentlyEnabledPlanet: {fileID: 1205204888}
   planets:
@@ -1977,12 +1980,9 @@ MonoBehaviour:
   - {fileID: 1055335010}
   - {fileID: 1205204888}
   - {fileID: 51688453}
-  playerInRange: 0
   dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
   planetPicker: {fileID: 0}
-  inDialouge: 0
-  puzzleOver: 0
+  dialougeText: {fileID: 0}
   player: {fileID: 0}
 --- !u!65 &340326395
 BoxCollider:
@@ -3210,6 +3210,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasCorrectPlanet: 0
+  inDialouge: 0
+  puzzleOver: 0
+  playerInRange: 0
   correctPlanet: {fileID: 1703904876}
   currentlyEnabledPlanet: {fileID: 403205498}
   planets:
@@ -3221,12 +3224,9 @@ MonoBehaviour:
   - {fileID: 1703904876}
   - {fileID: 25483179}
   - {fileID: 1729318202}
-  playerInRange: 0
   dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
   planetPicker: {fileID: 0}
-  inDialouge: 0
-  puzzleOver: 0
+  dialougeText: {fileID: 0}
   player: {fileID: 0}
 --- !u!65 &500796921
 BoxCollider:
@@ -4009,9 +4009,9 @@ MonoBehaviour:
   - Seventh was Aphrodite, daughter of Zeus, and goddess of love and beauty.
   - 'Eighth was Hermes, son of Zeus, and the god of travellers and thieves. '
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!1 &620471830
 GameObject:
   m_ObjectHideFlags: 0
@@ -5630,6 +5630,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasCorrectPlanet: 0
+  inDialouge: 0
+  puzzleOver: 0
+  playerInRange: 0
   correctPlanet: {fileID: 858229813}
   currentlyEnabledPlanet: {fileID: 1053634358}
   planets:
@@ -5641,12 +5644,9 @@ MonoBehaviour:
   - {fileID: 1064504727}
   - {fileID: 26449693}
   - {fileID: 858229813}
-  playerInRange: 0
   dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
   planetPicker: {fileID: 0}
-  inDialouge: 0
-  puzzleOver: 0
+  dialougeText: {fileID: 0}
   player: {fileID: 0}
 --- !u!65 &780049944
 BoxCollider:
@@ -6359,6 +6359,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasCorrectPlanet: 0
+  inDialouge: 0
+  puzzleOver: 0
+  playerInRange: 0
   correctPlanet: {fileID: 1618084971}
   currentlyEnabledPlanet: {fileID: 823996260}
   planets:
@@ -6370,12 +6373,9 @@ MonoBehaviour:
   - {fileID: 1682594219}
   - {fileID: 490890941}
   - {fileID: 787067816}
-  playerInRange: 0
   dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
   planetPicker: {fileID: 0}
-  inDialouge: 0
-  puzzleOver: 0
+  dialougeText: {fileID: 0}
   player: {fileID: 0}
 --- !u!65 &906871117
 BoxCollider:
@@ -10117,7 +10117,7 @@ GameObject:
   - component: {fileID: 1562242497}
   - component: {fileID: 1562242499}
   m_Layer: 0
-  m_Name: BasementKey
+  m_Name: Old Rusty Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10270,6 +10270,15 @@ MonoBehaviour:
   isKeyItem: 1
   isBullet: 0
   bullet1: 0
+  bullet2: 0
+  bullet3: 0
+  bullet4: 0
+  bullet5: 0
+  bullet6: 0
+  bullet7: 0
+  bullet8: 0
+  bullet9: 0
+  bullet10: 0
 --- !u!114 &1562242498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15960,6 +15969,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasCorrectPlanet: 0
+  inDialouge: 0
+  puzzleOver: 0
+  playerInRange: 0
   correctPlanet: {fileID: 47052998}
   currentlyEnabledPlanet: {fileID: 1914251343}
   planets:
@@ -15971,12 +15983,9 @@ MonoBehaviour:
   - {fileID: 1928132008}
   - {fileID: 47052998}
   - {fileID: 952922382}
-  playerInRange: 0
   dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
   planetPicker: {fileID: 0}
-  inDialouge: 0
-  puzzleOver: 0
+  dialougeText: {fileID: 0}
   player: {fileID: 0}
 --- !u!65 &1697218354
 BoxCollider:
@@ -18480,6 +18489,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasCorrectPlanet: 0
+  inDialouge: 0
+  puzzleOver: 0
+  playerInRange: 0
   correctPlanet: {fileID: 1722580870}
   currentlyEnabledPlanet: {fileID: 397344816}
   planets:
@@ -18491,12 +18503,9 @@ MonoBehaviour:
   - {fileID: 397344816}
   - {fileID: 264462087}
   - {fileID: 378335180}
-  playerInRange: 0
   dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
   planetPicker: {fileID: 0}
-  inDialouge: 0
-  puzzleOver: 0
+  dialougeText: {fileID: 0}
   player: {fileID: 0}
 --- !u!65 &1981260144
 BoxCollider:
@@ -19037,6 +19046,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasCorrectPlanet: 0
+  inDialouge: 0
+  puzzleOver: 0
+  playerInRange: 0
   correctPlanet: {fileID: 2042477398}
   currentlyEnabledPlanet: {fileID: 539807821}
   planets:
@@ -19048,12 +19060,9 @@ MonoBehaviour:
   - {fileID: 1010628764}
   - {fileID: 1720887356}
   - {fileID: 539807821}
-  playerInRange: 0
   dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
   planetPicker: {fileID: 0}
-  inDialouge: 0
-  puzzleOver: 0
+  dialougeText: {fileID: 0}
   player: {fileID: 0}
 --- !u!65 &2101008565
 BoxCollider:
@@ -19660,6 +19669,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasCorrectPlanet: 0
+  inDialouge: 0
+  puzzleOver: 0
+  playerInRange: 0
   correctPlanet: {fileID: 131991376}
   currentlyEnabledPlanet: {fileID: 1282079967}
   planets:
@@ -19671,12 +19683,9 @@ MonoBehaviour:
   - {fileID: 147552019}
   - {fileID: 1309828450}
   - {fileID: 1203120574}
-  playerInRange: 0
   dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
   planetPicker: {fileID: 0}
-  inDialouge: 0
-  puzzleOver: 0
+  dialougeText: {fileID: 0}
   player: {fileID: 0}
 --- !u!65 &2140747841
 BoxCollider:

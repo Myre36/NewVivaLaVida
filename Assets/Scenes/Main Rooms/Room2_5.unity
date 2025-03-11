@@ -2466,7 +2466,7 @@ GameObject:
   - component: {fileID: 1204651207}
   - component: {fileID: 1204651209}
   m_Layer: 0
-  m_Name: Tunnel Key
+  m_Name: Horse Shaped Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

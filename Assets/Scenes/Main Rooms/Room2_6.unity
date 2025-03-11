@@ -1333,7 +1333,7 @@ GameObject:
   - component: {fileID: 636578342}
   - component: {fileID: 636578344}
   m_Layer: 0
-  m_Name: ServantsKey
+  m_Name: S Shaped Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1465,6 +1465,15 @@ MonoBehaviour:
   isKeyItem: 1
   isBullet: 0
   bullet1: 0
+  bullet2: 0
+  bullet3: 0
+  bullet4: 0
+  bullet5: 0
+  bullet6: 0
+  bullet7: 0
+  bullet8: 0
+  bullet9: 0
+  bullet10: 0
 --- !u!114 &636578343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2176,9 +2185,9 @@ MonoBehaviour:
   - A corpse is slanted dead up against it.
   - What did he need in the toilet?
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!43 &1025066153
 Mesh:
   m_ObjectHideFlags: 0
@@ -3471,9 +3480,9 @@ MonoBehaviour:
   - A corpse is slanted dead up against it.
   - What did he need in the toilet?
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 0
   isBook: 0
+  lineNumber: 0
 --- !u!1001 &1842014060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4427,9 +4436,9 @@ MonoBehaviour:
   - Someone forgot to drain the water.
   - A small dip into it wouldn't hurt, right?
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -250,8 +250,15 @@ public class Movement : MonoBehaviour
             else
             {
                 Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
-
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+                if (!aiming)
+                {
+                    transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+                }
+                else
+                {
+                    //Attempt on mouse rotation
+                    transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+                }
             }
         }
 

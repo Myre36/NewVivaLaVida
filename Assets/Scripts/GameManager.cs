@@ -84,6 +84,8 @@ public class GameManager : MonoBehaviour
     public bool bullet9;
     public bool bullet10;
 
+    public bool usingController;
+
     private void Awake()
     {
         //This code is used to make sure there are never more than one game manager
@@ -102,13 +104,14 @@ public class GameManager : MonoBehaviour
         //The below code is to make sure that the game manager destroys itself if it enters certain scenes
         Scene currentScene = SceneManager.GetActiveScene();
 
-        if (currentScene.name == "TutorialScene")
+        if (currentScene.name == "Tutorial Scene")
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
+
         if (currentScene.name == "Death scene")
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 }

@@ -163,7 +163,7 @@ public class Movement : MonoBehaviour
         if (Input.GetMouseButton(1) || Input.GetKey(KeyCode.JoystickButton6))
         {
             aiming = true;
-            rotationSpeed = 50;
+            rotationSpeed = 200;
             gun.GetComponent<Renderer>().enabled = true;
             gunShaft.GetComponent<Renderer>().enabled = true;
         }

@@ -110,34 +110,98 @@ public class PanetPuzzleScript : MonoBehaviour
                             if (currentlyEnabledPlanet.name == "Sun")
                             {
                                 planetPicker.hasSun = true;
+                                for (int i = 0; i < player.inventoryTexts.Length; i++)
+                                {
+                                    if (player.inventoryTexts[i].text == "")
+                                    {
+                                        player.inventoryTexts[i].text = "Sun";
+                                        break;
+                                    }
+                                }
                             }
                             else if (currentlyEnabledPlanet.name == "Mercury")
                             {
                                 planetPicker.hasMercury = true;
+                                for (int i = 0; i < player.inventoryTexts.Length; i++)
+                                {
+                                    if (player.inventoryTexts[i].text == "")
+                                    {
+                                        player.inventoryTexts[i].text = "Mercury";
+                                        break;
+                                    }
+                                }
                             }
                             else if (currentlyEnabledPlanet.name == "Venus")
                             {
                                 planetPicker.hasVenus = true;
+                                for (int i = 0; i < player.inventoryTexts.Length; i++)
+                                {
+                                    if (player.inventoryTexts[i].text == "")
+                                    {
+                                        player.inventoryTexts[i].text = "Venus";
+                                        break;
+                                    }
+                                }
                             }
                             else if (currentlyEnabledPlanet.name == "Earth")
                             {
                                 planetPicker.hasEarth = true;
+                                for (int i = 0; i < player.inventoryTexts.Length; i++)
+                                {
+                                    if (player.inventoryTexts[i].text == "")
+                                    {
+                                        player.inventoryTexts[i].text = "Earth";
+                                        break;
+                                    }
+                                }
                             }
                             else if (currentlyEnabledPlanet.name == "Mars")
                             {
                                 planetPicker.hasMars = true;
+                                for (int i = 0; i < player.inventoryTexts.Length; i++)
+                                {
+                                    if (player.inventoryTexts[i].text == "")
+                                    {
+                                        player.inventoryTexts[i].text = "Mars";
+                                        break;
+                                    }
+                                }
                             }
                             else if (currentlyEnabledPlanet.name == "Jupiter")
                             {
                                 planetPicker.hasJupiter = true;
+                                for (int i = 0; i < player.inventoryTexts.Length; i++)
+                                {
+                                    if (player.inventoryTexts[i].text == "")
+                                    {
+                                        player.inventoryTexts[i].text = "Jupiter";
+                                        break;
+                                    }
+                                }
                             }
                             else if (currentlyEnabledPlanet.name == "Saturn")
                             {
                                 planetPicker.hasSaturn = true;
+                                for (int i = 0; i < player.inventoryTexts.Length; i++)
+                                {
+                                    if (player.inventoryTexts[i].text == "")
+                                    {
+                                        player.inventoryTexts[i].text = "Saturn";
+                                        break;
+                                    }
+                                }
                             }
                             else if (currentlyEnabledPlanet.name == "Uranus")
                             {
                                 planetPicker.hasUranus = true;
+                                for (int i = 0; i < player.inventoryTexts.Length; i++)
+                                {
+                                    if (player.inventoryTexts[i].text == "")
+                                    {
+                                        player.inventoryTexts[i].text = "Uranus";
+                                        break;
+                                    }
+                                }
                             }
                             //This is for error checking
                             else

@@ -210,6 +210,14 @@ public class PlanetPickerScript : MonoBehaviour
         currentStand.GetComponent<PanetPuzzleScript>().planets[0].SetActive(true);
         currentStand.GetComponent<PanetPuzzleScript>().currentlyEnabledPlanet = currentStand.GetComponent<PanetPuzzleScript>().planets[0];
         hasSun = false;
+        for (int i = 0; i < player.inventoryTexts.Length; i++)
+        {
+            if (player.inventoryTexts[i].text == "Sun")
+            {
+                player.inventoryTexts[i].text = "";
+                break;
+            }
+        }
         CloseButtonMenu();
     }
 
@@ -219,6 +227,14 @@ public class PlanetPickerScript : MonoBehaviour
         currentStand.GetComponent<PanetPuzzleScript>().planets[1].SetActive(true);
         currentStand.GetComponent<PanetPuzzleScript>().currentlyEnabledPlanet = currentStand.GetComponent<PanetPuzzleScript>().planets[1];
         hasMercury = false;
+        for (int i = 0; i < player.inventoryTexts.Length; i++)
+        {
+            if (player.inventoryTexts[i].text == "Mercury")
+            {
+                player.inventoryTexts[i].text = "";
+                break;
+            }
+        }
         CloseButtonMenu();
     }
 
@@ -228,6 +244,14 @@ public class PlanetPickerScript : MonoBehaviour
         currentStand.GetComponent<PanetPuzzleScript>().planets[2].SetActive(true);
         currentStand.GetComponent<PanetPuzzleScript>().currentlyEnabledPlanet = currentStand.GetComponent<PanetPuzzleScript>().planets[2];
         hasVenus = false;
+        for (int i = 0; i < player.inventoryTexts.Length; i++)
+        {
+            if (player.inventoryTexts[i].text == "Venus")
+            {
+                player.inventoryTexts[i].text = "";
+                break;
+            }
+        }
         CloseButtonMenu();
     }
 
@@ -237,6 +261,14 @@ public class PlanetPickerScript : MonoBehaviour
         currentStand.GetComponent<PanetPuzzleScript>().planets[3].SetActive(true);
         currentStand.GetComponent<PanetPuzzleScript>().currentlyEnabledPlanet = currentStand.GetComponent<PanetPuzzleScript>().planets[3];
         hasEarth = false;
+        for (int i = 0; i < player.inventoryTexts.Length; i++)
+        {
+            if (player.inventoryTexts[i].text == "Earth")
+            {
+                player.inventoryTexts[i].text = "";
+                break;
+            }
+        }
         CloseButtonMenu();
     }
 
@@ -246,6 +278,14 @@ public class PlanetPickerScript : MonoBehaviour
         currentStand.GetComponent<PanetPuzzleScript>().planets[4].SetActive(true);
         currentStand.GetComponent<PanetPuzzleScript>().currentlyEnabledPlanet = currentStand.GetComponent<PanetPuzzleScript>().planets[4];
         hasMars = false;
+        for (int i = 0; i < player.inventoryTexts.Length; i++)
+        {
+            if (player.inventoryTexts[i].text == "Mars")
+            {
+                player.inventoryTexts[i].text = "";
+                break;
+            }
+        }
         CloseButtonMenu();
     }
 
@@ -255,6 +295,14 @@ public class PlanetPickerScript : MonoBehaviour
         currentStand.GetComponent<PanetPuzzleScript>().planets[5].SetActive(true);
         currentStand.GetComponent<PanetPuzzleScript>().currentlyEnabledPlanet = currentStand.GetComponent<PanetPuzzleScript>().planets[5];
         hasJupiter = false;
+        for (int i = 0; i < player.inventoryTexts.Length; i++)
+        {
+            if (player.inventoryTexts[i].text == "Jupiter")
+            {
+                player.inventoryTexts[i].text = "";
+                break;
+            }
+        }
         CloseButtonMenu();
     }
 
@@ -264,6 +312,14 @@ public class PlanetPickerScript : MonoBehaviour
         currentStand.GetComponent<PanetPuzzleScript>().planets[6].SetActive(true);
         currentStand.GetComponent<PanetPuzzleScript>().currentlyEnabledPlanet = currentStand.GetComponent<PanetPuzzleScript>().planets[6];
         hasSaturn = false;
+        for (int i = 0; i < player.inventoryTexts.Length; i++)
+        {
+            if (player.inventoryTexts[i].text == "Saturn")
+            {
+                player.inventoryTexts[i].text = "";
+                break;
+            }
+        }
         CloseButtonMenu();
     }
 
@@ -273,6 +329,14 @@ public class PlanetPickerScript : MonoBehaviour
         currentStand.GetComponent<PanetPuzzleScript>().planets[7].SetActive(true);
         currentStand.GetComponent<PanetPuzzleScript>().currentlyEnabledPlanet = currentStand.GetComponent<PanetPuzzleScript>().planets[7];
         hasUranus = false;
+        for (int i = 0; i < player.inventoryTexts.Length; i++)
+        {
+            if (player.inventoryTexts[i].text == "Uranus")
+            {
+                player.inventoryTexts[i].text = "";
+                break;
+            }
+        }
         CloseButtonMenu();
     }
 

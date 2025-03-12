@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +12,8 @@ public class MapManager : MonoBehaviour
     private bool mapIsOpen;
 
     public bool firstFloor;
+
+    public Animator mapAnimator;
 
 
     private void Update()
@@ -30,25 +33,29 @@ public class MapManager : MonoBehaviour
         {
             if (mapIsOpen)
             {
-                CloseMap();
+                StartCoroutine(CloseMap());
             }
             else
             {
-                OpenMap();
+                StartCoroutine(OpenMap());
             }
         }
     }
 
-    private void OpenMap()
+    IEnumerator OpenMap()
     {
-        currentMap.SetActive(true);
         mapIsOpen = true;
+        mapAnimator.SetBool("IsOpen", true);
+        yield return new WaitForSeconds(1f);
+        currentMap.SetActive(true);
     }
 
 
-    private void CloseMap()
+    IEnumerator CloseMap()
     {
-        currentMap.SetActive(false);
         mapIsOpen = false;
+        mapAnimator.SetBool("IsOpen", false);
+        yield return new WaitForSeconds(0.1f);
+        currentMap.SetActive(false);
     }
 }

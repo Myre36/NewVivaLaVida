@@ -43,6 +43,8 @@ public class Movement : MonoBehaviour
 
     public TMP_Text[] inventoryTexts;
 
+    private Vector3 mouseWorldPos;
+
     public MovementState state;
 
     //This defines the health changed events and handler delagating
@@ -239,26 +241,29 @@ public class Movement : MonoBehaviour
         //Calculate the movement direction
         moveDirection = (Vector3.forward * verticalInput) + (Vector3.right * horizontalInput);
 
-        if (moveDirection != Vector3.zero)
+        if (gameManager.usingController)
         {
-            if(gameManager.usingController)
-            {
-                Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
+            Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
 
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+        }
+        else
+        {
+            Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
+            if (!aiming)
+            {
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
             }
             else
             {
-                Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
-                if (!aiming)
+                RaycastHit hit;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if(Physics.Raycast(ray, out hit))
                 {
-                    transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+                    mouseWorldPos = hit.point;
                 }
-                else
-                {
-                    //Attempt on mouse rotation
-                    transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
-                }
+                Quaternion lookRotation = Quaternion.LookRotation(-mouseWorldPos, Vector3.up);
+                transform.rotation = lookRotation;
             }
         }
 

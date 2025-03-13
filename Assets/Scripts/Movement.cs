@@ -256,14 +256,7 @@ public class Movement : MonoBehaviour
             }
             else
             {
-                RaycastHit hit;
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                if(Physics.Raycast(ray, out hit))
-                {
-                    mouseWorldPos = hit.point;
-                }
-                Quaternion lookRotation = Quaternion.LookRotation(-mouseWorldPos, Vector3.up);
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, lookRotation, rotationSpeed * Time.deltaTime);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
             }
         }
 

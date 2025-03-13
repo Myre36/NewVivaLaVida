@@ -263,7 +263,7 @@ public class Movement : MonoBehaviour
                     mouseWorldPos = hit.point;
                 }
                 Quaternion lookRotation = Quaternion.LookRotation(-mouseWorldPos, Vector3.up);
-                transform.rotation = lookRotation;
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, lookRotation, rotationSpeed * Time.deltaTime);
             }
         }
 

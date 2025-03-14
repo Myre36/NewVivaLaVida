@@ -19212,6 +19212,7 @@ MonoBehaviour:
   - The keys are probably hidden somewhere within the castle.
   - You just have to find them.
   - Then you'll finally get to the bottom of what has been going on here.
+  introDialouge: 1
 --- !u!4 &1370667265
 Transform:
   m_ObjectHideFlags: 0

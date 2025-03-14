@@ -14,15 +14,17 @@ public class MandatoryDialouge : MonoBehaviour
 
     private GameManager gameManager;
 
+    public bool introDialouge;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        if (gameManager.introDialougeDone == false)
+        player = GameObject.Find("Player").GetComponent<Movement>();
+        dialougeBox = GameObject.Find("DialougeBox");
+        dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
+        if (gameManager.introDialougeDone == false && introDialouge)
         {
-            player = GameObject.Find("Player").GetComponent<Movement>();
-            dialougeBox = GameObject.Find("DialougeBox");
-            dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
             player.inMandatory = true;
             player.enabled = false;
             StartCoroutine(DelayStart());

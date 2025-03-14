@@ -12,15 +12,12 @@ public class MandatoryDialouge : MonoBehaviour
     public string[] dialouge;
     private int lineNumber;
 
-    public GameObject door;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<Movement>();
         dialougeBox = GameObject.Find("DialougeBox");
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
-        door.GetComponent<DialougeScript>().enabled = false;
         StartCoroutine(DelayStart());
     }
 
@@ -35,12 +32,7 @@ public class MandatoryDialouge : MonoBehaviour
             }
             else
             {
-                dialougeBox.GetComponent<RawImage>().enabled = false;
-                dialougeText.enabled = false;
-                lineNumber = 0;
-                player.enabled = true;
-                door.GetComponent<DialougeScript>().enabled = true;
-                Destroy(gameObject);
+                StartCoroutine(DelayEnd());
             }
         }
     }
@@ -55,8 +47,20 @@ public class MandatoryDialouge : MonoBehaviour
 
     IEnumerator DelayStart()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
+        player.inMandatory = true;
         player.enabled = false;
         NextLine();
+    }
+
+    IEnumerator DelayEnd()
+    {
+        dialougeBox.GetComponent<RawImage>().enabled = false;
+        dialougeText.enabled = false;
+        lineNumber = 0;
+        yield return new WaitForSeconds(0.2f);
+        player.enabled = true;
+        player.inMandatory = false;
+        Destroy(gameObject);
     }
 }

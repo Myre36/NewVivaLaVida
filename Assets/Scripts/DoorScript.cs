@@ -41,7 +41,7 @@ public class DoorScript : MonoBehaviour
         //If the player is by the door and press the interact key
         if(playerInDoor)
         {
-            if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.JoystickButton1))
+            if ((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.JoystickButton1)) && !player.inMandatory)
             {
                 //The door accesses the game manager and assigns its entry number as the same as the door number
                 gameManager.entryNumber = doorNumber;

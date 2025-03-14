@@ -25,6 +25,8 @@ public class DialougeScript : MonoBehaviour
     //The current line in the dialouge
     public int lineNumber;
 
+    private Movement player;
+
     private void Start()
     {
         //If the object is a book, the book sprite will be assigned as the dialouge box
@@ -39,6 +41,8 @@ public class DialougeScript : MonoBehaviour
             dialougeBox = GameObject.Find("DialougeBox").GetComponent<RawImage>();
             dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
         }
+
+        player = GameObject.Find("Player").GetComponent<Movement>();
     }
 
     // Update is called once per frame
@@ -47,7 +51,7 @@ public class DialougeScript : MonoBehaviour
         //If the player is in range of the object and presses the interact key
         if(playerInRange)
         {
-            if((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.JoystickButton1)))
+            if((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.JoystickButton1)) && !player.inMandatory)
             {
                 //If the player has not reached the end of the dialouge, the next line will be displayed
                 if(lineNumber < dialouge.Length)

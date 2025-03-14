@@ -50,6 +50,8 @@ public class Movement : MonoBehaviour
 
     public RawImage healthImage;
 
+    public bool inMandatory;
+
     public MovementState state;
 
     //This defines the health changed events and handler delagating

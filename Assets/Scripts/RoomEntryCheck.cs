@@ -52,8 +52,7 @@ public class RoomEntryCheck : MonoBehaviour
     public bool isEnemyThirteen;
     public bool isEnemyFourteen;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Awake()
     {
         //Assigns the player,game manager, and camera
         gameManager = GameObject.Find("GameManager");
@@ -62,6 +61,11 @@ public class RoomEntryCheck : MonoBehaviour
         fadeScreen = GameObject.Find("FadeScreen").GetComponent<CanvasGroup>();
 
         StartCoroutine(MovePlayer());
+    }
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
 
         //Sets the status of the enemies
         if(isEnemyOne)

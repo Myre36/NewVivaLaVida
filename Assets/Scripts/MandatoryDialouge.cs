@@ -12,13 +12,25 @@ public class MandatoryDialouge : MonoBehaviour
     public string[] dialouge;
     private int lineNumber;
 
+    private GameManager gameManager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        player = GameObject.Find("Player").GetComponent<Movement>();
-        dialougeBox = GameObject.Find("DialougeBox");
-        dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
-        StartCoroutine(DelayStart());
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        if (gameManager.introDialougeDone == false)
+        {
+            player = GameObject.Find("Player").GetComponent<Movement>();
+            dialougeBox = GameObject.Find("DialougeBox");
+            dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
+            player.inMandatory = true;
+            player.enabled = false;
+            StartCoroutine(DelayStart());
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame
@@ -61,6 +73,7 @@ public class MandatoryDialouge : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         player.enabled = true;
         player.inMandatory = false;
+        gameManager.introDialougeDone = true;
         Destroy(gameObject);
     }
 }

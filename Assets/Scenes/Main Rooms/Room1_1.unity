@@ -9741,10 +9741,10 @@ RectTransform:
   - {fileID: 1231215139}
   - {fileID: 1035718460}
   - {fileID: 70447246}
-  - {fileID: 1225949420}
-  - {fileID: 986836469}
   - {fileID: 824418476}
   - {fileID: 71690653}
+  - {fileID: 1225949420}
+  - {fileID: 986836469}
   - {fileID: 1318190096}
   - {fileID: 1355647252}
   m_Father: {fileID: 0}
@@ -19203,8 +19203,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialouge:
-  - Testing
-  - I hope this works
+  - The castle greets you with an eerie silence.
+  - Nothing but the silent wind outside.
+  - ...
+  - The king is probably hauled up in his throne room.
+  - Behind the giant door straight ahead of you.
+  - It's kept shut with two giant locks.
+  - The keys are probably hidden somewhere within the castle.
+  - You just have to find them.
+  - Then you'll finally get to the bottom of what has been going on here.
 --- !u!4 &1370667265
 Transform:
   m_ObjectHideFlags: 0

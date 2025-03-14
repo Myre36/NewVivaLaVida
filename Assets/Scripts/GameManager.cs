@@ -88,6 +88,8 @@ public class GameManager : MonoBehaviour
 
     public bool usingController;
 
+    public bool introDialougeDone;
+
     private void Awake()
     {
         //This code is used to make sure there are never more than one game manager

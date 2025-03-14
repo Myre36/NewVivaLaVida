@@ -2917,6 +2917,65 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: adcece65f9ebf064fb0862bbbb93d501, type: 2}
   m_BuildHeightMesh: 0
+--- !u!1 &628112177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 628112179}
+  - component: {fileID: 628112178}
+  m_Layer: 0
+  m_Name: MandatoryDialouge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &628112178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628112177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636a86526ffbfe74985b74f9f335ffe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouge:
+  - You hear the sound of moaning coming from the door ahead of you.
+  - Could be someone who can tell you what's going on.
+  - Or...
+  - You ready your gun, checking if you have enough bullets.
+  - (Hold down the right mouse button to aim your gun).
+  - (If you press the left mouse button while aiming, you will shoot your gun).
+  - (If you are using a controller, use L2 to aim and R2 to shoot).
+  - (You cannot move while aiming, so be careful).
+  - (You do not have infinite bullets, use them sparingly).
+  - (You can find extra bullets lying around the castle).
+  - (Press R to reload your gun)
+  - (Or the square button on the PS4 controller)
+  introDialouge: 0
+  tutorialDialouge: 1
+--- !u!4 &628112179
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628112177}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19514894, y: 4.6809587, z: -169.47787}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &751182038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3045,9 +3104,9 @@ MonoBehaviour:
   - There's a book detailing the family tree of the royal family.
   - Looks a lot more connected than you'd like to belive.
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!1001 &758352748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3661,9 +3720,9 @@ MonoBehaviour:
   dialouge:
   - It would be nice to sit down here
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!1001 &1022360284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5160,9 +5219,9 @@ MonoBehaviour:
   - ...
   - It also includes entries for people that we ruled a long time ago.
   playerInRange: 0
-  lineNumber: 0
   outlineEneabled: 1
   isBook: 0
+  lineNumber: 0
 --- !u!1 &1856213245
 GameObject:
   m_ObjectHideFlags: 0
@@ -6003,3 +6062,4 @@ SceneRoots:
   - {fileID: 1823944650}
   - {fileID: 751182038}
   - {fileID: 436893031}
+  - {fileID: 628112179}

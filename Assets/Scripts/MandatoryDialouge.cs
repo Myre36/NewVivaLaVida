@@ -15,6 +15,7 @@ public class MandatoryDialouge : MonoBehaviour
     private GameManager gameManager;
 
     public bool introDialouge;
+    public bool tutorialDialouge;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

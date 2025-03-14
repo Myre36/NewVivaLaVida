@@ -89,6 +89,7 @@ public class GameManager : MonoBehaviour
     public bool usingController;
 
     public bool introDialougeDone;
+    public bool tutorialDialougeDone;
 
     private void Awake()
     {

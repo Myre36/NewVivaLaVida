@@ -37,6 +37,19 @@ public class MandatoryDialouge : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        else if (tutorialDialouge)
+        {
+            if (!gameManager.tutorialDialougeDone)
+            {
+                player.inMandatory = true;
+                player.enabled = false;
+                StartCoroutine(DelayStart());
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 
     // Update is called once per frame

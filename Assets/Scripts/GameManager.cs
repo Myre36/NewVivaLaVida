@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     public bool bookPlaced;
 
     //Bools for if teh player has certain keys
+    public bool firstKey;
     public bool hallwayKey;
     public bool planetariumKey;
     public bool meetingKey;
@@ -54,6 +55,7 @@ public class GameManager : MonoBehaviour
     public bool kingsKeyTwo;
 
     //Bools for if the player has unlocked certain doors
+    public bool firstUnlocked;
     public bool hallwayUnlocked;
     public bool tunnelUnlocked;
     public bool servantsUnlocked;

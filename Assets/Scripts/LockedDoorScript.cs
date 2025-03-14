@@ -13,6 +13,7 @@ public class LockedDoorScript : MonoBehaviour
     public TMP_Text dialougeText;
     public bool playerInRange = false;
 
+    public bool firstDoor;
     public bool hallwayDoor;
     public bool servantsDoor;
     public bool planeteriumDoor;
@@ -40,6 +41,14 @@ public class LockedDoorScript : MonoBehaviour
         if(hallwayDoor)
         {
             if (gameManager.hallwayUnlocked)
+            {
+                doorScript.enabled = true;
+                this.enabled = false;
+            }
+        }
+        else if (firstDoor)
+        {
+            if (gameManager.firstUnlocked)
             {
                 doorScript.enabled = true;
                 this.enabled = false;
@@ -141,7 +150,7 @@ public class LockedDoorScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            dialougeText.text = "You unlocked the hallway door.";
+                            dialougeText.text = "You unlocked the east hallway.";
                         }
                     }
                     else
@@ -154,6 +163,42 @@ public class LockedDoorScript : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "The door is locked. An orange citrine gemstone is engraved into the door.";
+                        }
+                    }
+                }
+                else if (firstDoor)
+                {
+                    if (gameManager.firstKey)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.firstUnlocked = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "Emerald Key")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                    break;
+                                }
+                            }
+                            UnlockDoor();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            dialougeText.text = "You unlocked the west hallway.";
+                        }
+                    }
+                    else
+                    {
+                        if (inDialouge)
+                        {
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            dialougeText.text = "The door is locked. A large emerald gemstone is engraved into the door.";
                         }
                     }
                 }

@@ -23,6 +23,7 @@ public class PickupObject : MonoBehaviour
 
     public bool toiletClogged;
 
+    public bool firstKey;
     public bool hallwayKey;
     public bool planetariumKey;
     public bool meetingKey;
@@ -66,6 +67,13 @@ public class PickupObject : MonoBehaviour
             if (hallwayKey)
             {
                 if (gameManager.hallwayKey)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            else if (firstKey)
+            {
+                if (gameManager.firstKey)
                 {
                     Destroy(gameObject);
                 }
@@ -281,6 +289,19 @@ public class PickupObject : MonoBehaviour
                             {
                                 inDialouge = true;
                                 dialougeText.text = "You pick up a key with an orange citrine gemstone as its head.";
+                            }
+                        }
+                        else if (firstKey)
+                        {
+                            if (inDialouge)
+                            {
+                                gameManager.firstKey = true;
+                                CloseDialouge();
+                            }
+                            else
+                            {
+                                inDialouge = true;
+                                dialougeText.text = "You pick up a key with an emerald gemstone as its head.";
                             }
                         }
                         else if (tunnelKey)

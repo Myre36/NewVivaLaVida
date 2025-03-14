@@ -9,7 +9,6 @@ public class GunScript : MonoBehaviour
     public GameObject bullet;
     //Refrence to the player
     public GameObject player;
-    public GameObject reloadingText;
 
     //The speed at which the bullet fires
     public float shootForce;
@@ -24,6 +23,7 @@ public class GunScript : MonoBehaviour
     public Transform shootPoint;
 
     private bool canShoot;
+    private bool reloading;
 
     public float reloadTime;
 
@@ -31,6 +31,7 @@ public class GunScript : MonoBehaviour
     private bool ammoInChamber;
 
     public TMP_Text ammoText;
+    public TMP_Text reloadingText;
 
     public RawImage ammoInImage;
     public RawImage noAmmoInInImage;
@@ -60,6 +61,15 @@ public class GunScript : MonoBehaviour
         {
             noAmmoInInImage.enabled = true;
             ammoInImage.enabled = false;
+        }
+
+        if(reloading)
+        {
+            reloadingText.text = "Reloading...";
+        }
+        else
+        {
+            reloadingText.text = "Bullets: " + ammoCount.ToString();
         }
     }
 
@@ -103,9 +113,9 @@ public class GunScript : MonoBehaviour
     IEnumerator ReloadGun()
     {
         Debug.Log("Start reload");
-        reloadingText.SetActive(true);
+        reloading = true;
         yield return new WaitForSeconds(reloadTime);
-        reloadingText.SetActive(false);
+        reloading = false;
         canShoot = true;
         ammoInChamber = true;
         Debug.Log("End reload");

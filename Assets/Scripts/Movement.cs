@@ -277,7 +277,10 @@ public class Movement : MonoBehaviour
             }
             else
             {
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+                if (moveDirection != Vector3.zero)
+                {
+                    transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+                }
 
                 /*LayerMask ignore = LayerMask.GetMask("Default", "Ground", "StatuePoints");
                 Ray cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);

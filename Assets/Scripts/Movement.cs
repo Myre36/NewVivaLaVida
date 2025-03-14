@@ -43,7 +43,7 @@ public class Movement : MonoBehaviour
 
     public TMP_Text[] inventoryTexts;
 
-    private Vector3 mouseWorldPos;
+    private Camera mainCamera;
 
     public MovementState state;
 
@@ -127,6 +127,8 @@ public class Movement : MonoBehaviour
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         }
         inventorySpace++;
+
+        mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
     }
 
     // Update is called once per frame
@@ -252,11 +254,26 @@ public class Movement : MonoBehaviour
             Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
             if (!aiming)
             {
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+                if(moveDirection != Vector3.zero)
+                {
+                    transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+                }
             }
             else
             {
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+                //transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+
+                Ray cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
+                Plane ground = new Plane(Vector3.up, Vector3.zero);
+                float rayLength;
+
+                if(ground.Raycast(cameraRay, out rayLength))
+                {
+                    Vector3 pointToLook = cameraRay.GetPoint(rayLength);
+                    Debug.DrawLine(cameraRay.origin, pointToLook, Color.yellow);
+                    Quaternion lookRotation = Quaternion.LookRotation(pointToLook - transform.position, Vector3.up);
+                    transform.rotation = Quaternion.RotateTowards(transform.rotation, lookRotation, rotationSpeed * Time.deltaTime);
+                }
             }
         }
 

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public class Movement : MonoBehaviour
 {
@@ -44,6 +45,8 @@ public class Movement : MonoBehaviour
     public TMP_Text[] inventoryTexts;
 
     private Camera mainCamera;
+
+    public RawImage healthImage;
 
     public MovementState state;
 
@@ -197,6 +200,19 @@ public class Movement : MonoBehaviour
             DamageHealth();
         }
 
+        float healthFraction = currentHealth / maxHealth;
+        if(healthFraction >= 0.67f)
+        {
+            healthImage.color = Color.green;
+        }
+        else if(healthFraction < 0.67f &&  healthFraction >= 0.33f)
+        {
+            healthImage.color = Color.yellow;
+        }
+        else
+        {
+            healthImage.color = Color.red;
+        }
     }
 
     private void FixedUpdate()

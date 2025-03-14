@@ -10556,6 +10556,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5061211484470418040, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: healthImage
+      value: 
+      objectReference: {fileID: 1831968657}
+    - target: {fileID: 5061211484470418040, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: playerHeight
       value: 2
       objectReference: {fileID: 0}
@@ -22037,8 +22041,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -493.79758, y: -309.89096}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -465.4422, y: -329.22}
+  m_SizeDelta: {x: 114.7156, y: 46.439}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1831968657
 MonoBehaviour:
@@ -22053,7 +22057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.20305198, g: 0.90188676, b: 0.05275182, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

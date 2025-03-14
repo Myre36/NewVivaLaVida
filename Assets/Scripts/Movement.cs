@@ -261,9 +261,9 @@ public class Movement : MonoBehaviour
             }
             else
             {
-                //transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
 
-                LayerMask ignore = LayerMask.GetMask("Default", "Ground", "StatuePoints");
+                /*LayerMask ignore = LayerMask.GetMask("Default", "Ground", "StatuePoints");
                 Ray cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
                 Plane ground = new Plane(Vector3.forward, Vector3.zero);
                 float rayLength;
@@ -275,7 +275,7 @@ public class Movement : MonoBehaviour
                     Quaternion lookRotation = Quaternion.LookRotation(pointToLook - transform.position, Vector3.up);
                     Quaternion clampedRotation = new Quaternion(Mathf.Clamp(lookRotation.x, 0f, 0f), lookRotation.y, Mathf.Clamp(lookRotation.z, 0f, 0f), 1);
                     transform.rotation = Quaternion.RotateTowards(transform.rotation, clampedRotation, rotationSpeed * Time.deltaTime);
-                }
+                }*/
             }
         }
 

@@ -33,7 +33,6 @@ public class Movement : MonoBehaviour
 
     //A refrence to the gun
     public GameObject gun;
-    public GameObject gunShaft;
     //A refrence to the inventory screen
     public GameObject inventoryScreen;
 
@@ -176,7 +175,6 @@ public class Movement : MonoBehaviour
             aiming = true;
             rotationSpeed = 200;
             gun.GetComponent<Renderer>().enabled = true;
-            gunShaft.GetComponent<Renderer>().enabled = true;
         }
         //If the player is not holding down the RMB, the gun is not visible
         else
@@ -184,7 +182,6 @@ public class Movement : MonoBehaviour
             aiming = false;
             rotationSpeed = 500;
             gun.GetComponent<Renderer>().enabled = false;
-            gunShaft.GetComponent<Renderer>().enabled = false;
         }
         //Pressing the Tab key either opens the inventory screen, or closes it, depending on what its status is
         if(Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.JoystickButton13) || Input.GetKeyDown(KeyCode.Tab))

@@ -288,8 +288,10 @@ public class Movement : MonoBehaviour
                     pointToLook = cameraRay.GetPoint(rayLength);
                     //transform.LookAt(pointToLook);
                     Quaternion lookPosition = Quaternion.LookRotation(pointToLook - transform.position);
-                    //Quaternion clampedPosition = new Quaternion(Mathf.Clamp(transform.rotation.x, 0f, 0f), lookPosition.y, Mathf.Clamp(transform.rotation.z, 0f, 0f), 1);
-                    transform.rotation = Quaternion.RotateTowards(transform.rotation, lookPosition, rotationSpeed * Time.deltaTime);
+                    Quaternion tempRotation = Quaternion.RotateTowards(transform.rotation, lookPosition, rotationSpeed * Time.deltaTime);
+                    tempRotation.x = 0f;
+                    tempRotation.z = 0f;
+                    transform.rotation = tempRotation;
                 }
 
                 /*if (moveDirection != Vector3.zero)

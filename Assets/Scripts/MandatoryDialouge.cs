@@ -23,15 +23,18 @@ public class MandatoryDialouge : MonoBehaviour
         player = GameObject.Find("Player").GetComponent<Movement>();
         dialougeBox = GameObject.Find("DialougeBox");
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
-        if (gameManager.introDialougeDone == false && introDialouge)
+        if (introDialouge)
         {
-            player.inMandatory = true;
-            player.enabled = false;
-            StartCoroutine(DelayStart());
-        }
-        else
-        {
-            Destroy(gameObject);
+            if(!gameManager.introDialougeDone)
+            {
+                player.inMandatory = true;
+                player.enabled = false;
+                StartCoroutine(DelayStart());
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 

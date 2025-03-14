@@ -46,6 +46,8 @@ public class Movement : MonoBehaviour
 
     private Camera mainCamera;
 
+    private Vector3 pointToLook;
+
     public RawImage healthImage;
 
     public MovementState state;
@@ -277,10 +279,23 @@ public class Movement : MonoBehaviour
             }
             else
             {
-                if (moveDirection != Vector3.zero)
+                var cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
+
+                Plane ground = new Plane(Vector3.up, Vector3.zero);
+
+                if(ground.Raycast(cameraRay, out var rayLength))
+                {
+                    pointToLook = cameraRay.GetPoint(rayLength);
+                    //transform.LookAt(pointToLook);
+                    Quaternion lookPosition = Quaternion.LookRotation(pointToLook - transform.position);
+                    //Quaternion clampedPosition = new Quaternion(Mathf.Clamp(transform.rotation.x, 0f, 0f), lookPosition.y, Mathf.Clamp(transform.rotation.z, 0f, 0f), 1);
+                    transform.rotation = Quaternion.RotateTowards(transform.rotation, lookPosition, rotationSpeed * Time.deltaTime);
+                }
+
+                /*if (moveDirection != Vector3.zero)
                 {
                     transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
-                }
+                }*/
 
                 /*LayerMask ignore = LayerMask.GetMask("Default", "Ground", "StatuePoints");
                 Ray cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);

@@ -29,4 +29,9 @@ public class MenuScript : MonoBehaviour
     {
         SceneManager.LoadScene("Introduction");
     }
+
+    public void LoadCreditsScene()
+    {
+        SceneManager.LoadScene("CreditsScene");
+    }
 }

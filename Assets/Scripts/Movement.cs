@@ -264,7 +264,10 @@ public class Movement : MonoBehaviour
         {
             Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
 
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+            if (moveDirection != Vector3.zero)
+            {
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+            }
         }
         else
         {

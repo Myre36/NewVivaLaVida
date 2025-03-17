@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -99,22 +98,6 @@ public class GameManager : MonoBehaviour
             instance = this;
         }
         else
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    private void Update()
-    {
-        //The below code is to make sure that the game manager destroys itself if it enters certain scenes
-        Scene currentScene = SceneManager.GetActiveScene();
-
-        if (currentScene.name == "Tutorial Scene")
-        {
-            Destroy(gameObject);
-        }
-
-        if (currentScene.name == "Death scene")
         {
             Destroy(gameObject);
         }

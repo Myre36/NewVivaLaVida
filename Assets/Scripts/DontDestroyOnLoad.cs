@@ -16,7 +16,7 @@ public class DontDestroyOnLoad : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
 
-        if (currentScene.name == "TutorialScene")
+        if (currentScene.name == "Main Menu")
         {
             Destroy(this.gameObject);
         }

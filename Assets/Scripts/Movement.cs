@@ -140,17 +140,6 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Scene currentScene = SceneManager.GetActiveScene();
-
-        if (currentScene.name == "TutorialScene")
-        {
-            Destroy(this.gameObject);
-        }
-        if (currentScene.name == "Death scene")
-        {
-            Destroy(this.gameObject);
-        }
-
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
 
         //Calling the input function

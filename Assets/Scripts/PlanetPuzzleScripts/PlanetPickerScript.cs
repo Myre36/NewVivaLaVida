@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlanetPickerScript : MonoBehaviour
@@ -103,18 +102,6 @@ public class PlanetPickerScript : MonoBehaviour
 
     private void Update()
     {
-        //Code for checking what scene the player is in. This is to make sure this doesn't go into forbidden scenes
-        Scene currentScene = SceneManager.GetActiveScene();
-
-        if (currentScene.name == "TutorialScene")
-        {
-            Destroy(this.gameObject);
-        }
-        if (currentScene.name == "Death scene")
-        {
-            Destroy(this.gameObject);
-        }
-
         //If the button menu is open, certain buttons will appear depending on what planets the player is currently holding
         if (buttonMenuOpen)
         {

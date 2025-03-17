@@ -16,6 +16,7 @@ public class MandatoryDialouge : MonoBehaviour
 
     public bool introDialouge;
     public bool tutorialDialouge;
+    public bool afterEnemyDialouge;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,6 +41,19 @@ public class MandatoryDialouge : MonoBehaviour
         else if (tutorialDialouge)
         {
             if (!gameManager.tutorialDialougeDone)
+            {
+                player.inMandatory = true;
+                player.enabled = false;
+                StartCoroutine(DelayStart());
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
+        else if (afterEnemyDialouge)
+        {
+            if (!gameManager.afterEnemyDone)
             {
                 player.inMandatory = true;
                 player.enabled = false;
@@ -92,7 +106,18 @@ public class MandatoryDialouge : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         player.enabled = true;
         player.inMandatory = false;
-        gameManager.introDialougeDone = true;
+        if(introDialouge)
+        {
+            gameManager.introDialougeDone = true;
+        }
+        else if(tutorialDialouge)
+        {
+            gameManager.tutorialDialougeDone = true;
+        }
+        else if(afterEnemyDialouge)
+        {
+            gameManager.afterEnemyDone = true;
+        }
         Destroy(gameObject);
     }
 }

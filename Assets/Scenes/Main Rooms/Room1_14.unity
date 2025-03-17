@@ -3462,6 +3462,7 @@ MonoBehaviour:
   clothPile: 0
   book: 0
   toiletClogged: 0
+  firstKey: 0
   hallwayKey: 1
   planetariumKey: 0
   meetingKey: 0
@@ -3865,7 +3866,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1860933188}
+  m_Mesh: {fileID: 285059952}
 --- !u!33 &1094711752
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -5126,6 +5127,68 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 523923235}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1666786399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1666786401}
+  - component: {fileID: 1666786400}
+  m_Layer: 0
+  m_Name: MandatoryDialouge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1666786400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666786399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636a86526ffbfe74985b74f9f335ffe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouge:
+  - What on earth was that???
+  - It looked human... but it was like it was possessed by a demon.
+  - Blank eyes, frothing mouth...
+  - Were they sick?
+  - Is there a plague?
+  - ...
+  - You can't leave now.
+  - You'll have to get to the king.
+  - Since he's locked up in the throne room, he might still be alive.
+  - And as a soldier, it's your duty to get him to safety if possible.
+  - If you leave now, you might be executed for treason.
+  - Maybe you'll find soemthing on the second floor.
+  - But you'll have to get there first.
+  - Just save up your bullets...
+  introDialouge: 0
+  tutorialDialouge: 0
+  afterEnemyDialouge: 1
+--- !u!4 &1666786401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666786399}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19514894, y: 4.6809587, z: -169.47787}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1676785913
 GameObject:
@@ -8018,3 +8081,4 @@ SceneRoots:
   - {fileID: 1985769938}
   - {fileID: 1094711756}
   - {fileID: 342704295}
+  - {fileID: 1666786401}

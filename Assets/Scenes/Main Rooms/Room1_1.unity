@@ -19268,6 +19268,7 @@ MonoBehaviour:
   - Then you'll finally get to the bottom of what has been going on here.
   introDialouge: 1
   tutorialDialouge: 0
+  afterEnemyDialouge: 0
 --- !u!4 &1370667265
 Transform:
   m_ObjectHideFlags: 0
@@ -25391,6 +25392,10 @@ PrefabInstance:
     - target: {fileID: 1860051969269654845, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103271113099047929, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
+      propertyPath: enemyRespawnTime
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2103271113099047929, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
       propertyPath: objectTwoPosition.x

@@ -46,6 +46,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entryNumber: 0
+  enemyRespawnTime: 0
+  enemyOneFakeDead: 0
+  enemyTwoFakeDead: 0
+  enemyThreeFakeDead: 0
+  enemyFourFakeDead: 0
+  enemyFiveFakeDead: 0
+  enemySixFakeDead: 0
+  enemySevenFakeDead: 0
+  enemyEightFakeDead: 0
+  enemyNineFakeDead: 0
+  enemyTenFakeDead: 0
+  enemyElevenFakeDead: 0
+  enemyTwelveFakeDead: 0
+  enemyThirteenFakeDead: 0
+  enemyFourteenFakeDead: 0
   enemyOneDead: 0
   enemyTwoDead: 0
   enemyThreeDead: 0
@@ -60,6 +75,20 @@ MonoBehaviour:
   enemyTwelveDead: 0
   enemyThirteenDead: 0
   enemyFourteenDead: 0
+  enemyOneTimer: 0
+  enemyTwoTimer: 0
+  enemyThreeTimer: 0
+  enemyFourTimer: 0
+  enemyFiveTimer: 0
+  enemySixTimer: 0
+  enemySevenTimer: 0
+  enemyEightTimer: 0
+  enemyNineTimer: 0
+  enemyTenTimer: 0
+  enemyElevenTimer: 0
+  enemyTwelveTimer: 0
+  enemyThirteenTimer: 0
+  enemyFourteenTimer: 0
   coinOne: 0
   coinTwo: 0
   coinThree: 0
@@ -107,6 +136,7 @@ MonoBehaviour:
   usingController: 0
   introDialougeDone: 0
   tutorialDialougeDone: 0
+  afterEnemyDone: 0
 --- !u!114 &1197596856980045196
 MonoBehaviour:
   m_ObjectHideFlags: 0

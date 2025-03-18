@@ -120,6 +120,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
             if(gameManager.enemyOneFakeDead)
             {
                 gameManager.enemyOneDead = true;
+                gameManager.enemyOneFakeDead = false;
             }
             else
             {
@@ -131,6 +132,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
             if (gameManager.enemyTwoFakeDead)
             {
                 gameManager.enemyTwoDead = true;
+                gameManager.enemyTwoFakeDead = false;
             }
             else
             {
@@ -142,6 +144,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
             if (gameManager.enemyThreeFakeDead)
             {
                 gameManager.enemyThreeDead = true;
+                gameManager.enemyThreeFakeDead = false;
             }
             else
             {
@@ -153,6 +156,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
             if (gameManager.enemyFourFakeDead)
             {
                 gameManager.enemyFourDead = true;
+                gameManager.enemyFourFakeDead = false;
             }
             else
             {
@@ -164,6 +168,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
             if (gameManager.enemyFiveFakeDead)
             {
                 gameManager.enemyFiveDead = true;
+                gameManager.enemyFiveFakeDead = false;
             }
             else
             {
@@ -175,6 +180,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
             if (gameManager.enemySixFakeDead)
             {
                 gameManager.enemySixDead = true;
+                gameManager.enemySixFakeDead = false;
             }
             else
             {
@@ -186,6 +192,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
             if (gameManager.enemySevenFakeDead)
             {
                 gameManager.enemySevenDead = true;
+                gameManager.enemySevenFakeDead = false;
             }
             else
             {
@@ -197,6 +204,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
             if (gameManager.enemyEightFakeDead)
             {
                 gameManager.enemyEightDead = true;
+                gameManager.enemyEightFakeDead = false;
             }
             else
             {
@@ -208,6 +216,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
             if (gameManager.enemyNineFakeDead)
             {
                 gameManager.enemyNineDead = true;
+                gameManager.enemyNineFakeDead = false;
             }
             else
             {
@@ -219,6 +228,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
             if (gameManager.enemyTenFakeDead)
             {
                 gameManager.enemyTenDead = true;
+                gameManager.enemyTenFakeDead = false;
             }
             else
             {
@@ -230,6 +240,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
             if (gameManager.enemyElevenFakeDead)
             {
                 gameManager.enemyElevenDead = true;
+                gameManager.enemyElevenFakeDead = false;
             }
             else
             {
@@ -241,6 +252,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
             if (gameManager.enemyTwelveFakeDead)
             {
                 gameManager.enemyTwelveDead = true;
+                gameManager.enemyTwelveFakeDead = false;
             }
             else
             {
@@ -252,6 +264,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
             if (gameManager.enemyThirteenFakeDead)
             {
                 gameManager.enemyThirteenDead = true;
+                gameManager.enemyThirteenFakeDead = false;
             }
             else
             {
@@ -263,6 +276,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
             if (gameManager.enemyFourteenFakeDead)
             {
                 gameManager.enemyFourteenDead = true;
+                gameManager.enemyFourteenFakeDead = false;
             }
             else
             {

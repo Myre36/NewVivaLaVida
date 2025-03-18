@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     //The number used to spawn the player in the correct location when entering a room
     public int entryNumber;
 
-    public int enemyRespawnTime = 420;
+    public int enemyRespawnTime;
 
     //Bools for if all the enemies are dead
     public bool enemyOneFakeDead = false;
@@ -156,43 +156,43 @@ public class GameManager : MonoBehaviour
         }
         if (enemyFiveFakeDead)
         {
-            enemyFourTimer += Time.deltaTime;
+            enemyFiveTimer += Time.deltaTime;
         }
         if (enemySixFakeDead)
         {
-            enemyFourTimer += Time.deltaTime;
+            enemySixTimer += Time.deltaTime;
         }
         if (enemySevenFakeDead)
         {
-            enemyFourTimer += Time.deltaTime;
+            enemySevenTimer += Time.deltaTime;
         }
         if (enemyEightFakeDead)
         {
-            enemyFourTimer += Time.deltaTime;
+            enemyEightTimer += Time.deltaTime;
         }
         if (enemyNineFakeDead)
         {
-            enemyFourTimer += Time.deltaTime;
+            enemyNineTimer += Time.deltaTime;
         }
         if (enemyTenFakeDead)
         {
-            enemyFourTimer += Time.deltaTime;
+            enemyTenTimer += Time.deltaTime;
         }
         if (enemyElevenFakeDead)
         {
-            enemyFourTimer += Time.deltaTime;
+            enemyElevenTimer += Time.deltaTime;
         }
         if (enemyTwelveFakeDead)
         {
-            enemyFourTimer += Time.deltaTime;
+            enemyTwelveTimer += Time.deltaTime;
         }
         if (enemyThirteenFakeDead)
         {
-            enemyFourTimer += Time.deltaTime;
+            enemyThirteenTimer += Time.deltaTime;
         }
         if (enemyFourteenFakeDead)
         {
-            enemyFourTimer += Time.deltaTime;
+            enemyFourteenTimer += Time.deltaTime;
         }
     }
 }

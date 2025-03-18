@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     //The number used to spawn the player in the correct location when entering a room
     public int entryNumber;
 
+    public int enemyRespawnTime = 420;
+
     //Bools for if all the enemies are dead
     public bool enemyOneFakeDead = false;
     public bool enemyTwoFakeDead = false;

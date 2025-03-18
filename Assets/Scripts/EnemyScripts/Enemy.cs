@@ -128,55 +128,146 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
         }
         else if (enemyNum == 2)
         {
-            gameManager.enemyTwoDead = true;
+            if (gameManager.enemyTwoFakeDead)
+            {
+                gameManager.enemyTwoDead = true;
+            }
+            else
+            {
+                gameManager.enemyTwoFakeDead = true;
+            }
         }
         else if (enemyNum == 3)
         {
-            gameManager.enemyThreeDead = true;
+            if (gameManager.enemyThreeFakeDead)
+            {
+                gameManager.enemyThreeDead = true;
+            }
+            else
+            {
+                gameManager.enemyThreeFakeDead = true;
+            }
         }
         else if (enemyNum == 4)
         {
-            gameManager.enemyFourDead = true;
+            if (gameManager.enemyFourFakeDead)
+            {
+                gameManager.enemyFourDead = true;
+            }
+            else
+            {
+                gameManager.enemyFourFakeDead = true;
+            }
         }
         else if (enemyNum == 5)
         {
-            gameManager.enemyFiveDead = true;
+            if (gameManager.enemyFiveFakeDead)
+            {
+                gameManager.enemyFiveDead = true;
+            }
+            else
+            {
+                gameManager.enemyFiveFakeDead = true;
+            }
         }
         else if (enemyNum == 6)
         {
-            gameManager.enemySixDead = true;
+            if (gameManager.enemySixFakeDead)
+            {
+                gameManager.enemySixDead = true;
+            }
+            else
+            {
+                gameManager.enemySixFakeDead = true;
+            }
         }
         else if (enemyNum == 7)
         {
-            gameManager.enemySevenDead = true;
+            if (gameManager.enemySevenFakeDead)
+            {
+                gameManager.enemySevenDead = true;
+            }
+            else
+            {
+                gameManager.enemySevenFakeDead = true;
+            }
         }
         else if (enemyNum == 8)
         {
-            gameManager.enemyEightDead = true;
+            if (gameManager.enemyEightFakeDead)
+            {
+                gameManager.enemyEightDead = true;
+            }
+            else
+            {
+                gameManager.enemyEightFakeDead = true;
+            }
         }
         else if (enemyNum == 9)
         {
-            gameManager.enemyNineDead = true;
+            if (gameManager.enemyNineFakeDead)
+            {
+                gameManager.enemyNineDead = true;
+            }
+            else
+            {
+                gameManager.enemyNineFakeDead = true;
+            }
         }
         else if (enemyNum == 10)
         {
-            gameManager.enemyTenDead = true;
+            if (gameManager.enemyTenFakeDead)
+            {
+                gameManager.enemyTenDead = true;
+            }
+            else
+            {
+                gameManager.enemyTenFakeDead = true;
+            }
         }
         else if (enemyNum == 11)
         {
-            gameManager.enemyElevenDead = true;
+            if (gameManager.enemyElevenFakeDead)
+            {
+                gameManager.enemyElevenDead = true;
+            }
+            else
+            {
+                gameManager.enemyElevenFakeDead = true;
+            }
         }
         else if (enemyNum == 12)
         {
-            gameManager.enemyTwelveDead = true;
+            if (gameManager.enemyTwelveFakeDead)
+            {
+                gameManager.enemyTwelveDead = true;
+            }
+            else
+            {
+                gameManager.enemyTwelveFakeDead = true;
+            }
         }
         else if (enemyNum == 13)
         {
-            gameManager.enemyThirteenDead = true;
+            if (gameManager.enemyThirteenFakeDead)
+            {
+                gameManager.enemyThirteenDead = true;
+            }
+            else
+            {
+                gameManager.enemyThirteenFakeDead = true;
+            }
         }
         else if (enemyNum == 14)
         {
-            gameManager.enemyFourteenDead = true;
+            if (gameManager.enemyFourteenFakeDead)
+            {
+                gameManager.enemyFourteenDead = true;
+            }
+            else
+            {
+                gameManager.enemyFourteenFakeDead = true;
+            }
         }
         Destroy(gameObject);
     }

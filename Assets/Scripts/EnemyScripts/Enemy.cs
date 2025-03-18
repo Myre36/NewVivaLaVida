@@ -117,59 +117,66 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
     {
         if (enemyNum == 1)
         {
-            gameManager.GetComponent<GameManager>().enemyOneDead = true;
+            if(gameManager.enemyOneFakeDead)
+            {
+                gameManager.enemyOneDead = true;
+            }
+            else
+            {
+                gameManager.enemyOneFakeDead = true;
+            }
         }
         else if (enemyNum == 2)
         {
-            gameManager.GetComponent<GameManager>().enemyTwoDead = true;
+            gameManager.enemyTwoDead = true;
         }
         else if (enemyNum == 3)
         {
-            gameManager.GetComponent<GameManager>().enemyThreeDead = true;
+            gameManager.enemyThreeDead = true;
         }
         else if (enemyNum == 4)
         {
-            gameManager.GetComponent<GameManager>().enemyFourDead = true;
+            gameManager.enemyFourDead = true;
         }
         else if (enemyNum == 5)
         {
-            gameManager.GetComponent<GameManager>().enemyFiveDead = true;
+            gameManager.enemyFiveDead = true;
         }
         else if (enemyNum == 6)
         {
-            gameManager.GetComponent<GameManager>().enemySixDead = true;
+            gameManager.enemySixDead = true;
         }
         else if (enemyNum == 7)
         {
-            gameManager.GetComponent<GameManager>().enemySevenDead = true;
+            gameManager.enemySevenDead = true;
         }
         else if (enemyNum == 8)
         {
-            gameManager.GetComponent<GameManager>().enemyEightDead = true;
+            gameManager.enemyEightDead = true;
         }
         else if (enemyNum == 9)
         {
-            gameManager.GetComponent<GameManager>().enemyNineDead = true;
+            gameManager.enemyNineDead = true;
         }
         else if (enemyNum == 10)
         {
-            gameManager.GetComponent<GameManager>().enemyTenDead = true;
+            gameManager.enemyTenDead = true;
         }
         else if (enemyNum == 11)
         {
-            gameManager.GetComponent<GameManager>().enemyElevenDead = true;
+            gameManager.enemyElevenDead = true;
         }
         else if (enemyNum == 12)
         {
-            gameManager.GetComponent<GameManager>().enemyTwelveDead = true;
+            gameManager.enemyTwelveDead = true;
         }
         else if (enemyNum == 13)
         {
-            gameManager.GetComponent<GameManager>().enemyThirteenDead = true;
+            gameManager.enemyThirteenDead = true;
         }
         else if (enemyNum == 14)
         {
-            gameManager.GetComponent<GameManager>().enemyFourteenDead = true;
+            gameManager.enemyFourteenDead = true;
         }
         Destroy(gameObject);
     }

@@ -9,6 +9,21 @@ public class GameManager : MonoBehaviour
     public int entryNumber;
 
     //Bools for if all the enemies are dead
+    public bool enemyOneFakeDead = false;
+    public bool enemyTwoFakeDead = false;
+    public bool enemyThreeFakeDead = false;
+    public bool enemyFourFakeDead = false;
+    public bool enemyFiveFakeDead = false;
+    public bool enemySixFakeDead = false;
+    public bool enemySevenFakeDead = false;
+    public bool enemyEightFakeDead = false;
+    public bool enemyNineFakeDead = false;
+    public bool enemyTenFakeDead = false;
+    public bool enemyElevenFakeDead = false;
+    public bool enemyTwelveFakeDead = false;
+    public bool enemyThirteenFakeDead = false;
+    public bool enemyFourteenFakeDead = false;
+
     public bool enemyOneDead = false;
     public bool enemyTwoDead = false;
     public bool enemyThreeDead = false;
@@ -23,6 +38,21 @@ public class GameManager : MonoBehaviour
     public bool enemyTwelveDead = false;
     public bool enemyThirteenDead = false;
     public bool enemyFourteenDead = false;
+
+    public float enemyOneTimer;
+    public float enemyTwoTimer;
+    public float enemyThreeTimer;
+    public float enemyFourTimer;
+    public float enemyFiveTimer;
+    public float enemySixTimer;
+    public float enemySevenTimer;
+    public float enemyEightTimer;
+    public float enemyNineTimer;
+    public float enemyTenTimer;
+    public float enemyElevenTimer;
+    public float enemyTwelveTimer;
+    public float enemyThirteenTimer;
+    public float enemyFourteenTimer;
 
     //Bools for if the player has all the coins
     public bool coinOne;
@@ -101,6 +131,66 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void Update()
+    {
+        if(enemyOneFakeDead)
+        {
+            enemyOneTimer += Time.deltaTime;
+        }
+        if(enemyTwoFakeDead)
+        {
+            enemyTwoTimer += Time.deltaTime;
+        }
+        if(enemyThreeFakeDead)
+        {
+            enemyThreeTimer += Time.deltaTime;
+        }
+        if (enemyFourFakeDead)
+        {
+            enemyFourTimer += Time.deltaTime;
+        }
+        if (enemyFiveFakeDead)
+        {
+            enemyFourTimer += Time.deltaTime;
+        }
+        if (enemySixFakeDead)
+        {
+            enemyFourTimer += Time.deltaTime;
+        }
+        if (enemySevenFakeDead)
+        {
+            enemyFourTimer += Time.deltaTime;
+        }
+        if (enemyEightFakeDead)
+        {
+            enemyFourTimer += Time.deltaTime;
+        }
+        if (enemyNineFakeDead)
+        {
+            enemyFourTimer += Time.deltaTime;
+        }
+        if (enemyTenFakeDead)
+        {
+            enemyFourTimer += Time.deltaTime;
+        }
+        if (enemyElevenFakeDead)
+        {
+            enemyFourTimer += Time.deltaTime;
+        }
+        if (enemyTwelveFakeDead)
+        {
+            enemyFourTimer += Time.deltaTime;
+        }
+        if (enemyThirteenFakeDead)
+        {
+            enemyFourTimer += Time.deltaTime;
+        }
+        if (enemyFourteenFakeDead)
+        {
+            enemyFourTimer += Time.deltaTime;
         }
     }
 }

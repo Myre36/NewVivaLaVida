@@ -575,13 +575,16 @@ public class PickupObject : MonoBehaviour
         if(player.inventorySpace < 8)
         {
             pickupSound.Play();
-            player.inventorySpace++;
-            for(int i = 0; i < player.inventoryTexts.Length; i++)
+            if(isKeyItem)
             {
-                if (player.inventoryTexts[i].text == "")
+                player.inventorySpace++;
+                for (int i = 0; i < player.inventoryTexts.Length; i++)
                 {
-                    player.inventoryTexts[i].text = gameObject.name;
-                    break;
+                    if (player.inventoryTexts[i].text == "")
+                    {
+                        player.inventoryTexts[i].text = gameObject.name;
+                        break;
+                    }
                 }
             }
             Destroy(gameObject);

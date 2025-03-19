@@ -91,6 +91,14 @@ public class UnlockItem : MonoBehaviour
                         if(inDialouge)
                         {
                             gameManager.swordPlaced = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "Sword")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                    break;
+                                }
+                            }
                             keyItem.SetActive(true);
 
                             PlaceItem();
@@ -121,6 +129,14 @@ public class UnlockItem : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.toiletClogged = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "Cloth Pile")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                    break;
+                                }
+                            }
                             PlaceItem();
                         }
                         else
@@ -149,6 +165,14 @@ public class UnlockItem : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.bookPlaced = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "Weird Book")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                    break;
+                                }
+                            }
                             GetComponent<DoorScript>().enabled = true;
                             PlaceItem();
                         }

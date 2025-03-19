@@ -356,15 +356,8 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   dialouge:
-  - Seems to be the menu for this week.
-  - '"Monday 11/09: Duck with wine sauce."'
-  - '"Tuesday 12/09: Cheese cake with cream."'
-  - '"Wednesday 13/09: Reindeer with apples."'
-  - '"Thursday 14/09: Roasted pig with fruits."'
-  - '"Friday 15/09: Roasted pig with fruits."'
-  - '"Saturday 16/09: His highness is away."'
-  - '"Sunday 17/09: Fine steak with mushrooms."'
-  - Doesn't look like they made it too far into the week.
+  - Letter from the prince.
+  - Letter from the prince.
   playerInRange: 0
   outlineEneabled: 1
   isBook: 0

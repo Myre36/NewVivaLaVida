@@ -32339,6 +32339,7 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   playerInRange: 0
+  firstDoor: 0
   hallwayDoor: 0
   servantsDoor: 1
   planeteriumDoor: 0

@@ -51,6 +51,8 @@ public class Movement : MonoBehaviour
 
     public bool inMandatory;
 
+    private DetermineController controllerDecider;
+
     public MovementState state;
 
     //This defines the health changed events and handler delagating
@@ -135,6 +137,7 @@ public class Movement : MonoBehaviour
         inventorySpace++;
 
         mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
+        controllerDecider = GameObject.Find("ControllerDecider").GetComponent<DetermineController>();
     }
 
     // Update is called once per frame
@@ -249,7 +252,7 @@ public class Movement : MonoBehaviour
         //Calculate the movement direction
         moveDirection = (Vector3.forward * verticalInput) + (Vector3.right * horizontalInput);
 
-        if (gameManager.usingController)
+        if (controllerDecider.usingController)
         {
             Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
 

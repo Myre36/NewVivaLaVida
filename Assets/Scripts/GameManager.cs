@@ -117,8 +117,6 @@ public class GameManager : MonoBehaviour
     public bool bullet9;
     public bool bullet10;
 
-    public bool usingController;
-
     public bool introDialougeDone;
     public bool tutorialDialougeDone;
     public bool afterEnemyDone;

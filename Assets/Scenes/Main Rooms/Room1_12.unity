@@ -357,7 +357,14 @@ MonoBehaviour:
   dialougeText: {fileID: 0}
   dialouge:
   - Letter from the prince.
-  - Letter from the prince.
+  - '"Dear father, I hope you are well."'
+  - '"For me, I have been quite well. I have already been promoted to commander,
+    fresh out of the academy."'
+  - '"I''m currently stationed in Bornholm for a short inspection of the defences."'
+  - '"I must say, the old fortifications are pretty run down."'
+  - '"The garrison is also underequipped."'
+  - '"In other news, I''m excited for the Christmas celebration later in December..."'
+  - It continues in endless ramblings about parties and self-indulged compliments.
   playerInRange: 0
   outlineEneabled: 1
   isBook: 0

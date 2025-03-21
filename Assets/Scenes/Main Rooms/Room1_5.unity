@@ -4549,6 +4549,9 @@ MonoBehaviour:
   playerInRange: 0
   placedObject: {fileID: 90215706}
   keyItem: {fileID: 0}
+  hasEnemies: 1
+  enemies:
+  - {fileID: 196211142}
 --- !u!114 &1419450018
 MonoBehaviour:
   m_ObjectHideFlags: 0

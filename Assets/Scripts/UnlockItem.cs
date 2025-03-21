@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 
 public class UnlockItem : MonoBehaviour
@@ -21,6 +22,10 @@ public class UnlockItem : MonoBehaviour
     public GameObject placedObject;
 
     public GameObject keyItem;
+
+    public bool hasEnemies;
+
+    public NavMeshAgent[] enemies;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -84,7 +89,19 @@ public class UnlockItem : MonoBehaviour
                 player.enabled = false;
                 dialougeBox.GetComponent<RawImage>().enabled = true;
                 dialougeText.enabled = true;
-                if(swordNeeded)
+                if (hasEnemies)
+                {
+                    for (int i = 0; i < enemies.Length; i++)
+                    {
+                        if (enemies[i] != null)
+                        {
+                            NavMeshAgent currentEnemy = enemies[i];
+
+                            currentEnemy.enabled = false;
+                        }
+                    }
+                }
+                if (swordNeeded)
                 {
                     if(gameManager.sword)
                     {
@@ -226,6 +243,18 @@ public class UnlockItem : MonoBehaviour
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         inDialouge = false;
+        if (hasEnemies)
+        {
+            for (int i = 0; i < enemies.Length; i++)
+            {
+                if (enemies[i] != null)
+                {
+                    NavMeshAgent currentEnemy = enemies[i];
+
+                    currentEnemy.enabled = false;
+                }
+            }
+        }
         placedObject.SetActive(true);
         GetComponent<Outline>().enabled = false;
         this.enabled = false;
@@ -236,6 +265,18 @@ public class UnlockItem : MonoBehaviour
         player.enabled = true;
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
+        if (hasEnemies)
+        {
+            for (int i = 0; i < enemies.Length; i++)
+            {
+                if (enemies[i] != null)
+                {
+                    NavMeshAgent currentEnemy = enemies[i];
+
+                    currentEnemy.enabled = false;
+                }
+            }
+        }
         inDialouge = false;
     }
 }

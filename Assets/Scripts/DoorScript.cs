@@ -27,6 +27,8 @@ public class DoorScript : MonoBehaviour
     //The anount of time it takes for the screen to fade
     public float timeToFade;
 
+    public bool isPlanetDoor;
+
 
     private void Start()
     {
@@ -45,6 +47,25 @@ public class DoorScript : MonoBehaviour
             {
                 //The door accesses the game manager and assigns its entry number as the same as the door number
                 gameManager.entryNumber = doorNumber;
+
+                if(isPlanetDoor)
+                {
+                    PlanetCheckScript planetChecker = GameObject.Find("PlanetChecker").GetComponent<PlanetCheckScript>();
+
+                    for(int i = 0; i < planetChecker.stands.Length; i++)
+                    {
+                        var currentStand = planetChecker.stands[i].GetComponent<PanetPuzzleScript>();
+
+                        if (currentStand.currentlyEnabledPlanet == null)
+                        {
+                            gameManager.stands[i] = "None";
+                        }
+                        else
+                        {
+                            gameManager.stands[i] = currentStand.currentlyEnabledPlanet.name;
+                        }
+                    }
+                }
                 //Then, it calls the function that loads the next scene
                 StartCoroutine(OpenDoor());
             }

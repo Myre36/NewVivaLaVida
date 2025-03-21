@@ -25246,8 +25246,44 @@ PrefabInstance:
       value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2103271113099047929, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
+      propertyPath: stands.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103271113099047929, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
       propertyPath: objectTwoPosition.x
       value: 0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103271113099047929, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
+      propertyPath: 'stands.Array.data[0]'
+      value: Sun
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103271113099047929, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
+      propertyPath: 'stands.Array.data[1]'
+      value: Mercury
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103271113099047929, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
+      propertyPath: 'stands.Array.data[2]'
+      value: Venus
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103271113099047929, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
+      propertyPath: 'stands.Array.data[3]'
+      value: Earth
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103271113099047929, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
+      propertyPath: 'stands.Array.data[4]'
+      value: Mars
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103271113099047929, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
+      propertyPath: 'stands.Array.data[5]'
+      value: Jupiter
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103271113099047929, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
+      propertyPath: 'stands.Array.data[6]'
+      value: Saturn
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103271113099047929, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
+      propertyPath: 'stands.Array.data[7]'
+      value: Uranus
       objectReference: {fileID: 0}
     - target: {fileID: 7137961382319958337, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
       propertyPath: m_LocalPosition.x

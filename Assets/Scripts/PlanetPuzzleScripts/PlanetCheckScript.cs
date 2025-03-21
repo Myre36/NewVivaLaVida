@@ -43,21 +43,4 @@ public class PlanetCheckScript : MonoBehaviour
             this.enabled = false;
         }
     }
-
-    private void OnDestroy()
-    {
-        for (int i = 0; i < stands.Length; i++)
-        {
-            var currentStand = stands[i].GetComponent<PanetPuzzleScript>();
-
-            if(currentStand.currentlyEnabledPlanet == null)
-            {
-                gameManager.stands[i] = "None";
-            }
-            else
-            {
-                gameManager.stands[i] = currentStand.currentlyEnabledPlanet.name;
-            }
-        }
-    }
 }

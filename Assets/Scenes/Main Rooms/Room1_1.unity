@@ -11090,7 +11090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2177347232662621564, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: Priority
-      value: 82
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 2177347232662621564, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: m_Volume
@@ -11098,7 +11098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2177347232662621564, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4701487174813629034, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: ammoText
@@ -11148,6 +11148,10 @@ PrefabInstance:
       propertyPath: virtualCamera
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5061211484470418040, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: heartbeatSound
+      value: 
+      objectReference: {fileID: 1003096510}
     - target: {fileID: 5061211484470418040, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: inventoryScreen
       value: 
@@ -11200,6 +11204,11 @@ PrefabInstance:
 --- !u!4 &1003096508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1439286263002396067, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+  m_PrefabInstance: {fileID: 1003096500}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1003096510 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2177347232662621564, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
   m_PrefabInstance: {fileID: 1003096500}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1004128125

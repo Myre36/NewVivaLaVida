@@ -121,6 +121,8 @@ public class GameManager : MonoBehaviour
     public bool tutorialDialougeDone;
     public bool afterEnemyDone;
 
+    public string[] stands;
+
     private void Awake()
     {
         //This code is used to make sure there are never more than one game manager

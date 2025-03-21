@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 
 public class PickupObject : MonoBehaviour
@@ -53,7 +54,7 @@ public class PickupObject : MonoBehaviour
 
     public bool hasEnemies;
 
-    public SmallZombie[] enemies;
+    public NavMeshAgent[] enemies;
 
     private AudioSource pickupSound;
 
@@ -270,7 +271,7 @@ public class PickupObject : MonoBehaviour
                 {
                     for(int i = 0; i < enemies.Length; i++)
                     {
-                        SmallZombie currentEnemy = enemies[i];
+                        NavMeshAgent currentEnemy = enemies[i];
 
                         currentEnemy.enabled = false;
                     }
@@ -606,7 +607,7 @@ public class PickupObject : MonoBehaviour
         {
             for (int i = 0; i < enemies.Length; i++)
             {
-                SmallZombie currentEnemy = enemies[i];
+                NavMeshAgent currentEnemy = enemies[i];
 
                 currentEnemy.enabled = true;
             }

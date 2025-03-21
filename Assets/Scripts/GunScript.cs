@@ -41,7 +41,7 @@ public class GunScript : MonoBehaviour
         //Make sure that the player is able to shoot
         readyToShoot = true;
         canShoot = true;
-        ammoCount = 3;
+        ammoCount = 4;
         ammoInChamber = true;
     }
 
@@ -52,7 +52,7 @@ public class GunScript : MonoBehaviour
 
         ammoText.text = ammoCount.ToString();
 
-        if(ammoInChamber)
+        /*if(ammoInChamber)
         {
             ammoInImage.enabled = true;
             noAmmoInInImage.enabled = false;
@@ -61,7 +61,7 @@ public class GunScript : MonoBehaviour
         {
             noAmmoInInImage.enabled = true;
             ammoInImage.enabled = false;
-        }
+        }*/
 
         if(reloading)
         {
@@ -69,7 +69,14 @@ public class GunScript : MonoBehaviour
         }
         else
         {
-            reloadingText.text = "Bullets: " + ammoCount.ToString();
+            if(ammoInChamber)
+            {
+                reloadingText.text = "1/" + ammoCount.ToString();
+            }
+            else
+            {
+                reloadingText.text = "0/" + ammoCount.ToString();
+            }
         }
     }
 
@@ -96,8 +103,6 @@ public class GunScript : MonoBehaviour
 
         ammoInChamber = false;
 
-        ammoCount--;
-
         //Calculate direction the bullet flies towards
         Vector3 direction = shootPoint.position - bulletSpawn.position;
 
@@ -115,6 +120,7 @@ public class GunScript : MonoBehaviour
         Debug.Log("Start reload");
         reloading = true;
         yield return new WaitForSeconds(reloadTime);
+        ammoCount--;
         reloading = false;
         canShoot = true;
         ammoInChamber = true;

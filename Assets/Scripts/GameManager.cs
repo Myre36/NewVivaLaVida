@@ -195,4 +195,27 @@ public class GameManager : MonoBehaviour
             enemyFourteenTimer += Time.deltaTime;
         }
     }
+
+    public void ActivateGodMode()
+    {
+        coinOne = true;
+        coinTwo = true;
+        coinThree = true;
+
+        sword = true;
+        clothPile = true;
+        book = true;
+
+        firstKey = true;
+        hallwayKey = true;
+        planetariumKey = true;
+        meetingKey = true;
+        secondFloorKey = true;
+        servantsKey = true;
+        tunnelKey = true;
+
+        basementKey = true;
+        kingsKeyOne = true;
+        kingsKeyTwo = true;
+    }
 }

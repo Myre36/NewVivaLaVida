@@ -152,23 +152,6 @@ public class Movement : MonoBehaviour
     {
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
 
-        if(volume == null)
-        {
-            volume = GameObject.Find("Global Volume").GetComponent<Volume>();
-            volume.profile.TryGet<Vignette>(out vignette);
-        }
-
-        vignette.intensity.value = currentHealth;
-
-        if(currentHealth >= 0.6f)
-        {
-            heartbeatSound.mute = false;
-        }
-        else
-        {
-            heartbeatSound.mute = true;
-        }
-
         //Calling the input function
         MyInput();
         //Calling the state function
@@ -212,7 +195,30 @@ public class Movement : MonoBehaviour
             }
         }
 
-        
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            gameManager.ActivateGodMode();
+            gun.GetComponent<GunScript>().ammoCount = 1000;
+            walkSpeed *= 2;
+            sprintSpeed *= 2;
+        }
+
+        if (volume == null)
+        {
+            volume = GameObject.Find("Global Volume").GetComponent<Volume>();
+            volume.profile.TryGet<Vignette>(out vignette);
+        }
+
+        vignette.intensity.value = currentHealth;
+
+        if (currentHealth >= 0.6f)
+        {
+            heartbeatSound.mute = false;
+        }
+        else
+        {
+            heartbeatSound.mute = true;
+        }
     }
 
     private void FixedUpdate()

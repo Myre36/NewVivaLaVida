@@ -9424,6 +9424,10 @@ PrefabInstance:
       propertyPath: timeToFade
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+      propertyPath: isPlanetDoor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3379292178544000931, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -10258,6 +10262,7 @@ MonoBehaviour:
   clothPile: 0
   book: 0
   toiletClogged: 0
+  firstKey: 0
   hallwayKey: 0
   planetariumKey: 0
   meetingKey: 0

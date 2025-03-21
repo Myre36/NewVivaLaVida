@@ -271,9 +271,12 @@ public class PickupObject : MonoBehaviour
                 {
                     for(int i = 0; i < enemies.Length; i++)
                     {
-                        NavMeshAgent currentEnemy = enemies[i];
+                        if (enemies[i] != null)
+                        {
+                            NavMeshAgent currentEnemy = enemies[i];
 
-                        currentEnemy.enabled = false;
+                            currentEnemy.enabled = false;
+                        }
                     }
                 }
                 if(player.inventorySpace >= 8)
@@ -607,9 +610,12 @@ public class PickupObject : MonoBehaviour
         {
             for (int i = 0; i < enemies.Length; i++)
             {
-                NavMeshAgent currentEnemy = enemies[i];
+                if (enemies[i] != null)
+                {
+                    NavMeshAgent currentEnemy = enemies[i];
 
-                currentEnemy.enabled = true;
+                    currentEnemy.enabled = true;
+                }
             }
         }
         if (player.inventorySpace < 8)

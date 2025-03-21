@@ -199,8 +199,6 @@ public class Movement : MonoBehaviour
         {
             gameManager.ActivateGodMode();
             gun.GetComponent<GunScript>().ammoCount = 1000;
-            walkSpeed *= 2;
-            sprintSpeed *= 2;
         }
 
         if (volume == null)

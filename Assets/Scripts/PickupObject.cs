@@ -51,6 +51,10 @@ public class PickupObject : MonoBehaviour
     public bool bullet9;
     public bool bullet10;
 
+    public bool hasEnemies;
+
+    public SmallZombie[] enemies;
+
     private AudioSource pickupSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -262,6 +266,15 @@ public class PickupObject : MonoBehaviour
                 player.enabled = false;
                 dialougeBox.GetComponent<RawImage>().enabled = true;
                 dialougeText.enabled = true;
+                if(hasEnemies)
+                {
+                    for(int i = 0; i < enemies.Length; i++)
+                    {
+                        SmallZombie currentEnemy = enemies[i];
+
+                        currentEnemy.enabled = false;
+                    }
+                }
                 if(player.inventorySpace >= 8)
                 {
                     if (inDialouge)
@@ -589,7 +602,16 @@ public class PickupObject : MonoBehaviour
         dialougeText.text = "You are not supposed to see this";
         dialougeText.enabled = false;
         inDialouge = false;
-        if(player.inventorySpace < 8)
+        if (hasEnemies)
+        {
+            for (int i = 0; i < enemies.Length; i++)
+            {
+                SmallZombie currentEnemy = enemies[i];
+
+                currentEnemy.enabled = true;
+            }
+        }
+        if (player.inventorySpace < 8)
         {
             if(isKeyItem)
             {

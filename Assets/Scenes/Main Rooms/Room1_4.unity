@@ -372,6 +372,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7793298037032126722, guid: bc29346653880de458760774721b9699, type: 3}
   m_PrefabInstance: {fileID: 86859040}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &86859042 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3694110888022399015, guid: bc29346653880de458760774721b9699, type: 3}
+  m_PrefabInstance: {fileID: 86859040}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86859041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2bfa8f84c3194cbc9398fcf547713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &107324459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5449,6 +5460,10 @@ MonoBehaviour:
   bullet8: 0
   bullet9: 0
   bullet10: 0
+  hasEnemies: 1
+  enemies:
+  - {fileID: 86859042}
+  - {fileID: 1972558924}
 --- !u!82 &1892491686
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5612,6 +5627,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7793298037032126722, guid: bc29346653880de458760774721b9699, type: 3}
   m_PrefabInstance: {fileID: 1972558922}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1972558924 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3694110888022399015, guid: bc29346653880de458760774721b9699, type: 3}
+  m_PrefabInstance: {fileID: 1972558922}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972558923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2bfa8f84c3194cbc9398fcf547713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2043045293
 GameObject:
   m_ObjectHideFlags: 0

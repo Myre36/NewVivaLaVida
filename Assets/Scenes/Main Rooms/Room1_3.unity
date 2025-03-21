@@ -4689,6 +4689,10 @@ MonoBehaviour:
   bullet8: 0
   bullet9: 0
   bullet10: 0
+  hasEnemies: 1
+  enemies:
+  - {fileID: 1998735924}
+  - {fileID: 228937513}
 --- !u!82 &829823720
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11564,6 +11568,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1998735924 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3694110888022399015, guid: bc29346653880de458760774721b9699, type: 3}
+  m_PrefabInstance: {fileID: 1998735920}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998735921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe2bfa8f84c3194cbc9398fcf547713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &2020313816
 Mesh:
   m_ObjectHideFlags: 0

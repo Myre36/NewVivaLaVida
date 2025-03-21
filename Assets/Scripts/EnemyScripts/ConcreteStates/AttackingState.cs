@@ -36,6 +36,7 @@ public class AttackingState : EnemyState
             timer = 0f;
 
             movementScript.ChangeHealth(enemy.DamageDelt);
+            Debug.Log(enemy.DamageDelt);
 
 
         }

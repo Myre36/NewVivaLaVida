@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
     public Action OnDamage { get; set; } = delegate { };
 
     public float MaxHealth { get; set; } = 100f;
-    public float DamageDelt { get; set; } = -20f;
+    public float DamageDelt { get; set; } = 0.2f;
     public float currentHealth { get ; set; }
 
     #endregion

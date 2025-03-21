@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class Movement : MonoBehaviour
 {
@@ -47,11 +49,13 @@ public class Movement : MonoBehaviour
 
     private Vector3 pointToLook;
 
-    public RawImage healthImage;
-
     public bool inMandatory;
 
     private DetermineController controllerDecider;
+
+    private Volume volume;
+
+    private Vignette vignette;
 
     public MovementState state;
 
@@ -61,9 +65,9 @@ public class Movement : MonoBehaviour
 
     [SerializeField]
     float currentHealth;
-    float maxHealth = 50f;
-    float damage = 10f;
-    float healing = 10f;
+    float maxHealth = 0f;
+    float damage = 0.2f;
+    float healing = 0.2f;
 
     public float CurrentHealth => currentHealth;
 
@@ -71,11 +75,12 @@ public class Movement : MonoBehaviour
     {
         float oldHealth = currentHealth;
         currentHealth += amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        Debug.Log(amount);
+        currentHealth = Mathf.Clamp(currentHealth, maxHealth, 1);
         OnHealthChanged?.Invoke(this, oldHealth, currentHealth);
 
         // Checks if health has reached zero
-        if (currentHealth <= 0)
+        if (currentHealth >= 1)
         {
             SceneManager.LoadScene("Death scene");
         }
@@ -92,12 +97,12 @@ public class Movement : MonoBehaviour
 
     public void DamageHealth()
     {
-        if (currentHealth > 0)
+        if (currentHealth < 1)
         {
-            currentHealth -= damage;
+            currentHealth += damage;
 
             // Checks if health is zero and changes scene
-            if (currentHealth <= 0)
+            if (currentHealth >= 1)
             {
                 SceneManager.LoadScene("Death scene");
             }
@@ -145,6 +150,14 @@ public class Movement : MonoBehaviour
     {
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
 
+        if(volume == null)
+        {
+            volume = GameObject.Find("Global Volume").GetComponent<Volume>();
+            volume.profile.TryGet<Vignette>(out vignette);
+        }
+
+        vignette.intensity.value = currentHealth;
+
         //Calling the input function
         MyInput();
         //Calling the state function
@@ -188,24 +201,7 @@ public class Movement : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            DamageHealth();
-        }
-
-        float healthFraction = currentHealth / maxHealth;
-        if(healthFraction >= 0.67f)
-        {
-            healthImage.color = Color.green;
-        }
-        else if(healthFraction < 0.67f &&  healthFraction >= 0.33f)
-        {
-            healthImage.color = Color.yellow;
-        }
-        else
-        {
-            healthImage.color = Color.red;
-        }
+        
     }
 
     private void FixedUpdate()

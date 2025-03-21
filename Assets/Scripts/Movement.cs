@@ -57,6 +57,8 @@ public class Movement : MonoBehaviour
 
     private Vignette vignette;
 
+    public AudioSource heartbeatSound;
+
     public MovementState state;
 
     //This defines the health changed events and handler delagating
@@ -157,6 +159,15 @@ public class Movement : MonoBehaviour
         }
 
         vignette.intensity.value = currentHealth;
+
+        if(currentHealth >= 0.6f)
+        {
+            heartbeatSound.mute = false;
+        }
+        else
+        {
+            heartbeatSound.mute = true;
+        }
 
         //Calling the input function
         MyInput();

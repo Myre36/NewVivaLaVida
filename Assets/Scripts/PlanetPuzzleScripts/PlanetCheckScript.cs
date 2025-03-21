@@ -17,6 +17,59 @@ public class PlanetCheckScript : MonoBehaviour
     {
         //Assigning the game manager
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        for(int i = 0; i < stands.Length; i++)
+        {
+            var currentStand = stands[i].GetComponent<PanetPuzzleScript>();
+
+            currentStand.currentlyEnabledPlanet.SetActive(false);
+            currentStand.currentlyEnabledPlanet = null;
+
+            if (gameManager.stands[i] == "Sun")
+            {
+                currentStand.currentlyEnabledPlanet = currentStand.planets[0];
+                currentStand.currentlyEnabledPlanet.SetActive(true);
+            }
+            else if(gameManager.stands[i] == "Mercury")
+            {
+                currentStand.currentlyEnabledPlanet = currentStand.planets[1];
+                currentStand.currentlyEnabledPlanet.SetActive(true);
+            }
+            else if (gameManager.stands[i] == "Venus")
+            {
+                currentStand.currentlyEnabledPlanet = currentStand.planets[2];
+                currentStand.currentlyEnabledPlanet.SetActive(true);
+            }
+            else if (gameManager.stands[i] == "Earth")
+            {
+                currentStand.currentlyEnabledPlanet = currentStand.planets[3];
+                currentStand.currentlyEnabledPlanet.SetActive(true);
+            }
+            else if (gameManager.stands[i] == "Mars")
+            {
+                currentStand.currentlyEnabledPlanet = currentStand.planets[4];
+                currentStand.currentlyEnabledPlanet.SetActive(true);
+            }
+            else if (gameManager.stands[i] == "Jupiter")
+            {
+                currentStand.currentlyEnabledPlanet = currentStand.planets[5];
+                currentStand.currentlyEnabledPlanet.SetActive(true);
+            }
+            else if (gameManager.stands[i] == "Saturn")
+            {
+                currentStand.currentlyEnabledPlanet = currentStand.planets[6];
+                currentStand.currentlyEnabledPlanet.SetActive(true);
+            }
+            else if (gameManager.stands[i] == "Uranus")
+            {
+                currentStand.currentlyEnabledPlanet = currentStand.planets[7];
+                currentStand.currentlyEnabledPlanet.SetActive(true);
+            }
+            else
+            {
+                currentStand.currentlyEnabledPlanet = null;
+            }
+        }
     }
 
     // Update is called once per frame
@@ -32,6 +85,7 @@ public class PlanetCheckScript : MonoBehaviour
             {
                 var currentStand = stands[i].GetComponent<PanetPuzzleScript>();
                 currentStand.puzzleOver = true;
+                currentStand.gameObject.GetComponent<Outline>().enabled = false;
                 currentStand.playerInRange = false;
             }
         }

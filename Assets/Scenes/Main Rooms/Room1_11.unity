@@ -2953,14 +2953,13 @@ MonoBehaviour:
   - You ready your gun, checking if you have enough bullets.
   - (Hold down the right mouse button to aim your gun).
   - (If you press the left mouse button while aiming, you will shoot your gun).
-  - (If you are using a controller, use L2 to aim and R2 to shoot).
   - (You cannot move while aiming, so be careful).
   - (You do not have infinite bullets, use them sparingly).
   - (You can find extra bullets lying around the castle).
   - (Press R to reload your gun)
-  - (Or the square button on the PS4 controller)
   introDialouge: 0
   tutorialDialouge: 1
+  afterEnemyDialouge: 0
 --- !u!4 &628112179
 Transform:
   m_ObjectHideFlags: 0

@@ -36,7 +36,7 @@ public class KillingBookshelf : MonoBehaviour
 
     private void Update()
     {
-        if ((isPlayerNearby && !wasTriggered && Input.GetKeyDown(KeyCode.E)) || (isPlayerNearby && !wasTriggered && Input.GetKeyDown(KeyCode.JoystickButton1)))
+        if (isPlayerNearby && !wasTriggered && Input.GetKeyDown(KeyCode.E))
         {
             wasTriggered = true;
             ActivateBookshelf();

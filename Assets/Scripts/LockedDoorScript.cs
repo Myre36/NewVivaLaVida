@@ -125,7 +125,7 @@ public class LockedDoorScript : MonoBehaviour
     {
         if(playerInRange)
         {
-            if((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.JoystickButton1)) && !player.inMandatory)
+            if(Input.GetKeyDown(KeyCode.E) && !player.inMandatory)
             {
                 player.enabled = false;
                 dialougeBox.GetComponent<RawImage>().enabled = true;

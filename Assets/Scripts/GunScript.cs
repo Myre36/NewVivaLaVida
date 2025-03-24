@@ -83,14 +83,14 @@ public class GunScript : MonoBehaviour
     //A method for shooting. If the player has ammo, presses the LMB, and they are currently aiming, the Shoot method is called
     private void MyInput()
     {
-        shooting = Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.JoystickButton7);
+        shooting = Input.GetKeyDown(KeyCode.Mouse0);
 
         if (readyToShoot && shooting && player.GetComponent<Movement>().aiming && canShoot)
         {
             Shoot();
         }
 
-        if((Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.JoystickButton7)) && ammoCount > 0 && !ammoInChamber)
+        if(Input.GetKeyDown(KeyCode.R) && ammoCount > 0 && !ammoInChamber)
         {
             StartCoroutine(ReloadGun());
         }

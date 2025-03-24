@@ -37,7 +37,7 @@ public class MapManager : MonoBehaviour
             currentMap = secondFloorMap;
         }
 
-        if (Input.GetKeyDown(KeyCode.M) || Input.GetKeyDown(KeyCode.JoystickButton3))
+        if (Input.GetKeyDown(KeyCode.M))
         {
             if (mapIsOpen)
             {

@@ -15,7 +15,7 @@ public class AimTracer : MonoBehaviour
 
     void Update() {
         // Detect right mouse button hold
-        if (Input.GetMouseButton(1) || Input.GetKey(KeyCode.JoystickButton6))
+        if (Input.GetMouseButton(1))
         {
             aiming = true;
         }

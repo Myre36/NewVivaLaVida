@@ -603,7 +603,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 2037219043}
+  m_Mesh: {fileID: 1706640679}
 --- !u!33 &76039639
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -8722,6 +8722,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 409136869}
     m_Modifications:
+    - target: {fileID: 331483400574236493, guid: 05885de5129592046bf1c8d193fdfc51, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2eef989d07519d540975dc957634adf7, type: 2}
     - target: {fileID: 460811770651825861, guid: 05885de5129592046bf1c8d193fdfc51, type: 3}
       propertyPath: m_Mesh
       value: 

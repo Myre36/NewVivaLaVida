@@ -3,20 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
-    private DetermineController controllerDecider;
-
-    private void Start()
-    {
-        controllerDecider = GameObject.Find("ControllerDecider").GetComponent<DetermineController>();
-    }
-
     public void LoadFreeroam()
     {
-        SceneManager.LoadScene("Room1_1");
-    }
-    public void LoadController()
-    {
-        controllerDecider.usingController = true;
         SceneManager.LoadScene("Room1_1");
     }
 

@@ -51,8 +51,6 @@ public class Movement : MonoBehaviour
 
     public bool inMandatory;
 
-    private DetermineController controllerDecider;
-
     private Volume volume;
 
     private Vignette vignette;
@@ -144,7 +142,6 @@ public class Movement : MonoBehaviour
         inventorySpace++;
 
         mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
-        controllerDecider = GameObject.Find("ControllerDecider").GetComponent<DetermineController>();
     }
 
     // Update is called once per frame
@@ -169,7 +166,7 @@ public class Movement : MonoBehaviour
         }
 
         //When the player holds down the RMB, the gun appears and the player starts aiming
-        if (Input.GetMouseButton(1) || Input.GetKey(KeyCode.JoystickButton6))
+        if (Input.GetMouseButton(1))
         {
             aiming = true;
             rotationSpeed = 200;
@@ -183,7 +180,7 @@ public class Movement : MonoBehaviour
             gun.GetComponent<Renderer>().enabled = false;
         }
         //Pressing the Tab key either opens the inventory screen, or closes it, depending on what its status is
-        if(Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.JoystickButton13) || Input.GetKeyDown(KeyCode.Tab))
+        if(Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.Tab))
         {
             if(inventoryScreen.activeSelf == false)
             {
@@ -229,7 +226,7 @@ public class Movement : MonoBehaviour
     private void StateHandler()
     {
         //Holding down left shift means the player is sprinting, meaning they move faster
-        if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.JoystickButton4))
+        if(Input.GetKey(KeyCode.LeftShift))
         {
             state = MovementState.sprinting;
             moveSpeed = sprintSpeed;
@@ -263,70 +260,56 @@ public class Movement : MonoBehaviour
         //Calculate the movement direction
         moveDirection = (Vector3.forward * verticalInput) + (Vector3.right * horizontalInput);
 
-        if (controllerDecider.usingController)
+        Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
+        if (!aiming)
         {
-            Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
-
             if (moveDirection != Vector3.zero)
             {
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
             }
-        }
-        else
-        {
-            Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
-            if (!aiming)
-            {
-                if(moveDirection != Vector3.zero)
-                {
-                    transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
-                }
-            }
-            else
-            {
-                var cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
 
-                Plane ground = new Plane(Vector3.up, Vector3.zero);
-
-                if(ground.Raycast(cameraRay, out var rayLength))
-                {
-                    pointToLook = cameraRay.GetPoint(rayLength);
-                    //transform.LookAt(pointToLook);
-                    Quaternion lookPosition = Quaternion.LookRotation(pointToLook - transform.position);
-                    Quaternion tempRotation = Quaternion.RotateTowards(transform.rotation, lookPosition, rotationSpeed * Time.deltaTime);
-                    tempRotation.x = 0f;
-                    tempRotation.z = 0f;
-                    transform.rotation = tempRotation;
-                }
-
-                /*if (moveDirection != Vector3.zero)
-                {
-                    transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
-                }*/
-
-                /*LayerMask ignore = LayerMask.GetMask("Default", "Ground", "StatuePoints");
-                Ray cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
-                Plane ground = new Plane(Vector3.forward, Vector3.zero);
-                float rayLength;
-
-                if(ground.Raycast(cameraRay, out rayLength))
-                {
-                    Vector3 pointToLook = cameraRay.GetPoint(rayLength);
-                    Debug.DrawLine(cameraRay.origin, pointToLook, Color.yellow);
-                    Quaternion lookRotation = Quaternion.LookRotation(pointToLook - transform.position, Vector3.up);
-                    Quaternion clampedRotation = new Quaternion(Mathf.Clamp(lookRotation.x, 0f, 0f), lookRotation.y, Mathf.Clamp(lookRotation.z, 0f, 0f), 1);
-                    transform.rotation = Quaternion.RotateTowards(transform.rotation, clampedRotation, rotationSpeed * Time.deltaTime);
-                }*/
-            }
-        }
-
-        //Player can only move if they are not aiming their gun
-        if (!aiming)
-        {
             //Moves the player in the calculated direction at an increased movement speed
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
             //transform.rotation = Quaternion.LookRotation(moveDirection.normalized);
         }
+        else
+        {
+            var cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
+
+            Plane ground = new Plane(Vector3.up, Vector3.zero);
+
+            if (ground.Raycast(cameraRay, out var rayLength))
+            {
+                pointToLook = cameraRay.GetPoint(rayLength);
+                //transform.LookAt(pointToLook);
+                Quaternion lookPosition = Quaternion.LookRotation(pointToLook - transform.position);
+                Quaternion tempRotation = Quaternion.RotateTowards(transform.rotation, lookPosition, rotationSpeed * Time.deltaTime);
+                tempRotation.x = 0f;
+                tempRotation.z = 0f;
+                transform.rotation = tempRotation;
+            }
+
+            /*if (moveDirection != Vector3.zero)
+            {
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+            }*/
+
+            /*LayerMask ignore = LayerMask.GetMask("Default", "Ground", "StatuePoints");
+            Ray cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
+            Plane ground = new Plane(Vector3.forward, Vector3.zero);
+            float rayLength;
+
+            if(ground.Raycast(cameraRay, out rayLength))
+            {
+                Vector3 pointToLook = cameraRay.GetPoint(rayLength);
+                Debug.DrawLine(cameraRay.origin, pointToLook, Color.yellow);
+                Quaternion lookRotation = Quaternion.LookRotation(pointToLook - transform.position, Vector3.up);
+                Quaternion clampedRotation = new Quaternion(Mathf.Clamp(lookRotation.x, 0f, 0f), lookRotation.y, Mathf.Clamp(lookRotation.z, 0f, 0f), 1);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, clampedRotation, rotationSpeed * Time.deltaTime);
+            }*/
+        }
+
+        
     }
 
     //A function that prvents the player from going too fast

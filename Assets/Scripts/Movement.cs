@@ -250,7 +250,7 @@ public class Movement : MonoBehaviour
             //This rotates the player if they hold down the horizontal inputs
             transform.Rotate(0, (horizontalInput * rotationSpeed * Time.deltaTime), 0);
         }*/
-}
+    }
 
     //A function that takes care of movement
     private void MovePlayer()

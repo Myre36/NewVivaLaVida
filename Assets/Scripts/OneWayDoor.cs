@@ -4,31 +4,44 @@ using UnityEngine.UI;
 
 public class OneWayDoor : MonoBehaviour
 {
+    //A bool for checking the correct way
     public bool correctWay;
-
-    private DoorScript doorScript;
-    private GameManager gameManager;
-    public Movement player;
-
-    public GameObject dialougeBox;
-    public TMP_Text dialougeText;
-    public bool playerInRange = false;
-
+    //A bool for if the player is in range of the door
+    public bool playerInRange;
+    //Bools for what door this is
     public bool kitchenDoor;
     public bool statueDoor;
     public bool diningDoor;
-
+    //A bool for if the player is in dialouge
     private bool inDialouge;
+
+    //A refrence to the door script
+    private DoorScript doorScript;
+
+    //A refrence to the game manager
+    private GameManager gameManager;
+
+    //A refrence to the player movement
+    public Movement player;
+
+    //A refrence to the dialouge box
+    public GameObject dialougeBox;
+
+    //A refrence to the dialouge text
+    public TMP_Text dialougeText;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //Assigning all refrences
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         player = GameObject.Find("Player").GetComponent<Movement>();
         doorScript = this.GetComponent<DoorScript>();
         dialougeBox = GameObject.Find("DialougeBox");
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
 
+        //Checking if this door has been unlocked before. If it has, it will unlock
         if(kitchenDoor)
         {
             if(gameManager.kitchenUnlocked)
@@ -58,13 +71,16 @@ public class OneWayDoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //If the player is in range and presses E
         if(playerInRange)
         {
             if(Input.GetKeyDown(KeyCode.E))
             {
+                //Disables player movement and turns on dialouge
                 player.enabled = false;
                 dialougeBox.GetComponent<RawImage>().enabled = true;
                 dialougeText.enabled = true;
+                //Checks what door this is and depending which side you are on, the door will unlock or not
                 if(kitchenDoor)
                 {
                     if(correctWay)
@@ -171,6 +187,7 @@ public class OneWayDoor : MonoBehaviour
         }
     }
 
+    //A function for unlocking the door
     void UnlockDoor()
     {
         player.enabled = true;
@@ -182,6 +199,7 @@ public class OneWayDoor : MonoBehaviour
         this.enabled = false;
     }
 
+    //A function for closing the dialouge
     void CloseDialouge()
     {
         player.enabled = true;

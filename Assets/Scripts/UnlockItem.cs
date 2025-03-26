@@ -5,35 +5,47 @@ using UnityEngine.UI;
 
 public class UnlockItem : MonoBehaviour
 {
+    //Bools for what item is needed for this door
     public bool swordNeeded;
     public bool bookNeeded;
     public bool clothNeeded;
+    //A check for if this room is the upper bathroom
     public bool upperBathroom;
-
-    private GameManager gameManager;
-    public Movement player;
-
-    public GameObject dialougeBox;
-    public TMP_Text dialougeText;
-    public bool playerInRange = false;
-
+    //A bool to check if the player is in range
+    public bool playerInRange;
+    //A bool for if the player in in dialouge
     private bool inDialouge;
-
-    public GameObject placedObject;
-
-    public GameObject keyItem;
-
+    //A bool for if this room has enemies
     public bool hasEnemies;
 
+    //A refrence to the gamemanager
+    private GameManager gameManager;
+
+    //A refrence to the player movement script
+    public Movement player;
+
+    //A refrence to the dialouge box
+    public GameObject dialougeBox;
+    //A refrence to the object that will be placed
+    public GameObject placedObject;
+    //A refrence to the key item that will unlock once the key item is placed
+    public GameObject keyItem;
+
+    //A refrence to the dialouge text
+    public TMP_Text dialougeText;
+
+    //An array of all the navmeshes of the enemies in this room
     public NavMeshAgent[] enemies;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //Assigns all refrences
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         player = GameObject.Find("Player").GetComponent<Movement>();
         dialougeBox = GameObject.Find("DialougeBox");
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
+        //Makes sure the placed item and key item exist depending on what the player has done
         if(swordNeeded)
         {
             if(gameManager.swordPlaced)
@@ -82,13 +94,16 @@ public class UnlockItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //If the player is in range of the item and presses the interact key
         if(playerInRange)
         {
             if(Input.GetKeyDown(KeyCode.E))
             {
+                //Turns off the player movement and turns on the dialoge
                 player.enabled = false;
                 dialougeBox.GetComponent<RawImage>().enabled = true;
                 dialougeText.enabled = true;
+                //If this room has enemies, the enemy movement will be paused
                 if (hasEnemies)
                 {
                     for (int i = 0; i < enemies.Length; i++)
@@ -101,6 +116,7 @@ public class UnlockItem : MonoBehaviour
                         }
                     }
                 }
+                //Depending on what is needed, and if you have the item in your inventory, the item will be placed
                 if (swordNeeded)
                 {
                     if(gameManager.sword)
@@ -236,6 +252,7 @@ public class UnlockItem : MonoBehaviour
         }
     }
 
+    //A function for placing down the item
     private void PlaceItem()
     {
         player.enabled = true;
@@ -260,6 +277,7 @@ public class UnlockItem : MonoBehaviour
         this.enabled = false;
     }
 
+    //A function for closing the dialouge
     private void CloseDialouge()
     {
         player.enabled = true;

@@ -5,15 +5,25 @@ using UnityEngine.UI;
 
 public class MandatoryDialouge : MonoBehaviour
 {
+    //A refrence to the player movement
     private Movement player;
 
+    //A refrence to the player dialouge box
     private GameObject dialougeBox;
+
+    //A refrence to the dialouge text
     private TMP_Text dialougeText;
+
+    //A refrence to all the dialouge that will play
     public string[] dialouge;
+
+    //A refrence to what line number you are on
     private int lineNumber;
 
+    //A refrence to the game manager
     private GameManager gameManager;
 
+    //Bools to check which dialouge this is
     public bool introDialouge;
     public bool tutorialDialouge;
     public bool afterEnemyDialouge;
@@ -21,10 +31,12 @@ public class MandatoryDialouge : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //Assigning all refrences
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         player = GameObject.Find("Player").GetComponent<Movement>();
         dialougeBox = GameObject.Find("DialougeBox");
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
+        //This checks if the dialouge has already played, to prevent things from playing twice
         if (introDialouge)
         {
             if(!gameManager.introDialougeDone)
@@ -69,6 +81,7 @@ public class MandatoryDialouge : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //If you press E, you either continue to the next line, or the dialouge ends
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (lineNumber < dialouge.Length)
@@ -82,6 +95,7 @@ public class MandatoryDialouge : MonoBehaviour
         }
     }
 
+    //A function for playing the next line
     void NextLine()
     {
         dialougeBox.GetComponent<RawImage>().enabled = true;
@@ -90,6 +104,7 @@ public class MandatoryDialouge : MonoBehaviour
         lineNumber++;
     }
 
+    //A function for a delayed start to prevent any conflicts with other scripts
     IEnumerator DelayStart()
     {
         yield return new WaitForSeconds(0.2f);
@@ -98,6 +113,7 @@ public class MandatoryDialouge : MonoBehaviour
         NextLine();
     }
 
+    //A function for closing down the dialouge
     IEnumerator DelayEnd()
     {
         dialougeBox.GetComponent<RawImage>().enabled = false;

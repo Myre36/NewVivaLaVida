@@ -2,10 +2,9 @@ using UnityEngine;
 
 public class StopDuplicateScript : MonoBehaviour
 {
-    private static StopDuplicateScript instance;
+    //This is just to prevent things from duplicating
 
-    //A refrence to the game manager
-    public GameObject gameManager;
+    private static StopDuplicateScript instance;
 
     private void Awake()
     {

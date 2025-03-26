@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
+    //Functions for loading all the levels
+
     public void LoadFreeroam()
     {
         SceneManager.LoadScene("Room1_1");

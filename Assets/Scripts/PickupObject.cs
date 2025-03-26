@@ -5,25 +5,28 @@ using UnityEngine.UI;
 
 public class PickupObject : MonoBehaviour
 {
+    //A refrence to the game manager
     private GameManager gameManager;
+
+    //A refrence to the player movement
     public Movement player;
 
-    public GameObject roomCheck;
-
+    //Refrence to the dialouge box
     public GameObject dialougeBox;
-    public TMP_Text dialougeText;
-    public bool playerInRange = false;
 
+    //Refrence to the dialouge text
+    public TMP_Text dialougeText;
+
+    //A bool that checks if the player is in range
+    public bool playerInRange;
+    //A bool to check what item this is
     public bool coinOne;
     public bool coinTwo;
     public bool coinThree;
-
     public bool sword;
     public bool clothPile;
     public bool book;
-
     public bool toiletClogged;
-
     public bool firstKey;
     public bool hallwayKey;
     public bool planetariumKey;
@@ -31,16 +34,16 @@ public class PickupObject : MonoBehaviour
     public bool secondFloorKey;
     public bool servantsKey;
     public bool tunnelKey;
-
     public bool basementKey;
     public bool kingsKeyOne;
     public bool kingsKeyTwo;
-
+    //A bool for if the player is in dialouge
     private bool inDialouge;
-
+    //A bool for if this is a key item
     public bool isKeyItem;
-
+    //A bool for of this is a bullet
     public bool isBullet;
+    //Bools for what bullet this is
     public bool bullet1;
     public bool bullet2;
     public bool bullet3;
@@ -51,24 +54,29 @@ public class PickupObject : MonoBehaviour
     public bool bullet8;
     public bool bullet9;
     public bool bullet10;
-
+    //A bool for if this room has enemies
     public bool hasEnemies;
 
+    //An array of all the enemy navmeshes
     public NavMeshAgent[] enemies;
 
+    //The audiosource for the sound that plays when you pick this item up
     private AudioSource pickupSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //Assigning all refrences
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        roomCheck = GameObject.Find("RoomEntryCheck");
         player = GameObject.Find("Player").GetComponent<Movement>();
         dialougeBox = GameObject.Find("DialougeBox");
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
         pickupSound = GetComponent<AudioSource>();
+
+        //Checks if this is a key item
         if(isKeyItem)
         {
+            //Used to make sure the this item is destroyed if the player has already picked it up before
             if (hallwayKey)
             {
                 if (gameManager.hallwayKey)
@@ -182,8 +190,10 @@ public class PickupObject : MonoBehaviour
                 }
             }
         }
+        //If this item is a bullet
         else if(isBullet)
         {
+            //Makes sure the item is destroyed if the player has picked it up before
             if (bullet1)
             {
                 if (gameManager.bullet1)
@@ -260,13 +270,16 @@ public class PickupObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //If the player is in range and presses E
         if (playerInRange)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                //Turns off the player
                 player.enabled = false;
                 dialougeBox.GetComponent<RawImage>().enabled = true;
                 dialougeText.enabled = true;
+                //If this room has enemies, their movement will all be paused while the player is in dialouge
                 if(hasEnemies)
                 {
                     for(int i = 0; i < enemies.Length; i++)
@@ -279,6 +292,7 @@ public class PickupObject : MonoBehaviour
                         }
                     }
                 }
+                //If the player's inventory is full, it will notify the player and the item will not be picked up
                 if(player.inventorySpace >= 8)
                 {
                     if (inDialouge)
@@ -293,8 +307,10 @@ public class PickupObject : MonoBehaviour
                 }
                 else
                 {
+                    //Checks if this is a key item
                     if (isKeyItem)
                     {
+                        //Checks what item this is and picks it up
                         if (hallwayKey)
                         {
                             if (inDialouge)
@@ -520,6 +536,7 @@ public class PickupObject : MonoBehaviour
                             }
                         }
                     }
+                    //If this is a bullet, it will be picked up
                     else if (isBullet)
                     {
                         if (inDialouge)
@@ -599,13 +616,17 @@ public class PickupObject : MonoBehaviour
         }
     }
 
+    //A function for closing the dialouge
     void CloseDialouge()
     {
+        //Turns the player on
         player.enabled = true;
+        //Closes the dialouge
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.text = "You are not supposed to see this";
         dialougeText.enabled = false;
         inDialouge = false;
+        //If this room has enemies, their movement will be turned back on
         if (hasEnemies)
         {
             for (int i = 0; i < enemies.Length; i++)
@@ -618,6 +639,7 @@ public class PickupObject : MonoBehaviour
                 }
             }
         }
+        //If the player has space in their inventory, this item will be added
         if (player.inventorySpace < 8)
         {
             if(isKeyItem)

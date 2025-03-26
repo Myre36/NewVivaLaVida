@@ -4,15 +4,20 @@ using UnityEngine.UI;
 
 public class LockedDoorScript : MonoBehaviour
 {
+    //A refrence to the door script
     private DoorScript doorScript;
+
+    //A refrence to the game manager
     private GameManager gameManager;
+
+    //A refrence to the player movement script
     public Movement player;
 
+    //Bool for if you are on the second floor
     public bool onSecondFloor;
-    public GameObject dialougeBox;
-    public TMP_Text dialougeText;
-    public bool playerInRange = false;
-
+    //Bool to check if the player is in rnage of the door
+    public bool playerInRange;
+    //Bools to check what door this is
     public bool firstDoor;
     public bool hallwayDoor;
     public bool servantsDoor;
@@ -21,23 +26,29 @@ public class LockedDoorScript : MonoBehaviour
     public bool meetingDoor;
     public bool libraryDoor;
     public bool tunnelDoor;
-
     public bool coinDoor;
     public bool basementDoor;
     public bool kingsDoor;
-
+    //A bool to check if the player is already in dialouge
     private bool inDialouge;
+
+    //A refrence to the dialouge box
+    public GameObject dialougeBox;
+
+    //A refrence to the dialouge text
+    public TMP_Text dialougeText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //Assigning the game manager
+        //Assigning all the refrences
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         player = GameObject.Find("Player").GetComponent<Movement>();
         doorScript = this.GetComponent<DoorScript>();
         dialougeBox = GameObject.Find("DialougeBox");
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
 
+        //The below code is just to check if the player has already unlocked this door. If they have, this door will unlock
         if(hallwayDoor)
         {
             if (gameManager.hallwayUnlocked)
@@ -123,13 +134,16 @@ public class LockedDoorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //If the player is in range of the door and presses the interaction key
         if(playerInRange)
         {
             if(Input.GetKeyDown(KeyCode.E) && !player.inMandatory)
             {
+                //Freezes the player and turns on the dialouge
                 player.enabled = false;
                 dialougeBox.GetComponent<RawImage>().enabled = true;
                 dialougeText.enabled = true;
+                //It will check what door this is, and then check if you have the key to it. If you don't, it will display dialouge that tells you its locked. If you do, the door will unlock
                 if (hallwayDoor)
                 {
                     if (gameManager.hallwayKey)
@@ -522,6 +536,7 @@ public class LockedDoorScript : MonoBehaviour
         }
     }
 
+    //A function for unlocking the door
     void UnlockDoor()
     {
         player.enabled = true;
@@ -534,6 +549,7 @@ public class LockedDoorScript : MonoBehaviour
         this.enabled = false;
     }
 
+    //A function to close the dialouge
     void CloseDialouge()
     {
         player.enabled = true;

@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class MapManager : MonoBehaviour
@@ -52,7 +51,7 @@ public class MapManager : MonoBehaviour
 
     IEnumerator OpenMap()
     {
-         if (openMapSound != null)
+        if (openMapSound != null)
         {
             audioSource.PlayOneShot(openMapSound);
         }

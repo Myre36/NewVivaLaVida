@@ -12,27 +12,34 @@ public class GunScript : MonoBehaviour
 
     //The speed at which the bullet fires
     public float shootForce;
+    //The reload time of the bullet
+    public float reloadTime;
 
-    //Bools for shooting
+    //Bool for if you are shooting
     private bool shooting;
+    //A bool for if you are ready to shoot
     public bool readyToShoot;
+    //A bool for if you can shoot
+    private bool canShoot;
+    //A bool for if you are currently reloading
+    private bool reloading;
+    //A bool for if there is a bullet in the chamber of the gun
+    private bool ammoInChamber;
 
     //Refrence to the bullet spawn point
     public Transform bulletSpawn;
     //Refrence to the point that the bullet fires towards
     public Transform shootPoint;
 
-    private bool canShoot;
-    private bool reloading;
-
-    public float reloadTime;
-
+    //The amount of bullets you have
     public int ammoCount;
-    private bool ammoInChamber;
 
+    //The text for the amount of ammo you have
     public TMP_Text ammoText;
+    //The text for the reloading
     public TMP_Text reloadingText;
 
+    //The images used for showing if you can shoot
     public RawImage ammoInImage;
     public RawImage noAmmoInInImage;
 
@@ -41,7 +48,9 @@ public class GunScript : MonoBehaviour
         //Make sure that the player is able to shoot
         readyToShoot = true;
         canShoot = true;
+        //Add four bullets to your gun
         ammoCount = 4;
+        //Make it so that you have a bullet in your chamber
         ammoInChamber = true;
     }
 
@@ -50,8 +59,10 @@ public class GunScript : MonoBehaviour
         //Calling the input method
         MyInput();
 
+        //Making the ammo text display
         ammoText.text = ammoCount.ToString();
 
+        //For making the gun image display correctly
         /*if(ammoInChamber)
         {
             ammoInImage.enabled = true;
@@ -63,6 +74,7 @@ public class GunScript : MonoBehaviour
             ammoInImage.enabled = false;
         }*/
 
+        //Make the reload text display correctly depending on what the player is doing
         if(reloading)
         {
             reloadingText.text = "Reloading...";
@@ -83,13 +95,16 @@ public class GunScript : MonoBehaviour
     //A method for shooting. If the player has ammo, presses the LMB, and they are currently aiming, the Shoot method is called
     private void MyInput()
     {
+        //Make shooting applied to the left mouse button
         shooting = Input.GetKeyDown(KeyCode.Mouse0);
 
+        //If you fulfill all requirments to shoot, the shoot method is called
         if (readyToShoot && shooting && player.GetComponent<Movement>().aiming && canShoot)
         {
             Shoot();
         }
 
+        //If you press R and have enough ammo, the reloading coroutine is activated
         if(Input.GetKeyDown(KeyCode.R) && ammoCount > 0 && !ammoInChamber)
         {
             StartCoroutine(ReloadGun());
@@ -115,6 +130,7 @@ public class GunScript : MonoBehaviour
         currentBullet.GetComponent<Rigidbody>().AddForce(direction.normalized * shootForce, ForceMode.Impulse);
     }
 
+    //A coroutine that reloads your gun
     IEnumerator ReloadGun()
     {
         Debug.Log("Start reload");

@@ -138,6 +138,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        //The below code is for the timers of the enemy. Once the timer reaches a certtain point, the enemy will be able to respawn
         if(enemyOneFakeDead)
         {
             enemyOneTimer += Time.deltaTime;
@@ -196,6 +197,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //A way to activate god mode
     public void ActivateGodMode()
     {
         coinOne = true;

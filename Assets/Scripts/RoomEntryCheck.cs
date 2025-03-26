@@ -5,21 +5,16 @@ public class RoomEntryCheck : MonoBehaviour
 {
     //An array of all the entry points the room has
     public Transform[] entryPoints;
+    //An array of all the camera points this room has
     public Transform[] cameraStartPoints;
+
+    //A refrence to the game manager
+    public GameManager gameManager;
 
     //A refrence to the player
     public GameObject player;
-    //A refrence to the game manager
-    public GameManager gameManager;
     //A refrence to the player camera
     public GameObject playerCamera;
-
-    public CanvasGroup fadeScreen;
-
-    private bool fadeOut = true;
-
-    public float timeToFade;
-
     //Enemies
     public GameObject enemyOne;
     public GameObject enemyTwo;
@@ -36,6 +31,11 @@ public class RoomEntryCheck : MonoBehaviour
     public GameObject enemyThirteen;
     public GameObject enemyFourteen;
 
+    //A refrence to the black fade screen
+    public CanvasGroup fadeScreen;
+
+    //A bool to check if this should fade or not
+    private bool fadeOut = true;
     //Enemy bools
     public bool isEnemyOne;
     public bool isEnemyTwo;
@@ -52,22 +52,25 @@ public class RoomEntryCheck : MonoBehaviour
     public bool isEnemyThirteen;
     public bool isEnemyFourteen;
 
+    //The time it takes to fade in
+    public float timeToFade;
+
     private void Awake()
     {
-        //Assigns the player,game manager, and camera
+        //Assigns all the refrences
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         player = GameObject.Find("Player");
         playerCamera = GameObject.Find("Main Camera");
         fadeScreen = GameObject.Find("FadeScreen").GetComponent<CanvasGroup>();
 
+        //Starts the coroutine to move the player to the correct position
         StartCoroutine(MovePlayer());
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
-        //Sets the status of the enemies
+        //Enemies are destroyed depending at which state they are in
         if(isEnemyOne)
         {
             if(gameManager.enemyOneDead)
@@ -281,25 +284,31 @@ public class RoomEntryCheck : MonoBehaviour
         }
     }
 
+    //A coroutine for moving the player to the correct spot
     IEnumerator MovePlayer()
     {
-        //Gets the entry number in the game manager (assigned from the door in the previous scene
+        //Gets the entry number in the game manager (assigned from the door in the previous scene)
         int entryNum = gameManager.entryNumber;
 
+        //Gets a refrence to the rigidbody
         Rigidbody rb = player.gameObject.GetComponent<Rigidbody>();
+        //The only way for this to work is for the player's rigidbody to be kinematic. I don't know why, it bugs if it isn't
         rb.isKinematic = true;
 
-        //Sets the player's position to the entry point
+        //Sets the player's position and rotation to the entry point
         player.transform.position = entryPoints[entryNum].position;
         player.transform.rotation = entryPoints[entryNum].rotation;
 
         //Sets the camera position
         playerCamera.transform.position = cameraStartPoints[entryNum].position;
 
+        //Waits for a bit
         yield return new WaitForSeconds(0.1f);
 
+        //Enables the player movement
         player.GetComponent<Movement>().enabled = true;
 
+        //Makes the player not kinematic
         rb.isKinematic = false;
     }
 }

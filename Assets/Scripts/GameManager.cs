@@ -123,6 +123,8 @@ public class GameManager : MonoBehaviour
 
     public string[] stands;
 
+    public bool godModeActivated;
+
     private void Awake()
     {
         //This code is used to make sure there are never more than one game manager
@@ -219,5 +221,7 @@ public class GameManager : MonoBehaviour
         basementKey = true;
         kingsKeyOne = true;
         kingsKeyTwo = true;
+
+        godModeActivated = true;
     }
 }

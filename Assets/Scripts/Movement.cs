@@ -79,17 +79,23 @@ public class Movement : MonoBehaviour
 
     public void ChangeHealth(float amount)
     {
-        float oldHealth = currentHealth;
-        currentHealth += amount;
-        Debug.Log(amount);
-        currentHealth = Mathf.Clamp(currentHealth, maxHealth, 1);
-        OnHealthChanged?.Invoke(this, oldHealth, currentHealth);
-
-
-        // Checks if health has reached zero
-        if (currentHealth >= 1)
+        if(!gameManager.godModeActivated)
         {
-            SceneManager.LoadScene("Death scene");
+            float oldHealth = currentHealth;
+            currentHealth += amount;
+            Debug.Log(amount);
+            currentHealth = Mathf.Clamp(currentHealth, maxHealth, 1);
+            OnHealthChanged?.Invoke(this, oldHealth, currentHealth);
+
+            EstherGrunt1Sound.Play();
+
+
+            // Checks if health has reached zero
+            if (currentHealth >= 1)
+            {
+                SceneManager.LoadScene("Death scene");
+            }
+
         }
     }
 
@@ -104,16 +110,19 @@ public class Movement : MonoBehaviour
 
     public void DamageHealth()
     {
-        if (currentHealth < 1)
+        if(!gameManager.godModeActivated)
         {
-            currentHealth += damage;
-
-            EstherGrunt1Sound.Play();
-
-            // Checks if health is zero and changes scene
-            if (currentHealth >= 1)
+            if (currentHealth < 1)
             {
-                SceneManager.LoadScene("Death scene");
+                currentHealth += damage;
+
+                EstherGrunt1Sound.Play();
+
+                // Checks if health is zero and changes scene
+                if (currentHealth >= 1)
+                {
+                    SceneManager.LoadScene("Death scene");
+                }
             }
         }
     }

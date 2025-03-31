@@ -7876,8 +7876,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   onSecondFloor: 0
-  dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
   playerInRange: 0
   firstDoor: 0
   hallwayDoor: 0
@@ -7890,6 +7888,8 @@ MonoBehaviour:
   coinDoor: 0
   basementDoor: 0
   kingsDoor: 0
+  dialougeBox: {fileID: 0}
+  dialougeText: {fileID: 0}
 --- !u!4 &614924218 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
@@ -8165,8 +8165,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   onSecondFloor: 0
-  dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
   playerInRange: 0
   firstDoor: 0
   hallwayDoor: 0
@@ -8179,6 +8177,8 @@ MonoBehaviour:
   coinDoor: 0
   basementDoor: 0
   kingsDoor: 1
+  dialougeBox: {fileID: 0}
+  dialougeText: {fileID: 0}
 --- !u!4 &639831642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
@@ -9647,7 +9647,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8fb321028bf0054ea86be3b72c45e7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
 --- !u!114 &878384289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9887,8 +9886,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   onSecondFloor: 0
-  dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
   playerInRange: 0
   firstDoor: 1
   hallwayDoor: 0
@@ -9901,6 +9898,8 @@ MonoBehaviour:
   coinDoor: 0
   basementDoor: 0
   kingsDoor: 0
+  dialougeBox: {fileID: 0}
+  dialougeText: {fileID: 0}
 --- !u!4 &903863526 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8768663584701067380, guid: 05885de5129592046bf1c8d193fdfc51, type: 3}
@@ -14843,7 +14842,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  roomCheck: {fileID: 0}
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   playerInRange: 0
@@ -15180,8 +15178,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   onSecondFloor: 0
-  dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
   playerInRange: 0
   firstDoor: 0
   hallwayDoor: 0
@@ -15194,6 +15190,8 @@ MonoBehaviour:
   coinDoor: 0
   basementDoor: 0
   kingsDoor: 0
+  dialougeBox: {fileID: 0}
+  dialougeText: {fileID: 0}
 --- !u!4 &1155579397 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
@@ -21249,13 +21247,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctWay: 0
-  player: {fileID: 0}
-  dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
   playerInRange: 0
   kitchenDoor: 1
   statueDoor: 0
   diningDoor: 0
+  player: {fileID: 0}
+  dialougeBox: {fileID: 0}
+  dialougeText: {fileID: 0}
 --- !u!1 &1604470200
 GameObject:
   m_ObjectHideFlags: 0
@@ -25037,8 +25035,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   onSecondFloor: 0
-  dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
   playerInRange: 0
   firstDoor: 0
   hallwayDoor: 1
@@ -25051,6 +25047,8 @@ MonoBehaviour:
   coinDoor: 0
   basementDoor: 0
   kingsDoor: 0
+  dialougeBox: {fileID: 0}
+  dialougeText: {fileID: 0}
 --- !u!4 &1636257751810229339 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
@@ -25767,6 +25765,18 @@ PrefabInstance:
     - target: {fileID: 6273391425360442391, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332837694656332198, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332837694656332198, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: m_Volume
+      value: 0.501
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332837694656332198, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

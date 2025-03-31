@@ -43,6 +43,10 @@ public class GunScript : MonoBehaviour
     public RawImage ammoInImage;
     public RawImage noAmmoInInImage;
 
+    // Sound effects
+    public AudioSource gunShootSound;
+    public AudioSource reloadSound;
+    public AudioSource cantShootSound;
     private void Awake()
     {
         //Make sure that the player is able to shoot
@@ -103,9 +107,13 @@ public class GunScript : MonoBehaviour
         {
             Shoot();
         }
+        else
+        {
+            cantShootSound.Play();
+        }
 
         //If you press R and have enough ammo, the reloading coroutine is activated
-        if(Input.GetKeyDown(KeyCode.R) && ammoCount > 0 && !ammoInChamber)
+        if (Input.GetKeyDown(KeyCode.R) && ammoCount > 0 && !ammoInChamber)
         {
             StartCoroutine(ReloadGun());
         }
@@ -128,6 +136,8 @@ public class GunScript : MonoBehaviour
 
         //Add forces to bullet
         currentBullet.GetComponent<Rigidbody>().AddForce(direction.normalized * shootForce, ForceMode.Impulse);
+
+        gunShootSound.Play();
     }
 
     //A coroutine that reloads your gun
@@ -135,6 +145,7 @@ public class GunScript : MonoBehaviour
     {
         Debug.Log("Start reload");
         reloading = true;
+        reloadSound.Play();
         yield return new WaitForSeconds(reloadTime);
         ammoCount--;
         reloading = false;

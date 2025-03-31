@@ -57,6 +57,12 @@ public class Movement : MonoBehaviour
 
     public AudioSource heartbeatSound;
 
+    public AudioSource EstherDeathSound;
+
+    public AudioSource EstherGrunt1Sound;
+
+    public AudioSource EstherGrunt2Sound;
+
     public MovementState state;
 
     //This defines the health changed events and handler delagating
@@ -79,6 +85,7 @@ public class Movement : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth, maxHealth, 1);
         OnHealthChanged?.Invoke(this, oldHealth, currentHealth);
 
+
         // Checks if health has reached zero
         if (currentHealth >= 1)
         {
@@ -100,6 +107,8 @@ public class Movement : MonoBehaviour
         if (currentHealth < 1)
         {
             currentHealth += damage;
+
+            EstherGrunt1Sound.Play();
 
             // Checks if health is zero and changes scene
             if (currentHealth >= 1)

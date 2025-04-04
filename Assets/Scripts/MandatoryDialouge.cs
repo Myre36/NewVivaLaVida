@@ -28,6 +28,7 @@ public class MandatoryDialouge : MonoBehaviour
     public bool tutorialDialouge;
     public bool afterEnemyDialouge;
     public bool livingRoomDialouge;
+    public bool eastHallwayDialouge;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -80,6 +81,19 @@ public class MandatoryDialouge : MonoBehaviour
         else if (livingRoomDialouge)
         {
             if (!gameManager.livingRoomDialougeDone)
+            {
+                player.inMandatory = true;
+                player.enabled = false;
+                StartCoroutine(DelayStart());
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
+        else if (eastHallwayDialouge)
+        {
+            if (!gameManager.eastHallwayDialougeDone)
             {
                 player.inMandatory = true;
                 player.enabled = false;
@@ -151,6 +165,10 @@ public class MandatoryDialouge : MonoBehaviour
         else if(livingRoomDialouge)
         {
             gameManager.livingRoomDialougeDone = true;
+        }
+        else if (eastHallwayDialouge)
+        {
+            gameManager.eastHallwayDialougeDone = true;
         }
         Destroy(gameObject);
     }

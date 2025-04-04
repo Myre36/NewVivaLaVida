@@ -120,7 +120,7 @@ public class GameManager : MonoBehaviour
     public bool introDialougeDone;
     public bool tutorialDialougeDone;
     public bool afterEnemyDone;
-    public bool livingRoomDialouge;
+    public bool livingRoomDialougeDone;
 
     public string[] stands;
 

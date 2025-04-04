@@ -4467,10 +4467,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialouge:
-  - 
+  - No sound, no sign of life.
+  - Nothing.
+  - This place should be filled with life, with servants darting from room to room.
+  - The guards should be walking around, discussing all the comings and goings of
+    the world.
+  - And yet, there is nothing.
+  - What happened?
   introDialouge: 0
   tutorialDialouge: 0
   afterEnemyDialouge: 0
+  livingRoomDialouge: 1
 --- !u!4 &969910194
 Transform:
   m_ObjectHideFlags: 0

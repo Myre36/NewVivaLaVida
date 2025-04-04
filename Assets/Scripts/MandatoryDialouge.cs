@@ -29,6 +29,7 @@ public class MandatoryDialouge : MonoBehaviour
     public bool afterEnemyDialouge;
     public bool livingRoomDialouge;
     public bool eastHallwayDialouge;
+    public bool kitchenDialouge;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -104,6 +105,19 @@ public class MandatoryDialouge : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        else if (kitchenDialouge)
+        {
+            if (!gameManager.kitchenDialougeDone)
+            {
+                player.inMandatory = true;
+                player.enabled = false;
+                StartCoroutine(DelayStart());
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -169,6 +183,10 @@ public class MandatoryDialouge : MonoBehaviour
         else if (eastHallwayDialouge)
         {
             gameManager.eastHallwayDialougeDone = true;
+        }
+        else if (kitchenDialouge)
+        {
+            gameManager.kitchenDialougeDone = true;
         }
         Destroy(gameObject);
     }

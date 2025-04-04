@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7750752298206080776
 Transform:
@@ -50,10 +50,10 @@ MonoBehaviour:
   sceneName: 
   gameManager: {fileID: 0}
   playerInDoor: 0
-  roomCheck: {fileID: 0}
+  player: {fileID: 0}
   fadeScreen: {fileID: 0}
   timeToFade: 1
-  player: {fileID: 0}
+  isPlanetDoor: 0
 --- !u!65 &3471631330561862319
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -92,7 +92,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8748832686067019298
 Transform:

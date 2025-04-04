@@ -34,6 +34,7 @@ public class MandatoryDialouge : MonoBehaviour
     public bool afterBasementDialouge;
     public bool bothKeysDialouge;
     public bool statueDialouge;
+    public bool secondFloorDialouge;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -625,7 +625,6 @@ public class PickupObject : MonoBehaviour
         }
         if (isKeyItem)
         {
-            player.inventorySpace++;
             for (int i = 0; i < player.inventoryTexts.Length; i++)
             {
                 if (player.inventoryTexts[i].text == "")

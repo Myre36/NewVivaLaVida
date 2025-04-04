@@ -335,6 +335,5 @@ public class PlanetPickerScript : MonoBehaviour
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         player.enabled = true;
-        player.inventorySpace--;
     }
 }

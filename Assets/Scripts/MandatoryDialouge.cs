@@ -30,6 +30,8 @@ public class MandatoryDialouge : MonoBehaviour
     public bool livingRoomDialouge;
     public bool eastHallwayDialouge;
     public bool kitchenDialouge;
+    public bool afterKitchenDialouge;
+    public bool afterBasementDialouge;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -118,6 +120,32 @@ public class MandatoryDialouge : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        else if (afterKitchenDialouge)
+        {
+            if (!gameManager.afterKitchenDialougeDone && gameManager.secondFloorKey)
+            {
+                player.inMandatory = true;
+                player.enabled = false;
+                StartCoroutine(DelayStart());
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
+        else if (afterBasementDialouge)
+        {
+            if (!gameManager.afterBasementDialougeDone && gameManager.kingsKeyOne)
+            {
+                player.inMandatory = true;
+                player.enabled = false;
+                StartCoroutine(DelayStart());
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -187,6 +215,14 @@ public class MandatoryDialouge : MonoBehaviour
         else if (kitchenDialouge)
         {
             gameManager.kitchenDialougeDone = true;
+        }
+        else if (afterKitchenDialouge)
+        {
+            gameManager.afterKitchenDialougeDone = true;
+        }
+        else if (afterBasementDialouge)
+        {
+            gameManager.afterBasementDialougeDone = true;
         }
         Destroy(gameObject);
     }

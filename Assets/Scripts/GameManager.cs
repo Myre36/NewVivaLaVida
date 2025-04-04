@@ -123,6 +123,8 @@ public class GameManager : MonoBehaviour
     public bool livingRoomDialougeDone;
     public bool eastHallwayDialougeDone;
     public bool kitchenDialougeDone;
+    public bool afterKitchenDialougeDone;
+    public bool afterBasementDialougeDone;
 
     public string[] stands;
 

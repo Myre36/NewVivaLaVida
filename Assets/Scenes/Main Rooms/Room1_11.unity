@@ -2960,6 +2960,11 @@ MonoBehaviour:
   introDialouge: 0
   tutorialDialouge: 1
   afterEnemyDialouge: 0
+  livingRoomDialouge: 0
+  eastHallwayDialouge: 0
+  kitchenDialouge: 0
+  afterKitchenDialouge: 0
+  afterBasementDialouge: 0
 --- !u!4 &628112179
 Transform:
   m_ObjectHideFlags: 0
@@ -3816,13 +3821,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctWay: 0
-  player: {fileID: 0}
-  dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
   playerInRange: 0
   kitchenDoor: 0
   statueDoor: 0
   diningDoor: 1
+  player: {fileID: 0}
+  dialougeBox: {fileID: 0}
+  dialougeText: {fileID: 0}
 --- !u!1 &1102329850
 GameObject:
   m_ObjectHideFlags: 0
@@ -4160,6 +4165,62 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.750009, y: 4.6221695, z: -157.54613}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1549144899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1549144901}
+  - component: {fileID: 1549144900}
+  m_Layer: 0
+  m_Name: MandatoryDialouge (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1549144900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549144899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636a86526ffbfe74985b74f9f335ffe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouge:
+  - Your is racing.
+  - Finally, you have the key to second floor.
+  - Maybe the answers are up there.
+  introDialouge: 0
+  tutorialDialouge: 0
+  afterEnemyDialouge: 0
+  livingRoomDialouge: 0
+  eastHallwayDialouge: 0
+  kitchenDialouge: 0
+  afterKitchenDialouge: 1
+  afterBasementDialouge: 0
+--- !u!4 &1549144901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549144899}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19514894, y: 4.6809587, z: -169.47787}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6062,3 +6123,4 @@ SceneRoots:
   - {fileID: 751182038}
   - {fileID: 436893031}
   - {fileID: 628112179}
+  - {fileID: 1549144901}

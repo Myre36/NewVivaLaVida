@@ -1710,6 +1710,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7417185479149808847, guid: 0c14269eda770c041a9130fc1e99539b, type: 3}
   m_PrefabInstance: {fileID: 606931771}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &643431242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 643431244}
+  - component: {fileID: 643431243}
+  m_Layer: 0
+  m_Name: MandatoryDialouge (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &643431243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643431242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636a86526ffbfe74985b74f9f335ffe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouge:
+  - Finally, you have the a key to the throne room.
+  - Once you get in there, you'll see if the king is still alive.
+  - At this point, you hope that he isn't.
+  - ...
+  - The smell in here is still terrible...
+  introDialouge: 0
+  tutorialDialouge: 0
+  afterEnemyDialouge: 0
+  livingRoomDialouge: 0
+  eastHallwayDialouge: 0
+  kitchenDialouge: 0
+  afterKitchenDialouge: 0
+  afterBasementDialouge: 1
+--- !u!4 &643431244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643431242}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19514894, y: 4.6809587, z: -169.47787}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &661453146
 Mesh:
   m_ObjectHideFlags: 0
@@ -8694,6 +8752,8 @@ MonoBehaviour:
   livingRoomDialouge: 0
   eastHallwayDialouge: 0
   kitchenDialouge: 1
+  afterKitchenDialouge: 0
+  afterBasementDialouge: 0
 --- !u!4 &1839291609
 Transform:
   m_ObjectHideFlags: 0
@@ -10526,3 +10586,4 @@ SceneRoots:
   - {fileID: 1400449756}
   - {fileID: 1314550961}
   - {fileID: 1839291609}
+  - {fileID: 643431244}

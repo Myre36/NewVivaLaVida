@@ -32,6 +32,7 @@ public class MandatoryDialouge : MonoBehaviour
     public bool kitchenDialouge;
     public bool afterKitchenDialouge;
     public bool afterBasementDialouge;
+    public bool bothKeysDialouge;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -136,6 +137,19 @@ public class MandatoryDialouge : MonoBehaviour
         else if (afterBasementDialouge)
         {
             if (!gameManager.afterBasementDialougeDone && gameManager.kingsKeyOne)
+            {
+                player.inMandatory = true;
+                player.enabled = false;
+                StartCoroutine(DelayStart());
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
+        else if (bothKeysDialouge)
+        {
+            if (!gameManager.bothKeysDialougeDone && gameManager.kingsKeyOne && gameManager.kingsKeyTwo)
             {
                 player.inMandatory = true;
                 player.enabled = false;

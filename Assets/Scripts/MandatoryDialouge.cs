@@ -36,6 +36,7 @@ public class MandatoryDialouge : MonoBehaviour
     public bool statueDialouge;
     public bool secondFloorDialouge;
     public bool planetariumDialouge;
+    public bool libraryDialouge;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -189,6 +190,19 @@ public class MandatoryDialouge : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        else if (libraryDialouge)
+        {
+            if (!gameManager.libraryDialougeDone)
+            {
+                player.inMandatory = true;
+                player.enabled = false;
+                StartCoroutine(DelayStart());
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -278,6 +292,10 @@ public class MandatoryDialouge : MonoBehaviour
         else if (planetariumDialouge)
         {
             gameManager.planetariumDialougeDone = true;
+        }
+        else if (libraryDialouge)
+        {
+            gameManager.libraryDialougeDone = true;
         }
         Destroy(gameObject);
     }

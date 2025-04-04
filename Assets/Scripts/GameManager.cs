@@ -129,6 +129,7 @@ public class GameManager : MonoBehaviour
     public bool statueDialougeDone;
     public bool secondFloorDialougeDone;
     public bool planetariumDialougeDone;
+    public bool libraryDialougeDone;
 
     public string[] stands;
 

@@ -695,6 +695,68 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1 &34361616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 34361618}
+  - component: {fileID: 34361617}
+  m_Layer: 0
+  m_Name: MandatoryDialouge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &34361617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34361616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636a86526ffbfe74985b74f9f335ffe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouge:
+  - Maybe it's better to get out of here.
+  - Screw the king, your officers will never find out if you left.
+  - You could run away, cross into Sweden, be far away from all these horrors.
+  - ...
+  - You take a deep breath.
+  - One breath after another, just like father taught you.
+  - It would be cowardess to run away now.
+  - It would be a stain on your father's honor.
+  - His own daughter, his pride and joy, running at the first sign of danger.
+  - ...
+  - The castle answers your silence with its own.
+  - Better get to the king quickly.
+  introDialouge: 0
+  tutorialDialouge: 0
+  afterEnemyDialouge: 0
+  livingRoomDialouge: 0
+  eastHallwayDialouge: 1
+--- !u!4 &34361618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34361616}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19514894, y: 4.6809587, z: -169.47787}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &50392865
 GameObject:
   m_ObjectHideFlags: 0
@@ -28949,6 +29011,10 @@ PrefabInstance:
       propertyPath: ShapeModule.m_Position.z
       value: 0.97
       objectReference: {fileID: 0}
+    - target: {fileID: 7171669484725370151, guid: cb42e1301dbb9ef4caff75f5b7d596d1, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     - target: {fileID: 7203803595939376245, guid: cb42e1301dbb9ef4caff75f5b7d596d1, type: 3}
       propertyPath: m_Name
       value: GodLightSystem
@@ -37276,3 +37342,4 @@ SceneRoots:
   - {fileID: 18883128}
   - {fileID: 1465636955}
   - {fileID: 1606617011}
+  - {fileID: 34361618}

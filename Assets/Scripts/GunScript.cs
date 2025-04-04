@@ -34,8 +34,6 @@ public class GunScript : MonoBehaviour
     //The amount of bullets you have
     public int ammoCount;
 
-    //The text for the amount of ammo you have
-    public TMP_Text ammoText;
     //The text for the reloading
     public TMP_Text reloadingText;
 
@@ -62,9 +60,6 @@ public class GunScript : MonoBehaviour
     {
         //Calling the input method
         MyInput();
-
-        //Making the ammo text display
-        ammoText.text = ammoCount.ToString();
 
         //For making the gun image display correctly
         /*if(ammoInChamber)

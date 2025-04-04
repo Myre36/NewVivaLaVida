@@ -41,8 +41,6 @@ public class Movement : MonoBehaviour
     //A bool which will be used to check if the player is aiming
     public bool aiming;
 
-    public int inventorySpace;
-
     public TMP_Text[] inventoryTexts;
 
     private Camera mainCamera;
@@ -157,7 +155,6 @@ public class Movement : MonoBehaviour
         {
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         }
-        inventorySpace++;
 
         mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
     }

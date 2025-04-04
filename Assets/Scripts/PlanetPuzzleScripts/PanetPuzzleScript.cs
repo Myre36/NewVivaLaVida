@@ -91,128 +91,116 @@ public class PanetPuzzleScript : MonoBehaviour
                     //If there is a planet on this stand, the player try to pick up the planet
                     else
                     {
-                        //If the player's inventory is full, it will not pick up the planet
-                        if(player.inventorySpace >= 8)
+                        //The dialouge will tell you which planet you picked up
+                        dialougeText.text = "You picked up " + currentlyEnabledPlanet.name;
+
+                        //If the planet on the stand is the sun, it will tell the planet picker that the player is holding the sun
+                        //This code is repeated a lot, it's just to take into account all the other planets
+                        if (currentlyEnabledPlanet.name == "Sun")
                         {
-                            dialougeText.text = "You do not have space in your inventory";
+                            planetPicker.hasSun = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "")
+                                {
+                                    player.inventoryTexts[i].text = "Sun";
+                                    break;
+                                }
+                            }
                         }
-                        //If there is space in the player's inventory, they will pick up whatever planet is on the stand
+                        else if (currentlyEnabledPlanet.name == "Mercury")
+                        {
+                            planetPicker.hasMercury = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "")
+                                {
+                                    player.inventoryTexts[i].text = "Mercury";
+                                    break;
+                                }
+                            }
+                        }
+                        else if (currentlyEnabledPlanet.name == "Venus")
+                        {
+                            planetPicker.hasVenus = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "")
+                                {
+                                    player.inventoryTexts[i].text = "Venus";
+                                    break;
+                                }
+                            }
+                        }
+                        else if (currentlyEnabledPlanet.name == "Earth")
+                        {
+                            planetPicker.hasEarth = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "")
+                                {
+                                    player.inventoryTexts[i].text = "Earth";
+                                    break;
+                                }
+                            }
+                        }
+                        else if (currentlyEnabledPlanet.name == "Mars")
+                        {
+                            planetPicker.hasMars = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "")
+                                {
+                                    player.inventoryTexts[i].text = "Mars";
+                                    break;
+                                }
+                            }
+                        }
+                        else if (currentlyEnabledPlanet.name == "Jupiter")
+                        {
+                            planetPicker.hasJupiter = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "")
+                                {
+                                    player.inventoryTexts[i].text = "Jupiter";
+                                    break;
+                                }
+                            }
+                        }
+                        else if (currentlyEnabledPlanet.name == "Saturn")
+                        {
+                            planetPicker.hasSaturn = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "")
+                                {
+                                    player.inventoryTexts[i].text = "Saturn";
+                                    break;
+                                }
+                            }
+                        }
+                        else if (currentlyEnabledPlanet.name == "Uranus")
+                        {
+                            planetPicker.hasUranus = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "")
+                                {
+                                    player.inventoryTexts[i].text = "Uranus";
+                                    break;
+                                }
+                            }
+                        }
+                        //This is for error checking
                         else
                         {
-                            //The player's inventory will increase by one
-                            player.inventorySpace++;
-
-                            //The dialouge will tell you which planet you picked up
-                            dialougeText.text = "You picked up " + currentlyEnabledPlanet.name;
-
-                            //If the planet on the stand is the sun, it will tell the planet picker that the player is holding the sun
-                            //This code is repeated a lot, it's just to take into account all the other planets
-                            if (currentlyEnabledPlanet.name == "Sun")
-                            {
-                                planetPicker.hasSun = true;
-                                for (int i = 0; i < player.inventoryTexts.Length; i++)
-                                {
-                                    if (player.inventoryTexts[i].text == "")
-                                    {
-                                        player.inventoryTexts[i].text = "Sun";
-                                        break;
-                                    }
-                                }
-                            }
-                            else if (currentlyEnabledPlanet.name == "Mercury")
-                            {
-                                planetPicker.hasMercury = true;
-                                for (int i = 0; i < player.inventoryTexts.Length; i++)
-                                {
-                                    if (player.inventoryTexts[i].text == "")
-                                    {
-                                        player.inventoryTexts[i].text = "Mercury";
-                                        break;
-                                    }
-                                }
-                            }
-                            else if (currentlyEnabledPlanet.name == "Venus")
-                            {
-                                planetPicker.hasVenus = true;
-                                for (int i = 0; i < player.inventoryTexts.Length; i++)
-                                {
-                                    if (player.inventoryTexts[i].text == "")
-                                    {
-                                        player.inventoryTexts[i].text = "Venus";
-                                        break;
-                                    }
-                                }
-                            }
-                            else if (currentlyEnabledPlanet.name == "Earth")
-                            {
-                                planetPicker.hasEarth = true;
-                                for (int i = 0; i < player.inventoryTexts.Length; i++)
-                                {
-                                    if (player.inventoryTexts[i].text == "")
-                                    {
-                                        player.inventoryTexts[i].text = "Earth";
-                                        break;
-                                    }
-                                }
-                            }
-                            else if (currentlyEnabledPlanet.name == "Mars")
-                            {
-                                planetPicker.hasMars = true;
-                                for (int i = 0; i < player.inventoryTexts.Length; i++)
-                                {
-                                    if (player.inventoryTexts[i].text == "")
-                                    {
-                                        player.inventoryTexts[i].text = "Mars";
-                                        break;
-                                    }
-                                }
-                            }
-                            else if (currentlyEnabledPlanet.name == "Jupiter")
-                            {
-                                planetPicker.hasJupiter = true;
-                                for (int i = 0; i < player.inventoryTexts.Length; i++)
-                                {
-                                    if (player.inventoryTexts[i].text == "")
-                                    {
-                                        player.inventoryTexts[i].text = "Jupiter";
-                                        break;
-                                    }
-                                }
-                            }
-                            else if (currentlyEnabledPlanet.name == "Saturn")
-                            {
-                                planetPicker.hasSaturn = true;
-                                for (int i = 0; i < player.inventoryTexts.Length; i++)
-                                {
-                                    if (player.inventoryTexts[i].text == "")
-                                    {
-                                        player.inventoryTexts[i].text = "Saturn";
-                                        break;
-                                    }
-                                }
-                            }
-                            else if (currentlyEnabledPlanet.name == "Uranus")
-                            {
-                                planetPicker.hasUranus = true;
-                                for (int i = 0; i < player.inventoryTexts.Length; i++)
-                                {
-                                    if (player.inventoryTexts[i].text == "")
-                                    {
-                                        player.inventoryTexts[i].text = "Uranus";
-                                        break;
-                                    }
-                                }
-                            }
-                            //This is for error checking
-                            else
-                            {
-                                Debug.Log("Error: You are not supposed to see this. If you encounter this, alert the developer");
-                                dialougeText.text = "Error: You are not supposed to see this. If you encounter this, alert the developer";
-                            }
-                            //This will turn off the planet that the player picked up
-                            currentlyEnabledPlanet.SetActive(false);
-                            currentlyEnabledPlanet = null;
+                            Debug.Log("Error: You are not supposed to see this. If you encounter this, alert the developer");
+                            dialougeText.text = "Error: You are not supposed to see this. If you encounter this, alert the developer";
                         }
+                        //This will turn off the planet that the player picked up
+                        currentlyEnabledPlanet.SetActive(false);
+                        currentlyEnabledPlanet = null;
                     }
                 }
                 //If the player is already in dialouge when the player presses E, they will go out of the dialouge and the dialouge text will turn off

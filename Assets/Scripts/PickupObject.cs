@@ -292,304 +292,288 @@ public class PickupObject : MonoBehaviour
                         }
                     }
                 }
-                //If the player's inventory is full, it will notify the player and the item will not be picked up
-                if(player.inventorySpace >= 8)
+                //Checks if this is a key item
+                if (isKeyItem)
                 {
-                    if (inDialouge)
-                    {
-                        CloseDialouge();
-                    }
-                    else
-                    {
-                        inDialouge = true;
-                        dialougeText.text = "You don't have enough space in your inventory.";
-                    }
-                }
-                else
-                {
-                    //Checks if this is a key item
-                    if (isKeyItem)
-                    {
-                        //Checks what item this is and picks it up
-                        if (hallwayKey)
-                        {
-                            if (inDialouge)
-                            {
-                                gameManager.hallwayKey = true;
-                                CloseDialouge();
-                            }
-                            else
-                            {
-                                inDialouge = true;
-                                pickupSound.Play();
-                                dialougeText.text = "You pick up a key with an orange citrine gemstone as its head.";
-                            }
-                        }
-                        else if (firstKey)
-                        {
-                            if (inDialouge)
-                            {
-                                gameManager.firstKey = true;
-                                CloseDialouge();
-                            }
-                            else
-                            {
-                                inDialouge = true;
-                                pickupSound.Play();
-                                dialougeText.text = "You pick up a key with an emerald gemstone as its head.";
-                            }
-                        }
-                        else if (tunnelKey)
-                        {
-                            if (inDialouge)
-                            {
-                                gameManager.tunnelKey = true;
-                                CloseDialouge();
-                            }
-                            else
-                            {
-                                inDialouge = true;
-                                pickupSound.Play();
-                                dialougeText.text = "You pick up a key with a horse emblem as its head.";
-                            }
-                        }
-                        else if (servantsKey)
-                        {
-                            if (inDialouge)
-                            {
-                                gameManager.servantsKey = true;
-                                CloseDialouge();
-                            }
-                            else
-                            {
-                                inDialouge = true;
-                                pickupSound.Play();
-                                dialougeText.text = "You pick up a key with a large S-shaped emblem as its head.";
-                            }
-                        }
-                        else if (basementKey)
-                        {
-                            if (inDialouge)
-                            {
-                                gameManager.basementKey = true;
-                                CloseDialouge();
-                            }
-                            else
-                            {
-                                inDialouge = true;
-                                pickupSound.Play();
-                                dialougeText.text = "You pick up an old and rusty key. Whatever this unlocks, it must be a very old lock.";
-                            }
-                        }
-                        else if (secondFloorKey)
-                        {
-                            if (inDialouge)
-                            {
-                                gameManager.secondFloorKey = true;
-                                CloseDialouge();
-                            }
-                            else
-                            {
-                                inDialouge = true;
-                                pickupSound.Play();
-                                dialougeText.text = "You pick up a small key. The head is engraved with a 2.";
-                            }
-                        }
-                        else if (planetariumKey)
-                        {
-                            if (inDialouge)
-                            {
-                                gameManager.planetariumKey = true;
-                                CloseDialouge();
-                            }
-                            else
-                            {
-                                inDialouge = true;
-                                pickupSound.Play();
-                                dialougeText.text = "You pick up a shiny golden key. The head of it is shaped like the sun.";
-                            }
-                        }
-                        else if (meetingKey)
-                        {
-                            if (inDialouge)
-                            {
-                                gameManager.meetingKey = true;
-                                CloseDialouge();
-                            }
-                            else
-                            {
-                                inDialouge = true;
-                                pickupSound.Play();
-                                dialougeText.text = "You pick up small key. Its head is decorated with small blue saphires.";
-                            }
-                        }
-                        else if (coinOne)
-                        {
-                            if (inDialouge)
-                            {
-                                gameManager.coinOne = true;
-                                CloseDialouge();
-                            }
-                            else
-                            {
-                                inDialouge = true;
-                                pickupSound.Play();
-                                dialougeText.text = "You pick up a large copper coin. Wonder if it can be used somewhere.";
-                            }
-                        }
-                        else if (coinTwo)
-                        {
-                            if (inDialouge)
-                            {
-                                gameManager.coinTwo = true;
-                                CloseDialouge();
-                            }
-                            else
-                            {
-                                inDialouge = true;
-                                pickupSound.Play();
-                                dialougeText.text = "You pick up a large silver coin. Maybe it will be of some use?";
-                            }
-                        }
-                        else if (coinThree)
-                        {
-                            if (inDialouge)
-                            {
-                                gameManager.coinThree = true;
-                                CloseDialouge();
-                            }
-                            else
-                            {
-                                inDialouge = true;
-                                pickupSound.Play();
-                                dialougeText.text = "You pick up a large gold coin. If it's of no use, you can pocket it for yourself.";
-                            }
-                        }
-                        else if (kingsKeyOne)
-                        {
-                            if (inDialouge)
-                            {
-                                gameManager.kingsKeyOne = true;
-                                CloseDialouge();
-                            }
-                            else
-                            {
-                                inDialouge = true;
-                                pickupSound.Play();
-                                dialougeText.text = "You pick up a large blue key. It's head is a replica of the crown of Norway.";
-                            }
-                        }
-                        else if (kingsKeyTwo)
-                        {
-                            if (inDialouge)
-                            {
-                                gameManager.kingsKeyTwo = true;
-                                CloseDialouge();
-                            }
-                            else
-                            {
-                                inDialouge = true;
-                                pickupSound.Play();
-                                dialougeText.text = "You pick up a large red key. It's head is a replica of the crown of Denmark.";
-                            }
-                        }
-                        else if (clothPile)
-                        {
-                            if (inDialouge)
-                            {
-                                gameManager.clothPile = true;
-                                CloseDialouge();
-                            }
-                            else
-                            {
-                                inDialouge = true;
-                                pickupSound.Play();
-                                dialougeText.text = "You pick up a pile of cloth. Maybe you can use it somewhere?";
-                            }
-                        }
-                        else if (sword)
-                        {
-                            if (inDialouge)
-                            {
-                                gameManager.sword = true;
-                                CloseDialouge();
-                            }
-                            else
-                            {
-                                inDialouge = true;
-                                pickupSound.Play();
-                                dialougeText.text = "You pick up a large sword. Weird place to keep one.";
-                            }
-                        }
-                        else if (book)
-                        {
-                            if (inDialouge)
-                            {
-                                gameManager.book = true;
-                                CloseDialouge();
-                            }
-                            else
-                            {
-                                inDialouge = true;
-                                pickupSound.Play();
-                                dialougeText.text = "You pick up a blue book. It has a small metal thing sticking out of its pages. Maybe its a key for something?";
-                            }
-                        }
-                    }
-                    //If this is a bullet, it will be picked up
-                    else if (isBullet)
+                    //Checks what item this is and picks it up
+                    if (hallwayKey)
                     {
                         if (inDialouge)
                         {
-                            player.gameObject.GetComponentInChildren<GunScript>().ammoCount++;
-                            if (bullet1)
-                            {
-                                gameManager.bullet1 = true;
-                            }
-                            if (bullet2)
-                            {
-                                gameManager.bullet2 = true;
-                            }
-                            if (bullet3)
-                            {
-                                gameManager.bullet3 = true;
-                            }
-                            if (bullet4)
-                            {
-                                gameManager.bullet4 = true;
-                            }
-                            if (bullet5)
-                            {
-                                gameManager.bullet5 = true;
-                            }
-                            if (bullet6)
-                            {
-                                gameManager.bullet6 = true;
-                            }
-                            if (bullet7)
-                            {
-                                gameManager.bullet7 = true;
-                            }
-                            if (bullet8)
-                            {
-                                gameManager.bullet8 = true;
-                            }
-                            if (bullet9)
-                            {
-                                gameManager.bullet9 = true;
-                            }
-                            if (bullet10)
-                            {
-                                gameManager.bullet10 = true;
-                            }
+                            gameManager.hallwayKey = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
                             pickupSound.Play();
-                            dialougeText.text = "You pick up a bullet.";
+                            dialougeText.text = "You pick up a key with an orange citrine gemstone as its head.";
                         }
+                    }
+                    else if (firstKey)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.firstKey = true;
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            pickupSound.Play();
+                            dialougeText.text = "You pick up a key with an emerald gemstone as its head.";
+                        }
+                    }
+                    else if (tunnelKey)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.tunnelKey = true;
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            pickupSound.Play();
+                            dialougeText.text = "You pick up a key with a horse emblem as its head.";
+                        }
+                    }
+                    else if (servantsKey)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.servantsKey = true;
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            pickupSound.Play();
+                            dialougeText.text = "You pick up a key with a large S-shaped emblem as its head.";
+                        }
+                    }
+                    else if (basementKey)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.basementKey = true;
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            pickupSound.Play();
+                            dialougeText.text = "You pick up an old and rusty key. Whatever this unlocks, it must be a very old lock.";
+                        }
+                    }
+                    else if (secondFloorKey)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.secondFloorKey = true;
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            pickupSound.Play();
+                            dialougeText.text = "You pick up a small key. The head is engraved with a 2.";
+                        }
+                    }
+                    else if (planetariumKey)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.planetariumKey = true;
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            pickupSound.Play();
+                            dialougeText.text = "You pick up a shiny golden key. The head of it is shaped like the sun.";
+                        }
+                    }
+                    else if (meetingKey)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.meetingKey = true;
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            pickupSound.Play();
+                            dialougeText.text = "You pick up small key. Its head is decorated with small blue saphires.";
+                        }
+                    }
+                    else if (coinOne)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.coinOne = true;
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            pickupSound.Play();
+                            dialougeText.text = "You pick up a large copper coin. Wonder if it can be used somewhere.";
+                        }
+                    }
+                    else if (coinTwo)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.coinTwo = true;
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            pickupSound.Play();
+                            dialougeText.text = "You pick up a large silver coin. Maybe it will be of some use?";
+                        }
+                    }
+                    else if (coinThree)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.coinThree = true;
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            pickupSound.Play();
+                            dialougeText.text = "You pick up a large gold coin. If it's of no use, you can pocket it for yourself.";
+                        }
+                    }
+                    else if (kingsKeyOne)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.kingsKeyOne = true;
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            pickupSound.Play();
+                            dialougeText.text = "You pick up a large blue key. It's head is a replica of the crown of Norway.";
+                        }
+                    }
+                    else if (kingsKeyTwo)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.kingsKeyTwo = true;
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            pickupSound.Play();
+                            dialougeText.text = "You pick up a large red key. It's head is a replica of the crown of Denmark.";
+                        }
+                    }
+                    else if (clothPile)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.clothPile = true;
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            pickupSound.Play();
+                            dialougeText.text = "You pick up a pile of cloth. Maybe you can use it somewhere?";
+                        }
+                    }
+                    else if (sword)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.sword = true;
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            pickupSound.Play();
+                            dialougeText.text = "You pick up a large sword. Weird place to keep one.";
+                        }
+                    }
+                    else if (book)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.book = true;
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            pickupSound.Play();
+                            dialougeText.text = "You pick up a blue book. It has a small metal thing sticking out of its pages. Maybe its a key for something?";
+                        }
+                    }
+                }
+                //If this is a bullet, it will be picked up
+                else if (isBullet)
+                {
+                    if (inDialouge)
+                    {
+                        player.gameObject.GetComponentInChildren<GunScript>().ammoCount++;
+                        if (bullet1)
+                        {
+                            gameManager.bullet1 = true;
+                        }
+                        if (bullet2)
+                        {
+                            gameManager.bullet2 = true;
+                        }
+                        if (bullet3)
+                        {
+                            gameManager.bullet3 = true;
+                        }
+                        if (bullet4)
+                        {
+                            gameManager.bullet4 = true;
+                        }
+                        if (bullet5)
+                        {
+                            gameManager.bullet5 = true;
+                        }
+                        if (bullet6)
+                        {
+                            gameManager.bullet6 = true;
+                        }
+                        if (bullet7)
+                        {
+                            gameManager.bullet7 = true;
+                        }
+                        if (bullet8)
+                        {
+                            gameManager.bullet8 = true;
+                        }
+                        if (bullet9)
+                        {
+                            gameManager.bullet9 = true;
+                        }
+                        if (bullet10)
+                        {
+                            gameManager.bullet10 = true;
+                        }
+                        CloseDialouge();
+                    }
+                    else
+                    {
+                        inDialouge = true;
+                        pickupSound.Play();
+                        dialougeText.text = "You pick up a bullet.";
                     }
                 }
             }
@@ -639,22 +623,18 @@ public class PickupObject : MonoBehaviour
                 }
             }
         }
-        //If the player has space in their inventory, this item will be added
-        if (player.inventorySpace < 8)
+        if (isKeyItem)
         {
-            if(isKeyItem)
+            player.inventorySpace++;
+            for (int i = 0; i < player.inventoryTexts.Length; i++)
             {
-                player.inventorySpace++;
-                for (int i = 0; i < player.inventoryTexts.Length; i++)
+                if (player.inventoryTexts[i].text == "")
                 {
-                    if (player.inventoryTexts[i].text == "")
-                    {
-                        player.inventoryTexts[i].text = gameObject.name;
-                        break;
-                    }
+                    player.inventoryTexts[i].text = gameObject.name;
+                    break;
                 }
             }
-            Destroy(gameObject);
         }
+        Destroy(gameObject);
     }
 }

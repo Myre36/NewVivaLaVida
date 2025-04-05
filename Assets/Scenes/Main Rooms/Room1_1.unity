@@ -19734,6 +19734,8 @@ MonoBehaviour:
   secondFloorDialouge: 0
   planetariumDialouge: 0
   libraryDialouge: 0
+  afterKingBedDialouge: 0
+  balconyDialouge: 0
 --- !u!4 &1513359009
 Transform:
   m_ObjectHideFlags: 0
@@ -20574,7 +20576,8 @@ MonoBehaviour:
   dialouge:
   - A small book which discusses the noble families of Denmark.
   - It also has a chapter about the noble families of Norway and Iceland.
-  - How boring.
+  - It just a wall of paragraphs describing the history of all these families.
+  - You don't have time for this.
   playerInRange: 0
   outlineEneabled: 1
   isBook: 0

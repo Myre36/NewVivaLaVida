@@ -202,7 +202,7 @@ Transform:
   m_GameObject: {fileID: 989276}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 3.6791706, y: -1.2670832, z: 10.008804}
+  m_LocalPosition: {x: 3.6791706, y: -1.2670832, z: 10.881332}
   m_LocalScale: {x: 0.2883506, y: 1.5849001, z: 0.14938729}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1795,7 +1795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8033001958263655611, guid: 0fe9704e785b47d46a7831cfef58a943, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.621475
+      value: 10.365
       objectReference: {fileID: 0}
     - target: {fileID: 8033001958263655611, guid: 0fe9704e785b47d46a7831cfef58a943, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3451,7 +3451,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  roomCheck: {fileID: 0}
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   playerInRange: 0
@@ -4989,7 +4988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1515270644305213510, guid: 6bef39bc6b916e741816aedf3fb6b5d5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.49881
+      value: 9.24234
       objectReference: {fileID: 0}
     - target: {fileID: 1515270644305213510, guid: 6bef39bc6b916e741816aedf3fb6b5d5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5292,6 +5291,18 @@ MonoBehaviour:
   introDialouge: 0
   tutorialDialouge: 0
   afterEnemyDialouge: 1
+  livingRoomDialouge: 0
+  eastHallwayDialouge: 0
+  kitchenDialouge: 0
+  afterKitchenDialouge: 0
+  afterBasementDialouge: 0
+  bothKeysDialouge: 0
+  statueDialouge: 0
+  secondFloorDialouge: 0
+  planetariumDialouge: 0
+  libraryDialouge: 0
+  afterKingBedDialouge: 0
+  balconyDialouge: 0
 --- !u!4 &1666786401
 Transform:
   m_ObjectHideFlags: 0

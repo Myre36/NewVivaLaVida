@@ -3381,15 +3381,9 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   dialouge:
-  - Seems to be the menu for this week.
-  - '"Monday 11/09: Duck with wine sauce."'
-  - '"Tuesday 12/09: Cheese cake with cream."'
-  - '"Wednesday 13/09: Reindeer with apples."'
-  - '"Thursday 14/09: Roasted pig with fruits."'
-  - '"Friday 15/09: Roasted pig with fruits."'
-  - '"Saturday 16/09: His highness is away."'
-  - '"Sunday 17/09: Fine steak with mushrooms."'
-  - Doesn't look like they made it too far into the week.
+  - There is a note on the table, all bloodied.
+  - A single line is written on it with a weak hand.
+  - '"They won''t die."'
   playerInRange: 0
   outlineEneabled: 1
   isBook: 0
@@ -3477,7 +3471,7 @@ Transform:
   m_GameObject: {fileID: 976360528}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7120628, z: -0, w: 0.7021158}
-  m_LocalPosition: {x: 12.9391775, y: 1.2207, z: -140.1874}
+  m_LocalPosition: {x: 12.9391775, y: 1.221, z: -137.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

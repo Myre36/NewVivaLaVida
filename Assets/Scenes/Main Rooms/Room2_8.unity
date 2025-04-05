@@ -4508,6 +4508,7 @@ MonoBehaviour:
   planetariumDialouge: 0
   libraryDialouge: 0
   afterKingBedDialouge: 1
+  balconyDialouge: 0
 --- !u!4 &1058635802
 Transform:
   m_ObjectHideFlags: 0
@@ -4875,6 +4876,173 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1001 &1159698539
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1543613180}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2134571
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2134571
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2134571
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.19
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -35.39
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      propertyPath: m_Name
+      value: Book1 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3451118302482216456, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1159698544}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1159698543}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1159698542}
+  m_SourcePrefab: {fileID: 100100000, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+--- !u!4 &1159698540 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+  m_PrefabInstance: {fileID: 1159698539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1159698541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+  m_PrefabInstance: {fileID: 1159698539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1159698542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159698541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca762171fbce39d42bb655084dc20f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialougeBox: {fileID: 0}
+  dialougeText: {fileID: 0}
+  dialouge:
+  - Research notes.
+  - '"It is astounding how well preserved the ship is."'
+  - '"We even have a fully preserved skeleton."'
+  - '"We suspect this was a trading ship. How it got into the glacier, we don''t
+    know."'
+  - '"It is certainly fascinating."'
+  - '"The smell however is the worst part."'
+  - '"If it wasn''t for how fascinating this find is, I wouldn''t step a foot on
+    this ship."'
+  - The next page seems to have been written a little later.
+  - '"We will arrive in Denmark today."'
+  - '"I''ve had a splitting headache all day."'
+  - '"My colligues seem to be dealing with something simlar."'
+  - '"The commander seems to be the worst though."'
+  - '"He seemingly can''t sleep and stays below deck all day."'
+  - '"I bumped into yesterday, and his eyes were bloodshot."'
+  - '"I asked if he was okay, but he didn''t seem all too thrilled to talk to me."'
+  - '"I wonder if god has punished us for disturbing the ship."'
+  - The next place has a single sentance. There are drops of blood on the page.
+  - '"I''m sorry."'
+  playerInRange: 0
+  outlineEneabled: 1
+  isBook: 0
+  lineNumber: 0
+--- !u!114 &1159698543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159698541}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!65 &1159698544
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159698541}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1403768, y: 0.46593586, z: 0.907248}
+  m_Center: {x: 0.16895105, y: 0.23038031, z: 0.36816674}
 --- !u!1 &1209971687
 GameObject:
   m_ObjectHideFlags: 0
@@ -6057,6 +6225,7 @@ Transform:
   m_Children:
   - {fileID: 1734918164}
   - {fileID: 1005948866}
+  - {fileID: 1159698540}
   - {fileID: 459540835}
   - {fileID: 1860416921}
   - {fileID: 742944951}
@@ -7532,6 +7701,7 @@ MonoBehaviour:
   planetariumDialouge: 0
   libraryDialouge: 1
   afterKingBedDialouge: 0
+  balconyDialouge: 0
 --- !u!4 &2002972015
 Transform:
   m_ObjectHideFlags: 0

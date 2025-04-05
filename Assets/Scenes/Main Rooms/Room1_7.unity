@@ -2562,9 +2562,6 @@ GameObject:
   - component: {fileID: 780441144}
   - component: {fileID: 780441143}
   - component: {fileID: 780441142}
-  - component: {fileID: 780441141}
-  - component: {fileID: 780441140}
-  - component: {fileID: 780441139}
   m_Layer: 0
   m_Name: Painting
   m_TagString: Untagged
@@ -2572,66 +2569,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &780441139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780441138}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.9547169, g: 0.9220408, b: 0.23597719, a: 1}
-  outlineWidth: 2.26
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &780441140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780441138}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca762171fbce39d42bb655084dc20f40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
-  dialouge:
-  - Kitchenware is strewn around the table
-  - It doesn't look like it's been cleaned in months
-  playerInRange: 0
-  outlineEneabled: 1
-  isBook: 0
-  lineNumber: 0
---- !u!65 &780441141
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780441138}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 2.4013205, y: 1.7836373, z: 1.0335575}
-  m_Center: {x: -0.08812771, y: 0.3744602, z: -0.002467094}
 --- !u!65 &780441142
 BoxCollider:
   m_ObjectHideFlags: 0

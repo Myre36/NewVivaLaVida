@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -4543,13 +4543,13 @@ MonoBehaviour:
   bookNeeded: 0
   clothNeeded: 1
   upperBathroom: 0
+  playerInRange: 0
+  hasEnemies: 1
   player: {fileID: 0}
   dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
-  playerInRange: 0
   placedObject: {fileID: 90215706}
   keyItem: {fileID: 0}
-  hasEnemies: 1
+  dialougeText: {fileID: 0}
   enemies:
   - {fileID: 196211142}
 --- !u!114 &1419450018

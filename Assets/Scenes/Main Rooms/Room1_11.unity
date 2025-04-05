@@ -844,7 +844,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -2965,6 +2965,13 @@ MonoBehaviour:
   kitchenDialouge: 0
   afterKitchenDialouge: 0
   afterBasementDialouge: 0
+  bothKeysDialouge: 0
+  statueDialouge: 0
+  secondFloorDialouge: 0
+  planetariumDialouge: 0
+  libraryDialouge: 0
+  afterKingBedDialouge: 0
+  balconyDialouge: 0
 --- !u!4 &628112179
 Transform:
   m_ObjectHideFlags: 0
@@ -3919,7 +3926,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -4211,6 +4218,13 @@ MonoBehaviour:
   kitchenDialouge: 0
   afterKitchenDialouge: 1
   afterBasementDialouge: 0
+  bothKeysDialouge: 0
+  statueDialouge: 0
+  secondFloorDialouge: 0
+  planetariumDialouge: 0
+  libraryDialouge: 0
+  afterKingBedDialouge: 0
+  balconyDialouge: 0
 --- !u!4 &1549144901
 Transform:
   m_ObjectHideFlags: 0

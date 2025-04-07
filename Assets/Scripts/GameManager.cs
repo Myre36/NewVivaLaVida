@@ -141,6 +141,11 @@ public class GameManager : MonoBehaviour
     public bool plantSix;
     public bool plantSeven;
 
+    public bool chest1;
+    public bool chest2;
+    public bool chest3;
+    public bool chest4;
+
     public string[] stands;
 
     public bool godModeActivated;

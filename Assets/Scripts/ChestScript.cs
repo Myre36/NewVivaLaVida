@@ -1,0 +1,235 @@
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ChestScript : MonoBehaviour
+{
+    //A refrence to the game manager
+    private GameManager gameManager;
+
+    //A refrence to the player movement script
+    private Movement player;
+
+    //Bool to check if the player is in rnage of the door
+    public bool playerInRange;
+
+    //A bool to check if the player is already in dialouge
+    private bool inDialouge;
+
+    //A refrence to the dialouge box
+    public GameObject dialougeBox;
+
+    //A refrence to the dialouge text
+    public TMP_Text dialougeText;
+
+    //Bools to check what chest this is
+    public bool chest1;
+    public bool chest2;
+    public bool chest3;
+    public bool chest4;
+
+    public int ammoAmmount;
+
+    public bool hasHealing;
+
+    public GameObject closedLid;
+    public GameObject openLid;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        //Assigning all the refrences
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        player = GameObject.Find("Player").GetComponent<Movement>();
+        dialougeBox = GameObject.Find("DialougeBox");
+        dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
+
+        if(chest1)
+        {
+            if(gameManager.chest1)
+            {
+                closedLid.SetActive(false);
+                openLid.SetActive(true);
+                this.enabled = false;
+            }
+        }
+        else if (chest2)
+        {
+            if (gameManager.chest2)
+            {
+                closedLid.SetActive(false);
+                openLid.SetActive(true);
+                this.enabled = false;
+            }
+        }
+        else if (chest3)
+        {
+            if (gameManager.chest3)
+            {
+                closedLid.SetActive(false);
+                openLid.SetActive(true);
+                this.enabled = false;
+            }
+        }
+        else if (chest4)
+        {
+            if (gameManager.chest4)
+            {
+                closedLid.SetActive(false);
+                openLid.SetActive(true);
+                this.enabled = false;
+            }
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(playerInRange)
+        {
+            if(Input.GetKeyUp(KeyCode.E))
+            {
+                //Freezes the player and turns on the dialouge
+                player.enabled = false;
+                dialougeBox.GetComponent<RawImage>().enabled = true;
+                dialougeText.enabled = true;
+
+                if (hasHealing)
+                {
+                    dialougeText.text = "You got " + ammoAmmount + " bullets and a healing item.";
+                }
+                else
+                {
+                    dialougeText.text = "You got " + ammoAmmount + " bullets.";
+                }
+
+                if (chest1)
+                {
+                    if(gameManager.tunnelKey)
+                    {
+                        if(inDialouge)
+                        {
+                            gameManager.chest1 = true;
+                            UnlockChest();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                        }
+                    }
+                    else
+                    {
+                        if(inDialouge)
+                        {
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            dialougeText.text = "The lock on the chest is in the shape of a horse.";
+                        }
+                    }
+                }
+                else if(chest2)
+                {
+                    if (gameManager.kingsKeyOne)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.chest2 = true;
+                            UnlockChest();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                        }
+                    }
+                    else
+                    {
+                        if (inDialouge)
+                        {
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            dialougeText.text = "The lock on the chest is shaped like a blue crown.";
+                        }
+                    }
+                }
+                else if (chest3)
+                {
+                    if (gameManager.secondFloorKey)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.chest3 = true;
+                            UnlockChest();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                        }
+                    }
+                    else
+                    {
+                        if (inDialouge)
+                        {
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            dialougeText.text = "The lock on the chest is marked with the number 2.";
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Code to check when the player enters the door trigger
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player") && this.enabled == true)
+        {
+            playerInRange = true;
+            GetComponent<Outline>().enabled = true;
+        }
+    }
+
+    //Code to check when the player exits the door trigger
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player") && this.enabled == true)
+        {
+            playerInRange = false;
+            GetComponent<Outline>().enabled = false;
+        }
+    }
+
+    void UnlockChest()
+    {
+        player.enabled = true;
+        dialougeBox.GetComponent<RawImage>().enabled = false;
+        dialougeText.enabled = false;
+        inDialouge = false;
+        player.gameObject.GetComponentInChildren<GunScript>().ammoCount += ammoAmmount;
+        if(hasHealing)
+        {
+            player.healingCharges++;
+        }
+        GetComponent<Outline>().enabled = false;
+        closedLid.SetActive(false);
+        openLid.SetActive(true);
+        this.enabled = false;
+    }
+
+    void CloseDialouge()
+    {
+        player.enabled = true;
+        dialougeBox.GetComponent<RawImage>().enabled = false;
+        dialougeText.enabled = false;
+        inDialouge = false;
+    }
+}

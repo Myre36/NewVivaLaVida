@@ -1201,7 +1201,9 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   dialouge:
-  - A small tub for bathing
+  - The corpse is pale and stiff.
+  - Seems to have been a servant.
+  - It's been dead for a few days now.
   playerInRange: 0
   outlineEneabled: 1
   isBook: 0
@@ -1225,8 +1227,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.2802658, y: 1.7836365, z: 3.2471755}
-  m_Center: {x: -0.002111428, y: 0.37446025, z: 0.18128888}
+  m_Size: {x: 2.2802658, y: 1.7836365, z: 1.3209485}
+  m_Center: {x: -0.002111428, y: 0.37446025, z: 0.009444128}
 --- !u!65 &372983679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1310,8 +1312,8 @@ Transform:
   m_GameObject: {fileID: 372983675}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.04, y: 0.354, z: -154.405}
-  m_LocalScale: {x: 0.9254773, y: 0.682333, z: 0.73129684}
+  m_LocalPosition: {x: 9.04, y: 0.354, z: -154.68}
+  m_LocalScale: {x: 0.9254773, y: 0.682333, z: 2.2685559}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

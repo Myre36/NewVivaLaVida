@@ -267,7 +267,7 @@ public class UnlockItem : MonoBehaviour
                 {
                     NavMeshAgent currentEnemy = enemies[i];
 
-                    currentEnemy.enabled = false;
+                    currentEnemy.enabled = true;
                 }
             }
         }
@@ -290,7 +290,7 @@ public class UnlockItem : MonoBehaviour
                 {
                     NavMeshAgent currentEnemy = enemies[i];
 
-                    currentEnemy.enabled = false;
+                    currentEnemy.enabled = true;
                 }
             }
         }

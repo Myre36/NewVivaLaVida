@@ -1722,6 +1722,71 @@ Transform:
   m_Children: []
   m_Father: {fileID: 523923235}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &467840642
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1688220300375580150, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1688220300375580150, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.366
+      objectReference: {fileID: 0}
+    - target: {fileID: 1688220300375580150, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -147.642
+      objectReference: {fileID: 0}
+    - target: {fileID: 1688220300375580150, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1688220300375580150, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1688220300375580150, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1688220300375580150, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1688220300375580150, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1688220300375580150, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1688220300375580150, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4309521445921147632, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
+      propertyPath: m_Name
+      value: Pot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7159625346283352340, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
+      propertyPath: isPlant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7159625346283352340, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
+      propertyPath: plantOne
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
 --- !u!1 &523923234
 GameObject:
   m_ObjectHideFlags: 0
@@ -3473,6 +3538,7 @@ MonoBehaviour:
   kingsKeyTwo: 0
   isKeyItem: 1
   isBullet: 0
+  isPlant: 0
   bullet1: 0
   bullet2: 0
   bullet3: 0
@@ -3484,6 +3550,13 @@ MonoBehaviour:
   bullet9: 0
   bullet10: 0
   hasEnemies: 0
+  plantOne: 0
+  plantTwo: 0
+  plantThree: 0
+  plantFour: 0
+  plantFive: 0
+  plantSix: 0
+  plantSeven: 0
   enemies: []
 --- !u!23 &986580076
 MeshRenderer:
@@ -8298,3 +8371,4 @@ SceneRoots:
   - {fileID: 1666786401}
   - {fileID: 724983512751206723}
   - {fileID: 1436872049}
+  - {fileID: 467840642}

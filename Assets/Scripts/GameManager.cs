@@ -133,6 +133,14 @@ public class GameManager : MonoBehaviour
     public bool afterKingBedDialougeDone;
     public bool balconyDialougeDone;
 
+    public bool plantOne;
+    public bool plantTwo;
+    public bool plantThree;
+    public bool plantFour;
+    public bool plantFive;
+    public bool plantSix;
+    public bool plantSeven;
+
     public string[] stands;
 
     public bool godModeActivated;

@@ -61,6 +61,10 @@ public class Movement : MonoBehaviour
 
     public AudioSource EstherGrunt2Sound;
 
+    public int healingCharges = 0;
+
+    public TMP_Text healingChargeText;
+
     public MovementState state;
 
     //This defines the health changed events and handler delagating
@@ -207,6 +211,12 @@ public class Movement : MonoBehaviour
             }
         }
 
+        if(Input.GetKeyDown(KeyCode.G) && healingCharges > 0)
+        {
+            currentHealth += 0.25f;
+            healingCharges--;
+        }
+
         if(Input.GetKeyDown(KeyCode.P))
         {
             gameManager.ActivateGodMode();
@@ -229,6 +239,8 @@ public class Movement : MonoBehaviour
         {
             heartbeatSound.mute = true;
         }
+
+        healingChargeText.text = "Healing items: " + healingCharges;
     }
 
     private void FixedUpdate()

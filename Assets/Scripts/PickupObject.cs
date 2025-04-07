@@ -43,6 +43,8 @@ public class PickupObject : MonoBehaviour
     public bool isKeyItem;
     //A bool for of this is a bullet
     public bool isBullet;
+    //A bool for if this is a healing item
+    public bool isPlant;
     //Bools for what bullet this is
     public bool bullet1;
     public bool bullet2;
@@ -56,6 +58,15 @@ public class PickupObject : MonoBehaviour
     public bool bullet10;
     //A bool for if this room has enemies
     public bool hasEnemies;
+
+    //Bools for plants
+    public bool plantOne;
+    public bool plantTwo;
+    public bool plantThree;
+    public bool plantFour;
+    public bool plantFive;
+    public bool plantSix;
+    public bool plantSeven;
 
     //An array of all the enemy navmeshes
     public NavMeshAgent[] enemies;
@@ -260,6 +271,58 @@ public class PickupObject : MonoBehaviour
             if (bullet10)
             {
                 if (gameManager.bullet10)
+                {
+                    Destroy(gameObject);
+                }
+            }
+        }
+        else if(isPlant)
+        {
+            if (plantOne)
+            {
+                if (gameManager.plantOne)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            else if (plantTwo)
+            {
+                if (gameManager.plantTwo)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            else if (plantThree)
+            {
+                if (gameManager.plantThree)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            else if (plantFour)
+            {
+                if (gameManager.plantFour)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            else if (plantFive)
+            {
+                if (gameManager.plantFive)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            else if (plantSix)
+            {
+                if (gameManager.plantSix)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            else if (plantSeven)
+            {
+                if (gameManager.plantSeven)
                 {
                     Destroy(gameObject);
                 }
@@ -531,39 +594,39 @@ public class PickupObject : MonoBehaviour
                         {
                             gameManager.bullet1 = true;
                         }
-                        if (bullet2)
+                        else if (bullet2)
                         {
                             gameManager.bullet2 = true;
                         }
-                        if (bullet3)
+                        else if (bullet3)
                         {
                             gameManager.bullet3 = true;
                         }
-                        if (bullet4)
+                        else if (bullet4)
                         {
                             gameManager.bullet4 = true;
                         }
-                        if (bullet5)
+                        else if (bullet5)
                         {
                             gameManager.bullet5 = true;
                         }
-                        if (bullet6)
+                        else if (bullet6)
                         {
                             gameManager.bullet6 = true;
                         }
-                        if (bullet7)
+                        else if (bullet7)
                         {
                             gameManager.bullet7 = true;
                         }
-                        if (bullet8)
+                        else if (bullet8)
                         {
                             gameManager.bullet8 = true;
                         }
-                        if (bullet9)
+                        else if (bullet9)
                         {
                             gameManager.bullet9 = true;
                         }
-                        if (bullet10)
+                        else if (bullet10)
                         {
                             gameManager.bullet10 = true;
                         }
@@ -574,6 +637,48 @@ public class PickupObject : MonoBehaviour
                         inDialouge = true;
                         pickupSound.Play();
                         dialougeText.text = "You pick up a bullet.";
+                    }
+                }
+                else if(isPlant)
+                {
+                    if(inDialouge)
+                    {
+                        player.healingCharges++;
+                        if(plantOne)
+                        {
+                            gameManager.plantOne = true;
+                        }
+                        else if(plantTwo)
+                        {
+                            gameManager.plantTwo = true;
+                        }
+                        else if(plantThree)
+                        {
+                            gameManager.plantThree = true;
+                        }
+                        else if(plantFour)
+                        {
+                            gameManager.plantFour = true;
+                        }
+                        else if(plantFive)
+                        {
+                            gameManager.plantFive = true;
+                        }
+                        else if(plantSix)
+                        {
+                            gameManager.plantSix = true;
+                        }
+                        else if(plantSeven)
+                        {
+                            gameManager.plantSeven = true;
+                        }
+                        CloseDialouge();
+                    }
+                    else
+                    {
+                        inDialouge = true;
+                        pickupSound.Play();
+                        dialougeText.text = "You pick up a healing plant.";
                     }
                 }
             }

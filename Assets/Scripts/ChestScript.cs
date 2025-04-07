@@ -27,6 +27,10 @@ public class ChestScript : MonoBehaviour
     public bool chest2;
     public bool chest3;
     public bool chest4;
+    public bool chest5;
+    public bool chest6;
+    public bool chest7;
+    public bool chest8;
 
     public int ammoAmmount;
 
@@ -74,6 +78,42 @@ public class ChestScript : MonoBehaviour
         else if (chest4)
         {
             if (gameManager.chest4)
+            {
+                closedLid.SetActive(false);
+                openLid.SetActive(true);
+                this.enabled = false;
+            }
+        }
+        else if (chest5)
+        {
+            if (gameManager.chest5)
+            {
+                closedLid.SetActive(false);
+                openLid.SetActive(true);
+                this.enabled = false;
+            }
+        }
+        else if (chest6)
+        {
+            if (gameManager.chest6)
+            {
+                closedLid.SetActive(false);
+                openLid.SetActive(true);
+                this.enabled = false;
+            }
+        }
+        else if (chest7)
+        {
+            if (gameManager.chest7)
+            {
+                closedLid.SetActive(false);
+                openLid.SetActive(true);
+                this.enabled = false;
+            }
+        }
+        else if (chest8)
+        {
+            if (gameManager.chest8)
             {
                 closedLid.SetActive(false);
                 openLid.SetActive(true);
@@ -181,6 +221,141 @@ public class ChestScript : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "The lock on the chest is marked with the number 2.";
+                        }
+                    }
+                }
+                else if (chest4)
+                {
+                    if (gameManager.servantsKey)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.chest4 = true;
+                            UnlockChest();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                        }
+                    }
+                    else
+                    {
+                        if (inDialouge)
+                        {
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            dialougeText.text = "The lock on the chest is marked with the letter S.";
+                        }
+                    }
+                }
+                else if (chest5)
+                {
+                    if (gameManager.planetariumKey)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.chest5 = true;
+                            UnlockChest();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                        }
+                    }
+                    else
+                    {
+                        if (inDialouge)
+                        {
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            dialougeText.text = "The lock on the chest is shaped like a sun.";
+                        }
+                    }
+                }
+                else if (chest6)
+                {
+                    if (gameManager.basementKey)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.chest6 = true;
+                            UnlockChest();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                        }
+                    }
+                    else
+                    {
+                        if (inDialouge)
+                        {
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            dialougeText.text = "The lock on the chest is rusty, like it hasn't been used in a long time.";
+                        }
+                    }
+                }
+                else if (chest7)
+                {
+                    if (gameManager.servantsKey)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.chest7 = true;
+                            UnlockChest();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                        }
+                    }
+                    else
+                    {
+                        if (inDialouge)
+                        {
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            dialougeText.text = "The lock on the chest is marked with the letter S.";
+                        }
+                    }
+                }
+                else if (chest8)
+                {
+                    if (gameManager.kingsKeyTwo)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.chest8 = true;
+                            UnlockChest();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                        }
+                    }
+                    else
+                    {
+                        if (inDialouge)
+                        {
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            dialougeText.text = "The lock on the chest is shaped like a red crown.";
                         }
                     }
                 }

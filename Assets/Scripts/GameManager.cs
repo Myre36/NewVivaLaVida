@@ -145,6 +145,10 @@ public class GameManager : MonoBehaviour
     public bool chest2;
     public bool chest3;
     public bool chest4;
+    public bool chest5;
+    public bool chest6;
+    public bool chest7;
+    public bool chest8;
 
     public string[] stands;
 

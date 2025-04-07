@@ -31,6 +31,8 @@ public class ChestScript : MonoBehaviour
     public bool chest6;
     public bool chest7;
     public bool chest8;
+    public bool chest9;
+    public bool chest10;
 
     public int ammoAmmount;
 
@@ -114,6 +116,24 @@ public class ChestScript : MonoBehaviour
         else if (chest8)
         {
             if (gameManager.chest8)
+            {
+                closedLid.SetActive(false);
+                openLid.SetActive(true);
+                this.enabled = false;
+            }
+        }
+        else if (chest9)
+        {
+            if (gameManager.chest9)
+            {
+                closedLid.SetActive(false);
+                openLid.SetActive(true);
+                this.enabled = false;
+            }
+        }
+        else if (chest10)
+        {
+            if (gameManager.chest10)
             {
                 closedLid.SetActive(false);
                 openLid.SetActive(true);
@@ -339,6 +359,60 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest8 = true;
+                            UnlockChest();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                        }
+                    }
+                    else
+                    {
+                        if (inDialouge)
+                        {
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            dialougeText.text = "The lock on the chest is shaped like a red crown.";
+                        }
+                    }
+                }
+                else if (chest9)
+                {
+                    if (gameManager.kingsKeyOne)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.chest9 = true;
+                            UnlockChest();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                        }
+                    }
+                    else
+                    {
+                        if (inDialouge)
+                        {
+                            CloseDialouge();
+                        }
+                        else
+                        {
+                            inDialouge = true;
+                            dialougeText.text = "The lock on the chest is shaped like a blue crown.";
+                        }
+                    }
+                }
+                else if (chest10)
+                {
+                    if (gameManager.kingsKeyTwo)
+                    {
+                        if (inDialouge)
+                        {
+                            gameManager.chest10 = true;
                             UnlockChest();
                         }
                         else

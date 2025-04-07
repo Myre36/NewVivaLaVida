@@ -9308,6 +9308,9 @@ MonoBehaviour:
   - There are piles of food strewn around the kitchen table.
   - It looks like someone was in the middle of making food.
   - Seems they had to leave in a hurry.
+  - Mixed in with the smell of rotten food, is the smell of decomposing corpses and
+    blood.
+  - You struggle not to throw up.
   introDialouge: 0
   tutorialDialouge: 0
   afterEnemyDialouge: 0

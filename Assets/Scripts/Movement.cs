@@ -211,15 +211,15 @@ public class Movement : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.G) && healingCharges > 0)
+        if(Input.GetKeyDown(KeyCode.G) && healingCharges > 0 && currentHealth != 0)
         {
-            if(currentHealth < 0.25f)
+            if (currentHealth < 0.2f)
             {
                 currentHealth = 0;
             }
             else
             {
-                currentHealth -= 0.25f;
+                currentHealth -= 0.2f;
             }
 
             healingCharges--;

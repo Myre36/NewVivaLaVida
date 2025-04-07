@@ -15574,8 +15574,8 @@ MonoBehaviour:
   m_SerializedVersion: 0
   m_AgentTypeID: 0
   m_CollectObjects: 1
-  m_Size: {x: 40.35461, y: 1.4108042, z: 22.198166}
-  m_Center: {x: 4.595541, y: -1.346771, z: -7.144432}
+  m_Size: {x: 40.35461, y: 0.7189764, z: 22.198166}
+  m_Center: {x: 4.595541, y: -1.6926849, z: -7.144432}
   m_LayerMask:
     serializedVersion: 2
     m_Bits: 4294967295

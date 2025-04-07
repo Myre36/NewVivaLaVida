@@ -25,7 +25,7 @@ public class Movement : MonoBehaviour
     //The maximum speed that the player can reach
     public float maxSpeed;
     //The speed at which the player rotates
-    private int rotationSpeed;
+    public int rotationSpeed;
 
     public float playerHeight;
     public LayerMask whatIsGround;
@@ -188,14 +188,12 @@ public class Movement : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             aiming = true;
-            rotationSpeed = 200;
             gun.GetComponent<Renderer>().enabled = true;
         }
         //If the player is not holding down the RMB, the gun is not visible
         else
         {
             aiming = false;
-            rotationSpeed = 500;
             gun.GetComponent<Renderer>().enabled = false;
         }
         //Pressing the Tab key either opens the inventory screen, or closes it, depending on what its status is

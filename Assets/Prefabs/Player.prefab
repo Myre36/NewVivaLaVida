@@ -112,7 +112,6 @@ MonoBehaviour:
   bulletSpawn: {fileID: 6012942427680055160}
   shootPoint: {fileID: 6789656981116855533}
   ammoCount: 3
-  ammoText: {fileID: 0}
   reloadingText: {fileID: 0}
   ammoInImage: {fileID: 0}
   noAmmoInInImage: {fileID: 0}
@@ -755,6 +754,7 @@ MonoBehaviour:
   walkSpeed: 5
   sprintSpeed: 7
   maxSpeed: 4
+  rotationSpeed: 500
   playerHeight: 2
   whatIsGround:
     serializedVersion: 2
@@ -763,7 +763,6 @@ MonoBehaviour:
   gun: {fileID: 1515551007696776209}
   inventoryScreen: {fileID: 0}
   aiming: 0
-  inventorySpace: 0
   inventoryTexts:
   - {fileID: 0}
   - {fileID: 0}
@@ -777,6 +776,8 @@ MonoBehaviour:
   EstherDeathSound: {fileID: 2300006960355890567}
   EstherGrunt1Sound: {fileID: 7332837694656332198}
   EstherGrunt2Sound: {fileID: 0}
+  healingCharges: 0
+  healingChargeText: {fileID: 0}
   state: 0
   currentHealth: 0
   gameManager: {fileID: 0}

@@ -1162,7 +1162,7 @@ GameObject:
   - component: {fileID: 372983677}
   - component: {fileID: 372983676}
   m_Layer: 0
-  m_Name: Painting
+  m_Name: Corpse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

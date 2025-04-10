@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class DoorScript : MonoBehaviour
 {
+    // Open door sound effect
+    public AudioSource DoorOpen;
+
     //The number of the door. Used to determine where the player will spawn in the next scene
     public int doorNumber;
 
@@ -36,6 +39,7 @@ public class DoorScript : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         fadeScreen = GameObject.Find("FadeScreen").GetComponent<CanvasGroup>();
         player = GameObject.Find("Player").GetComponent<Movement>();
+        DoorOpen = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -106,6 +110,7 @@ public class DoorScript : MonoBehaviour
     public IEnumerator OpenDoor()
     {
         Debug.Log("Loading next scene");
+        DoorOpen.Play();
         player.enabled = false;
         fadeIn = true; 
         player.enabled = false;

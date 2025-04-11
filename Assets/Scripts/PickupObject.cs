@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
@@ -338,8 +339,48 @@ public class PickupObject : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                //Turns off the player
-                player.enabled = false;
+                if(isBullet)
+                {
+                    if(!gameManager.firstBullet)
+                    {
+                        //Turns off the player
+                        player.enabled = false;
+                        gameManager.firstBullet = true;
+                    }
+                    else
+                    {
+                        if(!inDialouge)
+                        {
+                            dialougeBox = GameObject.Find("SmallDialougeBox");
+                            dialougeText = GameObject.Find("SmallDialougeText").GetComponent<TMP_Text>();
+                            StartCoroutine(SmallDialouge());
+                        }
+                    }
+                }
+                else if(isPlant)
+                {
+                    if (!gameManager.firstPlant)
+                    {
+                        //Turns off the player
+                        player.enabled = false;
+                        gameManager.firstPlant = true;
+                    }
+                    else
+                    {
+                        if(!inDialouge)
+                        {
+                            dialougeBox = GameObject.Find("SmallDialougeBox");
+                            dialougeText = GameObject.Find("SmallDialougeText").GetComponent<TMP_Text>();
+                            StartCoroutine(SmallDialouge());
+                        }
+                    }
+                }
+                else
+                {
+                    //Turns off the player
+                    player.enabled = false;
+                }
+                
                 dialougeBox.GetComponent<RawImage>().enabled = true;
                 dialougeText.enabled = true;
                 //If this room has enemies, their movement will all be paused while the player is in dialouge
@@ -739,6 +780,30 @@ public class PickupObject : MonoBehaviour
                 }
             }
         }
+        Destroy(gameObject);
+    }
+
+    IEnumerator SmallDialouge()
+    {
+        GetComponent<Renderer>().enabled = false;
+        GetComponent<Outline>().enabled = false;
+        yield return new WaitForSeconds(3);
+        dialougeBox.GetComponent<RawImage>().enabled = false;
+        if (hasEnemies)
+        {
+            for (int i = 0; i < enemies.Length; i++)
+            {
+                if (enemies[i] != null)
+                {
+                    NavMeshAgent currentEnemy = enemies[i];
+
+                    currentEnemy.enabled = true;
+                }
+            }
+        }
+        dialougeText.text = "You are not supposed to see this";
+        dialougeText.enabled = false;
+        inDialouge = false;
         Destroy(gameObject);
     }
 }

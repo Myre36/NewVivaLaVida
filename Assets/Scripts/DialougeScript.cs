@@ -17,8 +17,6 @@ public class DialougeScript : MonoBehaviour
     public bool playerInRange = false;
     //A bool for if the object should have an outline or not
     public bool outlineEneabled = false;
-    //A bool for if the object is a book or not
-    public bool isBook;
     //A bool for if the player is in dialouge
     private bool inDialouge;
 
@@ -29,18 +27,8 @@ public class DialougeScript : MonoBehaviour
 
     private void Start()
     {
-        //If the object is a book, the book sprite will be assigned as the dialouge box
-        if(isBook)
-        {
-            dialougeBox = GameObject.Find("UIBook").GetComponent<RawImage>();
-            dialougeText = GameObject.Find("UIBookText").GetComponent<TMP_Text>();
-        }
-        //If not, then the normal dialouge box is used
-        else
-        {
-            dialougeBox = GameObject.Find("DialougeBox").GetComponent<RawImage>();
-            dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
-        }
+        dialougeBox = GameObject.Find("DialougeBox").GetComponent<RawImage>();
+        dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
 
         player = GameObject.Find("Player").GetComponent<Movement>();
     }

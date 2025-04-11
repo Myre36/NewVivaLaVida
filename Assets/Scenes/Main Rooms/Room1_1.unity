@@ -1556,7 +1556,6 @@ MonoBehaviour:
   - The door is locked
   playerInRange: 0
   outlineEneabled: 0
-  isBook: 0
   lineNumber: 0
 --- !u!65 &158576996
 BoxCollider:
@@ -8761,7 +8760,7 @@ GameObject:
   - component: {fileID: 602017140}
   - component: {fileID: 602017139}
   m_Layer: 5
-  m_Name: UIBookText
+  m_Name: SmallDialougeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8783,8 +8782,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -17.549, y: 148.11}
-  m_SizeDelta: {x: 383.07, y: 424.75}
+  m_AnchoredPosition: {x: -0.00011, y: 17.183985}
+  m_SizeDelta: {x: 217.44446, y: 45.7449}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &602017139
 MonoBehaviour:
@@ -8833,8 +8832,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 19.7
+  m_fontSizeBase: 19.7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11044,7 +11043,6 @@ MonoBehaviour:
   - How far we have fallen...
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &648768165
 BoxCollider:
@@ -15237,7 +15235,6 @@ MonoBehaviour:
   - High King Filip III
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1066295787
 BoxCollider:
@@ -17421,7 +17418,7 @@ GameObject:
   - component: {fileID: 1263717911}
   - component: {fileID: 1263717910}
   m_Layer: 5
-  m_Name: UIBook
+  m_Name: SmallDialougeBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17444,8 +17441,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 362.82745}
-  m_SizeDelta: {x: 70.1941, y: 295.5948}
+  m_AnchoredPosition: {x: 514, y: 642}
+  m_SizeDelta: {x: 20.1911, y: 34.4267}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1263717910
 MonoBehaviour:
@@ -20717,7 +20714,6 @@ MonoBehaviour:
   - You don't have time for this.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1530790638
 BoxCollider:
@@ -27439,7 +27435,6 @@ MonoBehaviour:
   - The painting exaggerates his posture.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &2023747669
 BoxCollider:
@@ -27890,7 +27885,6 @@ MonoBehaviour:
   - Maybe you really shouldn't be here.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &2048484974
 BoxCollider:

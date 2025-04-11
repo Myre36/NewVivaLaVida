@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
 
     public int enemyRespawnTime;
 
+    public bool firstBullet;
+    public bool firstPlant;
+
     //Bools for if all the enemies are dead
     public bool enemyOneFakeDead = false;
     public bool enemyTwoFakeDead = false;

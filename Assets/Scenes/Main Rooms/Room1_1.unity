@@ -19850,7 +19850,6 @@ MonoBehaviour:
   - Nothing but the silent wind outside.
   - ...
   - The king is probably hauled up in his throne room.
-  - Behind the giant door straight ahead of you.
   - It's kept shut with two giant locks.
   - The keys are probably hidden somewhere within the castle.
   - You just have to find them.
@@ -19870,6 +19869,8 @@ MonoBehaviour:
   libraryDialouge: 0
   afterKingBedDialouge: 0
   balconyDialouge: 0
+  playerCamera: {fileID: 1791594886}
+  cinematicCam: {fileID: 1619974104}
 --- !u!4 &1513359009
 Transform:
   m_ObjectHideFlags: 0
@@ -22251,6 +22252,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6910590204333320747, guid: 8484f0f22a0529541bb12dab3d1de8a6, type: 3}
   m_PrefabInstance: {fileID: 1609852501}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1619974103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1619974104}
+  m_Layer: 0
+  m_Name: CinematicPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1619974104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619974103}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.389554, y: 8.17, z: -113.103806}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1623175480
 GameObject:
   m_ObjectHideFlags: 0
@@ -25667,6 +25699,7 @@ MonoBehaviour:
   bullet8: 0
   bullet9: 0
   bullet10: 0
+  bullet11: 0
   hasEnemies: 0
   plantOne: 0
   plantTwo: 0
@@ -25855,6 +25888,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09d0a74249fc108469eed18f3d5c7cef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1791594886 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4232964553878461502, guid: f1be4bf64473e954a8de213d109461aa, type: 3}
+  m_PrefabInstance: {fileID: 1791594882}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791594883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad54dfa12090d04793226ecd8fdd6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1801976914
@@ -28348,3 +28392,4 @@ SceneRoots:
   - {fileID: 1537719509}
   - {fileID: 1783118955805685985}
   - {fileID: 1953757713613596387}
+  - {fileID: 1619974104}

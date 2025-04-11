@@ -40,6 +40,9 @@ public class MandatoryDialouge : MonoBehaviour
     public bool afterKingBedDialouge;
     public bool balconyDialouge;
 
+    public CameraScript playerCamera;
+    public Transform cinematicCam;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -257,6 +260,22 @@ public class MandatoryDialouge : MonoBehaviour
         dialougeText.enabled = true;
         dialougeText.text = dialouge[lineNumber];
         lineNumber++;
+        if(introDialouge)
+        {
+            switch (lineNumber)
+            {
+                case 4:
+                    playerCamera.player = cinematicCam;
+                    break;
+
+                case 6:
+                    playerCamera.player = player.transform;
+                    break;
+
+                default:
+                    break;
+            }
+        }
     }
 
     //A function for a delayed start to prevent any conflicts with other scripts

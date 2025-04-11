@@ -5263,87 +5263,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8319725951165929375, guid: 2edcb41afa013614d8481aa0c23444c2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1777266100}
-    - targetCorrespondingSourceObject: {fileID: 8319725951165929375, guid: 2edcb41afa013614d8481aa0c23444c2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1777266099}
-    - targetCorrespondingSourceObject: {fileID: 8319725951165929375, guid: 2edcb41afa013614d8481aa0c23444c2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1777266098}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2edcb41afa013614d8481aa0c23444c2, type: 3}
 --- !u!4 &1777266096 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7933128482532461739, guid: 2edcb41afa013614d8481aa0c23444c2, type: 3}
   m_PrefabInstance: {fileID: 1777266095}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1777266097 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8319725951165929375, guid: 2edcb41afa013614d8481aa0c23444c2, type: 3}
-  m_PrefabInstance: {fileID: 1777266095}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1777266098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777266097}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &1777266099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777266097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca762171fbce39d42bb655084dc20f40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
-  dialouge:
-  - Some cleaning supplies.
-  - Servants probably use them.
-  playerInRange: 0
-  outlineEneabled: 1
-  isBook: 0
-  lineNumber: 0
---- !u!65 &1777266100
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777266097}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.66, y: 1, z: 3.19}
-  m_Center: {x: 0, y: 0, z: -0.000015258789}
 --- !u!1 &1867270703
 GameObject:
   m_ObjectHideFlags: 0
@@ -5580,6 +5506,7 @@ MonoBehaviour:
   kingsKeyTwo: 0
   isKeyItem: 1
   isBullet: 0
+  isPlant: 0
   bullet1: 0
   bullet2: 0
   bullet3: 0
@@ -5591,6 +5518,13 @@ MonoBehaviour:
   bullet9: 0
   bullet10: 0
   hasEnemies: 1
+  plantOne: 0
+  plantTwo: 0
+  plantThree: 0
+  plantFour: 0
+  plantFive: 0
+  plantSix: 0
+  plantSeven: 0
   enemies:
   - {fileID: 86859042}
   - {fileID: 1972558924}
@@ -5925,86 +5859,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8319725951165929375, guid: 2edcb41afa013614d8481aa0c23444c2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4390216964329943755}
-    - targetCorrespondingSourceObject: {fileID: 8319725951165929375, guid: 2edcb41afa013614d8481aa0c23444c2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4390216964329943757}
-    - targetCorrespondingSourceObject: {fileID: 8319725951165929375, guid: 2edcb41afa013614d8481aa0c23444c2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4390216964329943756}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2edcb41afa013614d8481aa0c23444c2, type: 3}
 --- !u!4 &4390216964329943753 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7933128482532461739, guid: 2edcb41afa013614d8481aa0c23444c2, type: 3}
   m_PrefabInstance: {fileID: 4390216964329943752}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4390216964329943754 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8319725951165929375, guid: 2edcb41afa013614d8481aa0c23444c2, type: 3}
-  m_PrefabInstance: {fileID: 4390216964329943752}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &4390216964329943755
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4390216964329943754}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.57, y: 1, z: 5.63}
-  m_Center: {x: 0, y: 0, z: -0.000015258789}
---- !u!114 &4390216964329943756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4390216964329943754}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &4390216964329943757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4390216964329943754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca762171fbce39d42bb655084dc20f40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
-  dialouge:
-  - The shelves are empty.
-  playerInRange: 0
-  outlineEneabled: 1
-  isBook: 0
-  lineNumber: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -182,6 +182,19 @@ public class MandatoryDialouge : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        else if (secondFloorDialouge)
+        {
+            if (!gameManager.secondFloorDialougeDone)
+            {
+                player.inMandatory = true;
+                player.enabled = false;
+                StartCoroutine(DelayStart());
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
         else if (planetariumDialouge)
         {
             if (!gameManager.planetariumDialougeDone)
@@ -340,6 +353,10 @@ public class MandatoryDialouge : MonoBehaviour
         else if (statueDialouge)
         {
             gameManager.statueDialougeDone = true;
+        }
+        else if (secondFloorDialouge)
+        {
+            gameManager.secondFloorDialougeDone = true;
         }
         else if (planetariumDialouge)
         {

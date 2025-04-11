@@ -313,7 +313,6 @@ MonoBehaviour:
   - He sure loves paintings of himself
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &5734514
 BoxCollider:
@@ -733,7 +732,6 @@ MonoBehaviour:
   - A great leader, father of lesser men
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &30271558
 BoxCollider:
@@ -1721,7 +1719,6 @@ MonoBehaviour:
   - If only he was here now...
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &145259962
 BoxCollider:
@@ -35152,7 +35149,6 @@ MonoBehaviour:
   - The high king.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1495136739
 BoxCollider:
@@ -35443,9 +35439,6 @@ GameObject:
   - component: {fileID: 1630464044}
   - component: {fileID: 1630464043}
   - component: {fileID: 1630464042}
-  - component: {fileID: 1630464041}
-  - component: {fileID: 1630464040}
-  - component: {fileID: 1630464039}
   m_Layer: 0
   m_Name: chessboard
   m_TagString: Untagged
@@ -35453,66 +35446,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1630464039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630464038}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.9547169, g: 0.9220408, b: 0.23597719, a: 1}
-  outlineWidth: 2.26
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &1630464040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630464038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca762171fbce39d42bb655084dc20f40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
-  dialouge:
-  - A small chessboard
-  - The pieces depict monestreous depictions of people
-  playerInRange: 0
-  outlineEneabled: 1
-  isBook: 0
-  lineNumber: 0
---- !u!65 &1630464041
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630464038}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.6632339, y: 1.8424094, z: 1.7769017}
-  m_Center: {x: 0.08878298, y: 0.40384632, z: -0.10947775}
 --- !u!65 &1630464042
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35904,7 +35837,6 @@ MonoBehaviour:
   - Something came out of the ice?
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1693847852
 BoxCollider:
@@ -37367,7 +37299,6 @@ MonoBehaviour:
   - A past long gone
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1818991826
 BoxCollider:

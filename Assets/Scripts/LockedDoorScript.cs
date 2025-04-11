@@ -375,6 +375,24 @@ public class LockedDoorScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.coinUnlocked = true;
+                            for (int i = 0; i < player.inventoryTexts.Length; i++)
+                            {
+                                if (player.inventoryTexts[i].text == "Copper Coin")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                    break;
+                                }
+                                else if (player.inventoryTexts[i].text == "Silver Coin")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                    break;
+                                }
+                                else if (player.inventoryTexts[i].text == "Gold Coin")
+                                {
+                                    player.inventoryTexts[i].text = "";
+                                    break;
+                                }
+                            }
                             UnlockDoor();
                         }
                         else

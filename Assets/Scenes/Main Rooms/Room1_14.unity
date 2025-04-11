@@ -245,7 +245,6 @@ MonoBehaviour:
   - Hope it'll all be fine.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &989283
 BoxCollider:
@@ -365,87 +364,13 @@ PrefabInstance:
     - {fileID: 3776273620714594529, guid: ef04112b146b5af48b06184847d3d9f7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7063674888562401926, guid: ef04112b146b5af48b06184847d3d9f7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 29276644}
-    - targetCorrespondingSourceObject: {fileID: 7063674888562401926, guid: ef04112b146b5af48b06184847d3d9f7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 29276646}
-    - targetCorrespondingSourceObject: {fileID: 7063674888562401926, guid: ef04112b146b5af48b06184847d3d9f7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 29276645}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef04112b146b5af48b06184847d3d9f7, type: 3}
 --- !u!4 &29276642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6127739509147100734, guid: ef04112b146b5af48b06184847d3d9f7, type: 3}
   m_PrefabInstance: {fileID: 29276641}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &29276643 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7063674888562401926, guid: ef04112b146b5af48b06184847d3d9f7, type: 3}
-  m_PrefabInstance: {fileID: 29276641}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &29276644
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29276643}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.5378144, y: 0.76485455, z: 0.73923707}
-  m_Center: {x: -0.17576219, y: -0.28034914, z: -0.45678216}
---- !u!114 &29276645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29276643}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &29276646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29276643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca762171fbce39d42bb655084dc20f40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
-  dialouge:
-  - A fancy looking bathtub.
-  - You're almost tempted to just take a bath right there.
-  playerInRange: 0
-  outlineEneabled: 1
-  isBook: 0
-  lineNumber: 0
 --- !u!43 &40232785
 Mesh:
   m_ObjectHideFlags: 0
@@ -4881,7 +4806,6 @@ MonoBehaviour:
   - '"Maybe I''ll just open the door."'
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1402826159
 BoxCollider:
@@ -8204,93 +8128,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8698081835559011744, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1869352355767423289, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
     - {fileID: 7764355349258963414, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8698081835559011744, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2075168724027018536}
-    - targetCorrespondingSourceObject: {fileID: 8698081835559011744, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2075168724027018535}
-    - targetCorrespondingSourceObject: {fileID: 8698081835559011744, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2075168724027018534}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
 --- !u!4 &2075168724027018532 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3179830504527580877, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
   m_PrefabInstance: {fileID: 2075168724027018531}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2075168724027018533 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8698081835559011744, guid: 8f3e2aadd5fae984ebbce1ff28de0da2, type: 3}
-  m_PrefabInstance: {fileID: 2075168724027018531}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2075168724027018534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2075168724027018533}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &2075168724027018535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2075168724027018533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca762171fbce39d42bb655084dc20f40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
-  dialouge:
-  - A fancy looking toilet.
-  playerInRange: 0
-  outlineEneabled: 1
-  isBook: 0
-  lineNumber: 0
---- !u!65 &2075168724027018536
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2075168724027018533}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.5566247, y: 1.4796115, z: 1.3656158}
-  m_Center: {x: 1.119115, y: 1.236882, z: -0.8619766}
 --- !u!33 &4440675937067204326
 MeshFilter:
   m_ObjectHideFlags: 0

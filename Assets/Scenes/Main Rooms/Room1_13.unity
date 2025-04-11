@@ -1672,7 +1672,6 @@ MonoBehaviour:
   - The queen's face is covered by a veil.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!1 &280728681
 GameObject:
@@ -2920,87 +2919,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 15530989008880246, guid: 51f82d8979e4e90498c888a2a39d64b8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 800093573}
-    - targetCorrespondingSourceObject: {fileID: 15530989008880246, guid: 51f82d8979e4e90498c888a2a39d64b8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 800093575}
-    - targetCorrespondingSourceObject: {fileID: 15530989008880246, guid: 51f82d8979e4e90498c888a2a39d64b8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 800093574}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51f82d8979e4e90498c888a2a39d64b8, type: 3}
 --- !u!4 &800093571 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6659093455678553526, guid: 51f82d8979e4e90498c888a2a39d64b8, type: 3}
   m_PrefabInstance: {fileID: 800093570}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &800093572 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 15530989008880246, guid: 51f82d8979e4e90498c888a2a39d64b8, type: 3}
-  m_PrefabInstance: {fileID: 800093570}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &800093573
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800093572}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.7713695, y: 2.3364766, z: 4.7413173}
-  m_Center: {x: 0.5748533, y: -0.6682395, z: -0.03366914}
---- !u!114 &800093574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800093572}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &800093575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800093572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca762171fbce39d42bb655084dc20f40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
-  dialouge:
-  - A large luxury bed.
-  - If it wasn't for the circumstances, you could sleep here for hours.
-  playerInRange: 0
-  outlineEneabled: 1
-  isBook: 0
-  lineNumber: 0
 --- !u!43 &854109696
 Mesh:
   m_ObjectHideFlags: 0
@@ -5048,7 +4973,6 @@ MonoBehaviour:
   - Maybe the king is a fan of scultures?
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1451630787
 BoxCollider:
@@ -7351,8 +7275,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   onSecondFloor: 0
-  dialougeBox: {fileID: 0}
-  dialougeText: {fileID: 0}
   playerInRange: 0
   firstDoor: 0
   hallwayDoor: 0
@@ -7365,6 +7287,8 @@ MonoBehaviour:
   coinDoor: 0
   basementDoor: 0
   kingsDoor: 0
+  dialougeBox: {fileID: 0}
+  dialougeText: {fileID: 0}
 --- !u!1 &1941534961
 GameObject:
   m_ObjectHideFlags: 0

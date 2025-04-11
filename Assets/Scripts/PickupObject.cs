@@ -75,6 +75,8 @@ public class PickupObject : MonoBehaviour
     //The audiosource for the sound that plays when you pick this item up
     private AudioSource pickupSound;
 
+    private bool stopDialougeBug;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -729,7 +731,7 @@ public class PickupObject : MonoBehaviour
     //Code to check when the player enters the door trigger
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !stopDialougeBug)
         {
             GetComponent<Outline>().enabled = true;
             playerInRange = true;
@@ -739,7 +741,7 @@ public class PickupObject : MonoBehaviour
     //Code to check when the player exits the door trigger
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !stopDialougeBug)
         {
             GetComponent<Outline>().enabled = false;
             playerInRange = false;
@@ -785,8 +787,87 @@ public class PickupObject : MonoBehaviour
 
     IEnumerator SmallDialouge()
     {
+        stopDialougeBug = true;
+        playerInRange = false;
         GetComponent<Renderer>().enabled = false;
         GetComponent<Outline>().enabled = false;
+        transform.GetChild(0).gameObject.SetActive(false);
+        if(isPlant)
+        {
+            player.healingCharges++;
+            if (plantOne)
+            {
+                gameManager.plantOne = true;
+            }
+            else if (plantTwo)
+            {
+                gameManager.plantTwo = true;
+            }
+            else if (plantThree)
+            {
+                gameManager.plantThree = true;
+            }
+            else if (plantFour)
+            {
+                gameManager.plantFour = true;
+            }
+            else if (plantFive)
+            {
+                gameManager.plantFive = true;
+            }
+            else if (plantSix)
+            {
+                gameManager.plantSix = true;
+            }
+            else if (plantSeven)
+            {
+                gameManager.plantSeven = true;
+            }
+        }
+        else
+        {
+            player.gameObject.GetComponentInChildren<GunScript>().ammoCount++;
+            if (bullet1)
+            {
+                gameManager.bullet1 = true;
+            }
+            else if (bullet2)
+            {
+                gameManager.bullet2 = true;
+            }
+            else if (bullet3)
+            {
+                gameManager.bullet3 = true;
+            }
+            else if (bullet4)
+            {
+                gameManager.bullet4 = true;
+            }
+            else if (bullet5)
+            {
+                gameManager.bullet5 = true;
+            }
+            else if (bullet6)
+            {
+                gameManager.bullet6 = true;
+            }
+            else if (bullet7)
+            {
+                gameManager.bullet7 = true;
+            }
+            else if (bullet8)
+            {
+                gameManager.bullet8 = true;
+            }
+            else if (bullet9)
+            {
+                gameManager.bullet9 = true;
+            }
+            else if (bullet10)
+            {
+                gameManager.bullet10 = true;
+            }
+        }
         yield return new WaitForSeconds(3);
         dialougeBox.GetComponent<RawImage>().enabled = false;
         if (hasEnemies)

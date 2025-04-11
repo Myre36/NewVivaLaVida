@@ -3116,7 +3116,6 @@ MonoBehaviour:
   - Looks a lot more connected than you'd like to belive.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!1001 &758352748
 PrefabInstance:
@@ -3732,7 +3731,6 @@ MonoBehaviour:
   - It would be nice to sit down here
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!1001 &1022360284
 PrefabInstance:
@@ -4207,7 +4205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialouge:
-  - Your is racing.
+  - Your heart is racing.
   - Finally, you have the key to second floor.
   - Maybe the answers are up there.
   introDialouge: 0
@@ -5294,7 +5292,6 @@ MonoBehaviour:
   - It also includes entries for people that we ruled a long time ago.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!1 &1856213245
 GameObject:

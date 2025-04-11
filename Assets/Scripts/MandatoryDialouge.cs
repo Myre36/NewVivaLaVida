@@ -265,11 +265,16 @@ public class MandatoryDialouge : MonoBehaviour
             switch (lineNumber)
             {
                 case 4:
+                    playerCamera.smoothSpeed = 2.5f;
                     playerCamera.player = cinematicCam;
                     break;
 
                 case 6:
                     playerCamera.player = player.transform;
+                    break;
+
+                case 8:
+                    playerCamera.smoothSpeed = 5f;
                     break;
 
                 default:

@@ -25,12 +25,16 @@ public class DialougeScript : MonoBehaviour
 
     private Movement player;
 
+    //The audiosource for the sound that plays when you enter books
+    private AudioSource pageflipSound;
+
     private void Start()
     {
         dialougeBox = GameObject.Find("DialougeBox").GetComponent<RawImage>();
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
 
         player = GameObject.Find("Player").GetComponent<Movement>();
+        pageflipSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -41,8 +45,9 @@ public class DialougeScript : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.E) && !player.inMandatory)
             {
+                pageflipSound.Play();
                 //If the player has not reached the end of the dialouge, the next line will be displayed
-                if(lineNumber < dialouge.Length)
+                if (lineNumber < dialouge.Length)
                 {
                     NextLine();
                 }

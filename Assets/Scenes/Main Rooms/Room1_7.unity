@@ -858,7 +858,6 @@ MonoBehaviour:
   - Why is it left out on the table like this?
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &153752844
 BoxCollider:
@@ -1882,6 +1881,8 @@ MonoBehaviour:
   libraryDialouge: 0
   afterKingBedDialouge: 0
   balconyDialouge: 0
+  playerCamera: {fileID: 0}
+  cinematicCam: {fileID: 0}
 --- !u!4 &643431244
 Transform:
   m_ObjectHideFlags: 0
@@ -2314,6 +2315,7 @@ MonoBehaviour:
   bullet8: 0
   bullet9: 0
   bullet10: 0
+  bullet11: 0
   hasEnemies: 0
   plantOne: 0
   plantTwo: 0
@@ -2968,7 +2970,6 @@ MonoBehaviour:
   - There must have been a party recently.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!1001 &857657869
 PrefabInstance:
@@ -3408,6 +3409,7 @@ GameObject:
   - component: {fileID: 976360531}
   - component: {fileID: 976360530}
   - component: {fileID: 976360529}
+  - component: {fileID: 976360535}
   m_Layer: 0
   m_Name: Book (1)
   m_TagString: Untagged
@@ -3453,7 +3455,6 @@ MonoBehaviour:
   - '"They won''t die."'
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &976360531
 BoxCollider:
@@ -3544,6 +3545,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90.806, z: 0}
+--- !u!82 &976360535
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976360528}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1007791915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6076,6 +6174,7 @@ GameObject:
   - component: {fileID: 1314550958}
   - component: {fileID: 1314550957}
   - component: {fileID: 1314550956}
+  - component: {fileID: 1314550962}
   m_Layer: 0
   m_Name: Book
   m_TagString: Untagged
@@ -6127,7 +6226,6 @@ MonoBehaviour:
   - Doesn't look like they made it too far into the week.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1314550958
 BoxCollider:
@@ -6218,6 +6316,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -18.892, z: 0}
+--- !u!82 &1314550962
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314550955}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9cc12c05e625a7f42bd4c0c16cde9957, type: 3}
+  m_Resource: {fileID: 8300000, guid: 9cc12c05e625a7f42bd4c0c16cde9957, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.124
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1361022797
 GameObject:
   m_ObjectHideFlags: 0
@@ -6517,7 +6712,6 @@ MonoBehaviour:
   - Did he get shot?
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1414274376
 BoxCollider:
@@ -9020,7 +9214,6 @@ MonoBehaviour:
   - Like someone ripped into it.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1815212257
 BoxCollider:
@@ -9411,6 +9604,8 @@ MonoBehaviour:
   libraryDialouge: 0
   afterKingBedDialouge: 0
   balconyDialouge: 0
+  playerCamera: {fileID: 0}
+  cinematicCam: {fileID: 0}
 --- !u!4 &1839291609
 Transform:
   m_ObjectHideFlags: 0
@@ -10558,7 +10753,6 @@ MonoBehaviour:
   - The king definetly has the wealth to afford all this.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1983414606
 BoxCollider:

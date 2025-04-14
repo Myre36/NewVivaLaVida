@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 public class ChestScript : MonoBehaviour
 {
+    // Open door sound effect
+    public AudioSource ChestOpen;
+
     //A refrence to the game manager
     private GameManager gameManager;
 
@@ -49,8 +52,9 @@ public class ChestScript : MonoBehaviour
         player = GameObject.Find("Player").GetComponent<Movement>();
         dialougeBox = GameObject.Find("DialougeBox");
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
+        ChestOpen = GetComponent<AudioSource>();
 
-        if(chest1)
+        if (chest1)
         {
             if(gameManager.chest1)
             {
@@ -471,6 +475,7 @@ public class ChestScript : MonoBehaviour
         GetComponent<Outline>().enabled = false;
         closedLid.SetActive(false);
         openLid.SetActive(true);
+        ChestOpen.Play();
         this.enabled = false;
     }
 

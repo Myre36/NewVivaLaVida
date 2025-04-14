@@ -1039,7 +1039,6 @@ MonoBehaviour:
   - He sure loves his own posture.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &77289530
 BoxCollider:
@@ -4435,7 +4434,6 @@ MonoBehaviour:
   - Aside from trigonometry, all of this looks like giberish to you.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &582414829
 BoxCollider:
@@ -7574,7 +7572,6 @@ MonoBehaviour:
   - Couldn't understand a word even if you read them all.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1223509078
 BoxCollider:
@@ -7685,6 +7682,8 @@ MonoBehaviour:
   libraryDialouge: 0
   afterKingBedDialouge: 0
   balconyDialouge: 0
+  playerCamera: {fileID: 0}
+  cinematicCam: {fileID: 0}
 --- !u!4 &1287650392
 Transform:
   m_ObjectHideFlags: 0
@@ -7949,6 +7948,7 @@ GameObject:
   - component: {fileID: 1329558908}
   - component: {fileID: 1329558907}
   - component: {fileID: 1329558906}
+  - component: {fileID: 1329558912}
   m_Layer: 0
   m_Name: Book (1)
   m_TagString: Untagged
@@ -8019,7 +8019,6 @@ MonoBehaviour:
   - They found a ship in the ice?
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1329558908
 BoxCollider:
@@ -8110,6 +8109,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -0.248, z: 0}
+--- !u!82 &1329558912
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329558905}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9cc12c05e625a7f42bd4c0c16cde9957, type: 3}
+  m_Resource: {fileID: 8300000, guid: 9cc12c05e625a7f42bd4c0c16cde9957, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.124
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1364812166
 GameObject:
   m_ObjectHideFlags: 0
@@ -8282,7 +8378,6 @@ MonoBehaviour:
   - He also has a biant bitemark on his arm.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1415383268
 BoxCollider:
@@ -10436,7 +10531,6 @@ MonoBehaviour:
   - It's small hands are clutching a doll.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1728569047
 BoxCollider:

@@ -1002,7 +1002,6 @@ MonoBehaviour:
   - A pile of old dusty books, but nothing useful here.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &163502684
 BoxCollider:
@@ -4502,6 +4501,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1005948868}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1005948871}
   m_SourcePrefab: {fileID: 100100000, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
 --- !u!4 &1005948866 stripped
 Transform:
@@ -4548,7 +4550,6 @@ MonoBehaviour:
     god of the sky.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!114 &1005948869
 MonoBehaviour:
@@ -4589,6 +4590,103 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.5671606, y: 0.46593586, z: 2.3572693}
   m_Center: {x: 0.07187319, y: 0.23038034, z: -0.35684204}
+--- !u!82 &1005948871
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005948867}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9cc12c05e625a7f42bd4c0c16cde9957, type: 3}
+  m_Resource: {fileID: 8300000, guid: 9cc12c05e625a7f42bd4c0c16cde9957, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.124
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 187
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1055522000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4702,6 +4800,8 @@ MonoBehaviour:
   libraryDialouge: 0
   afterKingBedDialouge: 1
   balconyDialouge: 0
+  playerCamera: {fileID: 0}
+  cinematicCam: {fileID: 0}
 --- !u!4 &1058635802
 Transform:
   m_ObjectHideFlags: 0
@@ -5147,6 +5247,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1159698542}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1159698545}
   m_SourcePrefab: {fileID: 100100000, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
 --- !u!4 &1159698540 stripped
 Transform:
@@ -5195,7 +5298,6 @@ MonoBehaviour:
   - '"I''m sorry."'
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!114 &1159698543
 MonoBehaviour:
@@ -5236,6 +5338,103 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1403768, y: 0.46593586, z: 0.907248}
   m_Center: {x: 0.16895105, y: 0.23038031, z: 0.36816674}
+--- !u!82 &1159698545
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159698541}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9cc12c05e625a7f42bd4c0c16cde9957, type: 3}
+  m_Resource: {fileID: 8300000, guid: 9cc12c05e625a7f42bd4c0c16cde9957, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.124
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 195
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1209971687
 GameObject:
   m_ObjectHideFlags: 0
@@ -5610,7 +5809,6 @@ MonoBehaviour:
   - Quill and paper, and an unfinished letter... someone must've left in a hurry
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1311650760
 BoxCollider:
@@ -7896,6 +8094,8 @@ MonoBehaviour:
   libraryDialouge: 1
   afterKingBedDialouge: 0
   balconyDialouge: 0
+  playerCamera: {fileID: 0}
+  cinematicCam: {fileID: 0}
 --- !u!4 &2002972015
 Transform:
   m_ObjectHideFlags: 0

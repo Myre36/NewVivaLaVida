@@ -74,7 +74,8 @@ public class PickupObject : MonoBehaviour
     public NavMeshAgent[] enemies;
 
     //The audiosource for the sound that plays when you pick this item up
-    private AudioSource pickupSound;
+    private AudioSource pickupitemSound;
+    private AudioSource getkeysSound;
 
     private bool stopDialougeBug;
 
@@ -86,10 +87,11 @@ public class PickupObject : MonoBehaviour
         player = GameObject.Find("Player").GetComponent<Movement>();
         dialougeBox = GameObject.Find("DialougeBox");
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
-        pickupSound = GetComponent<AudioSource>();
+        pickupitemSound = GetComponent<AudioSource>();
+        getkeysSound = GetComponent<AudioSource>();
 
         //Checks if this is a key item
-        if(isKeyItem)
+        if (isKeyItem)
         {
             //Used to make sure the this item is destroyed if the player has already picked it up before
             if (hallwayKey)
@@ -420,7 +422,7 @@ public class PickupObject : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            pickupSound.Play();
+                            getkeysSound.Play();
                             dialougeText.text = "You pick up a key with an orange citrine gemstone as its head.";
                         }
                     }
@@ -434,7 +436,7 @@ public class PickupObject : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            pickupSound.Play();
+                            getkeysSound.Play();
                             dialougeText.text = "You pick up a key with an emerald gemstone as its head.";
                         }
                     }
@@ -448,7 +450,7 @@ public class PickupObject : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            pickupSound.Play();
+                            getkeysSound.Play();
                             dialougeText.text = "You pick up a key with a horse emblem as its head.";
                         }
                     }
@@ -462,7 +464,7 @@ public class PickupObject : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            pickupSound.Play();
+                            getkeysSound.Play();
                             dialougeText.text = "You pick up a key with a large S-shaped emblem as its head.";
                         }
                     }
@@ -476,7 +478,7 @@ public class PickupObject : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            pickupSound.Play();
+                            getkeysSound.Play();
                             dialougeText.text = "You pick up an old and rusty key. Whatever this unlocks, it must be a very old lock.";
                         }
                     }
@@ -490,7 +492,7 @@ public class PickupObject : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            pickupSound.Play();
+                            getkeysSound.Play();
                             dialougeText.text = "You pick up a small key. The head is engraved with a 2.";
                         }
                     }
@@ -504,7 +506,7 @@ public class PickupObject : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            pickupSound.Play();
+                            getkeysSound.Play();
                             dialougeText.text = "You pick up a shiny golden key. The head of it is shaped like the sun.";
                         }
                     }
@@ -518,7 +520,7 @@ public class PickupObject : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            pickupSound.Play();
+                            getkeysSound.Play();
                             dialougeText.text = "You pick up small key. Its head is decorated with small blue saphires.";
                         }
                     }
@@ -532,7 +534,7 @@ public class PickupObject : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            pickupSound.Play();
+                            pickupitemSound.Play();
                             dialougeText.text = "You pick up a large copper coin. Wonder if it can be used somewhere.";
                         }
                     }
@@ -546,7 +548,7 @@ public class PickupObject : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            pickupSound.Play();
+                            pickupitemSound.Play();
                             dialougeText.text = "You pick up a large silver coin. Maybe it will be of some use?";
                         }
                     }
@@ -560,7 +562,7 @@ public class PickupObject : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            pickupSound.Play();
+                            pickupitemSound.Play();
                             dialougeText.text = "You pick up a large gold coin. If it's of no use, you can pocket it for yourself.";
                         }
                     }
@@ -574,7 +576,7 @@ public class PickupObject : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            pickupSound.Play();
+                            getkeysSound.Play();
                             dialougeText.text = "You pick up a large blue key. It's head is a replica of the crown of Norway.";
                         }
                     }
@@ -588,7 +590,7 @@ public class PickupObject : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            pickupSound.Play();
+                            getkeysSound.Play();
                             dialougeText.text = "You pick up a large red key. It's head is a replica of the crown of Denmark.";
                         }
                     }
@@ -602,7 +604,7 @@ public class PickupObject : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            pickupSound.Play();
+                            pickupitemSound.Play();
                             dialougeText.text = "You pick up a pile of cloth. Maybe you can use it somewhere?";
                         }
                     }
@@ -616,7 +618,7 @@ public class PickupObject : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            pickupSound.Play();
+                            pickupitemSound.Play();
                             dialougeText.text = "You pick up a large sword. Weird place to keep one.";
                         }
                     }
@@ -630,7 +632,7 @@ public class PickupObject : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            pickupSound.Play();
+                            pickupitemSound.Play();
                             dialougeText.text = "You pick up a blue book. It has a small metal thing sticking out of its pages. Maybe its a key for something?";
                         }
                     }
@@ -690,7 +692,7 @@ public class PickupObject : MonoBehaviour
                     else
                     {
                         inDialouge = true;
-                        pickupSound.Play();
+                        pickupitemSound.Play();
                         dialougeText.text = "You pick up a bullet.";
                     }
                 }
@@ -732,7 +734,7 @@ public class PickupObject : MonoBehaviour
                     else
                     {
                         inDialouge = true;
-                        pickupSound.Play();
+                        pickupitemSound.Play();
                         dialougeText.text = "You pick up a healing plant.";
                     }
                 }

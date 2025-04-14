@@ -180,6 +180,7 @@ MonoBehaviour:
   bullet8: 0
   bullet9: 0
   bullet10: 0
+  bullet11: 0
   hasEnemies: 0
   plantOne: 0
   plantTwo: 0
@@ -217,10 +218,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: deefa95b19920ab4896e229c3b881413, type: 3}
-  m_Resource: {fileID: 8300000, guid: deefa95b19920ab4896e229c3b881413, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 23b0b1cc9f7810843a6ca6e7b88ff40b, type: 3}
+  m_Resource: {fileID: 8300000, guid: 23b0b1cc9f7810843a6ca6e7b88ff40b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.194
   m_Pitch: 1
   Loop: 0
   Mute: 0

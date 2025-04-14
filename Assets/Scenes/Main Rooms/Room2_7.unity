@@ -5169,6 +5169,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
       insertIndex: -1
       addedObject: {fileID: 588611712}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 588611713}
   m_SourcePrefab: {fileID: 100100000, guid: 0e4683473d7ea2a47ad90ef393c48b80, type: 3}
 --- !u!1 &588611709 stripped
 GameObject:
@@ -5242,8 +5245,104 @@ MonoBehaviour:
   - 'Eighth was Hermes, son of Zeus, and the god of travellers and thieves. '
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
+--- !u!82 &588611713
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588611709}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9cc12c05e625a7f42bd4c0c16cde9957, type: 3}
+  m_Resource: {fileID: 8300000, guid: 9cc12c05e625a7f42bd4c0c16cde9957, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.124
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &620471830
 GameObject:
   m_ObjectHideFlags: 0
@@ -8250,7 +8349,6 @@ MonoBehaviour:
   - The soldier's corpse is missing it's legs.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &992274065
 BoxCollider:
@@ -10400,6 +10498,8 @@ MonoBehaviour:
   libraryDialouge: 0
   afterKingBedDialouge: 0
   balconyDialouge: 0
+  playerCamera: {fileID: 0}
+  cinematicCam: {fileID: 0}
 --- !u!4 &1220005383
 Transform:
   m_ObjectHideFlags: 0
@@ -12365,6 +12465,7 @@ MonoBehaviour:
   kingsKeyTwo: 0
   isKeyItem: 1
   isBullet: 0
+  isPlant: 0
   bullet1: 0
   bullet2: 0
   bullet3: 0
@@ -12375,7 +12476,15 @@ MonoBehaviour:
   bullet8: 0
   bullet9: 0
   bullet10: 0
+  bullet11: 0
   hasEnemies: 0
+  plantOne: 0
+  plantTwo: 0
+  plantThree: 0
+  plantFour: 0
+  plantFive: 0
+  plantSix: 0
+  plantSeven: 0
   enemies: []
 --- !u!114 &1562242498
 MonoBehaviour:

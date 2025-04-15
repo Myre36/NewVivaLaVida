@@ -25482,7 +25482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2103271113099047929, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
       propertyPath: enemyRespawnTime
-      value: 150
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 2103271113099047929, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
       propertyPath: stands.Array.size

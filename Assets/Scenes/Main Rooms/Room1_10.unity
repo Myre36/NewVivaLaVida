@@ -1863,7 +1863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -119.27
+      value: -119.216
       objectReference: {fileID: 0}
     - target: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4541,6 +4541,13 @@ MonoBehaviour:
   afterBasementDialouge: 0
   bothKeysDialouge: 0
   statueDialouge: 1
+  secondFloorDialouge: 0
+  planetariumDialouge: 0
+  libraryDialouge: 0
+  afterKingBedDialouge: 0
+  balconyDialouge: 0
+  playerCamera: {fileID: 0}
+  cinematicCam: {fileID: 0}
 --- !u!4 &1272994987
 Transform:
   m_ObjectHideFlags: 0
@@ -4652,6 +4659,7 @@ MonoBehaviour:
   kingsKeyTwo: 0
   isKeyItem: 1
   isBullet: 0
+  isPlant: 0
   bullet1: 0
   bullet2: 0
   bullet3: 0
@@ -4662,7 +4670,15 @@ MonoBehaviour:
   bullet8: 0
   bullet9: 0
   bullet10: 0
+  bullet11: 0
   hasEnemies: 0
+  plantOne: 0
+  plantTwo: 0
+  plantThree: 0
+  plantFour: 0
+  plantFive: 0
+  plantSix: 0
+  plantSeven: 0
   enemies: []
 --- !u!23 &1374558095
 MeshRenderer:
@@ -5859,7 +5875,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.93
+      value: 29.031
       objectReference: {fileID: 0}
     - target: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: m_LocalPosition.y

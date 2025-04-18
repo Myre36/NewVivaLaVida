@@ -333,8 +333,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.5595398, y: 1.2260641, z: 1.7769017}
-  m_Center: {x: 0.5369377, y: 0.09567375, z: -0.10947775}
+  m_Size: {x: 1.157511, y: 1.2260641, z: 1.0023971}
+  m_Center: {x: 0.30927908, y: 0.09567376, z: 0.022604214}
 --- !u!65 &5734515
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1633,8 +1633,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.5595398, y: 1.2260641, z: 1.7769017}
-  m_Center: {x: 0.5369377, y: 0.09567375, z: -0.10947775}
+  m_Size: {x: 1.2880735, y: 1.0639695, z: 1.0500759}
+  m_Center: {x: 0.31311888, y: 0.014627692, z: 0.018537445}
 --- !u!65 &145259963
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33671,7 +33671,9 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   dialouge:
-  - The high king.
+  - Queen Margarette the Cruel.
+  - She is holding her daughter, princess Elizabeth.
+  - She killed her daughter shortly after this was painted.
   playerInRange: 0
   outlineEneabled: 1
   lineNumber: 0
@@ -33694,8 +33696,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.5595398, y: 1.2260641, z: 1.7769017}
-  m_Center: {x: 0.5369377, y: 0.09567375, z: -0.10947775}
+  m_Size: {x: 1.3982912, y: 1.0804859, z: 1.1121374}
+  m_Center: {x: 0.40404385, y: 0.02288498, z: 0.00017076974}
 --- !u!65 &1495136740
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33740,7 +33742,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d9fd58e1e2c00e4428cf3a297bb3a89c, type: 2}
+  - {fileID: 2100000, guid: 1cc49ce9876d2284d8938400f8c49570, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -1725,6 +1725,7 @@ MonoBehaviour:
   bullet8: 0
   bullet9: 0
   bullet10: 0
+  bullet11: 0
   hasEnemies: 0
   plantOne: 0
   plantTwo: 0
@@ -2065,7 +2066,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -60.672287
+      value: -60.729
       objectReference: {fileID: 0}
     - target: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2073,7 +2074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -65.883316
+      value: -65.883
       objectReference: {fileID: 0}
     - target: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6975,7 +6976,6 @@ MonoBehaviour:
   - He seems to have been shot in the chest.
   playerInRange: 0
   outlineEneabled: 1
-  isBook: 0
   lineNumber: 0
 --- !u!65 &1458989509
 BoxCollider:

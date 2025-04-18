@@ -45,7 +45,7 @@ public class DialougeScript : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.E) && !player.inMandatory)
             {
-                pageflipSound.Play();
+                //pageflipSound.Play();
                 //If the player has not reached the end of the dialouge, the next line will be displayed
                 if (lineNumber < dialouge.Length)
                 {

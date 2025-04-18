@@ -25,6 +25,7 @@ public class GunScript : MonoBehaviour
     private bool reloading;
     //A bool for if there is a bullet in the chamber of the gun
     private bool ammoInChamber;
+    private bool firstShot;
 
     //Refrence to the bullet spawn point
     public Transform bulletSpawn;
@@ -45,6 +46,12 @@ public class GunScript : MonoBehaviour
     public AudioSource gunShootSound;
     public AudioSource reloadSound;
     public AudioSource cantShootSound;
+
+    //Refrence to the dialouge box
+    public GameObject dialougeBox;
+
+    //Refrence to the dialouge text
+    public TMP_Text dialougeText;
     private void Awake()
     {
         //Make sure that the player is able to shoot
@@ -54,6 +61,9 @@ public class GunScript : MonoBehaviour
         ammoCount = 4;
         //Make it so that you have a bullet in your chamber
         ammoInChamber = true;
+
+        dialougeBox = GameObject.Find("SmallDialougeBox");
+        dialougeText = GameObject.Find("SmallDialougeText").GetComponent<TMP_Text>();
     }
 
     private void Update()
@@ -117,6 +127,11 @@ public class GunScript : MonoBehaviour
     //A method that handles shooting
     private void Shoot()
     {
+        if(!firstShot)
+        {
+            StartCoroutine(ReloadReminder());
+        }
+
         canShoot = false;
 
         ammoInChamber = false;
@@ -147,5 +162,17 @@ public class GunScript : MonoBehaviour
         canShoot = true;
         ammoInChamber = true;
         Debug.Log("End reload");
+    }
+
+    IEnumerator ReloadReminder()
+    {
+        dialougeBox.GetComponent<RawImage>().enabled = true;
+        dialougeText.enabled = true;
+        dialougeText.text = "Press R to reload";
+        firstShot = true;
+        yield return new WaitForSeconds(3);
+        dialougeText.text = "You are not supposed to see this";
+        dialougeBox.GetComponent<RawImage>().enabled = false;
+        dialougeText.enabled = false;
     }
 }

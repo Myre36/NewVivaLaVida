@@ -728,8 +728,8 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   dialouge:
-  - A painting of high king Filip III
-  - A great leader, father of lesser men
+  - The Great Regent.
+  - His legacy still stains the realm.
   playerInRange: 0
   outlineEneabled: 1
   lineNumber: 0
@@ -798,7 +798,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eb346d745e049584ca7e8b6fa2614820, type: 2}
+  - {fileID: 2100000, guid: d0ab5ad32fdad1f459e8ef5c0b4f2d55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

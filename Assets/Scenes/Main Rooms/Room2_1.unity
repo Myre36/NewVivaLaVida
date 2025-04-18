@@ -834,8 +834,8 @@ Transform:
   m_GameObject: {fileID: 77289525}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -26.02822, y: 1.36, z: 1.5726929}
-  m_LocalScale: {x: 0.281439, y: 0.16884935, z: 0.93813}
+  m_LocalPosition: {x: -26.028, y: 1.36, z: 1.5726929}
+  m_LocalScale: {x: 0.16880429, y: 0.16884935, z: 0.93813}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1256754417}
@@ -884,7 +884,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8e6fcec1b77fbbb4aa6717093a716dfe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 910880e6caba9f243b7840e3610f394e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -928,7 +928,7 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   dialouge:
-  - He sure loves his own posture.
+  - Maybe she is an ispiration to the king.
   playerInRange: 0
   outlineEneabled: 1
   lineNumber: 0

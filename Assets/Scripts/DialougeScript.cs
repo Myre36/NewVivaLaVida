@@ -34,7 +34,7 @@ public class DialougeScript : MonoBehaviour
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
 
         player = GameObject.Find("Player").GetComponent<Movement>();
-        pageflipSound = GetComponent<AudioSource>();
+        //pageflipSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

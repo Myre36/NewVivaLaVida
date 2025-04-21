@@ -28625,6 +28625,10 @@ PrefabInstance:
       propertyPath: noAmmoInInImage
       value: 
       objectReference: {fileID: 526401511}
+    - target: {fileID: 5414075784421266167, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: aabaed9fb37d821448c95447281e74a6, type: 3}
     - target: {fileID: 5953514445583351478, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: m_Name
       value: Player

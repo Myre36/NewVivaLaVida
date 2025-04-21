@@ -66,7 +66,7 @@ public class GunScript : MonoBehaviour
         MyInput();
 
         //For making the gun image display correctly
-        /*if(ammoInChamber)
+        if(ammoInChamber)
         {
             ammoInImage.enabled = true;
             noAmmoInInImage.enabled = false;
@@ -75,7 +75,7 @@ public class GunScript : MonoBehaviour
         {
             noAmmoInInImage.enabled = true;
             ammoInImage.enabled = false;
-        }*/
+        }
 
         //Make the reload text display correctly depending on what the player is doing
         if(reloading)

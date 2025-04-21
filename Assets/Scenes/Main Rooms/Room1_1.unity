@@ -28633,6 +28633,14 @@ PrefabInstance:
       propertyPath: 'inventoryTexts.Array.data[14]'
       value: 
       objectReference: {fileID: 468166102}
+    - target: {fileID: 3046367208514173352, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 8de43c7d1b540e14b93619889f95f1ee, type: 3}
+    - target: {fileID: 3046367208514173352, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8de43c7d1b540e14b93619889f95f1ee, type: 3}
     - target: {fileID: 4830082571205494753, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: ammoText
       value: 

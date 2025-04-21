@@ -156,6 +156,8 @@ public class GameManager : MonoBehaviour
     public bool chest9;
     public bool chest10;
 
+    public bool heardLibrarySound;
+
     public string[] stands;
 
     public bool godModeActivated;

@@ -114,7 +114,7 @@ public class GunScript : MonoBehaviour
         }
 
         //If you press R and have enough ammo, the reloading coroutine is activated
-        if (Input.GetKeyDown(KeyCode.R) && ammoCount > 0 && !ammoInChamber)
+        if (Input.GetKeyDown(KeyCode.R) && ammoCount > 0 && !ammoInChamber && !reloading)
         {
             StartCoroutine(ReloadGun());
         }

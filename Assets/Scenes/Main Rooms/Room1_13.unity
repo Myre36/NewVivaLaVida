@@ -761,6 +761,10 @@ PrefabInstance:
       propertyPath: timeToFade
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7557782268743658282, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.75
@@ -6613,6 +6617,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 24b55d585e1ef494b8e13f39be23a03e, type: 2}
+    - target: {fileID: 7557782268743658282, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.41

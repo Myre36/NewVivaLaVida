@@ -15,10 +15,6 @@ public class GunScript : MonoBehaviour
     //The reload time of the bullet
     public float reloadTime;
 
-    //Bool for if you are shooting
-    private bool shooting;
-    //A bool for if you are ready to shoot
-    public bool readyToShoot;
     //A bool for if you can shoot
     private bool canShoot;
     //A bool for if you are currently reloading
@@ -54,8 +50,6 @@ public class GunScript : MonoBehaviour
     public TMP_Text dialougeText;
     private void Awake()
     {
-        //Make sure that the player is able to shoot
-        readyToShoot = true;
         canShoot = true;
         //Add four bullets to your gun
         ammoCount = 4;
@@ -104,17 +98,19 @@ public class GunScript : MonoBehaviour
     //A method for shooting. If the player has ammo, presses the LMB, and they are currently aiming, the Shoot method is called
     private void MyInput()
     {
-        //Make shooting applied to the left mouse button
-        shooting = Input.GetKeyDown(KeyCode.Mouse0);
-
-        //If you fulfill all requirments to shoot, the shoot method is called
-        if (readyToShoot && shooting && player.GetComponent<Movement>().aiming && canShoot)
+        if(Input.GetMouseButtonDown(0))
         {
-            Shoot();
-        }
-        else
-        {
-            cantShootSound.Play();
+            if(player.GetComponent<Movement>().aiming)
+            {
+                if(canShoot)
+                {
+                    Shoot();
+                }
+                else
+                {
+                    cantShootSound.Play();
+                }
+            }
         }
 
         //If you press R and have enough ammo, the reloading coroutine is activated

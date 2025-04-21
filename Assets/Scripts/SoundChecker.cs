@@ -13,14 +13,18 @@ public class SoundChecker : MonoBehaviour
     void Awake()
     {
         sound = GetComponent<AudioSource>();
-        if(gameManager.heardLibrarySound)
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        if(librarySound)
         {
-            Destroy(gameObject);
-        }
-        else
-        {
-            sound.Play();
-            gameManager.heardLibrarySound = true;
+            if (gameManager.heardLibrarySound)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                sound.Play();
+                gameManager.heardLibrarySound = true;
+            }
         }
     }
 }

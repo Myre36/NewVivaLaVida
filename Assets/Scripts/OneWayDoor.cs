@@ -30,6 +30,8 @@ public class OneWayDoor : MonoBehaviour
     //A refrence to the dialouge text
     public TMP_Text dialougeText;
 
+    public AudioSource unlockSound;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -93,6 +95,7 @@ public class OneWayDoor : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            unlockSound.Play();
                             dialougeText.text = "You unlocked the door. You should be able to come through on the other side now.";
                         }
                     }
@@ -121,6 +124,7 @@ public class OneWayDoor : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            unlockSound.Play();
                             dialougeText.text = "You unlocked the door. You should be able to come through on the other side now.";
                         }
                     }
@@ -149,6 +153,7 @@ public class OneWayDoor : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            unlockSound.Play();
                             dialougeText.text = "You unlocked the door. You should be able to come through on the other side now.";
                         }
                     }

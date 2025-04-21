@@ -38,6 +38,8 @@ public class LockedDoorScript : MonoBehaviour
     //A refrence to the dialouge text
     public TMP_Text dialougeText;
 
+    public AudioSource unlockSound;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -156,6 +158,7 @@ public class LockedDoorScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            unlockSound.Play();
                             dialougeText.text = "You unlocked the east hallway.";
                         }
                     }
@@ -184,6 +187,7 @@ public class LockedDoorScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            unlockSound.Play();
                             dialougeText.text = "You unlocked the west hallway.";
                         }
                     }
@@ -212,6 +216,7 @@ public class LockedDoorScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            unlockSound.Play();
                             dialougeText.text = "You unlocked the secret tunnel.";
                         }
                     }
@@ -240,6 +245,7 @@ public class LockedDoorScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            unlockSound.Play();
                             dialougeText.text = "You unlocked the servant's quarters.";
                         }
                     }
@@ -268,6 +274,7 @@ public class LockedDoorScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            unlockSound.Play();
                             dialougeText.text = "You unlocked the basement.";
                         }
                     }
@@ -296,6 +303,7 @@ public class LockedDoorScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            unlockSound.Play();
                             dialougeText.text = "You unlocked the second floor.";
                         }
                     }
@@ -324,6 +332,7 @@ public class LockedDoorScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            unlockSound.Play();
                             dialougeText.text = "You unlocked the planetarium.";
                         }
                     }
@@ -352,6 +361,7 @@ public class LockedDoorScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            unlockSound.Play();
                             dialougeText.text = "You unlocked the meeting room.";
                         }
                     }
@@ -398,6 +408,7 @@ public class LockedDoorScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            unlockSound.Play();
                             dialougeText.text = "You place the three coins into the slots on the door. A small click can be heard.";
                         }
                     }
@@ -426,6 +437,7 @@ public class LockedDoorScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            unlockSound.Play();
                             dialougeText.text = "You unlock the door using both of the crown keys. With all your strength, you push the door open.";
                         }
                     }

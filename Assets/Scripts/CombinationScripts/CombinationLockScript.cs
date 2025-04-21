@@ -26,6 +26,8 @@ public class CombinationLockScript : MonoBehaviour
     //A refrence to the game manager
     public GameManager gameManager;
 
+    public AudioSource unlockSound;
+
     private void Awake()
     {
         //Assigns the game manager
@@ -106,6 +108,7 @@ public class CombinationLockScript : MonoBehaviour
                 {
                     Debug.Log("Correct combination");
                     gameManager.combinationSolved = true;
+                    unlockSound.Play();
                     inDialouge = false;
                     player.enabled = true;
                     playerInRange = false;

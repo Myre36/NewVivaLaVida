@@ -1103,12 +1103,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EstherRM
       objectReference: {fileID: 0}
+    - target: {fileID: 7621258782034748646, guid: c143b64ffe5432944a145a631fea9875, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ba2dcd5561e580488d1555d65a69b57, type: 2}
     - target: {fileID: 8602657971169422976, guid: c143b64ffe5432944a145a631fea9875, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 030878dcd8423ea40a2551e8efb0e59f, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 9084960173323155433, guid: c143b64ffe5432944a145a631fea9875, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c143b64ffe5432944a145a631fea9875, type: 3}

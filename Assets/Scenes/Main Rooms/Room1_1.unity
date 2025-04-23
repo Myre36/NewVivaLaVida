@@ -19150,6 +19150,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -103.008
       objectReference: {fileID: 0}
+    - target: {fileID: 3462793549805942218, guid: 3e6979bbf2be81f4d831be4d063b7610, type: 3}
+      propertyPath: Pan2D
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462793549805942218, guid: 3e6979bbf2be81f4d831be4d063b7610, type: 3}
+      propertyPath: MaxDistance
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462793549805942218, guid: 3e6979bbf2be81f4d831be4d063b7610, type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462793549805942218, guid: 3e6979bbf2be81f4d831be4d063b7610, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8176455493348007983, guid: 3e6979bbf2be81f4d831be4d063b7610, type: 3}
       propertyPath: m_LocalRotation.w
       value: -0.14141192
@@ -29431,6 +29447,14 @@ PrefabInstance:
     - target: {fileID: 3144218762870174087, guid: 3e6979bbf2be81f4d831be4d063b7610, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -104.511
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462793549805942218, guid: 3e6979bbf2be81f4d831be4d063b7610, type: 3}
+      propertyPath: m_Volume
+      value: 0.106
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462793549805942218, guid: 3e6979bbf2be81f4d831be4d063b7610, type: 3}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8176455493348007983, guid: 3e6979bbf2be81f4d831be4d063b7610, type: 3}
       propertyPath: m_LocalRotation.w

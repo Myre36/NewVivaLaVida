@@ -6,8 +6,8 @@ public class MapManager : MonoBehaviour
 {
     [SerializeField] private GameObject firstFloorMap;
     [SerializeField] private GameObject secondFloorMap;
-    [SerializeField] private AudioClip openMapSound;
-    [SerializeField] private AudioClip closeMapSound;
+    [SerializeField] private AudioSource openMapSound;
+    [SerializeField] private AudioSource closeMapSound;
 
     private GameObject currentMap;
 
@@ -16,11 +16,10 @@ public class MapManager : MonoBehaviour
     public bool firstFloor;
 
     public Animator mapAnimator;
-    private AudioSource audioSource;
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        
     }
 
     private void Update()
@@ -53,10 +52,11 @@ public class MapManager : MonoBehaviour
     {
         if (openMapSound != null)
         {
-            audioSource.PlayOneShot(openMapSound);
+            openMapSound.Play();
         }
         mapIsOpen = true;
         mapAnimator.SetBool("IsOpen", true);
+        
         yield return new WaitForSeconds(1f);
         currentMap.SetActive(true);
 
@@ -68,7 +68,7 @@ public class MapManager : MonoBehaviour
     {
         if (closeMapSound != null)
         {
-            audioSource.PlayOneShot(closeMapSound);
+            closeMapSound.Play();
         }
         
         mapIsOpen = false;

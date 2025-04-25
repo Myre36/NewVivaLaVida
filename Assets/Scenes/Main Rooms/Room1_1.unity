@@ -1527,6 +1527,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 1.0948234
       objectReference: {fileID: 0}
+    - target: {fileID: 8914489664321408748, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: bullet1
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27081,6 +27085,43 @@ MonoBehaviour:
   closeMapSound: {fileID: 0}
   firstFloor: 0
   mapAnimator: {fileID: 745026383}
+  cover1_1: {fileID: 0}
+  cover1_2: {fileID: 0}
+  cover1_3: {fileID: 0}
+  cover1_4: {fileID: 0}
+  cover1_5: {fileID: 0}
+  cover1_6: {fileID: 0}
+  cover1_7: {fileID: 0}
+  cover1_8: {fileID: 0}
+  cover1_9: {fileID: 0}
+  cover1_10: {fileID: 0}
+  cover1_11: {fileID: 0}
+  cover1_12: {fileID: 0}
+  cover1_13: {fileID: 0}
+  cover1_14: {fileID: 0}
+  cover2_1: {fileID: 0}
+  cover2_2: {fileID: 0}
+  cover2_3: {fileID: 0}
+  cover2_4: {fileID: 0}
+  cover2_5: {fileID: 0}
+  cover2_6: {fileID: 0}
+  cover2_7: {fileID: 0}
+  cover2_8: {fileID: 0}
+  cover2_9: {fileID: 0}
+  cover2_10: {fileID: 0}
+  cover2_12: {fileID: 0}
+  cover2_13: {fileID: 0}
+  cover2_14: {fileID: 0}
+  firstUnlocked: 0
+  hallwayUnlocked: 0
+  tunnelUnlocked: 0
+  servantsUnlocked: 0
+  basementUnlocked: 0
+  secondFloorUnlocked: 0
+  planetariumUnlocked: 0
+  meetingUnlocked: 0
+  coinUnlocked: 0
+  kingsUnlocked: 0
 --- !u!82 &1780212954
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27091,7 +27132,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 68711d73ed2e2ce4094ef5ecc861224f, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 68711d73ed2e2ce4094ef5ecc861224f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -27385,6 +27426,8 @@ MonoBehaviour:
   bullet11: 0
   bullet12: 0
   bullet13: 0
+  bullet14: 0
+  bullet15: 0
   hasEnemies: 0
   plantOne: 0
   plantTwo: 0

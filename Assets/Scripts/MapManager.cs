@@ -32,6 +32,7 @@ public class MapManager : MonoBehaviour
     public GameObject cover1_12;
     public GameObject cover1_13;
     public GameObject cover1_14;
+    public GameObject coverkingsroom;
 
     public GameObject cover2_1;
     public GameObject cover2_2;
@@ -162,6 +163,11 @@ public class MapManager : MonoBehaviour
         if (currentScene.name == "Room1_14")
         {
             Destroy(cover1_14);
+        }
+
+        if (currentScene.name == "KingsRoom")
+        {
+            Destroy(coverkingsroom);
         }
 
         // Second floor

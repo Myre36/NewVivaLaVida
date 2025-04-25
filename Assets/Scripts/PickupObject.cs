@@ -919,6 +919,7 @@ public class PickupObject : MonoBehaviour
                 gameManager.bullet13 = true;
             }
         }
+        yield return new WaitForSeconds(3);
         if (hasEnemies)
         {
             for (int i = 0; i < enemies.Length; i++)
@@ -931,7 +932,6 @@ public class PickupObject : MonoBehaviour
                 }
             }
         }
-        yield return new WaitForSeconds(3);
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.text = "You are not supposed to see this";
         dialougeText.enabled = false;

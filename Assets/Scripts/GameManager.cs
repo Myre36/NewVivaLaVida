@@ -123,6 +123,7 @@ public class GameManager : MonoBehaviour
     public bool bullet12;
     public bool bullet13;
     public bool bullet14;
+    public bool bullet15;
 
     public bool introDialougeDone;
     public bool tutorialDialougeDone;

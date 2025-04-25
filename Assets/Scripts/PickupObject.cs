@@ -62,6 +62,7 @@ public class PickupObject : MonoBehaviour
     public bool bullet13;
     public bool bullet14;
     public bool bullet15;
+    public bool bullet16;
 
     //A bool for if this room has enemies
     public bool hasEnemies;
@@ -317,6 +318,13 @@ public class PickupObject : MonoBehaviour
             else if (bullet15)
             {
                 if (gameManager.bullet15)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            else if (bullet16)
+            {
+                if (gameManager.bullet16)
                 {
                     Destroy(gameObject);
                 }
@@ -767,7 +775,11 @@ public class PickupObject : MonoBehaviour
                         }
                         else if (bullet15)
                         {
-                            gameManager.bullet14 = true;
+                            gameManager.bullet15 = true;
+                        }
+                        else if (bullet16)
+                        {
+                            gameManager.bullet16 = true;
                         }
                         CloseDialouge();
                     }
@@ -983,20 +995,12 @@ public class PickupObject : MonoBehaviour
             {
                 gameManager.bullet15 = true;
             }
-        }
-        yield return new WaitForSeconds(3);
-        if (hasEnemies)
-        {
-            for (int i = 0; i < enemies.Length; i++)
+            else if (bullet16)
             {
-                if (enemies[i] != null)
-                {
-                    NavMeshAgent currentEnemy = enemies[i];
-
-                    currentEnemy.enabled = true;
-                }
+                gameManager.bullet16 = true;
             }
         }
+        yield return new WaitForSeconds(3);
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.text = "You are not supposed to see this";
         dialougeText.enabled = false;

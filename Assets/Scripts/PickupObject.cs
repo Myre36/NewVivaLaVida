@@ -60,6 +60,7 @@ public class PickupObject : MonoBehaviour
     public bool bullet11;
     public bool bullet12;
     public bool bullet13;
+    public bool bullet14;
 
     //A bool for if this room has enemies
     public bool hasEnemies;
@@ -301,6 +302,13 @@ public class PickupObject : MonoBehaviour
             else if (bullet13)
             {
                 if (gameManager.bullet13)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            else if (bullet14)
+            {
+                if (gameManager.bullet14)
                 {
                     Destroy(gameObject);
                 }
@@ -745,6 +753,10 @@ public class PickupObject : MonoBehaviour
                         {
                             gameManager.bullet13 = true;
                         }
+                        else if (bullet14)
+                        {
+                            gameManager.bullet14 = true;
+                        }
                         CloseDialouge();
                     }
                     else
@@ -950,6 +962,10 @@ public class PickupObject : MonoBehaviour
             else if (bullet13)
             {
                 gameManager.bullet13 = true;
+            }
+            else if (bullet14)
+            {
+                gameManager.bullet14 = true;
             }
         }
         yield return new WaitForSeconds(3);

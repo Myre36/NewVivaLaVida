@@ -415,13 +415,46 @@ public class PickupObject : MonoBehaviour
                 //If this room has enemies, their movement will all be paused while the player is in dialouge
                 if(hasEnemies)
                 {
-                    for(int i = 0; i < enemies.Length; i++)
+                    if(isBullet)
                     {
-                        if (enemies[i] != null)
+                        if(!gameManager.firstBullet)
                         {
-                            NavMeshAgent currentEnemy = enemies[i];
+                            for (int i = 0; i < enemies.Length; i++)
+                            {
+                                if (enemies[i] != null)
+                                {
+                                    NavMeshAgent currentEnemy = enemies[i];
 
-                            currentEnemy.enabled = false;
+                                    currentEnemy.enabled = false;
+                                }
+                            }
+                        }
+                    }
+                    else if(isPlant)
+                    {
+                        if(!gameManager.firstPlant)
+                        {
+                            for (int i = 0; i < enemies.Length; i++)
+                            {
+                                if (enemies[i] != null)
+                                {
+                                    NavMeshAgent currentEnemy = enemies[i];
+
+                                    currentEnemy.enabled = false;
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        for (int i = 0; i < enemies.Length; i++)
+                        {
+                            if (enemies[i] != null)
+                            {
+                                NavMeshAgent currentEnemy = enemies[i];
+
+                                currentEnemy.enabled = false;
+                            }
                         }
                     }
                 }

@@ -59,6 +59,8 @@ public class PickupObject : MonoBehaviour
     public bool bullet10;
     public bool bullet11;
     public bool bullet12;
+    public bool bullet13;
+
     //A bool for if this room has enemies
     public bool hasEnemies;
 
@@ -292,6 +294,13 @@ public class PickupObject : MonoBehaviour
             else if (bullet12)
             {
                 if (gameManager.bullet12)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            else if (bullet13)
+            {
+                if (gameManager.bullet13)
                 {
                     Destroy(gameObject);
                 }
@@ -699,6 +708,10 @@ public class PickupObject : MonoBehaviour
                         {
                             gameManager.bullet12 = true;
                         }
+                        else if (bullet13)
+                        {
+                            gameManager.bullet13 = true;
+                        }
                         CloseDialouge();
                     }
                     else
@@ -893,9 +906,19 @@ public class PickupObject : MonoBehaviour
             {
                 gameManager.bullet10 = true;
             }
+            else if (bullet11)
+            {
+                gameManager.bullet11 = true;
+            }
+            else if (bullet12)
+            {
+                gameManager.bullet12 = true;
+            }
+            else if (bullet13)
+            {
+                gameManager.bullet13 = true;
+            }
         }
-        yield return new WaitForSeconds(3);
-        dialougeBox.GetComponent<RawImage>().enabled = false;
         if (hasEnemies)
         {
             for (int i = 0; i < enemies.Length; i++)
@@ -908,6 +931,8 @@ public class PickupObject : MonoBehaviour
                 }
             }
         }
+        yield return new WaitForSeconds(3);
+        dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.text = "You are not supposed to see this";
         dialougeText.enabled = false;
         inDialouge = false;

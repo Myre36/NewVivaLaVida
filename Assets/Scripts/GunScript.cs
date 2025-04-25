@@ -48,6 +48,8 @@ public class GunScript : MonoBehaviour
 
     //Refrence to the dialouge text
     public TMP_Text dialougeText;
+
+    public Animator animator;
     private void Awake()
     {
         canShoot = true;
@@ -102,7 +104,7 @@ public class GunScript : MonoBehaviour
         {
             if(player.GetComponent<Movement>().aiming)
             {
-                if(canShoot)
+                if (canShoot)
                 {
                     Shoot();
                 }
@@ -127,6 +129,8 @@ public class GunScript : MonoBehaviour
         {
             StartCoroutine(ReloadReminder());
         }
+
+        animator.SetTrigger("Shoot");
 
         canShoot = false;
 

@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour
 {
     private static Movement instance;
 
+    public Animator animator;
+
     //A refrence to the player Rigidbody
     public Rigidbody rb;
 
@@ -188,13 +190,17 @@ public class Movement : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             aiming = true;
-            gun.GetComponent<Renderer>().enabled = true;
+
+            animator.SetBool("Aiming", true);
+            
+            //gun.GetComponent<Renderer>().enabled = true;
         }
         //If the player is not holding down the RMB, the gun is not visible
         else
         {
             aiming = false;
-            gun.GetComponent<Renderer>().enabled = false;
+            animator.SetBool("Aiming", false);
+            //gun.GetComponent<Renderer>().enabled = false;
         }
         //Pressing the Tab key either opens the inventory screen, or closes it, depending on what its status is
         if(Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.Tab))
@@ -292,6 +298,25 @@ public class Movement : MonoBehaviour
 
         //Calculate the movement direction
         moveDirection = (Vector3.forward * verticalInput) + (Vector3.right * horizontalInput);
+
+        if (moveDirection != Vector3.zero)
+        {
+            if(state == MovementState.sprinting)
+            {
+                animator.SetBool("isWalking", false);
+                animator.SetBool("isRunning", true);
+            }
+            else
+            {
+                animator.SetBool("isRunning", false);
+                animator.SetBool("isWalking", true);
+            }
+        }
+        else
+        {
+            animator.SetBool("isRunning", false);
+            animator.SetBool("isWalking", false);
+        }
 
         Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
         if (!aiming)

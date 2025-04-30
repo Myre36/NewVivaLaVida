@@ -299,31 +299,28 @@ public class Movement : MonoBehaviour
         //Calculate the movement direction
         moveDirection = (Vector3.forward * verticalInput) + (Vector3.right * horizontalInput);
 
-        if (moveDirection != Vector3.zero)
-        {
-            if(state == MovementState.sprinting)
-            {
-                animator.SetBool("isWalking", false);
-                animator.SetBool("isRunning", true);
-            }
-            else
-            {
-                animator.SetBool("isRunning", false);
-                animator.SetBool("isWalking", true);
-            }
-        }
-        else
-        {
-            animator.SetBool("isRunning", false);
-            animator.SetBool("isWalking", false);
-        }
-
         Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
         if (!aiming)
         {
             if (moveDirection != Vector3.zero)
             {
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+
+                if (state == MovementState.sprinting)
+                {
+                    animator.SetBool("isWalking", false);
+                    animator.SetBool("isRunning", true);
+                }
+                else
+                {
+                    animator.SetBool("isRunning", false);
+                    animator.SetBool("isWalking", true);
+                }
+            }
+            else
+            {
+                animator.SetBool("isRunning", false);
+                animator.SetBool("isWalking", false);
             }
 
             //Moves the player in the calculated direction at an increased movement speed

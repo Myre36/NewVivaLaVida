@@ -114,6 +114,9 @@ public class DoorScript : MonoBehaviour
         player.enabled = false;
         fadeIn = true; 
         player.enabled = false;
+        player.animator.SetBool("Aiming", false);
+        player.animator.SetBool("isWalking", false);
+        player.animator.SetBool("isRunning", false);
         yield return new WaitForSeconds(timeToFade + 0.2f);
         SceneManager.LoadScene(sceneName);
     }

@@ -3164,7 +3164,7 @@ MonoBehaviour:
   playerInDoor: 0
   player: {fileID: 0}
   fadeScreen: {fileID: 0}
-  timeToFade: 0
+  timeToFade: 1
   isPlanetDoor: 0
 --- !u!1 &975268406
 GameObject:

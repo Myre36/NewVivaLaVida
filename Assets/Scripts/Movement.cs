@@ -254,6 +254,18 @@ public class Movement : MonoBehaviour
         }
 
         healingChargeText.text = "Healing items: " + healingCharges;
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(Time.timeScale == 0)
+            {
+                Time.timeScale = 1;
+            }
+            else
+            {
+                Time.timeScale = 0;
+            }
+        }
     }
 
     private void FixedUpdate()

@@ -84,6 +84,11 @@ public class Movement : MonoBehaviour
     float damage = 0.2f;
     float healing = 0.2f;
 
+    private float InverseValue(float value)
+    {
+        return (1f - value);
+    }
+
     public float CurrentHealth => currentHealth;
 
     public void ChangeHealth(float amount)
@@ -273,7 +278,9 @@ public class Movement : MonoBehaviour
             }
         }
 
-        volume.weight = brightnessSlide.value;
+        volume.weight = InverseValue(brightnessSlide.value);
+
+        
     }
 
     private void FixedUpdate()

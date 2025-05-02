@@ -58,6 +58,8 @@ public class Movement : MonoBehaviour
 
     private Vignette vignette;
 
+    public Slider brightnessSlide;
+
     public AudioSource heartbeatSound;
 
     public AudioSource EstherDeathSound;
@@ -270,6 +272,8 @@ public class Movement : MonoBehaviour
                 Time.timeScale = 0;
             }
         }
+
+        volume.weight = brightnessSlide.value;
     }
 
     private void FixedUpdate()

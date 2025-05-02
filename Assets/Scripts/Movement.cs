@@ -279,8 +279,6 @@ public class Movement : MonoBehaviour
         }
 
         volume.weight = InverseValue(brightnessSlide.value);
-
-        
     }
 
     private void FixedUpdate()

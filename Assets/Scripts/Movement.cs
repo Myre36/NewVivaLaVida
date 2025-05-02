@@ -40,6 +40,8 @@ public class Movement : MonoBehaviour
     public GameObject gun;
     //A refrence to the inventory screen
     public GameObject inventoryScreen;
+    //Pause screen
+    public GameObject pauseScreen;
 
     //A bool which will be used to check if the player is aiming
     public bool aiming;
@@ -259,10 +261,12 @@ public class Movement : MonoBehaviour
         {
             if(Time.timeScale == 0)
             {
+                pauseScreen.SetActive(false);
                 Time.timeScale = 1;
             }
             else
             {
+                pauseScreen.SetActive(true);
                 Time.timeScale = 0;
             }
         }

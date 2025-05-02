@@ -21211,7 +21211,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 3e6979bbf2be81f4d831be4d063b7610, type: 3}
 --- !u!4 &1369116666 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 1906118194687653928, guid: 3e6979bbf2be81f4d831be4d063b7610, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1503136518300122737, guid: 3e6979bbf2be81f4d831be4d063b7610, type: 3}
   m_PrefabInstance: {fileID: 1369116665}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1369116667 stripped
@@ -22681,7 +22681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
+  outlineWidth: 3
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -32423,7 +32423,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 3e6979bbf2be81f4d831be4d063b7610, type: 3}
 --- !u!4 &2048484970 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 1906118194687653928, guid: 3e6979bbf2be81f4d831be4d063b7610, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1503136518300122737, guid: 3e6979bbf2be81f4d831be4d063b7610, type: 3}
   m_PrefabInstance: {fileID: 2048484969}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2048484971 stripped

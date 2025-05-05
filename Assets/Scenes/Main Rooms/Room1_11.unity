@@ -2640,15 +2640,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialouge:
-  - You hear the sound of moaning coming from the door ahead of you.
+  - You hear sounds coming from the room across you.
   - Could be someone who can tell you what's going on.
   - Or...
   - You ready your gun, checking if you have enough bullets.
   - (Hold down the right mouse button to aim your gun).
-  - (If you press the left mouse button while aiming, you will shoot your gun).
-  - (You cannot move while aiming, so be careful).
-  - (You do not have infinite bullets, use them sparingly).
-  - (You can find extra bullets lying around the castle).
+  - (Press the left mouse button while aiming to shoot).
   - (Press R to reload your gun)
   introDialouge: 0
   tutorialDialouge: 1

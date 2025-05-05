@@ -3115,26 +3115,8 @@ MonoBehaviour:
   - The queen lies on the ground.
   - Her beauty shines through despite everything.
   - Her wrist is slit, a knife lies on the ground next to her...
-  - There is a letter clutched in her other hand.
-  - You carefully remove it out of her hand.
-  - '"To the people."'
-  - '"I wish I could write everything my mind wishes."'
-  - '"Some horrible curse has befallen the king."'
-  - '"He shall not have the satisfaction of having me alive."'
-  - '"I wish I could have been a better queen."'
-  - '"Not for him, but for the people."'
-  - '"He trampled on the peasantry, while I sat and did little to persuade him."'
-  - '"He sent his own children off, for he did not bother to raise them himself."'
-  - '"I wish I could tell of the horrible things he has done, but my own pride forbades
-    me to."'
-  - '"My life has beem violated, and so has all those under him."'
-  - '"The wrath of god shall rain down on him and all who let him be king."'
-  - '"I will never be forgiven."'
-  - '"But he shall not have me."'
   - ...
-  - You stand there a few seconds.
-  - Then, you bow.
-  - Long live the queen.
+  - You take a deep bow.
   playerInRange: 0
   outlineEneabled: 1
   lineNumber: 0

@@ -33,6 +33,12 @@ public class MapManager : MonoBehaviour
     public GameObject cover1_13;
     public GameObject cover1_14;
     public GameObject coverkingsroom;
+    public GameObject ServantsDoor;
+    public GameObject HorseDoor;
+    public GameObject EmeraldDoor;
+    public GameObject CrownDoor;
+    public GameObject OrangeDoor;
+
 
     public GameObject cover2_1;
     public GameObject cover2_2;
@@ -47,6 +53,11 @@ public class MapManager : MonoBehaviour
     public GameObject cover2_12;
     public GameObject cover2_13;
     public GameObject cover2_14;
+
+    public GameObject SunDoor;
+    public GameObject SapphireDoor;
+    public GameObject CoinDoor;
+    public GameObject SecondFloorDoor;
 
 
     // For area unlock
@@ -204,6 +215,7 @@ public class MapManager : MonoBehaviour
         if (currentScene.name == "Room2_7")
         {
             Destroy(cover2_7);
+            Destroy(SunDoor);
         }
 
         if (currentScene.name == "Room2_8")

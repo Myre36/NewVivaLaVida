@@ -15587,6 +15587,7 @@ RectTransform:
   - {fileID: 569799382}
   - {fileID: 776688866}
   - {fileID: 919534982}
+  - {fileID: 1524565995}
   m_Father: {fileID: 745026384}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -23735,6 +23736,78 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1940621895}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1524565992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1524565995}
+  - component: {fileID: 1524565994}
+  - component: {fileID: 1524565993}
+  m_Layer: 5
+  m_Name: SunDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1524565993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524565992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: cb25322e12cfb07439506b3f5b67b0e8, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1524565994
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524565992}
+  m_CullTransparentMesh: 1
+--- !u!224 &1524565995
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524565992}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1.21}
+  m_LocalScale: {x: 0.20650621, y: 0.29854792, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 863777080}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -141.4, y: 50.4}
+  m_SizeDelta: {x: 136.3, y: 136.3}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!43 &1526784724
 Mesh:
   m_ObjectHideFlags: 0
@@ -29776,6 +29849,11 @@ MonoBehaviour:
   cover1_13: {fileID: 229375253}
   cover1_14: {fileID: 1793377934}
   coverkingsroom: {fileID: 671698955}
+  ServantsDoor: {fileID: 0}
+  HorseDoor: {fileID: 0}
+  EmeraldDoor: {fileID: 0}
+  CrownDoor: {fileID: 0}
+  OrangeDoor: {fileID: 0}
   cover2_1: {fileID: 194811810}
   cover2_2: {fileID: 2016295354}
   cover2_3: {fileID: 1143777012}
@@ -29789,6 +29867,10 @@ MonoBehaviour:
   cover2_12: {fileID: 569799381}
   cover2_13: {fileID: 776688865}
   cover2_14: {fileID: 919534981}
+  SunDoor: {fileID: 1524565992}
+  SapphireDoor: {fileID: 0}
+  CoinDoor: {fileID: 0}
+  SecondFloorDoor: {fileID: 0}
   firstUnlocked: 0
   hallwayUnlocked: 0
   tunnelUnlocked: 0

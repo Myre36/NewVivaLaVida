@@ -355,6 +355,10 @@ public class Movement : MonoBehaviour
         }
         else
         {
+            animator.SetBool("isWalking", false);
+            animator.SetBool("isRunning", false);
+            animator.SetBool("Aiming", true);
+
             var cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
 
             Plane ground = new Plane(Vector3.up, Vector3.zero);

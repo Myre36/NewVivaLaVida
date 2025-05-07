@@ -114,6 +114,7 @@ public class MapManager : MonoBehaviour
         if (currentScene.name == "Room1_2")
         {
             Destroy(cover1_2);
+            ServantsDoor.SetActive(true);
         }
 
         if (currentScene.name == "Room1_3")
@@ -134,6 +135,7 @@ public class MapManager : MonoBehaviour
         if (currentScene.name == "Room1_6")
         {
             Destroy(cover1_6);
+            Destroy(ServantsDoor);
         }
 
         if (currentScene.name == "Room1_7")

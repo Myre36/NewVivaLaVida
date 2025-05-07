@@ -154,6 +154,7 @@ public class MapManager : MonoBehaviour
         if (currentScene.name == "Room1_10")
         {
             Destroy(cover1_10);
+            Destroy(HorseDoor);
         }
 
         if (currentScene.name == "Room1_11")
@@ -170,6 +171,7 @@ public class MapManager : MonoBehaviour
         if (currentScene.name == "Room1_13")
         {
             Destroy(cover1_13);
+            HorseDoor.SetActive(true);
         }
 
         if (currentScene.name == "Room1_14")

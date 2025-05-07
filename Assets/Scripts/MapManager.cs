@@ -159,6 +159,7 @@ public class MapManager : MonoBehaviour
         if (currentScene.name == "Room1_11")
         {
             Destroy(cover1_11);
+            Destroy(EmeraldDoor);
         }
 
         if (currentScene.name == "Room1_12")

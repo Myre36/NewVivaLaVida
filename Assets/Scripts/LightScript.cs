@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class LightScript : MonoBehaviour
 {
-    private int candleNum;
+    public int candleNum;
 
     public GameManager gameManager;
 
@@ -22,6 +22,8 @@ public class LightScript : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             GetComponent<Light>().enabled = true;
+
+            gameManager.candleStates[candleNum] = true;
         }
     }
 }

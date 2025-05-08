@@ -176,7 +176,7 @@ public class GameManager : MonoBehaviour
 
     public bool godModeActivated;
 
-    bool[] candleStates = new bool[120];
+    public bool[] candleStates = new bool[2];
 
     private void Awake()
     {

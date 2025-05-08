@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     public bool enemyFourteenFakeDead = false;
     public bool enemyFifteenFakeDead = false;
     public bool enemySixteenFakeDead = false;
+    public bool enemySeventeenFakeDead = false;
 
     public bool enemyOneDead = false;
     public bool enemyTwoDead = false;
@@ -47,6 +48,7 @@ public class GameManager : MonoBehaviour
     public bool enemyFourteenDead = false;
     public bool enemyFifteenDead = false;
     public bool enemySixteenDead = false;
+    public bool enemySeventeenDead = false;
 
     public float enemyOneTimer;
     public float enemyTwoTimer;
@@ -64,6 +66,7 @@ public class GameManager : MonoBehaviour
     public float enemyFourteenTimer;
     public float enemyFifteenTimer;
     public float enemySixteenTimer;
+    public float enemySeventeenTimer;
 
     //Bools for if the player has all the coins
     public bool coinOne;
@@ -173,6 +176,8 @@ public class GameManager : MonoBehaviour
 
     public bool godModeActivated;
 
+    bool[] candleStates = new bool[120];
+
     private void Awake()
     {
         //This code is used to make sure there are never more than one game manager
@@ -252,6 +257,10 @@ public class GameManager : MonoBehaviour
         if (enemySixteenFakeDead)
         {
             enemySixteenTimer += Time.deltaTime;
+        }
+        if (enemySeventeenFakeDead)
+        {
+            enemySeventeenTimer += Time.deltaTime;
         }
     }
 

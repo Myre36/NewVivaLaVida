@@ -307,6 +307,18 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
                 gameManager.enemySixteenFakeDead = true;
             }
         }
+        else if (enemyNum == 17)
+        {
+            if (gameManager.enemySeventeenFakeDead)
+            {
+                gameManager.enemySeventeenDead = true;
+                gameManager.enemySeventeenFakeDead = false;
+            }
+            else
+            {
+                gameManager.enemySeventeenFakeDead = true;
+            }
+        }
         Destroy(gameObject);
     }
 

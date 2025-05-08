@@ -184,6 +184,7 @@ public class MapManager : MonoBehaviour
         if (currentScene.name == "KingsRoom")
         {
             Destroy(coverkingsroom);
+            Destroy(CrownDoor);
         }
 
         // Second floor

@@ -30,6 +30,8 @@ public class RoomEntryCheck : MonoBehaviour
     public GameObject enemyTwelve;
     public GameObject enemyThirteen;
     public GameObject enemyFourteen;
+    public GameObject enemyFifteen;
+    public GameObject enemySixteen;
 
     //A refrence to the black fade screen
     public CanvasGroup fadeScreen;
@@ -51,6 +53,8 @@ public class RoomEntryCheck : MonoBehaviour
     public bool isEnemyTwelve;
     public bool isEnemyThirteen;
     public bool isEnemyFourteen;
+    public bool isEnemyFifteen;
+    public bool isEnemySixteen;
 
     //The time it takes to fade in
     public float timeToFade;
@@ -264,6 +268,34 @@ public class RoomEntryCheck : MonoBehaviour
                 if (gameManager.enemyFourteenTimer < gameManager.enemyRespawnTime)
                 {
                     Destroy(enemyFourteen);
+                }
+            }
+        }
+        if (isEnemyFifteen)
+        {
+            if (gameManager.enemyFifteenDead)
+            {
+                Destroy(enemyFifteen);
+            }
+            else if (gameManager.enemyFifteenFakeDead)
+            {
+                if (gameManager.enemyFifteenTimer < gameManager.enemyRespawnTime)
+                {
+                    Destroy(enemyFifteen);
+                }
+            }
+        }
+        if (isEnemySixteen)
+        {
+            if (gameManager.enemySixteenDead)
+            {
+                Destroy(enemySixteen);
+            }
+            else if (gameManager.enemySixteenFakeDead)
+            {
+                if (gameManager.enemySixteenTimer < gameManager.enemyRespawnTime)
+                {
+                    Destroy(enemySixteen);
                 }
             }
         }

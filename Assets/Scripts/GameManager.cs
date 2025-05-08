@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
     public bool enemyTwelveFakeDead = false;
     public bool enemyThirteenFakeDead = false;
     public bool enemyFourteenFakeDead = false;
+    public bool enemyFifteenFakeDead = false;
+    public bool enemySixteenFakeDead = false;
 
     public bool enemyOneDead = false;
     public bool enemyTwoDead = false;
@@ -43,6 +45,8 @@ public class GameManager : MonoBehaviour
     public bool enemyTwelveDead = false;
     public bool enemyThirteenDead = false;
     public bool enemyFourteenDead = false;
+    public bool enemyFifteenDead = false;
+    public bool enemySixteenDead = false;
 
     public float enemyOneTimer;
     public float enemyTwoTimer;
@@ -58,6 +62,8 @@ public class GameManager : MonoBehaviour
     public float enemyTwelveTimer;
     public float enemyThirteenTimer;
     public float enemyFourteenTimer;
+    public float enemyFifteenTimer;
+    public float enemySixteenTimer;
 
     //Bools for if the player has all the coins
     public bool coinOne;
@@ -238,6 +244,14 @@ public class GameManager : MonoBehaviour
         if (enemyFourteenFakeDead)
         {
             enemyFourteenTimer += Time.deltaTime;
+        }
+        if (enemyFifteenFakeDead)
+        {
+            enemyFifteenTimer += Time.deltaTime;
+        }
+        if (enemySixteenFakeDead)
+        {
+            enemySixteenTimer += Time.deltaTime;
         }
     }
 

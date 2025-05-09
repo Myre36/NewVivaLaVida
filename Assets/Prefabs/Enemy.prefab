@@ -56,10 +56,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.3428971
+  m_Radius: 0.565108
   m_Height: 2.151671
   m_Direction: 1
-  m_Center: {x: -0.0018673539, y: 0.07583547, z: -0.0014816821}
+  m_Center: {x: -0.0037347674, y: 0.07583547, z: -0.0014817119}
 --- !u!114 &3694110888022399015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,6 +72,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe2bfa8f84c3194cbc9398fcf547713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aliveBody: {fileID: 4995574428120840194}
+  deadBody: {fileID: 4338529139165160767}
   agent: {fileID: 0}
   PlayerTransform: {fileID: 0}
   enemyNum: 0
@@ -263,6 +265,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8626080336605767757, guid: a2304f4a51d32334facf50006c7f67d5, type: 3}
   m_PrefabInstance: {fileID: 4669005430485211080}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4338529139165160767 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9006687914757599991, guid: a2304f4a51d32334facf50006c7f67d5, type: 3}
+  m_PrefabInstance: {fileID: 4669005430485211080}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5301495048111113555
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -320,6 +327,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aee18ca9628d1024497bdc4faa999b77, type: 3}
+--- !u!1 &4995574428120840194 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: aee18ca9628d1024497bdc4faa999b77, type: 3}
+  m_PrefabInstance: {fileID: 5301495048111113555}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5627257445850718904 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: aee18ca9628d1024497bdc4faa999b77, type: 3}

@@ -4,6 +4,11 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
 {
+    public GameObject aliveBody;
+    public GameObject deadBody;
+    private AudioSource enemySound;
+    private Collider enemyCollider;
+
     public NavMeshAgent agent;
 
     public Transform PlayerTransform;
@@ -42,6 +47,8 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
         IdleState = new IdleState(this, StateMachine);
         AttackingState = new AttackingState(this, StateMachine);
         ChasingState = new ChasingState(this, StateMachine);
+        enemySound = GetComponent<AudioSource>();
+        enemyCollider = GetComponent<Collider>();
     }
 
     #endregion
@@ -319,7 +326,17 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
                 gameManager.enemySeventeenFakeDead = true;
             }
         }
-        Destroy(gameObject);
+        DisableEverything();
+    }
+
+    public void DisableEverything()
+    {
+        aliveBody.SetActive(false);
+        deadBody.SetActive(true);
+        enemySound.enabled = false;
+        agent.enabled = false;
+        enemyCollider.enabled = false;
+        this.enabled = false;
     }
 
     #endregion

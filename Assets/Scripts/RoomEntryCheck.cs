@@ -79,239 +79,256 @@ public class RoomEntryCheck : MonoBehaviour
         //Enemies are destroyed depending at which state they are in
         if(isEnemyOne)
         {
-            if(gameManager.enemyOneDead)
+            Enemy currentEnemy = enemyOne.GetComponent<Enemy>();
+            if (gameManager.enemyOneDead)
             {
-                Destroy(enemyOne);
+                currentEnemy.DisableEverything();
             }
             else if(gameManager.enemyOneFakeDead)
             {
                 if(gameManager.enemyOneTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemyOne);
+                    currentEnemy.DisableEverything();
                 }
             }
         }
         if (isEnemyTwo)
         {
+            Enemy currentEnemy = enemyTwo.GetComponent<Enemy>();
             if (gameManager.enemyTwoDead)
             {
-                Destroy(enemyTwo);
+                currentEnemy.DisableEverything();
             }
             else if (gameManager.enemyTwoFakeDead)
             {
                 if (gameManager.enemyTwoTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemyTwo);
+                    currentEnemy.DisableEverything();
                 }
             }
         }
         if (isEnemyThree)
         {
+            Enemy currentEnemy = enemyThree.GetComponent<Enemy>();
             if (gameManager.enemyThreeDead)
             {
-                Destroy(enemyThree);
+                currentEnemy.DisableEverything();
             }
             else if (gameManager.enemyThreeFakeDead)
             {
                 if (gameManager.enemyThreeTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemyThree);
+                    currentEnemy.DisableEverything();
                 }
             }
         }
         if (isEnemyFour)
         {
+            Enemy currentEnemy = enemyFour.GetComponent<Enemy>();
             if (gameManager.enemyFourDead)
             {
-                Destroy(enemyFour);
+                currentEnemy.DisableEverything();
             }
             else if (gameManager.enemyFourFakeDead)
             {
                 if (gameManager.enemyFourTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemyFour);
+                    currentEnemy.DisableEverything();
                 }
             }
         }
         if (isEnemyFive)
         {
+            Enemy currentEnemy = enemyFive.GetComponent<Enemy>();
             if (gameManager.enemyFiveDead)
             {
-                Destroy(enemyFive);
+                currentEnemy.DisableEverything();
             }
             else if (gameManager.enemyFiveFakeDead)
             {
                 if (gameManager.enemyFiveTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemyFive);
+                    currentEnemy.DisableEverything();
                 }
             }
         }
         if (isEnemySix)
         {
+            Enemy currentEnemy = enemySix.GetComponent<Enemy>();
             if (gameManager.enemySixDead)
             {
-                Destroy(enemySix);
+                currentEnemy.DisableEverything();
             }
             else if (gameManager.enemySixFakeDead)
             {
                 if (gameManager.enemySixTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemySix);
+                    currentEnemy.DisableEverything();
                 }
             }
         }
         if (isEnemySeven)
         {
+            Enemy currentEnemy = enemySeven.GetComponent<Enemy>();
             if (gameManager.enemySevenDead)
             {
-                Destroy(enemySeven);
+                currentEnemy.DisableEverything();
             }
             else if (gameManager.enemySevenFakeDead)
             {
                 if (gameManager.enemySevenTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemySeven);
+                    currentEnemy.DisableEverything();
                 }
             }
         }
         if (isEnemyEight)
         {
+            Enemy currentEnemy = enemyEight.GetComponent<Enemy>();
             if (gameManager.enemyEightDead)
             {
-                Destroy(enemyEight);
+                currentEnemy.DisableEverything();
             }
             else if (gameManager.enemyEightFakeDead)
             {
                 if (gameManager.enemyEightTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemyEight);
+                    currentEnemy.DisableEverything();
                 }
             }
         }
         if (isEnemyNine)
         {
+            Enemy currentEnemy = enemyNine.GetComponent<Enemy>();
             if (gameManager.enemyNineDead)
             {
-                Destroy(enemyNine);
+                currentEnemy.DisableEverything();
             }
             else if (gameManager.enemyNineFakeDead)
             {
                 if (gameManager.enemyNineTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemyNine);
+                    currentEnemy.DisableEverything();
                 }
             }
         }
         if (isEnemyTen)
         {
+            Enemy currentEnemy = enemyTen.GetComponent<Enemy>();
             if (gameManager.enemyTenDead)
             {
-                Destroy(enemyTen);
+                currentEnemy.DisableEverything();
             }
             else if (gameManager.enemyTenFakeDead)
             {
                 if (gameManager.enemyTenTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemyTen);
+                    currentEnemy.DisableEverything();
                 }
             }
         }
         if (isEnemyEleven)
         {
+            Enemy currentEnemy = enemyEleven.GetComponent<Enemy>();
             if (gameManager.enemyElevenDead)
             {
-                Destroy(enemyEleven);
+                currentEnemy.DisableEverything();
             }
             else if (gameManager.enemyElevenFakeDead)
             {
                 if (gameManager.enemyElevenTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemyEleven);
+                    currentEnemy.DisableEverything();
                 }
             }
         }
         if (isEnemyTwelve)
         {
+            Enemy currentEnemy = enemyTwelve.GetComponent<Enemy>();
             if (gameManager.enemyTwelveDead)
             {
-                Destroy(enemyTwelve);
+                currentEnemy.DisableEverything();
             }
             else if (gameManager.enemyTwelveFakeDead)
             {
                 if (gameManager.enemyTwelveTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemyTwelve);
+                    currentEnemy.DisableEverything();
                 }
             }
         }
         if (isEnemyThirteen)
         {
+            Enemy currentEnemy = enemyThirteen.GetComponent<Enemy>();
             if (gameManager.enemyThirteenDead)
             {
-                Destroy(enemyThirteen);
+                currentEnemy.DisableEverything();
             }
             else if (gameManager.enemyThirteenFakeDead)
             {
                 if (gameManager.enemyThirteenTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemyThirteen);
+                    currentEnemy.DisableEverything();
                 }
             }
         }
         if (isEnemyFourteen)
         {
+            Enemy currentEnemy = enemyFourteen.GetComponent<Enemy>();
             if (gameManager.enemyFourteenDead)
             {
-                Destroy(enemyFourteen);
+                currentEnemy.DisableEverything();
             }
             else if (gameManager.enemyFourteenFakeDead)
             {
                 if (gameManager.enemyFourteenTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemyFourteen);
+                    currentEnemy.DisableEverything();
                 }
             }
         }
         if (isEnemyFifteen)
         {
+            Enemy currentEnemy = enemyFifteen.GetComponent<Enemy>();
             if (gameManager.enemyFifteenDead)
             {
-                Destroy(enemyFifteen);
+                currentEnemy.DisableEverything();
             }
             else if (gameManager.enemyFifteenFakeDead)
             {
                 if (gameManager.enemyFifteenTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemyFifteen);
+                    currentEnemy.DisableEverything();
                 }
             }
         }
         if (isEnemySixteen)
         {
+            Enemy currentEnemy = enemySixteen.GetComponent<Enemy>();
             if (gameManager.enemySixteenDead)
             {
-                Destroy(enemySixteen);
+                currentEnemy.DisableEverything();
             }
             else if (gameManager.enemySixteenFakeDead)
             {
                 if (gameManager.enemySixteenTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemySixteen);
+                    currentEnemy.DisableEverything();
                 }
             }
         }
         if (isEnemySeventeen)
         {
+            Enemy currentEnemy = enemySeventeen.GetComponent<Enemy>();
             if (gameManager.enemySeventeenDead)
             {
-                Destroy(enemySeventeen);
+                currentEnemy.DisableEverything();
             }
             else if (gameManager.enemySeventeenFakeDead)
             {
                 if (gameManager.enemySeventeenTimer < gameManager.enemyRespawnTime)
                 {
-                    Destroy(enemySixteen);
+                    currentEnemy.DisableEverything();
                 }
             }
         }

@@ -3267,6 +3267,10 @@ PrefabInstance:
       propertyPath: enemyNum
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 6992943924828346387, guid: bc29346653880de458760774721b9699, type: 3}
+      propertyPath: m_Name
+      value: Zombie1
+      objectReference: {fileID: 0}
     - target: {fileID: 7793298037032126722, guid: bc29346653880de458760774721b9699, type: 3}
       propertyPath: m_Name
       value: Enemy

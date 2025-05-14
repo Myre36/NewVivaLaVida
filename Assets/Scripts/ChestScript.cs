@@ -184,6 +184,7 @@ public class ChestScript : MonoBehaviour
                         if(inDialouge)
                         {
                             gameManager.chest1 = true;
+                            Destroy(icon);
                             UnlockChest();
                             
                         }
@@ -212,7 +213,7 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest2 = true;
-                            Destroy(GameObject.Find("CrownChest"));
+                            Destroy(icon);
                             UnlockChest();
                             
                         }
@@ -241,7 +242,7 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest3 = true;
-                            Destroy(GameObject.Find("SecondFloorChest"));
+                            Destroy(icon);
                             UnlockChest();
                         }
                         else
@@ -269,7 +270,7 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest4 = true;
-                            Destroy(GameObject.Find("SChest"));
+                            Destroy(icon);
                             UnlockChest();
                         }
                         else
@@ -297,7 +298,7 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest5 = true;
-                            Destroy(GameObject.Find("SunChest"));
+                            Destroy(icon);
                             UnlockChest();
                         }
                         else
@@ -325,7 +326,7 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest6 = true;
-                            Destroy(GameObject.Find("RustyChest"));
+                            Destroy(icon);
                             UnlockChest();
                         }
                         else
@@ -353,7 +354,7 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest7 = true;
-                            Destroy(GameObject.Find("SChest_2"));
+                            Destroy(icon);
                             UnlockChest();
                         }
                         else
@@ -381,7 +382,7 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest8 = true;
-                            Destroy(GameObject.Find("CrownChest_1"));
+                            Destroy(icon);
                             UnlockChest();
                         }
                         else
@@ -409,7 +410,7 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest9 = true;
-                            Destroy(GameObject.Find("CrownChest_2"));
+                            Destroy(icon);
                             UnlockChest();
                         }
                         else
@@ -437,7 +438,7 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest10 = true;
-                            Destroy(GameObject.Find("CrownChest_3"));
+                            Destroy(icon);
                             UnlockChest();
                         }
                         else

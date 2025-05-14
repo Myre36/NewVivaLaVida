@@ -230,6 +230,7 @@ public class MapManager : MonoBehaviour
         if (currentScene.name == "Room2_8")
         {
             Destroy(cover2_8);
+            CoinDoor.SetActive(true);
         }
 
         if (currentScene.name == "Room2_9")
@@ -245,6 +246,7 @@ public class MapManager : MonoBehaviour
         if (currentScene.name == "Room2_12")
         {
             Destroy(cover2_12);
+            Destroy(CoinDoor);
         }
 
         if (currentScene.name == "Room2_13")

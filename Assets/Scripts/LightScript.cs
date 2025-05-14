@@ -15,6 +15,10 @@ public class LightScript : MonoBehaviour
         {
             GetComponent<Light>().enabled = true;
         }
+        else
+        {
+            GetComponent<Light>().enabled = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)

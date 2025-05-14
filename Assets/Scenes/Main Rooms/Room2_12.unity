@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.41451585, g: 0.41785333, b: 0.4245283, a: 1}
+  m_AmbientSkyColor: {r: 0.31901035, g: 0.3236561, b: 0.3283019, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -194,6 +194,10 @@ PrefabInstance:
     - target: {fileID: 7203803595939376245, guid: cb42e1301dbb9ef4caff75f5b7d596d1, type: 3}
       propertyPath: m_Name
       value: GodLightSystem (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203803595939376245, guid: cb42e1301dbb9ef4caff75f5b7d596d1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2455,6 +2459,10 @@ PrefabInstance:
     - target: {fileID: 7203803595939376245, guid: cb42e1301dbb9ef4caff75f5b7d596d1, type: 3}
       propertyPath: m_Name
       value: GodLightSystem (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203803595939376245, guid: cb42e1301dbb9ef4caff75f5b7d596d1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13777,6 +13785,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GodLightSystem (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7203803595939376245, guid: cb42e1301dbb9ef4caff75f5b7d596d1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15119,6 +15131,10 @@ PrefabInstance:
     - target: {fileID: 7203803595939376245, guid: cb42e1301dbb9ef4caff75f5b7d596d1, type: 3}
       propertyPath: m_Name
       value: GodLightSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203803595939376245, guid: cb42e1301dbb9ef4caff75f5b7d596d1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

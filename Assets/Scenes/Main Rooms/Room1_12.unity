@@ -6725,6 +6725,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8223755242028255033, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_Size.x
+      value: 9.724519
+      objectReference: {fileID: 0}
+    - target: {fileID: 8223755242028255033, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_Size.y
+      value: 3.2028577
+      objectReference: {fileID: 0}
+    - target: {fileID: 8223755242028255033, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_Size.z
+      value: 6.100011
+      objectReference: {fileID: 0}
+    - target: {fileID: 8223755242028255033, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_Center.x
+      value: 0.63880634
+      objectReference: {fileID: 0}
+    - target: {fileID: 8223755242028255033, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_Center.y
+      value: 0.05134643
+      objectReference: {fileID: 0}
+    - target: {fileID: 8223755242028255033, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
+      propertyPath: m_Center.z
+      value: -1.1891788
+      objectReference: {fileID: 0}
     - target: {fileID: 8914489664321408748, guid: 09592405fbb172847bf68a39ef6c050e, type: 3}
       propertyPath: bullet1
       value: 0

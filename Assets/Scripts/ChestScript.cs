@@ -215,6 +215,7 @@ public class ChestScript : MonoBehaviour
                         {
                             gameManager.chest2 = true;
                             UnlockChest();
+                            Destroy(CrownChest);
                         }
                         else
                         {

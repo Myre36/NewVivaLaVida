@@ -37,6 +37,18 @@ public class ChestScript : MonoBehaviour
     public bool chest9;
     public bool chest10;
 
+    //For chest check
+    public GameObject HorseChest;
+    public GameObject SChest;
+    public GameObject CrownChest;
+    public GameObject SunChest;
+    public GameObject RustyChest;
+
+    public GameObject SChest2;
+    public GameObject CrownChest_1;
+    public GameObject CrownChest_2;
+
+
     public int ammoAmmount;
 
     public bool hasHealing;
@@ -175,6 +187,7 @@ public class ChestScript : MonoBehaviour
                         {
                             gameManager.chest1 = true;
                             UnlockChest();
+                            Destroy(HorseChest);
                         }
                         else
                         {
@@ -379,7 +392,7 @@ public class ChestScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            dialougeText.text = "The lock on the chest is shaped like a red crown.";
+                            dialougeText.text = "The lock on the chest is shaped like a blue crown.";
                         }
                     }
                 }
@@ -391,6 +404,7 @@ public class ChestScript : MonoBehaviour
                         {
                             gameManager.chest9 = true;
                             UnlockChest();
+                            Destroy(CrownChest_2);
                         }
                         else
                         {
@@ -433,7 +447,7 @@ public class ChestScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            dialougeText.text = "The lock on the chest is shaped like a red crown.";
+                            dialougeText.text = "The lock on the chest is shaped like a blue crown.";
                         }
                     }
                 }

@@ -197,6 +197,7 @@ public class MapManager : MonoBehaviour
         if (currentScene.name == "Room2_2")
         {
             Destroy(cover2_2);
+            SapphireDoor.SetActive(true);
         }
 
         if (currentScene.name == "Room2_3")

@@ -1545,6 +1545,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4256750573049423644, guid: 8af6ddf0bf531a44cb4b36a6128b8a77, type: 3}
+      propertyPath: chest8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256750573049423644, guid: 8af6ddf0bf531a44cb4b36a6128b8a77, type: 3}
+      propertyPath: iconName
+      value: RustyChest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256750573049423644, guid: 8af6ddf0bf531a44cb4b36a6128b8a77, type: 3}
       propertyPath: hasHealing
       value: 0
       objectReference: {fileID: 0}

@@ -482,6 +482,8 @@ GameObject:
   - component: {fileID: 13127312}
   - component: {fileID: 13127314}
   - component: {fileID: 13127313}
+  - component: {fileID: 13127316}
+  - component: {fileID: 13127315}
   m_Layer: 0
   m_Name: Point Light (4)
   m_TagString: Untagged
@@ -592,6 +594,41 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &13127315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13127311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c504fa16b1ce2214b834d984899bac9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candleNum: 145
+  gameManager: {fileID: 0}
+--- !u!65 &13127316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13127311}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 3, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &56636702
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,6 +640,8 @@ GameObject:
   - component: {fileID: 56636703}
   - component: {fileID: 56636705}
   - component: {fileID: 56636704}
+  - component: {fileID: 56636707}
+  - component: {fileID: 56636706}
   m_Layer: 0
   m_Name: Point Light (3)
   m_TagString: Untagged
@@ -713,6 +752,41 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &56636706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56636702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c504fa16b1ce2214b834d984899bac9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candleNum: 142
+  gameManager: {fileID: 0}
+--- !u!65 &56636707
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56636702}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 3, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &67566950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -807,6 +881,8 @@ GameObject:
   - component: {fileID: 85398158}
   - component: {fileID: 85398160}
   - component: {fileID: 85398159}
+  - component: {fileID: 85398162}
+  - component: {fileID: 85398161}
   m_Layer: 0
   m_Name: Point Light (2)
   m_TagString: Untagged
@@ -917,6 +993,41 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &85398161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85398157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c504fa16b1ce2214b834d984899bac9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candleNum: 144
+  gameManager: {fileID: 0}
+--- !u!65 &85398162
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85398157}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 3, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &130350740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1550,6 +1661,8 @@ GameObject:
   - component: {fileID: 218094136}
   - component: {fileID: 218094135}
   - component: {fileID: 218094134}
+  - component: {fileID: 218094138}
+  - component: {fileID: 218094137}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -1660,6 +1773,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1929300476}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &218094137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218094133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c504fa16b1ce2214b834d984899bac9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candleNum: 139
+  gameManager: {fileID: 0}
+--- !u!65 &218094138
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218094133}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 3, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &293643679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3223,6 +3371,8 @@ GameObject:
   - component: {fileID: 594670091}
   - component: {fileID: 594670093}
   - component: {fileID: 594670092}
+  - component: {fileID: 594670095}
+  - component: {fileID: 594670094}
   m_Layer: 0
   m_Name: Point Light (5)
   m_TagString: Untagged
@@ -3333,6 +3483,41 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &594670094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594670090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c504fa16b1ce2214b834d984899bac9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candleNum: 146
+  gameManager: {fileID: 0}
+--- !u!65 &594670095
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594670090}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 3, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &635426207
 GameObject:
   m_ObjectHideFlags: 0
@@ -3712,6 +3897,8 @@ GameObject:
   - component: {fileID: 844097928}
   - component: {fileID: 844097930}
   - component: {fileID: 844097929}
+  - component: {fileID: 844097932}
+  - component: {fileID: 844097931}
   m_Layer: 0
   m_Name: Point Light (6)
   m_TagString: Untagged
@@ -3822,6 +4009,41 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &844097931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844097927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c504fa16b1ce2214b834d984899bac9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candleNum: 147
+  gameManager: {fileID: 0}
+--- !u!65 &844097932
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844097927}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 3, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &869466395
 GameObject:
   m_ObjectHideFlags: 0
@@ -6279,6 +6501,8 @@ GameObject:
   - component: {fileID: 1356120935}
   - component: {fileID: 1356120934}
   - component: {fileID: 1356120933}
+  - component: {fileID: 1356120937}
+  - component: {fileID: 1356120936}
   m_Layer: 0
   m_Name: Point Light (1)
   m_TagString: Untagged
@@ -6389,6 +6613,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1929300476}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1356120936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356120932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c504fa16b1ce2214b834d984899bac9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candleNum: 143
+  gameManager: {fileID: 0}
+--- !u!65 &1356120937
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356120932}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 3, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1457831650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7114,6 +7373,8 @@ GameObject:
   - component: {fileID: 1635737945}
   - component: {fileID: 1635737947}
   - component: {fileID: 1635737946}
+  - component: {fileID: 1635737949}
+  - component: {fileID: 1635737948}
   m_Layer: 0
   m_Name: Point Light (7)
   m_TagString: Untagged
@@ -7224,6 +7485,41 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1635737948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635737944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c504fa16b1ce2214b834d984899bac9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candleNum: 140
+  gameManager: {fileID: 0}
+--- !u!65 &1635737949
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635737944}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 3, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1694678898
 GameObject:
   m_ObjectHideFlags: 0
@@ -7297,6 +7593,8 @@ GameObject:
   - component: {fileID: 1734853525}
   - component: {fileID: 1734853527}
   - component: {fileID: 1734853526}
+  - component: {fileID: 1734853529}
+  - component: {fileID: 1734853528}
   m_Layer: 0
   m_Name: Point Light (8)
   m_TagString: Untagged
@@ -7407,6 +7705,41 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1734853528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734853524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c504fa16b1ce2214b834d984899bac9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candleNum: 141
+  gameManager: {fileID: 0}
+--- !u!65 &1734853529
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734853524}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 3, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1781149350
 GameObject:
   m_ObjectHideFlags: 0

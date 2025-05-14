@@ -2222,7 +2222,7 @@ GameObject:
   - component: {fileID: 160082436}
   - component: {fileID: 160082435}
   m_Layer: 5
-  m_Name: CrownKey_1
+  m_Name: CrownChest_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17342,7 +17342,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &863777078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21592,7 +21592,7 @@ GameObject:
   - component: {fileID: 1186326983}
   - component: {fileID: 1186326982}
   m_Layer: 5
-  m_Name: SKey_2
+  m_Name: SChest_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32755,6 +32755,7 @@ MonoBehaviour:
   secondFloorMap: {fileID: 863777077}
   openMapSound: {fileID: 1780212954}
   closeMapSound: {fileID: 0}
+  currentMap: {fileID: 1394678945}
   firstFloor: 0
   mapAnimator: {fileID: 745026383}
   cover1_1: {fileID: 595715567}
@@ -35026,7 +35027,7 @@ GameObject:
   - component: {fileID: 1937130679}
   - component: {fileID: 1937130678}
   m_Layer: 5
-  m_Name: CrownKey_2
+  m_Name: CrownChest_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37670,13 +37671,53 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4256750573049423644, guid: 8af6ddf0bf531a44cb4b36a6128b8a77, type: 3}
+      propertyPath: SChest
+      value: 
+      objectReference: {fileID: 658715022}
+    - target: {fileID: 4256750573049423644, guid: 8af6ddf0bf531a44cb4b36a6128b8a77, type: 3}
       propertyPath: chest1
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4256750573049423644, guid: 8af6ddf0bf531a44cb4b36a6128b8a77, type: 3}
+      propertyPath: chest7
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256750573049423644, guid: 8af6ddf0bf531a44cb4b36a6128b8a77, type: 3}
+      propertyPath: SChest2
+      value: 
+      objectReference: {fileID: 1186326980}
+    - target: {fileID: 4256750573049423644, guid: 8af6ddf0bf531a44cb4b36a6128b8a77, type: 3}
+      propertyPath: SunChest
+      value: 
+      objectReference: {fileID: 6099853}
+    - target: {fileID: 4256750573049423644, guid: 8af6ddf0bf531a44cb4b36a6128b8a77, type: 3}
+      propertyPath: iconName
+      value: HorseChest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256750573049423644, guid: 8af6ddf0bf531a44cb4b36a6128b8a77, type: 3}
+      propertyPath: CrownChest
+      value: 
+      objectReference: {fileID: 1004792184}
+    - target: {fileID: 4256750573049423644, guid: 8af6ddf0bf531a44cb4b36a6128b8a77, type: 3}
+      propertyPath: HorseChest
+      value: 
+      objectReference: {fileID: 1529874704}
+    - target: {fileID: 4256750573049423644, guid: 8af6ddf0bf531a44cb4b36a6128b8a77, type: 3}
+      propertyPath: RustyChest
+      value: 
+      objectReference: {fileID: 1486913740}
+    - target: {fileID: 4256750573049423644, guid: 8af6ddf0bf531a44cb4b36a6128b8a77, type: 3}
       propertyPath: ammoAmmount
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4256750573049423644, guid: 8af6ddf0bf531a44cb4b36a6128b8a77, type: 3}
+      propertyPath: CrownChest_1
+      value: 
+      objectReference: {fileID: 160082433}
+    - target: {fileID: 4256750573049423644, guid: 8af6ddf0bf531a44cb4b36a6128b8a77, type: 3}
+      propertyPath: CrownChest_2
+      value: 
+      objectReference: {fileID: 1937130676}
     - target: {fileID: 8257203889783242036, guid: 8af6ddf0bf531a44cb4b36a6128b8a77, type: 3}
       propertyPath: m_Name
       value: InteractableChest

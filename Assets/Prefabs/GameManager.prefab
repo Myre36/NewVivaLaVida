@@ -47,6 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entryNumber: 0
   enemyRespawnTime: 0
+  firstBullet: 0
+  firstPlant: 0
   enemyOneFakeDead: 0
   enemyTwoFakeDead: 0
   enemyThreeFakeDead: 0
@@ -61,6 +63,9 @@ MonoBehaviour:
   enemyTwelveFakeDead: 0
   enemyThirteenFakeDead: 0
   enemyFourteenFakeDead: 0
+  enemyFifteenFakeDead: 0
+  enemySixteenFakeDead: 0
+  enemySeventeenFakeDead: 0
   enemyOneDead: 0
   enemyTwoDead: 0
   enemyThreeDead: 0
@@ -75,6 +80,9 @@ MonoBehaviour:
   enemyTwelveDead: 0
   enemyThirteenDead: 0
   enemyFourteenDead: 0
+  enemyFifteenDead: 0
+  enemySixteenDead: 0
+  enemySeventeenDead: 0
   enemyOneTimer: 0
   enemyTwoTimer: 0
   enemyThreeTimer: 0
@@ -89,6 +97,9 @@ MonoBehaviour:
   enemyTwelveTimer: 0
   enemyThirteenTimer: 0
   enemyFourteenTimer: 0
+  enemyFifteenTimer: 0
+  enemySixteenTimer: 0
+  enemySeventeenTimer: 0
   coinOne: 0
   coinTwo: 0
   coinThree: 0
@@ -133,10 +144,48 @@ MonoBehaviour:
   bullet8: 0
   bullet9: 0
   bullet10: 0
-  usingController: 0
+  bullet11: 0
+  bullet12: 0
+  bullet13: 0
+  bullet14: 0
+  bullet15: 0
+  bullet16: 0
   introDialougeDone: 0
   tutorialDialougeDone: 0
   afterEnemyDone: 0
+  livingRoomDialougeDone: 0
+  eastHallwayDialougeDone: 0
+  kitchenDialougeDone: 0
+  afterKitchenDialougeDone: 0
+  afterBasementDialougeDone: 0
+  bothKeysDialougeDone: 0
+  statueDialougeDone: 0
+  secondFloorDialougeDone: 0
+  planetariumDialougeDone: 0
+  libraryDialougeDone: 0
+  afterKingBedDialougeDone: 0
+  balconyDialougeDone: 0
+  plantOne: 0
+  plantTwo: 0
+  plantThree: 0
+  plantFour: 0
+  plantFive: 0
+  plantSix: 0
+  plantSeven: 0
+  chest1: 0
+  chest2: 0
+  chest3: 0
+  chest4: 0
+  chest5: 0
+  chest6: 0
+  chest7: 0
+  chest8: 0
+  chest9: 0
+  chest10: 0
+  heardLibrarySound: 0
+  stands: []
+  godModeActivated: 0
+  candleStates: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!114 &1197596856980045196
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -37,17 +37,6 @@ public class ChestScript : MonoBehaviour
     public bool chest9;
     public bool chest10;
 
-    //For chest check
-    public GameObject HorseChest;
-    public GameObject SChest;
-    public GameObject CrownChest;
-    public GameObject SunChest;
-    public GameObject RustyChest;
-
-    public GameObject SChest2;
-    public GameObject CrownChest_1;
-    public GameObject CrownChest_2;
-
 
     public int ammoAmmount;
 
@@ -55,6 +44,11 @@ public class ChestScript : MonoBehaviour
 
     public GameObject closedLid;
     public GameObject openLid;
+
+    [SerializeField]
+    private string iconName;
+
+    public GameObject icon;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -65,6 +59,10 @@ public class ChestScript : MonoBehaviour
         dialougeBox = GameObject.Find("DialougeBox");
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
         ChestOpen = GetComponent<AudioSource>();
+
+        gameManager.currentMap.SetActive(true);
+        icon = GameObject.Find(iconName);
+        gameManager.currentMap.SetActive(false);
 
         if (chest1)
         {
@@ -161,7 +159,7 @@ public class ChestScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerInRange)
+        if (playerInRange)
         {
             if(Input.GetKeyUp(KeyCode.E))
             {
@@ -187,7 +185,7 @@ public class ChestScript : MonoBehaviour
                         {
                             gameManager.chest1 = true;
                             UnlockChest();
-                            Destroy(HorseChest);
+                            
                         }
                         else
                         {
@@ -214,8 +212,9 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest2 = true;
+                            Destroy(GameObject.Find("CrownChest"));
                             UnlockChest();
-                            Destroy(CrownChest);
+                            
                         }
                         else
                         {
@@ -242,6 +241,7 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest3 = true;
+                            Destroy(GameObject.Find("SecondFloorChest"));
                             UnlockChest();
                         }
                         else
@@ -269,6 +269,7 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest4 = true;
+                            Destroy(GameObject.Find("SChest"));
                             UnlockChest();
                         }
                         else
@@ -296,6 +297,7 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest5 = true;
+                            Destroy(GameObject.Find("SunChest"));
                             UnlockChest();
                         }
                         else
@@ -323,6 +325,7 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest6 = true;
+                            Destroy(GameObject.Find("RustyChest"));
                             UnlockChest();
                         }
                         else
@@ -350,6 +353,7 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest7 = true;
+                            Destroy(GameObject.Find("SChest_2"));
                             UnlockChest();
                         }
                         else
@@ -377,6 +381,7 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest8 = true;
+                            Destroy(GameObject.Find("CrownChest_1"));
                             UnlockChest();
                         }
                         else
@@ -404,8 +409,8 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest9 = true;
+                            Destroy(GameObject.Find("CrownChest_2"));
                             UnlockChest();
-                            Destroy(CrownChest_2);
                         }
                         else
                         {
@@ -432,6 +437,7 @@ public class ChestScript : MonoBehaviour
                         if (inDialouge)
                         {
                             gameManager.chest10 = true;
+                            Destroy(GameObject.Find("CrownChest_3"));
                             UnlockChest();
                         }
                         else

@@ -5,6 +5,10 @@ public class GameManager : MonoBehaviour
     //This is something used to make sure there is never more than one game manager
     private static GameManager instance;
 
+    public MapManager mapManager;
+
+    public GameObject currentMap;
+
     //The number used to spawn the player in the correct location when entering a room
     public int entryNumber;
 
@@ -189,10 +193,14 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        mapManager = gameObject.GetComponent<MapManager>();
+        currentMap = mapManager.currentMap;
     }
 
     private void Update()
     {
+        currentMap = mapManager.currentMap;
+
         //The below code is for the timers of the enemy. Once the timer reaches a certtain point, the enemy will be able to respawn
         if(enemyOneFakeDead)
         {

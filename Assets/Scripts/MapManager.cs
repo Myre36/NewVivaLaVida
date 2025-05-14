@@ -9,7 +9,7 @@ public class MapManager : MonoBehaviour
     [SerializeField] private AudioSource openMapSound;
     [SerializeField] private AudioSource closeMapSound;
 
-    private GameObject currentMap;
+    public GameObject currentMap;
 
     private bool mapIsOpen;
 

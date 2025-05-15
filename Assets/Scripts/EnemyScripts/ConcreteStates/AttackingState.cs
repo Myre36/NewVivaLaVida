@@ -20,6 +20,9 @@ public class AttackingState : EnemyState
 
     public override void EnterState() {
         base.EnterState();
+        enemy.animator.SetBool("isAttacking", true);
+        enemy.animator.SetBool("isIdle", false);
+        enemy.animator.SetBool("isRunning", false);
     }
 
     public override void ExitState() {

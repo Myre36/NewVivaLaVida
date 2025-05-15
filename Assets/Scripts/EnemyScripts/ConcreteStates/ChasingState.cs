@@ -13,6 +13,9 @@ public class ChasingState : EnemyState
 
     public override void EnterState() {
         base.EnterState();
+        enemy.animator.SetBool("isRunning", true);
+        enemy.animator.SetBool("isAttacking", false);
+        enemy.animator.SetBool("isIdle", false);
     }
 
     public override void ExitState() {

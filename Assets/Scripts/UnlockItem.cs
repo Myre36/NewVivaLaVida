@@ -1,3 +1,4 @@
+using System.Net;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
@@ -17,6 +18,14 @@ public class UnlockItem : MonoBehaviour
     private bool inDialouge;
     //A bool for if this room has enemies
     public bool hasEnemies;
+
+    private bool opened;
+
+    public Transform openedTransform;
+
+    private float speed = 2;
+
+    public GameObject table;
 
     //A refrence to the gamemanager
     private GameManager gameManager;
@@ -51,6 +60,8 @@ public class UnlockItem : MonoBehaviour
             if(gameManager.swordPlaced)
             {
                 placedObject.SetActive(true);
+                opened = true;
+                table.transform.position = openedTransform.position;
                 keyItem.SetActive(true);
                 if (gameManager.planetariumKey)
                 {
@@ -94,6 +105,17 @@ public class UnlockItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(opened)
+        {
+            table.transform.position = Vector3.MoveTowards(table.transform.position, openedTransform.position, speed * Time.deltaTime);
+        }
+
+        if(table.transform.position == openedTransform.position)
+        {
+            GetComponent<Outline>().enabled = false;
+            this.enabled = false;
+        }
+
         //If the player is in range of the item and presses the interact key
         if(playerInRange)
         {
@@ -133,6 +155,7 @@ public class UnlockItem : MonoBehaviour
                                 }
                             }
                             keyItem.SetActive(true);
+                            opened = true;
 
                             PlaceItem();
                         }
@@ -273,7 +296,7 @@ public class UnlockItem : MonoBehaviour
         }
         placedObject.SetActive(true);
         GetComponent<Outline>().enabled = false;
-        this.enabled = false;
+        //this.enabled = false;
     }
 
     //A function for closing the dialouge

@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
     public GameObject deadBody;
     private AudioSource enemySound;
     private Collider enemyCollider;
+    public Animator animator;
 
     public NavMeshAgent agent;
 
@@ -33,7 +34,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
     #region StateMachine Variables
 
     public EnemyStateMachine StateMachine { get; set; }
-    public IdleState IdleState { get; set; }
+    public IdleState IdleState { get; set; } 
     public AttackingState AttackingState { get; set; }
     public ChasingState ChasingState { get; set; }
     public bool isAggroed { get; set; }

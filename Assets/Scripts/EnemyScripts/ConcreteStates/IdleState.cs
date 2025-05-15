@@ -19,6 +19,9 @@ public class IdleState : EnemyState
     public override void EnterState() {
         base.EnterState();
         _targetPos = GetRandomPointInCircle();
+        enemy.animator.SetBool("isIdle", true);
+        enemy.animator.SetBool("isRunning", false);
+        enemy.animator.SetBool("isAttacking", false);
     }
 
     public override void ExitState() {

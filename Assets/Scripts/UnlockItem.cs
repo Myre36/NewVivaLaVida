@@ -22,7 +22,7 @@ public class UnlockItem : MonoBehaviour
 
     public Transform openedTransform;
 
-    private float speed = 1;
+    private int speed = 1;
 
     public GameObject table;
 

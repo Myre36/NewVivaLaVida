@@ -12,11 +12,29 @@ public class PuzzleManager : MonoBehaviour
 
     [SerializeField] private List<PuzzlePiece> _puzzlePieces = new();
 
+    [SerializeField]
+    private GameObject table;
+
+    public bool completed;
+
+    [SerializeField]
+    private Transform openPoint;
+    [SerializeField]
+    private int speed = 1;
+
     private void Awake() {
         foreach (var goal in _puzzlePieces) {
             if (goal != null) {
                 goal.CheckSolution += CheckIfSolved;
             }
+        }
+    }
+
+    private void Update()
+    {
+        if (completed)
+        {
+            table.transform.position = Vector3.MoveTowards(table.transform.position, openPoint.position, speed * Time.deltaTime);
         }
     }
 
@@ -30,6 +48,7 @@ public class PuzzleManager : MonoBehaviour
 
         if (IsSolved) {
             _puzzleSolvedAction?.Invoke();
+            completed = true;
         } else {
             _puzzleUnSolvedAction?.Invoke();
         }

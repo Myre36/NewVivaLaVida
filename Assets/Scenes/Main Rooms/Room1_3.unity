@@ -760,6 +760,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3694110888022399015, guid: bc29346653880de458760774721b9699, type: 3}
+      propertyPath: enemyNum
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4532127568473764603, guid: bc29346653880de458760774721b9699, type: 3}
       propertyPath: m_Name
       value: RightArm

@@ -86,7 +86,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if(gameManager.enemyOneFakeDead)
             {
-                if(gameManager.enemyOneTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[40] && gameManager.candleStates[41] && gameManager.candleStates[42] && gameManager.candleStates[43] && gameManager.candleStates[44] && gameManager.candleStates[45] && gameManager.candleStates[46] && gameManager.candleStates[47])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemyOneTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }
@@ -101,7 +105,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if (gameManager.enemyTwoFakeDead)
             {
-                if (gameManager.enemyTwoTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[40] && gameManager.candleStates[41] && gameManager.candleStates[42] && gameManager.candleStates[43] && gameManager.candleStates[44] && gameManager.candleStates[45] && gameManager.candleStates[46] && gameManager.candleStates[47])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemyTwoTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }
@@ -116,7 +124,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if (gameManager.enemyThreeFakeDead)
             {
-                if (gameManager.enemyThreeTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[48] && gameManager.candleStates[49] && gameManager.candleStates[50])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemyThreeTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }
@@ -131,7 +143,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if (gameManager.enemyFourFakeDead)
             {
-                if (gameManager.enemyFourTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[48] && gameManager.candleStates[49] && gameManager.candleStates[50])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemyFourTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }
@@ -146,7 +162,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if (gameManager.enemyFiveFakeDead)
             {
-                if (gameManager.enemyFiveTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[51] && gameManager.candleStates[52] && gameManager.candleStates[53])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemyFiveTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }
@@ -161,7 +181,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if (gameManager.enemySixFakeDead)
             {
-                if (gameManager.enemySixTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[54] && gameManager.candleStates[55] && gameManager.candleStates[56])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemySixTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }
@@ -176,7 +200,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if (gameManager.enemySevenFakeDead)
             {
-                if (gameManager.enemySevenTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[54] && gameManager.candleStates[55] && gameManager.candleStates[56])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemySevenTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }
@@ -191,7 +219,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if (gameManager.enemyEightFakeDead)
             {
-                if (gameManager.enemyEightTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[82] && gameManager.candleStates[83] && gameManager.candleStates[84] && gameManager.candleStates[85] && gameManager.candleStates[86] && gameManager.candleStates[87] && gameManager.candleStates[88] && gameManager.candleStates[89] && gameManager.candleStates[90] && gameManager.candleStates[91] && gameManager.candleStates[92])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemyEightTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }
@@ -206,7 +238,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if (gameManager.enemyNineFakeDead)
             {
-                if (gameManager.enemyNineTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[82] && gameManager.candleStates[83] && gameManager.candleStates[84] && gameManager.candleStates[85] && gameManager.candleStates[86] && gameManager.candleStates[87] && gameManager.candleStates[88] && gameManager.candleStates[89] && gameManager.candleStates[90] && gameManager.candleStates[91] && gameManager.candleStates[92])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemyNineTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }
@@ -221,7 +257,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if (gameManager.enemyTenFakeDead)
             {
-                if (gameManager.enemyTenTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[82] && gameManager.candleStates[83] && gameManager.candleStates[84] && gameManager.candleStates[85] && gameManager.candleStates[86] && gameManager.candleStates[87] && gameManager.candleStates[88] && gameManager.candleStates[89] && gameManager.candleStates[90] && gameManager.candleStates[91] && gameManager.candleStates[92])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemyTenTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }
@@ -236,7 +276,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if (gameManager.enemyElevenFakeDead)
             {
-                if (gameManager.enemyElevenTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[93] && gameManager.candleStates[94] && gameManager.candleStates[95] && gameManager.candleStates[96] && gameManager.candleStates[97] && gameManager.candleStates[98] && gameManager.candleStates[99] && gameManager.candleStates[100] && gameManager.candleStates[101] && gameManager.candleStates[102])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemyElevenTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }
@@ -251,7 +295,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if (gameManager.enemyTwelveFakeDead)
             {
-                if (gameManager.enemyTwelveTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[126] && gameManager.candleStates[127] && gameManager.candleStates[128] && gameManager.candleStates[129])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemyTwelveTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }
@@ -266,7 +314,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if (gameManager.enemyThirteenFakeDead)
             {
-                if (gameManager.enemyThirteenTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[130] && gameManager.candleStates[131] && gameManager.candleStates[132] && gameManager.candleStates[133] && gameManager.candleStates[134])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemyThirteenTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }
@@ -281,7 +333,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if (gameManager.enemyFourteenFakeDead)
             {
-                if (gameManager.enemyFourteenTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[148] && gameManager.candleStates[149])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemyFourteenTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }
@@ -296,7 +352,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if (gameManager.enemyFifteenFakeDead)
             {
-                if (gameManager.enemyFifteenTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[120] && gameManager.candleStates[121] && gameManager.candleStates[122] && gameManager.candleStates[123] && gameManager.candleStates[124] && gameManager.candleStates[125])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemyFifteenTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }
@@ -311,7 +371,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if (gameManager.enemySixteenFakeDead)
             {
-                if (gameManager.enemySixteenTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[120] && gameManager.candleStates[121] && gameManager.candleStates[122] && gameManager.candleStates[123] && gameManager.candleStates[124] && gameManager.candleStates[125])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemySixteenTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }
@@ -326,7 +390,11 @@ public class RoomEntryCheck : MonoBehaviour
             }
             else if (gameManager.enemySeventeenFakeDead)
             {
-                if (gameManager.enemySeventeenTimer < gameManager.enemyRespawnTime)
+                if (gameManager.candleStates[126] && gameManager.candleStates[127] && gameManager.candleStates[128] && gameManager.candleStates[129])
+                {
+                    currentEnemy.DisableEverything();
+                }
+                else if (gameManager.enemySeventeenTimer < gameManager.enemyRespawnTime)
                 {
                     currentEnemy.DisableEverything();
                 }

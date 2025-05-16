@@ -10415,7 +10415,7 @@ GameObject:
   - component: {fileID: 1297321486}
   - component: {fileID: 1297321485}
   m_Layer: 0
-  m_Name: Emerald Key
+  m_Name: Rusty Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -262,7 +262,7 @@ public class Movement : MonoBehaviour
             heartbeatSound.mute = true;
         }
 
-        healingChargeText.text = "Healing items: " + healingCharges;
+        healingChargeText.text = " " + healingCharges;
 
         if(Input.GetKeyDown(KeyCode.Escape))
         {

@@ -5973,7 +5973,7 @@ MonoBehaviour:
   - Your time in the army has taught you to recognise useful plants.
   - That one can be used to treat your wounds.
   - (Picking up plants gives you healing items).
-  - (To use a healing item, press G).
+  - (To use a healing item, press F).
   introDialouge: 0
   tutorialDialouge: 0
   afterEnemyDialouge: 1

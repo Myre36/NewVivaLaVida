@@ -585,9 +585,17 @@ PrefabInstance:
       value: Door 1_1
       objectReference: {fileID: 0}
     - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+      propertyPath: DoorOpen
+      value: 
+      objectReference: {fileID: 74997183}
+    - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: sceneName
       value: Room1_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+      propertyPath: DoorLocked
+      value: 
+      objectReference: {fileID: 74997183}
     - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: doorNumber
       value: 1
@@ -644,6 +652,11 @@ PrefabInstance:
 --- !u!4 &74997182 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 74997181}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &74997183 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5839371826121784423, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
   m_PrefabInstance: {fileID: 74997181}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &78313682
@@ -2218,9 +2231,17 @@ PrefabInstance:
       value: Door 1_5
       objectReference: {fileID: 0}
     - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+      propertyPath: DoorOpen
+      value: 
+      objectReference: {fileID: 290464277}
+    - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: sceneName
       value: Room1_5
       objectReference: {fileID: 0}
+    - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+      propertyPath: DoorLocked
+      value: 
+      objectReference: {fileID: 290464277}
     - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: doorNumber
       value: 0
@@ -2323,6 +2344,11 @@ MonoBehaviour:
 --- !u!4 &290464276 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 290464273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &290464277 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5839371826121784423, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
   m_PrefabInstance: {fileID: 290464273}
   m_PrefabAsset: {fileID: 0}
 --- !u!43 &299507224
@@ -19646,9 +19672,17 @@ PrefabInstance:
       value: Door 1_3
       objectReference: {fileID: 0}
     - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+      propertyPath: DoorOpen
+      value: 
+      objectReference: {fileID: 956545053}
+    - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: sceneName
       value: Room1_3
       objectReference: {fileID: 0}
+    - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+      propertyPath: DoorLocked
+      value: 
+      objectReference: {fileID: 956545053}
     - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: doorNumber
       value: 0
@@ -19709,6 +19743,11 @@ PrefabInstance:
 --- !u!4 &956545052 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 956545051}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &956545053 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5839371826121784423, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
   m_PrefabInstance: {fileID: 956545051}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &964317508
@@ -36287,6 +36326,10 @@ PrefabInstance:
       value: Door 1_6
       objectReference: {fileID: 0}
     - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+      propertyPath: DoorOpen
+      value: 
+      objectReference: {fileID: 1734579206}
+    - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -36294,6 +36337,10 @@ PrefabInstance:
       propertyPath: sceneName
       value: Room1_6
       objectReference: {fileID: 0}
+    - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+      propertyPath: DoorLocked
+      value: 
+      objectReference: {fileID: 1734579206}
     - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: doorNumber
       value: 0
@@ -36495,6 +36542,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &1734579206 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5839371826121784423, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 1734579201}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1737352079
 GameObject:
   m_ObjectHideFlags: 0
@@ -38926,9 +38978,17 @@ PrefabInstance:
       value: Door 1_4
       objectReference: {fileID: 0}
     - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+      propertyPath: DoorOpen
+      value: 
+      objectReference: {fileID: 1939898907}
+    - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: sceneName
       value: Room1_4
       objectReference: {fileID: 0}
+    - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+      propertyPath: DoorLocked
+      value: 
+      objectReference: {fileID: 1939898907}
     - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: doorNumber
       value: 0
@@ -38989,6 +39049,11 @@ PrefabInstance:
 --- !u!4 &1939898906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 1939898905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1939898907 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5839371826121784423, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
   m_PrefabInstance: {fileID: 1939898905}
   m_PrefabAsset: {fileID: 0}
 --- !u!43 &1944088352
@@ -41438,7 +41503,9 @@ PrefabInstance:
       value: FireEffect (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5872106644121064143, guid: eddac9b3c182bf04dacf22c89f03687f, type: 3}
+    - {fileID: 8863746886928947811, guid: eddac9b3c182bf04dacf22c89f03687f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eddac9b3c182bf04dacf22c89f03687f, type: 3}

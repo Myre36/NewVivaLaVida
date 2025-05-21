@@ -9,10 +9,6 @@ public class BulletScript : MonoBehaviour
         {
             collision.gameObject.GetComponent<SmallZombie>().KillEnemy();
         }
-        if(collision.gameObject.CompareTag("TriggerEnviorment"))
-        {
-            collision.gameObject.GetComponent<FallChandeleer>().TriggerFall();
-        }
         Destroy(gameObject);
     }
 }

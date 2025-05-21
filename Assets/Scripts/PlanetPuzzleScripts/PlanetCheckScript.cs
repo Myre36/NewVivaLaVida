@@ -13,6 +13,8 @@ public class PlanetCheckScript : MonoBehaviour
     //A refrence to the game manager
     private GameManager gameManager;
 
+    [SerializeField] private AudioSource puzzlecompletedSound;
+
     private void Start()
     {
         //Assigning the game manager
@@ -95,6 +97,7 @@ public class PlanetCheckScript : MonoBehaviour
             keyItem.SetActive(true);
             gameManager.planetSolved = true;
             this.enabled = false;
+            puzzlecompletedSound.Play();
         }
     }
 }

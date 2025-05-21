@@ -27,6 +27,8 @@ public class CombinationLockScript : MonoBehaviour
     public GameManager gameManager;
 
     public AudioSource unlockSound;
+    [SerializeField] private AudioSource puzzlefailedSound;
+    [SerializeField] private AudioSource puzzlecompletedSound;
 
     private void Awake()
     {
@@ -124,6 +126,7 @@ public class CombinationLockScript : MonoBehaviour
                 {
                     Debug.Log("Incorrect combination");
                     playerInput.text = "";
+                    puzzlefailedSound.Play();
                 }
             }
         }

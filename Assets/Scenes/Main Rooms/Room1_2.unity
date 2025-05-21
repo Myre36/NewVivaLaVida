@@ -36391,6 +36391,8 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 1734579205}
+  doorlockedSound: {fileID: 0}
+  puzzlecompletedSound: {fileID: 0}
 --- !u!4 &1734579204 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
@@ -39617,9 +39619,17 @@ PrefabInstance:
       value: Door 1_7
       objectReference: {fileID: 0}
     - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+      propertyPath: DoorOpen
+      value: 
+      objectReference: {fileID: 2001722262}
+    - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: sceneName
       value: Room1_7
       objectReference: {fileID: 0}
+    - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+      propertyPath: DoorLocked
+      value: 
+      objectReference: {fileID: 2001722262}
     - target: {fileID: 3093974979188267041, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
       propertyPath: doorNumber
       value: 1
@@ -39680,6 +39690,11 @@ PrefabInstance:
 --- !u!4 &2001722261 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 2001722260}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2001722262 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5839371826121784423, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
   m_PrefabInstance: {fileID: 2001722260}
   m_PrefabAsset: {fileID: 0}
 --- !u!43 &2002204900

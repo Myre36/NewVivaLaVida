@@ -39,6 +39,8 @@ public class LockedDoorScript : MonoBehaviour
     public TMP_Text dialougeText;
 
     public AudioSource unlockSound;
+    public AudioSource doorlockedSound;
+    public AudioSource puzzlecompletedSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -172,6 +174,7 @@ public class LockedDoorScript : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "The door is locked. An orange citrine gemstone is engraved into the door.";
+                            doorlockedSound.Play();
                         }
                     }
                 }
@@ -201,6 +204,7 @@ public class LockedDoorScript : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "The door is locked. A large emerald gemstone is engraved into the door.";
+                            doorlockedSound.Play();
                         }
                     }
                 }
@@ -230,6 +234,7 @@ public class LockedDoorScript : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "A small door is hidden behind the small cupboard. It is locked with a horse-shaped lock.";
+                            doorlockedSound.Play();
                         }
                     }
                 }
@@ -259,6 +264,7 @@ public class LockedDoorScript : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "The door is locked. The wood is worn out, and it is decorated with a large S emblem.";
+                            doorlockedSound.Play();
                         }
                     }
                 }
@@ -288,6 +294,7 @@ public class LockedDoorScript : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "The basement door is locked with large, old lock. Whatever key unlocks this must be old and rusty.";
+                            doorlockedSound.Play();
                         }
                     }
                 }
@@ -317,6 +324,7 @@ public class LockedDoorScript : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "The door to the second floor is locked. Maybe you can find the key lying around somewhere?";
+                            doorlockedSound.Play();
                         }
                     }
                 }
@@ -346,6 +354,7 @@ public class LockedDoorScript : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "The door is locked. The doorknob is shaped like a sun.";
+                            doorlockedSound.Play();
                         }
                     }
                 }
@@ -375,6 +384,7 @@ public class LockedDoorScript : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "The door is locked. The door is engraved with a large saphire stone.";
+                            doorlockedSound.Play();
                         }
                     }
                 }
@@ -410,6 +420,7 @@ public class LockedDoorScript : MonoBehaviour
                             inDialouge = true;
                             unlockSound.Play();
                             dialougeText.text = "You place the three coins into the slots on the door. A small click can be heard.";
+                            puzzlecompletedSound.Play();
                         }
                     }
                     else
@@ -422,6 +433,7 @@ public class LockedDoorScript : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "You stand before a large, locked oak door. There seems to no keyhole on it. Three equally sized circles are engraved into the door. First hole is made of bronze, second in silver, third in gold. Maybe you have to fit something in them?";
+                            doorlockedSound.Play();
                         }
                     }
                 }
@@ -451,6 +463,7 @@ public class LockedDoorScript : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "You stand before a massive door, so huge it would require all your strength to even push it open. It is kept shut by two locks, one blue, the other red. You know it leads to the throne room.";
+                            doorlockedSound.Play();
                         }
                     }
                 }

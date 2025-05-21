@@ -45,6 +45,9 @@ public class UnlockItem : MonoBehaviour
     //An array of all the navmeshes of the enemies in this room
     public NavMeshAgent[] enemies;
 
+    [SerializeField] private AudioSource puzzlefailedSound;
+    [SerializeField] private AudioSource puzzlecompletedSound;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -162,6 +165,7 @@ public class UnlockItem : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "You place the sword in cross with the other. A small click can be heard and something rises up from the table.";
+                            puzzlecompletedSound.Play();
                         }
                     }
                     else
@@ -198,6 +202,7 @@ public class UnlockItem : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "You place the pile of cloth into the toilet and flush. You hear the pipes rattle, and something bursts upstairs above you.";
+                            puzzlecompletedSound.Play();
                         }
                     }
                     else
@@ -235,6 +240,7 @@ public class UnlockItem : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "You place the book into the correct spot and push it in. A small click can be heard, and the bookshelf pushes open.";
+                            puzzlecompletedSound.Play();
                         }
                     }
                     else

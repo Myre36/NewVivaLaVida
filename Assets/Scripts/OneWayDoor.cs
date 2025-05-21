@@ -31,6 +31,7 @@ public class OneWayDoor : MonoBehaviour
     public TMP_Text dialougeText;
 
     public AudioSource unlockSound;
+    public AudioSource doorlockedSound;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -109,6 +110,7 @@ public class OneWayDoor : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "The door is locked from the other side.";
+                            doorlockedSound.Play();
                         }
                     }
                 }
@@ -138,6 +140,7 @@ public class OneWayDoor : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "The door is locked from the other side.";
+                            doorlockedSound.Play();
                         }
                     }
                 }
@@ -167,6 +170,7 @@ public class OneWayDoor : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "The door is locked from the other side.";
+                            doorlockedSound.Play();
                         }
                     }
                 }

@@ -6,6 +6,7 @@ public class DoorScript : MonoBehaviour
 {
     // Open door sound effect
     public AudioSource DoorOpen;
+    public AudioSource DoorLocked;
 
     //The number of the door. Used to determine where the player will spawn in the next scene
     public int doorNumber;
@@ -40,6 +41,7 @@ public class DoorScript : MonoBehaviour
         fadeScreen = GameObject.Find("FadeScreen").GetComponent<CanvasGroup>();
         player = GameObject.Find("Player").GetComponent<Movement>();
         DoorOpen = GetComponent<AudioSource>();
+        DoorLocked = GetComponent<AudioSource>();
     }
 
     private void Update()

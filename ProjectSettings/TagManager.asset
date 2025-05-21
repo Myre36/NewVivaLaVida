@@ -8,6 +8,7 @@ TagManager:
   - KillableEnviorment
   - Enemy
   - TriggerEnviorment
+  - Boss
   layers:
   - Default
   - TransparentFX

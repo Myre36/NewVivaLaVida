@@ -5787,6 +5787,8 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 421321868}
+  doorlockedSound: {fileID: 421321873}
+  puzzlecompletedSound: {fileID: 0}
 --- !u!114 &421321863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5902,6 +5904,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &421321873 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6411679169783106190, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 421321859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &450000784
 GameObject:
   m_ObjectHideFlags: 0
@@ -15790,6 +15797,7 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 747811951}
+  doorlockedSound: {fileID: 747811956}
 --- !u!82 &747811951
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15887,6 +15895,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &747811956 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6411679169783106190, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 747811943}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &750109867
 GameObject:
   m_ObjectHideFlags: 0
@@ -25101,6 +25114,8 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 1393925562}
+  doorlockedSound: {fileID: 1393925567}
+  puzzlecompletedSound: {fileID: 0}
 --- !u!82 &1393925562
 AudioSource:
   m_ObjectHideFlags: 0
@@ -25198,6 +25213,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &1393925567 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6411679169783106190, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 1393925554}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1394678945
 GameObject:
   m_ObjectHideFlags: 0
@@ -31997,6 +32017,8 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 1693102502}
+  doorlockedSound: {fileID: 1693102506}
+  puzzlecompletedSound: {fileID: 0}
 --- !u!114 &1693102504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32015,6 +32037,11 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!82 &1693102506 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5839371826121784423, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 1693102499}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1697040187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32145,6 +32172,8 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 1697040195}
+  doorlockedSound: {fileID: 1697040200}
+  puzzlecompletedSound: {fileID: 0}
 --- !u!82 &1697040195
 AudioSource:
   m_ObjectHideFlags: 0
@@ -32242,6 +32271,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &1697040200 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6411679169783106190, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 1697040187}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1697937956
 GameObject:
   m_ObjectHideFlags: 0
@@ -32742,6 +32776,8 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 1720635842}
+  doorlockedSound: {fileID: 1720635844}
+  puzzlecompletedSound: {fileID: 0}
 --- !u!82 &1720635837
 AudioSource:
   m_ObjectHideFlags: 0
@@ -32936,6 +32972,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &1720635844 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5839371826121784423, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 1720635833}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1751209386
 GameObject:
   m_ObjectHideFlags: 0

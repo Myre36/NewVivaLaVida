@@ -84,11 +84,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
         currentHealth -= DamageAmount;
         OnDamage?.Invoke();
         if (currentHealth <= 0 ) {
-            if (enemyNum == 0) {
-                Die();
-            } else {
-                KillEnemy();
-            }
+            KillEnemy();
         }
     }
 

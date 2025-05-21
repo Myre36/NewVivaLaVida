@@ -22,6 +22,9 @@ public class PuzzleManager : MonoBehaviour
     [SerializeField]
     private int speed = 1;
 
+    [SerializeField] private AudioSource puzzlefailedSound;
+    [SerializeField] private AudioSource puzzlecompletedSound;
+
     private void Awake() {
         foreach (var goal in _puzzlePieces) {
             if (goal != null) {
@@ -49,6 +52,7 @@ public class PuzzleManager : MonoBehaviour
         if (IsSolved) {
             _puzzleSolvedAction?.Invoke();
             completed = true;
+            puzzlecompletedSound.Play();
         } else {
             _puzzleUnSolvedAction?.Invoke();
         }

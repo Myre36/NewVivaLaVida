@@ -4626,6 +4626,8 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 1769912710}
+  doorlockedSound: {fileID: 1769912711}
+  puzzlecompletedSound: {fileID: 0}
 --- !u!4 &1769912709 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
@@ -4728,6 +4730,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &1769912711 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5839371826121784423, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 1769912706}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1824357481
 PrefabInstance:
   m_ObjectHideFlags: 0

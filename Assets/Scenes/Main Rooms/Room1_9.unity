@@ -5747,6 +5747,12 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 0}
+  doorlockedSound: {fileID: 1192579516}
+--- !u!82 &1192579516 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5839371826121784423, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 1192579513}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1207509485
 GameObject:
   m_ObjectHideFlags: 0

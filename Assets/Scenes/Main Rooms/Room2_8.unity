@@ -3058,6 +3058,8 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 528397232}
+  doorlockedSound: {fileID: 528397233}
+  puzzlecompletedSound: {fileID: 0}
 --- !u!4 &528397231 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7750752298206080776, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
@@ -3160,6 +3162,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &528397233 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5839371826121784423, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 528397228}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &535398013
 GameObject:
   m_ObjectHideFlags: 0
@@ -6859,12 +6866,16 @@ MonoBehaviour:
   upperBathroom: 0
   playerInRange: 0
   hasEnemies: 0
+  openedTransform: {fileID: 0}
+  table: {fileID: 0}
   player: {fileID: 0}
   dialougeBox: {fileID: 0}
   placedObject: {fileID: 67566952}
   keyItem: {fileID: 0}
   dialougeText: {fileID: 0}
   enemies: []
+  puzzlefailedSound: {fileID: 0}
+  puzzlecompletedSound: {fileID: 0}
 --- !u!114 &1467795010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6878,6 +6889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoorOpen: {fileID: 1467795012}
+  DoorLocked: {fileID: 0}
   doorNumber: 0
   sceneName: Room2_10
   gameManager: {fileID: 0}
@@ -6896,7 +6908,7 @@ AudioSource:
   m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bb4379f6fcc3f0f4cb06f843e5b732ab, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: bb4379f6fcc3f0f4cb06f843e5b732ab, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.108
@@ -6993,7 +7005,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5ef1ae6394759014b8288f48d08a1b72, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 5ef1ae6394759014b8288f48d08a1b72, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.413

@@ -34,6 +34,8 @@ public class LockedDoorScript : MonoBehaviour
 
     //A refrence to the dialouge box
     public GameObject dialougeBox;
+    //Refrence to the lock
+    public GameObject hanglock;
 
     //A refrence to the dialouge text
     public TMP_Text dialougeText;
@@ -58,6 +60,7 @@ public class LockedDoorScript : MonoBehaviour
             if (gameManager.hallwayUnlocked)
             {
                 doorScript.enabled = true;
+                Destroy(hanglock);
                 this.enabled = false;
             }
         }
@@ -66,6 +69,7 @@ public class LockedDoorScript : MonoBehaviour
             if (gameManager.firstUnlocked)
             {
                 doorScript.enabled = true;
+                Destroy(hanglock);
                 this.enabled = false;
             }
         }
@@ -74,6 +78,7 @@ public class LockedDoorScript : MonoBehaviour
             if(gameManager.tunnelUnlocked)
             {
                 doorScript.enabled = true;
+                Destroy(hanglock);
                 this.enabled = false;
             }
         }
@@ -82,6 +87,7 @@ public class LockedDoorScript : MonoBehaviour
             if(gameManager.servantsUnlocked)
             {
                 doorScript.enabled = true;
+                Destroy(hanglock);
                 this.enabled = false;
             }
         }
@@ -90,6 +96,7 @@ public class LockedDoorScript : MonoBehaviour
             if(gameManager.basementUnlocked)
             {
                 doorScript.enabled = true;
+                Destroy(hanglock);
                 this.enabled = false;
             }
         }
@@ -98,6 +105,7 @@ public class LockedDoorScript : MonoBehaviour
             if (gameManager.secondFloorUnlocked)
             {
                 doorScript.enabled = true;
+                Destroy(hanglock);
                 this.enabled = false;
             }
         }
@@ -106,6 +114,7 @@ public class LockedDoorScript : MonoBehaviour
             if (gameManager.planetariumUnlocked)
             {
                 doorScript.enabled = true;
+                Destroy(hanglock);
                 this.enabled = false;
             }
         }
@@ -114,6 +123,7 @@ public class LockedDoorScript : MonoBehaviour
             if (gameManager.meetingUnlocked)
             {
                 doorScript.enabled = true;
+                Destroy(hanglock);
                 this.enabled = false;
             }
         }
@@ -122,6 +132,7 @@ public class LockedDoorScript : MonoBehaviour
             if (gameManager.coinUnlocked)
             {
                 doorScript.enabled = true;
+                Destroy(hanglock);
                 this.enabled = false;
             }
         }
@@ -130,6 +141,7 @@ public class LockedDoorScript : MonoBehaviour
             if (gameManager.kingsUnlocked)
             {
                 doorScript.enabled = true;
+                Destroy(hanglock);
                 this.enabled = false;
             }
         }
@@ -493,6 +505,7 @@ public class LockedDoorScript : MonoBehaviour
     void UnlockDoor()
     {
         player.enabled = true;
+        Destroy(hanglock);
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         inDialouge = false;

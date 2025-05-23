@@ -2689,7 +2689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &214724411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5887,6 +5887,7 @@ MonoBehaviour:
   basementDoor: 0
   kingsDoor: 0
   dialougeBox: {fileID: 0}
+  hanglock: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 421321868}
   doorlockedSound: {fileID: 421321873}
@@ -25037,6 +25038,7 @@ MonoBehaviour:
   basementDoor: 0
   kingsDoor: 0
   dialougeBox: {fileID: 0}
+  hanglock: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 1393925562}
   doorlockedSound: {fileID: 1393925567}
@@ -31807,6 +31809,7 @@ MonoBehaviour:
   basementDoor: 0
   kingsDoor: 0
   dialougeBox: {fileID: 0}
+  hanglock: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 1693102502}
   doorlockedSound: {fileID: 1693102506}
@@ -31944,6 +31947,7 @@ MonoBehaviour:
   basementDoor: 0
   kingsDoor: 0
   dialougeBox: {fileID: 0}
+  hanglock: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 1697040195}
   doorlockedSound: {fileID: 1697040200}
@@ -32548,6 +32552,7 @@ MonoBehaviour:
   basementDoor: 0
   kingsDoor: 1
   dialougeBox: {fileID: 0}
+  hanglock: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 1720635842}
   doorlockedSound: {fileID: 1720635844}

@@ -4277,6 +4277,87 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a967e1db9c8661408db062544e70121, type: 3}
+--- !u!1001 &1735211131
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2785212212377818049, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+      propertyPath: m_Name
+      value: SaphireLock
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586183700546147868, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.26640356
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586183700546147868, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.26640356
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586183700546147868, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.26640356
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586183700546147868, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.056
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586183700546147868, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.603
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586183700546147868, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -143.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586183700546147868, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586183700546147868, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586183700546147868, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586183700546147868, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586183700546147868, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586183700546147868, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586183700546147868, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854522719477222529, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4e10b1e200a4c904abd0f53e1de2955c, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 6988744407117097621, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+    - {fileID: 9113148320102110160, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+    - {fileID: 6637893087788190401, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+--- !u!1 &1735211132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2785212212377818049, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+  m_PrefabInstance: {fileID: 1735211131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1767149107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4624,6 +4705,7 @@ MonoBehaviour:
   basementDoor: 0
   kingsDoor: 0
   dialougeBox: {fileID: 0}
+  hanglock: {fileID: 1735211132}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 1769912710}
   doorlockedSound: {fileID: 1769912711}
@@ -8021,3 +8103,4 @@ SceneRoots:
   - {fileID: 1652258767}
   - {fileID: 730819926}
   - {fileID: 1767149107}
+  - {fileID: 1735211131}

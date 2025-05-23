@@ -36,7 +36,8 @@ public class MapManager : MonoBehaviour
     public GameObject ServantsDoor;
     public GameObject HorseDoor;
     public GameObject EmeraldDoor;
-    public GameObject CrownDoor;
+    public GameObject BlueCrownDoor;
+    public GameObject RedCrownDoor;
     public GameObject OrangeDoor;
 
 
@@ -185,7 +186,8 @@ public class MapManager : MonoBehaviour
         if (currentScene.name == "KingsRoom")
         {
             Destroy(coverkingsroom);
-            Destroy(CrownDoor);
+            Destroy(RedCrownDoor);
+            Destroy(BlueCrownDoor);
         }
 
         // Second floor

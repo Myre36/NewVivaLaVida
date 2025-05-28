@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -188.43}
-  m_SizeDelta: {x: 617.26, y: 217.48}
+  m_AnchoredPosition: {x: 0, y: -201}
+  m_SizeDelta: {x: 617.26, y: 368.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &186650160
 MonoBehaviour:
@@ -180,7 +180,7 @@ MonoBehaviour:
 
 
     No word
-    come from the king''s castle for a week now.
+    has come from the king''s castle for a week now.
 
 
     All those sent to investigate
@@ -188,19 +188,32 @@ MonoBehaviour:
     of his highness.
 
 
-    You, an elite soldier in the royal army, are the only
-    one available.
+    You were ordered to lead your men in a final attempt to
+    make contact with the castle and find out what happened.
 
 
-    Your mission: Investigate the castle and find out what went
-    wrong.
+    Your men were
+    restless. Rumours of monsters roaming the countryside spread like wildfire through
+    the ranks.
 
 
-    You arrive at the castle, the silent night gives you no hint about
-    the status of its inhabitants.
+    You had little time to react. A horde of... something came out
+    of the darkness, attacking the flanks of your men. Your horse, frightened by
+    the thunderstorm and monsters, ran uncontrollably out into the night, no matter
+    how hard you pulled on its reins. The gunfire and screams behind you slowly died
+    out.
 
 
-    You open the door, and go inside.'
+    As the thunderstorm began to die down, you regained control of your
+    horse. You had no choice but to go to the castle yourself.
+
+
+    You arrive at
+    the castle, the silent night gives you no hint about the status of its inhabitants.
+
+
+    You
+    open the door, and go inside.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -265,7 +278,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 1.7441636, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -783,7 +796,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -108}
+  m_AnchoredPosition: {x: 0, y: -170}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1911928356

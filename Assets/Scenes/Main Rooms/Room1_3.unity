@@ -4130,7 +4130,7 @@ MonoBehaviour:
   dialougeText: {fileID: 0}
   dialouge:
   - Dozens upon dozens of books.
-  - 'One stands out to you: "Todd''s guide to the galaxy".'
+  - 'One stands out to you: "Todd''s guide to the stars".'
   - Might be some astronomy book.
   - You don't have time to read right now.
   playerInRange: 0

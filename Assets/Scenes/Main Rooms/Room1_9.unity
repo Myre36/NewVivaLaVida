@@ -7858,7 +7858,7 @@ MonoBehaviour:
   dialouge:
   - Stack of books about the landscape of Denmark.
   - The rolling hills, the flat terrain, the calm weather, the warm summers.
-  - Looks like forgot to remove the books about east Denmark.
+  - Looks like they forgot to remove the books about east Denmark.
   - Or perhaps they hope to one day regain it.
   playerInRange: 0
   outlineEneabled: 1

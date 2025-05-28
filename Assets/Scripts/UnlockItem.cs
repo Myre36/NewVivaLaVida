@@ -202,7 +202,7 @@ public class UnlockItem : MonoBehaviour
                         {
                             inDialouge = true;
                             dialougeText.text = "You place the pile of cloth into the toilet and flush. You hear the pipes rattle, and something bursts upstairs above you.";
-                            puzzlecompletedSound.Play();
+                            //puzzlecompletedSound.Play();
                         }
                     }
                     else

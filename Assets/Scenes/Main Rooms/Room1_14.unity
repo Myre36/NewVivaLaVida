@@ -242,7 +242,7 @@ MonoBehaviour:
   dialougeText: {fileID: 0}
   dialouge:
   - Your reflection stares back at you.
-  - Hope it'll all be fine.
+  - You hope it'll all be fine.
   playerInRange: 0
   outlineEneabled: 1
   lineNumber: 0
@@ -4091,28 +4091,27 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   dialouge:
-  - Servants' notes
+  - Servant's notes
   - The writing is frantic and uneven
   - Looks like whoever wrote this was in a hurry.
   - "\"I don't know what's going on. Duke J\xF8rgensen has been ill, ever since he
     went to meet the soldiers."
   - '"I knew those soldiers were acting weird. I heard from the kitchen ladies that
     they were up in northern Norway.'
-  - '"Were acting strange once they came back."'
   - '"One of them had red eyes."'
   - '"Another was sneezing blood."'
   - '"Maybe the devil has taken them."'
-  - The next page is barely legeble.
+  - The next page is barely legible.
   - "\"Duke J\xF8rgensen attacked me, I was bringing him breakfast when he suddenly
     ran at me.\""
-  - '"It was like a wild beast, biting and screaming."'
+  - '"He was like a wild beast, biting and screaming."'
   - '"I was able to push him off me, but the frothing from his mouth left a mess
     on me."'
   - "\"I ran in here to hide, J\xF8rgensen has been trying to break down the door.\""
   - '"I thought of escaping through the window, but I can hear screams outside as
     well."'
   - '"I''m trapped."'
-  - The next page only has a single sentance written with a weak hand.
+  - The next page only has a single sentence written with a weak hand.
   - '"Maybe I''ll just open the door."'
   playerInRange: 0
   outlineEneabled: 1
@@ -4824,7 +4823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
   - What on earth was that???
-  - It looked human... but it was like it was possessed by a demon.
+  - It looked human... but it seemed like it was possessed by a demon.
   - Blank eyes, frothing mouth...
   - Were they sick? Is there a plague?
   - ...

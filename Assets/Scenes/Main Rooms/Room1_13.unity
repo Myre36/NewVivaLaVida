@@ -6397,7 +6397,7 @@ MonoBehaviour:
   dialougeText: {fileID: 0}
   dialouge:
   - You find some books about statues.
-  - Maybe the king is a fan of scultures?
+  - Maybe the king is a fan of sculptures?
   playerInRange: 0
   outlineEneabled: 1
   lineNumber: 0

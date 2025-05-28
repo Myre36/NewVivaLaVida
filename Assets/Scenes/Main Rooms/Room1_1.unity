@@ -28511,7 +28511,7 @@ MonoBehaviour:
   dialouge:
   - A small book which discusses the noble families of Denmark.
   - It also has a chapter about the noble families of Norway and Iceland.
-  - It just a wall of paragraphs describing the history of all these families.
+  - It's just a wall of paragraphs describing the history of all these families.
   - You don't have time for this.
   playerInRange: 0
   outlineEneabled: 1

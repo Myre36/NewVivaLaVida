@@ -8017,11 +8017,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7417185479149808847, guid: 0c14269eda770c041a9130fc1e99539b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.32138819
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7417185479149808847, guid: 0c14269eda770c041a9130fc1e99539b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.010486553
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7417185479149808847, guid: 0c14269eda770c041a9130fc1e99539b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10434,7 +10434,7 @@ MonoBehaviour:
   dialouge:
   - What an odd room.
   - Suppose the king is a fan of the night sky.
-  - There a gray pedestal in the corner of the room.
+  - There is a gray pedestal in the corner of the room.
   - Wonder what that is for.
   introDialouge: 0
   tutorialDialouge: 0

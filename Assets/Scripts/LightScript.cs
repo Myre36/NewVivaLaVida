@@ -32,9 +32,9 @@ public class LightScript : MonoBehaviour
             if (fire.enabled == false) 
             {
                 fire.enabled = true;
-                igniteSound.Play();
 
                 gameManager.candleStates[candleNum] = true;
+                igniteSound.Play();
             }
             
             

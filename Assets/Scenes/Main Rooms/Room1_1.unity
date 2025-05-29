@@ -38640,6 +38640,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4830082571205494753, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4830082571205494753, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: ammoInImage
       value: 
       objectReference: {fileID: 1512639357}

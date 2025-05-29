@@ -23,6 +23,9 @@ public class CameraScript : MonoBehaviour
     public Vector3 minCamPosition;
     public Vector3 maxCamPosition;
 
+    private FreeFlyCamera freeFly;
+    public GameObject canvas;
+
 
     private void Awake()
     {
@@ -35,6 +38,7 @@ public class CameraScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        freeFly = GetComponent<FreeFlyCamera>();
     }
 
     private void Update()
@@ -69,6 +73,12 @@ public class CameraScript : MonoBehaviour
             {
                 offset.z += 2f * Time.deltaTime;
             }
+        }
+        if(Input.GetKeyDown(KeyCode.V))
+        {
+            freeFly.enabled = true;
+            canvas.SetActive(false);
+            this.enabled = false;
         }
     }
 

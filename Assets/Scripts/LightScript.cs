@@ -6,28 +6,40 @@ public class LightScript : MonoBehaviour
 
     public GameManager gameManager;
 
+    [SerializeField] private AudioSource igniteSound;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        Light fire = GetComponent<Light>();
 
         if (gameManager.candleStates[candleNum] == true)
         {
-            GetComponent<Light>().enabled = true;
+            fire.enabled = true;
         }
         else
         {
-            GetComponent<Light>().enabled = false;
+            fire.enabled = false;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        Light fire = GetComponent<Light>();
+        if (other.CompareTag("Player"))
         {
-            GetComponent<Light>().enabled = true;
+            if (fire.enabled == false) 
+            {
+                fire.enabled = true;
+                igniteSound.Play();
 
-            gameManager.candleStates[candleNum] = true;
+                gameManager.candleStates[candleNum] = true;
+            }
+            
+            
+
+            
         }
     }
 }

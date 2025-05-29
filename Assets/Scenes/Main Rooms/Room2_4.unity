@@ -7297,19 +7297,19 @@ MonoBehaviour:
   dialougeText: {fileID: 0}
   dialouge:
   - Status report
-  - Reports of Swedish warships have begun to increase. One report counted 14 warships
-    spotted near Bornholm.
-  - In the event of an invasion, we would not be in a favorable position. Our army
-    currently only consists of 15 thousand troops.
-  - We recomend that we increase troop recruitment in Norway by 40 thousand.
-  - In other reports, the Laki eruption in Iceland has claimed the lives of 9 thousand
-    locals. The local governor has sent numerous requests for aid.
-  - Unfortunetly, our treasury cannot handle it. We are only able to provide a 4th
-    of the aid he has asked for.
-  - The eruption has also claimed the lives of thousands of lifestock. Estamates
-    put it somewhere at 230 thousand animals dead.
-  - We recomend an immediate gathering of the council to discuss these matters.
-  - Signed, Count Johan Henrik Knuth
+  - '"Reports of Swedish warships have begun to increase. One report counted 14 warships
+    spotted near Bornholm."'
+  - '"In the event of an invasion, we would not be in a favorable position. Our army
+    currently only consists of 15 thousand troops."'
+  - '"We recommend that we increase troop recruitment in Norway by 40 thousand."'
+  - '"In other reports, the Laki eruption in Iceland has claimed the lives of 9 thousand
+    locals. The local governor has sent numerous requests for aid."'
+  - '"Unfortunately, our treasury cannot handle it. We are only able to provide a
+    4th of the aid he has asked for."'
+  - '"The eruption has also claimed the lives of thousands of lifestock. Estamates
+    put it somewhere at 230 thousand animals dead."'
+  - '"We recommend an immediate gathering of the council to discuss these matters."'
+  - '"Signed, Count Johan Henrik Knuth"'
   playerInRange: 0
   outlineEneabled: 1
   lineNumber: 0

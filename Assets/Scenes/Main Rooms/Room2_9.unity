@@ -2149,7 +2149,7 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   dialouge:
-  - Wonder if he's amused by the way he affected the downfall of the realm.
+  - Wonder if he's amused by the way he caused the downfall of the realm.
   playerInRange: 0
   outlineEneabled: 1
   lineNumber: 0
@@ -5562,14 +5562,14 @@ MonoBehaviour:
   dialouge:
   - Letter from soldier.
   - '"Dear Ragnhild."'
-  - '"I have arrived back in Denmark. Our journey to Norway to was relativley uneventful."'
-  - '"We were just standing around all day while those reasearchers checked out that
+  - '"I have arrived back in Denmark. Our journey to Norway was relativley uneventful."'
+  - '"We were just standing around all day while those researchers checked out that
     ship."'
-  - '"I asked for a few days off after I we finish.""'
+  - '"I asked for a few days off after we finish."'
   - '"It has been months since we last saw each other."'
   - '"When I get back, I wish to take you to Silkeborg, where we first met."'
   - '"We can spend the night looking at the stars, like we did all those years ago."'
-  - '"I will think to you until then."'
+  - '"I will think of you until then."'
   - '"Your Jakob."'
   - The letter ends here, but you see that something is written on the backside.
   - The hand that wrote this was much weaker.
@@ -5598,7 +5598,7 @@ MonoBehaviour:
   - '"We were discussing what to do next, when something terrible happened."'
   - '"We thought we had killed the commander. Who can survive three shots in the
     torso?"'
-  - '"But suddenly, we heard him as hee came charging from the darkness."'
+  - '"But suddenly, we heard him as he came charging from the darkness."'
   - '"We didn''t have our guns, so Jakob was completley unprepared."'
   - '"I wish to spare you the details of what the commander did to him."'
   - '"By the time I had shot the commander again, Jakob was bleeding on the floor."'

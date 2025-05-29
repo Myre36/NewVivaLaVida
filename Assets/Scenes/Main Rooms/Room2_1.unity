@@ -4137,7 +4137,7 @@ MonoBehaviour:
   dialougeText: {fileID: 0}
   dialouge:
   - You find some books on math.
-  - Aside from trigonometry, all of this looks like giberish to you.
+  - Aside from trigonometry, all of this looks like gibberish to you.
   playerInRange: 0
   outlineEneabled: 1
   lineNumber: 0
@@ -6309,7 +6309,7 @@ MonoBehaviour:
   dialougeBox: {fileID: 0}
   dialougeText: {fileID: 0}
   dialouge:
-  - Maybe she is an ispiration to the king.
+  - Maybe she is an inspiration to the king.
   playerInRange: 0
   outlineEneabled: 1
   lineNumber: 0

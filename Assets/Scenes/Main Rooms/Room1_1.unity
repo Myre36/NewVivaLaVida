@@ -35104,9 +35104,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4232964553878461502, guid: f1be4bf64473e954a8de213d109461aa, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 745026382}
+    - target: {fileID: 4232964553878461502, guid: f1be4bf64473e954a8de213d109461aa, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 2024493249}
+    - target: {fileID: 4232964553878461502, guid: f1be4bf64473e954a8de213d109461aa, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8069179711372027059, guid: f1be4bf64473e954a8de213d109461aa, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -35118,6 +35126,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8069179711372027059, guid: f1be4bf64473e954a8de213d109461aa, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1791594884}
+    - targetCorrespondingSourceObject: {fileID: 8069179711372027059, guid: f1be4bf64473e954a8de213d109461aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1791594891}
   m_SourcePrefab: {fileID: 100100000, guid: f1be4bf64473e954a8de213d109461aa, type: 3}
 --- !u!1 &1791594883 stripped
 GameObject:
@@ -35147,6 +35158,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad54dfa12090d04793226ecd8fdd6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1791594891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791594883}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 436275a13d4459746955fc6db5953473, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _active: 1
+  _enableRotation: 1
+  _mouseSense: 1.8
+  _enableTranslation: 1
+  _translationSpeed: 55
+  _enableMovement: 1
+  _movementSpeed: 10
+  _boostedSpeed: 50
+  _boostSpeed: 304
+  _moveUp: 101
+  _moveDown: 113
+  _enableSpeedAcceleration: 1
+  _speedAccelerationFactor: 1.5
+  _initPositonButton: 114
+  canvas: {fileID: 745026382}
 --- !u!1 &1793377934
 GameObject:
   m_ObjectHideFlags: 0

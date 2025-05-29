@@ -9,6 +9,8 @@ public class StatueMoving : MonoBehaviour
     private PointControll currentpoint;
     private float waitForTriggerUpdate;
 
+    [SerializeField] public AudioSource StatueMoveSound;
+
     private void Awake() {
         waitForTriggerUpdate = Time.realtimeSinceStartup + timeDelay;
         Collider[] spawnCollider = Physics.OverlapBox(transform.position, transform.forward);
@@ -39,6 +41,7 @@ public class StatueMoving : MonoBehaviour
                 maxAngle = angle;
                 if (gameObject.GetComponent<PointControll>().IsOccupied == false) {
                     transformPoint = gameObject.transform;
+                    StatueMoveSound.Play();
                 }
            } 
         }

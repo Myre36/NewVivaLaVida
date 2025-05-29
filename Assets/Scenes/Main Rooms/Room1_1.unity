@@ -2878,7 +2878,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &214724411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15482,6 +15482,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 4e10b1e200a4c904abd0f53e1de2955c, type: 2}
+    - target: {fileID: 5854522719477222529, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7e57a5c112730cf4ba028d1bb050ce18, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6988744407117097621, guid: 41c4a40f516b50844a7ec6ff44019d5f, type: 3}
@@ -41884,7 +41888,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2461422579213331634, guid: e87486bfdc7a26744b7166fb432ad4f4, type: 3}
+  - {fileID: 2100000, guid: 7e57a5c112730cf4ba028d1bb050ce18, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

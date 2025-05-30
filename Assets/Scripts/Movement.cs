@@ -68,6 +68,8 @@ public class Movement : MonoBehaviour
 
     public AudioSource EstherGrunt2Sound;
 
+    
+
     public int healingCharges = 0;
 
     public TMP_Text healingChargeText;
@@ -410,4 +412,16 @@ public class Movement : MonoBehaviour
             rb.linearVelocity = new Vector3(limitedVelocity.x, rb.linearVelocity.y, limitedVelocity.z);
         }
     }
+
+  
+
+    
+    
+        
+      
+        
+        
+        
+            
+    
 }

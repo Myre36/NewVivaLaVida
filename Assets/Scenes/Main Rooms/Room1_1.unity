@@ -39566,6 +39566,10 @@ PrefabInstance:
       value: 41.915665
       objectReference: {fileID: 0}
     - target: {fileID: 2701436946985437211, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: EstherStep
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2701436946985437211, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: pauseScreen
       value: 
       objectReference: {fileID: 1569359223}
@@ -40109,6 +40113,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 119.94566
       objectReference: {fileID: 0}
+    - target: {fileID: 6992684341865377027, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: audioClips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992684341865377027, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: 'audioClips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: cf45a896231740946a2cc260f3fdae06, type: 3}
     - target: {fileID: 7016493742019030377, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -1.625361

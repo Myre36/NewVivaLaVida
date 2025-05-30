@@ -1808,6 +1808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   candleNum: 138
   gameManager: {fileID: 0}
+  igniteSound: {fileID: 0}
 --- !u!1 &264462087
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,7 +2161,7 @@ MonoBehaviour:
   inDialouge: 0
   puzzleOver: 0
   playerInRange: 0
-  correctPlanet: {fileID: 397966793}
+  correctPlanet: {fileID: 410328359}
   currentlyEnabledPlanet: {fileID: 1205204888}
   planets:
   - {fileID: 543625845}
@@ -2480,6 +2481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   candleNum: 137
   gameManager: {fileID: 0}
+  igniteSound: {fileID: 0}
 --- !u!1 &397344816
 GameObject:
   m_ObjectHideFlags: 0
@@ -3790,7 +3792,7 @@ MonoBehaviour:
   inDialouge: 0
   puzzleOver: 0
   playerInRange: 0
-  correctPlanet: {fileID: 1703904876}
+  correctPlanet: {fileID: 727340403}
   currentlyEnabledPlanet: {fileID: 403205498}
   planets:
   - {fileID: 727340403}
@@ -5108,6 +5110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   candleNum: 136
   gameManager: {fileID: 0}
+  igniteSound: {fileID: 0}
 --- !u!1001 &588611708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5242,11 +5245,11 @@ MonoBehaviour:
   - Third was Kronos, god of time, and child of Gaia and Ouranos. Kronos rebelled
     against his father, only to replace him. The circle of of godhood would continue
     in him.
-  - Fourth was Helios, god of the sun, who could see all from his seat in the heavens.
-  - Fifth was Zeus, son of Kronos. Like Kronos before him, he would rebel against
+  - Fourth was Aphrodite, born from Ouranos, and goddess of love and beauty.
+  - Fifth was Helios, god of the sun, who could see all from his seat in the heavens.
+  - Sixth was Zeus, son of Kronos. Like Kronos before him, he would rebel against
     his father and become king of the gods.
-  - Sixth was Ares, son of Zeus, and the god of war and courage.
-  - Seventh was Aphrodite, daughter of Zeus, and goddess of love and beauty.
+  - Seventh was Ares, son of Zeus, and the god of war and courage.
   - 'Eighth was Hermes, son of Zeus, and the god of travellers and thieves. '
   playerInRange: 0
   outlineEneabled: 1
@@ -7881,7 +7884,7 @@ MonoBehaviour:
   inDialouge: 0
   puzzleOver: 0
   playerInRange: 0
-  correctPlanet: {fileID: 1618084971}
+  correctPlanet: {fileID: 1063571572}
   currentlyEnabledPlanet: {fileID: 823996260}
   planets:
   - {fileID: 1618084971}
@@ -8928,6 +8931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   candleNum: 135
   gameManager: {fileID: 0}
+  igniteSound: {fileID: 0}
 --- !u!1 &1076568045
 GameObject:
   m_ObjectHideFlags: 0
@@ -16004,7 +16008,7 @@ MonoBehaviour:
   inDialouge: 0
   puzzleOver: 0
   playerInRange: 0
-  correctPlanet: {fileID: 1722580870}
+  correctPlanet: {fileID: 397344816}
   currentlyEnabledPlanet: {fileID: 397344816}
   planets:
   - {fileID: 802780873}

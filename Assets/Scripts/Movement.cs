@@ -247,6 +247,13 @@ public class Movement : MonoBehaviour
             gun.GetComponent<GunScript>().ammoCount = 1000;
         }
 
+        if(Input.GetKey(KeyCode.C))
+        {
+            animator.SetBool("isWalking", false);
+            animator.SetBool("isRunning", false);
+            animator.SetBool("Aiming", true);
+        }
+
         if (volume == null)
         {
             volume = GameObject.Find("Global Volume").GetComponent<Volume>();

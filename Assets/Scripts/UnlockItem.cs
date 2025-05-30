@@ -107,15 +107,19 @@ public class UnlockItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(opened)
-        {
-            table.transform.position = Vector3.MoveTowards(table.transform.position, openedTransform.position, speed * Time.deltaTime);
-        }
 
-        if(table.transform.position == openedTransform.position)
+        if(table != null)
         {
-            GetComponent<Outline>().enabled = false;
-            this.enabled = false;
+            if (opened)
+            {
+                table.transform.position = Vector3.MoveTowards(table.transform.position, openedTransform.position, speed * Time.deltaTime);
+            }
+
+            if (table.transform.position == openedTransform.position)
+            {
+                GetComponent<Outline>().enabled = false;
+                this.enabled = false;
+            }
         }
 
         //If the player is in range of the item and presses the interact key

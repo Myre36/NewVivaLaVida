@@ -8542,9 +8542,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SerializedVersion: 0
   m_AgentTypeID: 0
-  m_CollectObjects: 0
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 2, z: 0}
+  m_CollectObjects: 1
+  m_Size: {x: 42.73605, y: 2.2409139, z: 15.583984}
+  m_Center: {x: -0.9566364, y: -1.8795421, z: -2.7919922}
   m_LayerMask:
     serializedVersion: 2
     m_Bits: 4294967295

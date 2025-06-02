@@ -1702,7 +1702,9 @@ PrefabInstance:
       propertyPath: plantOne
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7065161875741958320, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
+    - {fileID: 8445529990596328826, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

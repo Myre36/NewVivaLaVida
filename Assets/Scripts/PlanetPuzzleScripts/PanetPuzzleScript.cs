@@ -85,6 +85,8 @@ public class PanetPuzzleScript : MonoBehaviour
                     if (currentlyEnabledPlanet == null)
                     {
                         dialougeText.text = "Which planet do you want to place here?";
+                        Cursor.lockState = CursorLockMode.None;
+                        Cursor.visible = true;
                         //It will tell the planet picker that the button menu should be open
                         planetPicker.buttonMenuOpen = true;
                     }

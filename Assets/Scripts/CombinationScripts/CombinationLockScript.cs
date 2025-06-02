@@ -83,6 +83,8 @@ public class CombinationLockScript : MonoBehaviour
                         child.gameObject.SetActive(false);
                     }
                     playerInput.gameObject.SetActive(true);
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
                 }
                 //If the player is not already in dialouge, the input field will be turned on
                 else
@@ -97,6 +99,8 @@ public class CombinationLockScript : MonoBehaviour
                         child.gameObject.SetActive(true);
                     }
                     playerInput.gameObject.SetActive(true);
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
                 }
             }
         }
@@ -119,6 +123,8 @@ public class CombinationLockScript : MonoBehaviour
                     playerInput.gameObject.SetActive(false);
                     GetComponent<DoorScript>().enabled = true;
                     GetComponent<DoorScript>().playerInDoor = true;
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
                     this.enabled = false;
                 }
                 //If they input the incorrect combination, the input string will become empty

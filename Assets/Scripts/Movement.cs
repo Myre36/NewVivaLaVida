@@ -175,6 +175,9 @@ public class Movement : MonoBehaviour
         }
 
         mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -204,7 +207,10 @@ public class Movement : MonoBehaviour
             aiming = true;
 
             animator.SetBool("Aiming", true);
-            
+
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
             //gun.GetComponent<Renderer>().enabled = true;
         }
         //If the player is not holding down the RMB, the gun is not visible
@@ -212,6 +218,10 @@ public class Movement : MonoBehaviour
         {
             aiming = false;
             animator.SetBool("Aiming", false);
+
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
             //gun.GetComponent<Renderer>().enabled = false;
         }
         //Pressing the Tab key either opens the inventory screen, or closes it, depending on what its status is
@@ -279,11 +289,15 @@ public class Movement : MonoBehaviour
             {
                 pauseScreen.SetActive(false);
                 Time.timeScale = 1;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
             }
             else
             {
                 pauseScreen.SetActive(true);
                 Time.timeScale = 0;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
         }
 

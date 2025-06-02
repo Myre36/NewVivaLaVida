@@ -334,6 +334,8 @@ public class PlanetPickerScript : MonoBehaviour
         buttonMenuOpen = false;
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         player.enabled = true;
     }
 }

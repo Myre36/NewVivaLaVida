@@ -4,7 +4,6 @@ using UnityEngine;
 public class AttackingState : EnemyState
     {
     private float timer;
-    private float timeBetweenAttacks = 2f;
 
     private float exitTimer;
     private float timeTilExit;
@@ -34,7 +33,7 @@ public class AttackingState : EnemyState
 
         enemy.MoveEnemy(enemy.transform.position);
 
-        if (timer > timeBetweenAttacks) {
+        if (timer > enemy.timeBetweenAttacks) {
 
             timer = 0f;
 

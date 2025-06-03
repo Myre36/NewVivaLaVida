@@ -1524,8 +1524,9 @@ MonoBehaviour:
   agent: {fileID: 76994831}
   PlayerTransform: {fileID: 0}
   enemyNum: 20
-  AttackRange: 0
+  AttackRange: 3
   DetectionDistance: 30
+  timeBetweenAttacks: 2
   RandomMoveRange: 5
 --- !u!82 &76994833
 AudioSource:

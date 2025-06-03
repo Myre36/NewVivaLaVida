@@ -22,6 +22,8 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
 
     public float DetectionDistance = 50f;
 
+    public float timeBetweenAttacks = 2f;
+
     #region Health Variables
     public Action OnDamage { get; set; } = delegate { };
 

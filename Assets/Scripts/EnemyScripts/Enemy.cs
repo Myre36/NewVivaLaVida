@@ -37,6 +37,7 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
     public IdleState IdleState { get; set; } 
     public AttackingState AttackingState { get; set; }
     public ChasingState ChasingState { get; set; }
+    public BossIdleState BossIdleState { get; set; }
     public bool isAggroed { get; set; }
     public bool isWithinAttackDistance { get; set; }
 
@@ -50,6 +51,8 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
         ChasingState = new ChasingState(this, StateMachine);
         enemySound = GetComponent<AudioSource>();
         enemyCollider = GetComponent<Collider>();
+
+        BossIdleState = new BossIdleState(this, StateMachine);
     }
 
     #endregion

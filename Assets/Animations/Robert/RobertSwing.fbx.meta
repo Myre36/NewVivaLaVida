@@ -31,11 +31,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Swing
-      takeName: Swing
-      internalID: -4738338977195520429
+      name: Swing2
+      takeName: Swing2
+      internalID: 8622774824480122881
       firstFrame: 0
-      lastFrame: 60
+      lastFrame: 80
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

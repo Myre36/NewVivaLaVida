@@ -1525,7 +1525,7 @@ MonoBehaviour:
   PlayerTransform: {fileID: 0}
   enemyNum: 20
   AttackRange: 0
-  DetectionDistance: 50
+  DetectionDistance: 30
   RandomMoveRange: 5
 --- !u!82 &76994833
 AudioSource:

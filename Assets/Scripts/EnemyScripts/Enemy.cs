@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -338,6 +339,10 @@ public class Enemy : MonoBehaviour, IDamagable, IDistanceFinder
         enemySound.enabled = false;
         agent.enabled = false;
         enemyCollider.enabled = false;
+        if(this.gameObject.tag == "Boss")
+        {
+            PlayerTransform.gameObject.GetComponent<Movement>().ExecuteEnd();
+        }
         this.enabled = false;
     }
 

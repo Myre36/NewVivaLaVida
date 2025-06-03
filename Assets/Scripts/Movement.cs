@@ -434,15 +434,26 @@ public class Movement : MonoBehaviour
         }
     }
 
-  
+    public void ExecuteEnd()
+    {
+        StartCoroutine(EndGame());
+    }
 
-    
-    
-        
-      
-        
-        
-        
-            
-    
+    private IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("Ending");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }

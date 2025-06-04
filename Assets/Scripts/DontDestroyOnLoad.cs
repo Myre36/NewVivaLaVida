@@ -24,5 +24,17 @@ public class DontDestroyOnLoad : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if (currentScene.name == "Ending")
+        {
+            Destroy(this.gameObject);
+        }
+        if (currentScene.name == "Introduction")
+        {
+            Destroy(this.gameObject);
+        }
+        if (currentScene.name == "TutorialScene")
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

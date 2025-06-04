@@ -1525,7 +1525,7 @@ MonoBehaviour:
   PlayerTransform: {fileID: 0}
   enemyNum: 20
   AttackRange: 3
-  DetectionDistance: 30
+  DetectionDistance: 50
   timeBetweenAttacks: 2
   RandomMoveRange: 5
 --- !u!82 &76994833
@@ -3669,6 +3669,7 @@ GameObject:
   - component: {fileID: 311104386}
   - component: {fileID: 311104385}
   - component: {fileID: 311104384}
+  - component: {fileID: 311104387}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -3744,6 +3745,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 43.42, z: 0}
+--- !u!64 &311104387
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311104383}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &325717493
 GameObject:
   m_ObjectHideFlags: 0
@@ -21796,6 +21819,7 @@ GameObject:
   - component: {fileID: 1958069018}
   - component: {fileID: 1958069017}
   - component: {fileID: 1958069016}
+  - component: {fileID: 1958069019}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -21871,6 +21895,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 43.42, z: 0}
+--- !u!64 &1958069019
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958069015}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1969118618
 PrefabInstance:
   m_ObjectHideFlags: 0

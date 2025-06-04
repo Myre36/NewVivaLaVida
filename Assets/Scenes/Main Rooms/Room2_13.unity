@@ -14270,7 +14270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1688220300375580150, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -158.998
+      value: -158.774
       objectReference: {fileID: 0}
     - target: {fileID: 1688220300375580150, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14310,7 +14310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7002735747489066097, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
       propertyPath: m_Size.z
-      value: 5.742613
+      value: 6.665424
       objectReference: {fileID: 0}
     - target: {fileID: 7002735747489066097, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
       propertyPath: m_Center.x
@@ -14322,7 +14322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7002735747489066097, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
       propertyPath: m_Center.z
-      value: -0.3663058
+      value: 0.095099784
       objectReference: {fileID: 0}
     - target: {fileID: 7159625346283352340, guid: b3447f51f36b98f4eb76cbf795858df6, type: 3}
       propertyPath: isPlant

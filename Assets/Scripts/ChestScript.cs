@@ -191,6 +191,9 @@ public class ChestScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            closedLid.SetActive(false);
+                            openLid.SetActive(true);
+                            ChestOpen.Play();
                         }
                     }
                     else
@@ -220,6 +223,9 @@ public class ChestScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            closedLid.SetActive(false);
+                            openLid.SetActive(true);
+                            ChestOpen.Play();
                         }
                     }
                     else
@@ -248,6 +254,9 @@ public class ChestScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            closedLid.SetActive(false);
+                            openLid.SetActive(true);
+                            ChestOpen.Play();
                         }
                     }
                     else
@@ -276,6 +285,9 @@ public class ChestScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            closedLid.SetActive(false);
+                            openLid.SetActive(true);
+                            ChestOpen.Play();
                         }
                     }
                     else
@@ -304,6 +316,9 @@ public class ChestScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            closedLid.SetActive(false);
+                            openLid.SetActive(true);
+                            ChestOpen.Play();
                         }
                     }
                     else
@@ -332,6 +347,9 @@ public class ChestScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            closedLid.SetActive(false);
+                            openLid.SetActive(true);
+                            ChestOpen.Play();
                         }
                     }
                     else
@@ -360,6 +378,9 @@ public class ChestScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            closedLid.SetActive(false);
+                            openLid.SetActive(true);
+                            ChestOpen.Play();
                         }
                     }
                     else
@@ -388,6 +409,9 @@ public class ChestScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            closedLid.SetActive(false);
+                            openLid.SetActive(true);
+                            ChestOpen.Play();
                         }
                     }
                     else
@@ -399,7 +423,7 @@ public class ChestScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            dialougeText.text = "The lock on the chest is shaped like a blue crown.";
+                            dialougeText.text = "The lock on the chest is shaped like a red crown.";
                         }
                     }
                 }
@@ -416,6 +440,9 @@ public class ChestScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            closedLid.SetActive(false);
+                            openLid.SetActive(true);
+                            ChestOpen.Play();
                         }
                     }
                     else
@@ -444,6 +471,9 @@ public class ChestScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
+                            closedLid.SetActive(false);
+                            openLid.SetActive(true);
+                            ChestOpen.Play();
                         }
                     }
                     else
@@ -495,9 +525,6 @@ public class ChestScript : MonoBehaviour
             player.healingCharges++;
         }
         GetComponent<Outline>().enabled = false;
-        closedLid.SetActive(false);
-        openLid.SetActive(true);
-        ChestOpen.Play();
         this.enabled = false;
     }
 

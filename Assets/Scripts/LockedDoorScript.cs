@@ -395,7 +395,7 @@ public class LockedDoorScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            dialougeText.text = "The door is locked. The door is engraved with a large saphire stone.";
+                            dialougeText.text = "The door is locked. The door is engraved with a large sapphire stone.";
                             doorlockedSound.Play();
                         }
                     }
@@ -444,7 +444,7 @@ public class LockedDoorScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            dialougeText.text = "You stand before a large, locked oak door. There seems to no keyhole on it. Three equally sized circles are engraved into the door. First hole is made of bronze, second in silver, third in gold. Maybe you have to fit something in them?";
+                            dialougeText.text = "Three equally sized circles are engraved into the door. First hole is bronze, second is silver, third is gold. Maybe you have to fit something in them?";
                             doorlockedSound.Play();
                         }
                     }

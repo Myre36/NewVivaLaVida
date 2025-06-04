@@ -33,6 +33,8 @@ public class CreditsScript : MonoBehaviour
     private IEnumerator StartCredits()
     {
         yield return new WaitForSeconds(timeToCredits);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         cutscene.targetCameraAlpha = 0f;
         started = true;
     }

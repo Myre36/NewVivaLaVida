@@ -305,7 +305,10 @@ public class UnlockItem : MonoBehaviour
         }
         placedObject.SetActive(true);
         GetComponent<Outline>().enabled = false;
-        //this.enabled = false;
+        if(table == null)
+        {
+            this.enabled = false;
+        }
     }
 
     //A function for closing the dialouge

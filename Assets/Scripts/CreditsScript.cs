@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Video;
 
 public class CreditsScript : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class CreditsScript : MonoBehaviour
 
     public int timeToCredits;
 
+    public VideoPlayer cutscene;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,7 +24,7 @@ public class CreditsScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(started)
+        if (started)
         {
             rectTransform.anchoredPosition += new Vector2(0, scrollSpeed * Time.deltaTime);
         }
@@ -30,6 +33,7 @@ public class CreditsScript : MonoBehaviour
     private IEnumerator StartCredits()
     {
         yield return new WaitForSeconds(timeToCredits);
+        cutscene.targetCameraAlpha = 0f;
         started = true;
     }
 }

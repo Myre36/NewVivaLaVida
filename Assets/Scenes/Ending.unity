@@ -349,8 +349,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb996fd65dd69654bb3c7e2100d1fee2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 40
-  timeToCredits: 1
+  scrollSpeed: 50
+  timeToCredits: 75
+  cutscene: {fileID: 428024530}
 --- !u!114 &1329506145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -820,7 +821,6 @@ GameObject:
   - component: {fileID: 1705991545}
   - component: {fileID: 1705991544}
   - component: {fileID: 1705991543}
-  - component: {fileID: 1705991542}
   m_Layer: 5
   m_Name: CreditsCanvas
   m_TagString: Untagged
@@ -828,20 +828,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1705991542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1705991541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb996fd65dd69654bb3c7e2100d1fee2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollSpeed: 40
-  timeToCredits: 0
 --- !u!114 &1705991543
 MonoBehaviour:
   m_ObjectHideFlags: 0

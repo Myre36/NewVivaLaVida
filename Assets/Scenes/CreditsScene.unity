@@ -145,17 +145,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174460851}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2052904707}
-  m_Father: {fileID: 431787591}
+  m_Father: {fileID: 983091636}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -303, y: 188}
+  m_AnchoredPosition: {x: -46.392094, y: -2817}
   m_SizeDelta: {x: 325.482, y: 85.955}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &174460853
@@ -361,9 +361,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1591169963}
-  - {fileID: 2094528901}
   - {fileID: 983091636}
-  - {fileID: 174460852}
+  - {fileID: 1686860410}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -503,7 +502,7 @@ GameObject:
   - component: {fileID: 983091636}
   - component: {fileID: 983091639}
   - component: {fileID: 983091638}
-  - component: {fileID: 983091637}
+  - component: {fileID: 983091640}
   m_Layer: 5
   m_Name: TitleText
   m_TagString: Untagged
@@ -518,31 +517,20 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983091635}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2094528901}
+  - {fileID: 174460852}
   m_Father: {fileID: 431787591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 48, y: -350}
+  m_AnchoredPosition: {x: 47.999996, y: -335.00012}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &983091637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 983091635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb996fd65dd69654bb3c7e2100d1fee2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollSpeed: 40
 --- !u!114 &983091638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -642,6 +630,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983091635}
   m_CullTransparentMesh: 1
+--- !u!114 &983091640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983091635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb996fd65dd69654bb3c7e2100d1fee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 40
 --- !u!1 &1275792981
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,6 +944,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591169962}
   m_CullTransparentMesh: 1
+--- !u!1 &1686860409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1686860410}
+  m_Layer: 0
+  m_Name: Endpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1686860410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686860409}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 48, y: -335, z: 0}
+  m_LocalScale: {x: 3.8984954, y: 3.8984954, z: 3.8984954}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 431787591}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2052904706
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,8 +1009,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 43, y: 13}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0.000049591064}
+  m_SizeDelta: {x: 0, y: -0.000099182}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2052904708
 MonoBehaviour:
@@ -1000,7 +1032,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RETURN
+  m_text: BACK TO MENU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1065,7 +1097,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 105.4906, w: 0}
+  m_margin: {x: 0, y: 0, z: -1.1675643, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1090,7 +1122,6 @@ GameObject:
   - component: {fileID: 2094528901}
   - component: {fileID: 2094528904}
   - component: {fileID: 2094528903}
-  - component: {fileID: 2094528902}
   m_Layer: 5
   m_Name: CreditsText
   m_TagString: Untagged
@@ -1105,31 +1136,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094528900}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 431787591}
+  m_Father: {fileID: 983091636}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -419}
-  m_SizeDelta: {x: 808.6, y: 50}
+  m_AnchoredPosition: {x: -47.999996, y: -1363.2279}
+  m_SizeDelta: {x: 808.6, y: 2638.458}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2094528902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094528900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb996fd65dd69654bb3c7e2100d1fee2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollSpeed: 40
 --- !u!114 &2094528903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1150,12 +1168,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Team Lead \r\nMaya Chruicshank Ven\xE5s\r\n\r\nLead Programmer\r\nHalld\xF3r
-    Bj\xF6rnsson\r\n\r\nGame Design\r\nMaya Chruicshank Ven\xE5s\r\nAriana Roxana
-    Dragota\r\n\r\nArtists\r\nGabriel Mateo Gausen J\xF8rgensen\r\nAriana Roxana
-    Dragota\r\n\r\nAnimator\r\nGabriel Mateo Gausen J\xF8rgensen\r\n\r\nWriters\r\nHalld\xF3r
-    Bj\xF6rnsson\r\n\r\nUI and Sound Design\r\nMaya Chruicshank Ven\xE5s\r\n\r\nSpecial
-    thanks\nMs. Duchess\r\n\r\nPowered by\r\nUnity Engine"
+  m_text: "Team Lead \r\nMaya Chruicshank Ven\xE5s\n\nGame Design\nAriana Roxana
+    Dragota\nGabriel Mateo Gausen J\xF8rgensen\nHalld\xF3r Bj\xF6rnsson\r\nMaya Chruicshank
+    Ven\xE5s\r\r\n\r\nLead Programming\r\nHalld\xF3r Bj\xF6rnsson\n\nAdditional Programming\nGabriel
+    Mateo Gausen J\xF8rgensen\nMaya Chruicshank Ven\xE5s\n\nConcept Art\nAriana Roxana
+    Dragota\r\r\n\r\n2D Art\nAriana Roxana Dragota\r\nMaya Chruicshank Ven\xE5s\n\nTexturing\nAriana
+    Roxana Dragota\n\nLighting\nAriana Roxana Dragota\nHalld\xF3r Bj\xF6rnsson\n\n3D
+    Modeling\nAriana Roxana Dragota\nGabriel Mateo Gausen J\xF8rgensen\r\r\n\r\nAnimation\r\nGabriel
+    Mateo Gausen J\xF8rgensen\n\nSound Design\n\rMaya Chruicshank Ven\xE5s\n\nMusic\nMaya
+    Chruicshank Ven\xE5s\n\r\nWriting\r\nHalld\xF3r Bj\xF6rnsson\r\n\r\nUI and UX
+    Design\r\nMaya Chruicshank Ven\xE5s\n\nTrailer Creation\nHalld\xF3r Bj\xF6rnsson\n\nSupervisors\n\rSteven
+    Thomas Ford\nMar\xEDa Gu\xF0mundsd\xF3ttir\nJoachim Andr\xE9 Voldseth\n\r\nSpecial
+    thanks\nMs. Duchess\nTrond Olav Skevik - Programming help\nFrank Veenstra - Programming
+    help\nStef\xE1n Steinar Gu\xF0laugsson - Playtesting\n\nAdditional Credit\n\rLyuboslav
+    Borislavov Nalbantov\n\r\nPowered by\r\nUnity Engine\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThank
+    you for playing our little student project :D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

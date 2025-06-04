@@ -285,6 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 40
+  timeToCredits: 0
 --- !u!114 &431787588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,6 +644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 40
+  timeToCredits: 75
 --- !u!1 &1275792981
 GameObject:
   m_ObjectHideFlags: 0

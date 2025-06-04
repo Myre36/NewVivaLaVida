@@ -219,10 +219,12 @@ public class Movement : MonoBehaviour
             aiming = false;
             animator.SetBool("Aiming", false);
 
+            //gun.GetComponent<Renderer>().enabled = false;
+        }
+        if(Input.GetMouseButtonUp(1))
+        {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-
-            //gun.GetComponent<Renderer>().enabled = false;
         }
         //Pressing the Tab key either opens the inventory screen, or closes it, depending on what its status is
         if(Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.Tab))
@@ -288,16 +290,16 @@ public class Movement : MonoBehaviour
             if(Time.timeScale == 0)
             {
                 pauseScreen.SetActive(false);
-                Time.timeScale = 1;
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
+                Time.timeScale = 1;
             }
             else
             {
                 pauseScreen.SetActive(true);
-                Time.timeScale = 0;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
+                Time.timeScale = 0;
             }
         }
 

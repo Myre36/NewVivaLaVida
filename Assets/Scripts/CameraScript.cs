@@ -74,12 +74,14 @@ public class CameraScript : MonoBehaviour
                 offset.z += 2f * Time.deltaTime;
             }
         }
+        /*
         if(Input.GetKeyDown(KeyCode.V))
         {
             freeFly.enabled = true;
             canvas.SetActive(false);
             this.enabled = false;
         }
+        */
     }
 
     //Code for moving the camera. The reason its in LateUpdate is because we want the camera to be a little bit behind the player

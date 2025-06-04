@@ -252,7 +252,7 @@ public class Movement : MonoBehaviour
 
             healingCharges--;
         }
-
+        /*
         if(Input.GetKeyDown(KeyCode.P))
         {
             gameManager.ActivateGodMode();
@@ -265,7 +265,7 @@ public class Movement : MonoBehaviour
             animator.SetBool("isRunning", false);
             animator.SetBool("Aiming", true);
         }
-
+        */
         if (volume == null)
         {
             volume = GameObject.Find("Global Volume").GetComponent<Volume>();

@@ -31,6 +31,16 @@ public class MenuScript : MonoBehaviour
         SceneManager.LoadScene("TutorialScene");
     }
 
+    public void LoadBalcony()
+    {
+        SceneManager.LoadScene("Room2_14");
+    }
+
+    public void LoadBoss()
+    {
+        SceneManager.LoadScene("KingsRoom");
+    }
+
     public void Quit()
     {
         Application.Quit();

@@ -305,6 +305,7 @@ public class UnlockItem : MonoBehaviour
         }
         placedObject.SetActive(true);
         GetComponent<Outline>().enabled = false;
+        puzzlecompletedSound.enabled = false;
         if(table == null)
         {
             this.enabled = false;

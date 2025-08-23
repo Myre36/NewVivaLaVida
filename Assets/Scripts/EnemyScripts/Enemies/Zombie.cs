@@ -5,6 +5,7 @@ public class Zombie : Enemy
     private void Start() {
         base.Start();
         AttackRange = 4f;
+        DamageDelt = 0.5f;
         StateMachine.ChangeState(BossIdleState);
     }
     private void OnCollisionEnter(Collision collision) {

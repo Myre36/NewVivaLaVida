@@ -485,7 +485,7 @@ public class ChestScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            dialougeText.text = "The lock on the chest is shaped like a blue crown.";
+                            dialougeText.text = "The lock on the chest is shaped like a red crown.";
                         }
                     }
                 }

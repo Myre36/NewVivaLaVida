@@ -195,6 +195,8 @@ public class GameManager : MonoBehaviour
         }
         mapManager = gameObject.GetComponent<MapManager>();
         currentMap = mapManager.currentMap;
+
+        Application.targetFrameRate = 120;
     }
 
     private void Update()

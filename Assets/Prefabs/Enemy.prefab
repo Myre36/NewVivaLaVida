@@ -112,6 +112,7 @@ MonoBehaviour:
   enemyNum: 0
   AttackRange: 1.5
   DetectionDistance: 50
+  timeBetweenAttacks: 1
   RandomMoveRange: 5
 --- !u!195 &8459850859123624603
 NavMeshAgent:
@@ -145,7 +146,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3df70e80c1db43549b9f460b9650adf5, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 3df70e80c1db43549b9f460b9650adf5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.109

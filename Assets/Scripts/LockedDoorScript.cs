@@ -444,7 +444,7 @@ public class LockedDoorScript : MonoBehaviour
                         else
                         {
                             inDialouge = true;
-                            dialougeText.text = "Three equally sized circles are engraved into the door. First hole is bronze, second is silver, third is gold. Maybe you have to fit something in them?";
+                            dialougeText.text = "Three equally sized circles are engraved into the door. First hole is copper, second is silver, third is gold. Maybe you have to fit something in them?";
                             doorlockedSound.Play();
                         }
                     }

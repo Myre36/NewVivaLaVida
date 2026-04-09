@@ -13,6 +13,7 @@ public class MandatoryDialouge : MonoBehaviour
 
     //A refrence to the dialouge text
     private TMP_Text dialougeText;
+    private TMP_Text pressEText;
 
     //A refrence to all the dialouge that will play
     public string[] dialouge;
@@ -51,6 +52,7 @@ public class MandatoryDialouge : MonoBehaviour
         player = GameObject.Find("Player").GetComponent<Movement>();
         dialougeBox = GameObject.Find("DialougeBox");
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
+        pressEText = GameObject.Find("PressEText").GetComponent<TMP_Text>();
         //This checks if the dialouge has already played, to prevent things from playing twice
         if (introDialouge)
         {
@@ -58,6 +60,7 @@ public class MandatoryDialouge : MonoBehaviour
             {
                 player.inMandatory = true;
                 player.enabled = false;
+                pressEText.enabled = true;
                 StartCoroutine(DelayStart());
             }
             else
@@ -277,6 +280,9 @@ public class MandatoryDialouge : MonoBehaviour
         {
             switch (lineNumber)
             {
+                case 2:
+                    pressEText.enabled = false;
+                    break;
                 case 4:
                     playerCamera.smoothSpeed = 2.5f;
                     playerCamera.player = cinematicCam;

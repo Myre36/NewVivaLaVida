@@ -99,6 +99,10 @@ public class DialougeScript : MonoBehaviour
     //A function for displaying the next dialouge line
     void NextLine()
     {
+        if(lineNumber < 1)
+        {
+            player.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+        }
         inDialouge = true;
         dialougeBox.enabled = true;
         dialougeText.enabled = true;

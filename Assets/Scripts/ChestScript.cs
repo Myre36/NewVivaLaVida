@@ -491,6 +491,10 @@ public class ChestScript : MonoBehaviour
                 }
             }
         }
+        else if(inDialouge && !playerInRange)
+        {
+            CloseDialouge();
+        }
     }
 
     //Code to check when the player enters the door trigger

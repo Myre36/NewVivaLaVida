@@ -490,12 +490,12 @@ public class PickupObject : MonoBehaviour
                     {
                         if (inDialouge)
                         {
-                            gameManager.hallwayKey = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
+                            gameManager.hallwayKey = true;
                             getkeysSound.Play();
                             dialougeText.text = "You pick up a key with an orange citrine gemstone as its head.";
                         }
@@ -504,12 +504,12 @@ public class PickupObject : MonoBehaviour
                     {
                         if (inDialouge)
                         {
-                            gameManager.firstKey = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
+                            gameManager.firstKey = true;
                             getkeysSound.Play();
                             dialougeText.text = "You pick up a key with an emerald gemstone as its head.";
                         }
@@ -518,12 +518,12 @@ public class PickupObject : MonoBehaviour
                     {
                         if (inDialouge)
                         {
-                            gameManager.tunnelKey = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
+                            gameManager.tunnelKey = true;
                             getkeysSound.Play();
                             dialougeText.text = "You pick up a key with a horse emblem as its head.";
                         }
@@ -532,12 +532,12 @@ public class PickupObject : MonoBehaviour
                     {
                         if (inDialouge)
                         {
-                            gameManager.servantsKey = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
+                            gameManager.servantsKey = true;
                             getkeysSound.Play();
                             dialougeText.text = "You pick up a key with a large S-shaped emblem as its head.";
                         }
@@ -546,12 +546,12 @@ public class PickupObject : MonoBehaviour
                     {
                         if (inDialouge)
                         {
-                            gameManager.basementKey = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
+                            gameManager.basementKey = true;
                             getkeysSound.Play();
                             dialougeText.text = "You pick up an old and rusty key. Whatever this unlocks, it must be a very old lock.";
                         }
@@ -560,12 +560,12 @@ public class PickupObject : MonoBehaviour
                     {
                         if (inDialouge)
                         {
-                            gameManager.secondFloorKey = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
+                            gameManager.secondFloorKey = true;
                             getkeysSound.Play();
                             dialougeText.text = "You pick up a small key. The head is engraved with a 2.";
                         }
@@ -574,12 +574,12 @@ public class PickupObject : MonoBehaviour
                     {
                         if (inDialouge)
                         {
-                            gameManager.planetariumKey = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
+                            gameManager.planetariumKey = true;
                             getkeysSound.Play();
                             dialougeText.text = "You pick up a shiny golden key. The head of it is shaped like the sun.";
                         }
@@ -588,12 +588,12 @@ public class PickupObject : MonoBehaviour
                     {
                         if (inDialouge)
                         {
-                            gameManager.meetingKey = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
+                            gameManager.meetingKey = true;
                             getkeysSound.Play();
                             dialougeText.text = "You pick up small key. Its head is decorated with small blue saphires.";
                         }
@@ -602,12 +602,12 @@ public class PickupObject : MonoBehaviour
                     {
                         if (inDialouge)
                         {
-                            gameManager.coinOne = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
+                            gameManager.coinOne = true;
                             pickupitemSound.Play();
                             dialougeText.text = "You pick up a large copper coin. Wonder if it can be used somewhere.";
                         }
@@ -616,12 +616,12 @@ public class PickupObject : MonoBehaviour
                     {
                         if (inDialouge)
                         {
-                            gameManager.coinTwo = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
+                            gameManager.coinTwo = true;
                             pickupitemSound.Play();
                             dialougeText.text = "You pick up a large silver coin. Maybe it will be of some use?";
                         }
@@ -630,12 +630,12 @@ public class PickupObject : MonoBehaviour
                     {
                         if (inDialouge)
                         {
-                            gameManager.coinThree = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
+                            gameManager.coinThree = true;
                             pickupitemSound.Play();
                             dialougeText.text = "You pick up a large gold coin. If it's of no use, you can pocket it for yourself.";
                         }
@@ -644,12 +644,12 @@ public class PickupObject : MonoBehaviour
                     {
                         if (inDialouge)
                         {
-                            gameManager.kingsKeyOne = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
+                            gameManager.kingsKeyOne = true;
                             getkeysSound.Play();
                             dialougeText.text = "You pick up a large blue key. It's head is a replica of the crown of Norway.";
                         }
@@ -658,12 +658,12 @@ public class PickupObject : MonoBehaviour
                     {
                         if (inDialouge)
                         {
-                            gameManager.kingsKeyTwo = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
+                            gameManager.kingsKeyTwo = true;
                             getkeysSound.Play();
                             dialougeText.text = "You pick up a large red key. It's head is a replica of the crown of Denmark.";
                         }
@@ -672,12 +672,12 @@ public class PickupObject : MonoBehaviour
                     {
                         if (inDialouge)
                         {
-                            gameManager.clothPile = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
+                            gameManager.clothPile = true;
                             pickupitemSound.Play();
                             dialougeText.text = "You pick up a pile of cloth. Maybe you can use it somewhere?";
                         }
@@ -686,12 +686,12 @@ public class PickupObject : MonoBehaviour
                     {
                         if (inDialouge)
                         {
-                            gameManager.sword = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
+                            gameManager.sword = true;
                             pickupitemSound.Play();
                             dialougeText.text = "You pick up a large sword. Weird place to keep one.";
                         }
@@ -700,12 +700,12 @@ public class PickupObject : MonoBehaviour
                     {
                         if (inDialouge)
                         {
-                            gameManager.book = true;
                             CloseDialouge();
                         }
                         else
                         {
                             inDialouge = true;
+                            gameManager.book = true;
                             pickupitemSound.Play();
                             dialougeText.text = "You pick up a blue book. It has a small metal thing sticking out of its pages. Maybe its a key for something?";
                         }
@@ -715,6 +715,10 @@ public class PickupObject : MonoBehaviour
                 else if (isBullet)
                 {
                     if (inDialouge)
+                    {
+                        CloseDialouge();
+                    }
+                    else
                     {
                         player.gameObject.GetComponentInChildren<GunScript>().ammoCount++;
                         if (bullet1)
@@ -781,10 +785,6 @@ public class PickupObject : MonoBehaviour
                         {
                             gameManager.bullet16 = true;
                         }
-                        CloseDialouge();
-                    }
-                    else
-                    {
                         inDialouge = true;
                         pickupitemSound.Play();
                         dialougeText.text = "You pick up a bullet.";
@@ -794,45 +794,49 @@ public class PickupObject : MonoBehaviour
                 {
                     if(inDialouge)
                     {
-                        player.healingCharges++;
-                        if(plantOne)
-                        {
-                            gameManager.plantOne = true;
-                        }
-                        else if(plantTwo)
-                        {
-                            gameManager.plantTwo = true;
-                        }
-                        else if(plantThree)
-                        {
-                            gameManager.plantThree = true;
-                        }
-                        else if(plantFour)
-                        {
-                            gameManager.plantFour = true;
-                        }
-                        else if(plantFive)
-                        {
-                            gameManager.plantFive = true;
-                        }
-                        else if(plantSix)
-                        {
-                            gameManager.plantSix = true;
-                        }
-                        else if(plantSeven)
-                        {
-                            gameManager.plantSeven = true;
-                        }
                         CloseDialouge();
                     }
                     else
                     {
+                        player.healingCharges++;
+                        if (plantOne)
+                        {
+                            gameManager.plantOne = true;
+                        }
+                        else if (plantTwo)
+                        {
+                            gameManager.plantTwo = true;
+                        }
+                        else if (plantThree)
+                        {
+                            gameManager.plantThree = true;
+                        }
+                        else if (plantFour)
+                        {
+                            gameManager.plantFour = true;
+                        }
+                        else if (plantFive)
+                        {
+                            gameManager.plantFive = true;
+                        }
+                        else if (plantSix)
+                        {
+                            gameManager.plantSix = true;
+                        }
+                        else if (plantSeven)
+                        {
+                            gameManager.plantSeven = true;
+                        }
                         inDialouge = true;
                         pickupitemSound.Play();
                         dialougeText.text = "You pick up a healing plant.";
                     }
                 }
             }
+        }
+        else if(inDialouge && !playerInRange)
+        {
+            CloseDialouge();
         }
     }
 

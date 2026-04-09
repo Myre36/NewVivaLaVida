@@ -216,6 +216,14 @@ public class PanetPuzzleScript : MonoBehaviour
                 }
             }
         }
+        else if(inDialouge && !playerInRange)
+        {
+            player.enabled = true;
+            dialougeBox.GetComponent<RawImage>().enabled = false;
+            dialougeText.enabled = false;
+            inDialouge = false;
+            planetPicker.buttonMenuOpen = false;
+        }
     }
 
     //If the player enters the stand's trigger, this stand will be registered as the current stand in range and the player will be able to interact with it

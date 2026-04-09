@@ -156,6 +156,7 @@ public class LockedDoorScript : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.E) && !player.inMandatory)
             {
                 //Freezes the player and turns on the dialouge
+                player.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
                 player.enabled = false;
                 dialougeBox.GetComponent<RawImage>().enabled = true;
                 dialougeText.enabled = true;
@@ -480,6 +481,10 @@ public class LockedDoorScript : MonoBehaviour
                     }
                 }
             }
+        }
+        else if (inDialouge && !playerInRange)
+        {
+            CloseDialouge();
         }
     }
 

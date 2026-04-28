@@ -54,6 +54,8 @@ public class Movement : MonoBehaviour
 
     public bool inMandatory;
 
+    public bool inDialouge;
+
     private Volume volume;
 
     private Vignette vignette;
@@ -285,9 +287,13 @@ public class Movement : MonoBehaviour
 
         healingChargeText.text = " " + healingCharges;
 
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) && !inMandatory && !inDialouge)
         {
-            if(Time.timeScale == 0)
+            if (inventoryScreen.activeSelf == true)
+            {
+                inventoryScreen.SetActive(false);
+            }
+            else if (Time.timeScale == 0)
             {
                 pauseScreen.SetActive(false);
                 Cursor.lockState = CursorLockMode.Locked;

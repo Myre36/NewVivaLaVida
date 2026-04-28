@@ -57,6 +57,7 @@ public class DialougeScript : MonoBehaviour
                     dialougeBox.enabled = false;
                     dialougeText.enabled = false;
                     inDialouge = false;
+                    player.inDialouge = false;
                     lineNumber = 0;
                 }
             }
@@ -102,6 +103,7 @@ public class DialougeScript : MonoBehaviour
         if(lineNumber < 1)
         {
             player.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+            player.inDialouge = true;
         }
         inDialouge = true;
         dialougeBox.enabled = true;

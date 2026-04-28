@@ -40000,7 +40000,7 @@ PrefabInstance:
     - target: {fileID: 3046367208514173352, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8de43c7d1b540e14b93619889f95f1ee, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 3388846496759543041, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0.027673038
@@ -40216,7 +40216,7 @@ PrefabInstance:
     - target: {fileID: 5414075784421266167, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: d9401eb82528acb4ea3ce32dd08bc2b6, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 5649370624401028225, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 16.803425

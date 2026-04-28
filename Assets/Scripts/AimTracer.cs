@@ -28,7 +28,7 @@ public class AimTracer : MonoBehaviour
         Ray ray = new Ray(player.transform.position, player.transform.forward);
 
         // Perform raycast
-        if (Physics.Raycast(ray, out RaycastHit hitData)) {
+        if (Physics.Raycast(ray, out RaycastHit hitData, Mathf.Infinity, ~0, QueryTriggerInteraction.Ignore)) {
             // Save the exact hit position
             aimPosition = hitData.point;
         }

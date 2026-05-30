@@ -163,7 +163,14 @@ public class ChestScript : MonoBehaviour
         {
             if(Input.GetKeyUp(KeyCode.E))
             {
+                if(player.inventoryIsOpen || gameManager.GetComponent<MapManager>().mapIsOpen)
+                {
+                    return;
+                }
+
                 //Freezes the player and turns on the dialouge
+                player.inDialouge = true;
+                player.ResetAnimations();
                 player.enabled = false;
                 dialougeBox.GetComponent<RawImage>().enabled = true;
                 dialougeText.enabled = true;
@@ -520,6 +527,7 @@ public class ChestScript : MonoBehaviour
     void UnlockChest()
     {
         player.enabled = true;
+        player.inDialouge = false;
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         inDialouge = false;
@@ -535,6 +543,7 @@ public class ChestScript : MonoBehaviour
     void CloseDialouge()
     {
         player.enabled = true;
+        player.inDialouge = false;
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         inDialouge = false;

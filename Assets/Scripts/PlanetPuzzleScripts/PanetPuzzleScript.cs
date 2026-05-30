@@ -71,10 +71,17 @@ public class PanetPuzzleScript : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.E))
             {
+                if (player.inventoryIsOpen || gameManager.GetComponent<MapManager>().mapIsOpen)
+                {
+                    return;
+                }
+
                 //If they are not already in dialouge
-                if(!inDialouge)
+                if (!inDialouge)
                 {
                     //The player's movement will be turned off to prevent them from moving
+                    player.inDialouge = true;
+                    player.ResetAnimations();
                     player.enabled = false;
                     //The dialouge box will turn on
                     dialougeBox.GetComponent<RawImage>().enabled = true;
@@ -209,6 +216,7 @@ public class PanetPuzzleScript : MonoBehaviour
                 else
                 {
                     player.enabled = true;
+                    player.inDialouge = false;
                     dialougeBox.GetComponent<RawImage>().enabled = false;
                     dialougeText.enabled = false;
                     inDialouge = false;

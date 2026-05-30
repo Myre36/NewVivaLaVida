@@ -13,6 +13,11 @@ public class AimTracer : MonoBehaviour
     private bool aiming = false;
     private Vector3 aimPosition;
 
+    [SerializeField]
+    private Movement movement;
+    [SerializeField]
+    private MapManager mapManager;
+
     void Update() {
         // Detect right mouse button hold
         if (Input.GetMouseButton(1))
@@ -39,6 +44,10 @@ public class AimTracer : MonoBehaviour
 
         // If aiming, update the line renderer
         if (aiming) {
+            if(movement.inMandatory || movement.inDialouge || movement.inventoryIsOpen || mapManager.mapIsOpen)
+            {
+                return;
+            }
             lineRenderer.enabled = true; // Make sure the LineRenderer is enabled
             lineRenderer.SetPosition(0, player.transform.position);
             lineRenderer.SetPosition(1, aimPosition);

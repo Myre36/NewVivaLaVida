@@ -11,7 +11,7 @@ public class MapManager : MonoBehaviour
 
     public GameObject currentMap;
 
-    private bool mapIsOpen;
+    public bool mapIsOpen;
 
     public bool firstFloor;
 
@@ -73,6 +73,9 @@ public class MapManager : MonoBehaviour
     public bool coinUnlocked;
     public bool kingsUnlocked;
 
+    [SerializeField]
+    private Movement player;
+
     private void Start()
     {
         if (firstUnlocked && cover1_1 != null)
@@ -94,8 +97,13 @@ public class MapManager : MonoBehaviour
             currentMap = secondFloorMap;
         }
 
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.M) && !player.inMandatory && !player.inDialouge)
         {
+            if(player.inventoryIsOpen)
+            {
+                return;
+            }
+
             if (mapIsOpen)
             {
                 StartCoroutine(CloseMap());
@@ -293,5 +301,10 @@ public class MapManager : MonoBehaviour
         currentMap.SetActive(false);
 
 
+    }
+
+    public void StartCloseMap()
+    {
+        StartCoroutine(CloseMap());
     }
 }

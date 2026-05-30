@@ -25,6 +25,9 @@ public class DialougeScript : MonoBehaviour
 
     private Movement player;
 
+    //A refrence to the game manager
+    private GameManager gameManager;
+
     //The audiosource for the sound that plays when you enter books
     private AudioSource pageflipSound;
 
@@ -34,6 +37,7 @@ public class DialougeScript : MonoBehaviour
         dialougeText = GameObject.Find("DialougeText").GetComponent<TMP_Text>();
 
         player = GameObject.Find("Player").GetComponent<Movement>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         //pageflipSound = GetComponent<AudioSource>();
     }
 
@@ -45,6 +49,11 @@ public class DialougeScript : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.E) && !player.inMandatory)
             {
+                if (player.inventoryIsOpen || gameManager.GetComponent<MapManager>().mapIsOpen)
+                {
+                    return;
+                }
+
                 //pageflipSound.Play();
                 //If the player has not reached the end of the dialouge, the next line will be displayed
                 if (lineNumber < dialouge.Length)

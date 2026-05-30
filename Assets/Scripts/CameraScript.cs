@@ -26,6 +26,11 @@ public class CameraScript : MonoBehaviour
     private FreeFlyCamera freeFly;
     public GameObject canvas;
 
+    [SerializeField]
+    private Movement movement;
+    [SerializeField]
+    private MapManager mapManager;
+
 
     private void Awake()
     {
@@ -58,20 +63,28 @@ public class CameraScript : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        //When the player is going towards the camera, the camera will move away from them until it hits the maximum distance to the player
-        if (verticalInput < 0)
+        if (verticalInput != 0)
         {
-            if(offset.z > cameraZOffsetMax)
+            if (movement.inventoryIsOpen || mapManager.mapIsOpen || movement.inMandatory || movement.inDialouge)
             {
-                offset.z -= 2f * Time.deltaTime;
+                return;
             }
-        }
-        //When the player is moving away from the camera, the camera will move towards the camera until it hits the minimum distance to the player
-        else if(verticalInput > 0)
-        {
-            if (offset.z < cameraZOffsetMin)
+
+            //When the player is going towards the camera, the camera will move away from them until it hits the maximum distance to the player
+            if (verticalInput < 0)
             {
-                offset.z += 2f * Time.deltaTime;
+                if (offset.z > cameraZOffsetMax)
+                {
+                    offset.z -= 2f * Time.deltaTime;
+                }
+            }
+            //When the player is moving away from the camera, the camera will move towards the camera until it hits the minimum distance to the player
+            else if (verticalInput > 0)
+            {
+                if (offset.z < cameraZOffsetMin)
+                {
+                    offset.z += 2f * Time.deltaTime;
+                }
             }
         }
         /*
@@ -99,54 +112,4 @@ public class CameraScript : MonoBehaviour
         //Moves the camera to the desired position
         transform.position = smoothPosition;
     }
-
-    //This is old code, kept here for the sake of showing at the end of the project
-    /*public float cameraMaximumZPosition;
-
-    private float cameraOffsetValueMinimum;
-    private float cameraOffsetValueMaximum;
-
-    private void Update()
-    {
-        if(transform.position.z >= cameraMaximumZPosition)
-        {
-            cameraOffsetValueMinimum = -5.8f;
-            cameraOffsetValueMaximum = -8.25f;
-
-            if (Input.GetKey(KeyCode.S))
-            {
-                if (GetComponent<CinemachineFollow>().FollowOffset.z > cameraOffsetValueMaximum)
-                {
-                    GetComponent<CinemachineFollow>().FollowOffset.z -= 2f * Time.deltaTime;
-                }
-            }
-            else if (Input.GetKey(KeyCode.W))
-            {
-                if (GetComponent<CinemachineFollow>().FollowOffset.z < cameraOffsetValueMinimum)
-                {
-                    GetComponent<CinemachineFollow>().FollowOffset.z += 2f * Time.deltaTime;
-                }
-            }
-        }
-        else
-        {
-            cameraOffsetValueMinimum = -4.96f;
-            cameraOffsetValueMaximum = -8.25f;
-
-            if (Input.GetKey(KeyCode.S))
-            {
-                if (GetComponent<CinemachineFollow>().FollowOffset.z < cameraOffsetValueMinimum)
-                {
-                    GetComponent<CinemachineFollow>().FollowOffset.z += 4f * Time.deltaTime;
-                }
-            }
-            else if (Input.GetKey(KeyCode.W))
-            {
-                if (GetComponent<CinemachineFollow>().FollowOffset.z < cameraOffsetValueMinimum)
-                {
-                    GetComponent<CinemachineFollow>().FollowOffset.z += 2f * Time.deltaTime;
-                }
-            }
-        }
-    }*/
 }

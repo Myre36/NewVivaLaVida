@@ -155,8 +155,15 @@ public class LockedDoorScript : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.E) && !player.inMandatory)
             {
+                if (player.inventoryIsOpen || gameManager.GetComponent<MapManager>().mapIsOpen)
+                {
+                    return;
+                }
+
                 //Freezes the player and turns on the dialouge
                 player.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+                player.inDialouge = true;
+                player.ResetAnimations();
                 player.enabled = false;
                 dialougeBox.GetComponent<RawImage>().enabled = true;
                 dialougeText.enabled = true;
@@ -510,6 +517,7 @@ public class LockedDoorScript : MonoBehaviour
     void UnlockDoor()
     {
         player.enabled = true;
+        player.inDialouge = false;
         Destroy(hanglock);
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
@@ -523,6 +531,7 @@ public class LockedDoorScript : MonoBehaviour
     void CloseDialouge()
     {
         player.enabled = true;
+        player.inDialouge = false;
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         inDialouge = false;

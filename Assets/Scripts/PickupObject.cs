@@ -392,7 +392,15 @@ public class PickupObject : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if(isBullet)
+                if (player.inventoryIsOpen || gameManager.GetComponent<MapManager>().mapIsOpen)
+                {
+                    return;
+                }
+
+                player.inDialouge = true;
+                player.ResetAnimations();
+
+                if (isBullet)
                 {
                     if(!gameManager.firstBullet)
                     {
@@ -865,6 +873,7 @@ public class PickupObject : MonoBehaviour
     {
         //Turns the player on
         player.enabled = true;
+        player.inDialouge = false;
         //Closes the dialouge
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.text = "You are not supposed to see this";

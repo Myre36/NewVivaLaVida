@@ -48,7 +48,7 @@ MonoBehaviour:
   mapManager: {fileID: 0}
   currentMap: {fileID: 0}
   entryNumber: 0
-  enemyRespawnTime: 0
+  enemyRespawnTime: 300
   firstBullet: 0
   firstPlant: 0
   enemyOneFakeDead: 0

@@ -79,7 +79,14 @@ public class OneWayDoor : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.E))
             {
+                if (player.inventoryIsOpen || gameManager.GetComponent<MapManager>().mapIsOpen)
+                {
+                    return;
+                }
+
                 //Disables player movement and turns on dialouge
+                player.inDialouge = true;
+                player.ResetAnimations();
                 player.enabled = false;
                 dialougeBox.GetComponent<RawImage>().enabled = true;
                 dialougeText.enabled = true;
@@ -204,6 +211,7 @@ public class OneWayDoor : MonoBehaviour
     void UnlockDoor()
     {
         player.enabled = true;
+        player.inDialouge = false;
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         inDialouge = false;
@@ -216,6 +224,7 @@ public class OneWayDoor : MonoBehaviour
     void CloseDialouge()
     {
         player.enabled = true;
+        player.inDialouge = false;
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.enabled = false;
         inDialouge = false;

@@ -56,6 +56,8 @@ public class Movement : MonoBehaviour
 
     public bool inDialouge;
 
+    public bool inventoryIsOpen;
+
     private Volume volume;
 
     private Vignette vignette;
@@ -69,6 +71,9 @@ public class Movement : MonoBehaviour
     public AudioSource EstherGrunt1Sound;
 
     public AudioSource EstherGrunt2Sound;
+
+    [SerializeField]
+    private MapManager mapManager;
 
     
 
@@ -206,6 +211,11 @@ public class Movement : MonoBehaviour
         //When the player holds down the RMB, the gun appears and the player starts aiming
         if (Input.GetMouseButton(1))
         {
+            if (inDialouge)
+            {
+                return;
+            }
+
             aiming = true;
 
             animator.SetBool("Aiming", true);
@@ -231,12 +241,19 @@ public class Movement : MonoBehaviour
         //Pressing the Tab key either opens the inventory screen, or closes it, depending on what its status is
         if(Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.Tab))
         {
-            if(inventoryScreen.activeSelf == false)
+            if(mapManager.mapIsOpen)
             {
+                return;
+            }
+
+            if(!inventoryIsOpen)
+            {
+                inventoryIsOpen = true;
                 inventoryScreen.SetActive(true);
             }
             else
             {
+                inventoryIsOpen = false;
                 inventoryScreen.SetActive(false);
             }
         }
@@ -289,9 +306,13 @@ public class Movement : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Escape) && !inMandatory && !inDialouge)
         {
-            if (inventoryScreen.activeSelf == true)
+            if (inventoryIsOpen)
             {
                 inventoryScreen.SetActive(false);
+            }
+            else if(mapManager.mapIsOpen)
+            {
+                mapManager.StartCloseMap();
             }
             else if (Time.timeScale == 0)
             {
@@ -359,6 +380,11 @@ public class Movement : MonoBehaviour
         Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
         if (!aiming)
         {
+            if(inventoryIsOpen || mapManager.mapIsOpen)
+            {
+                return;
+            }
+
             if (moveDirection != Vector3.zero)
             {
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
@@ -451,6 +477,13 @@ public class Movement : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("Ending");
+    }
+
+    public void ResetAnimations()
+    {
+        animator.SetBool("isWalking", false);
+        animator.SetBool("isRunning", false);
+        animator.SetBool("Aiming", false);
     }
 
 

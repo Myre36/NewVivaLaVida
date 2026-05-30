@@ -24252,7 +24252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.9547169, g: 0.9220408, b: 0.23597719, a: 1}
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 2.26
   precomputeOutline: 0
   bakeKeys: []
@@ -34018,7 +34018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.9547169, g: 0.9220408, b: 0.23597719, a: 1}
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 2.26
   precomputeOutline: 0
   bakeKeys: []
@@ -35684,10 +35684,6 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 2103271113099047929, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
-      propertyPath: enemyRespawnTime
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 2103271113099047929, guid: d96c6dcf571515f48be8bf97cfe5e021, type: 3}
       propertyPath: stands.Array.size
       value: 8
       objectReference: {fileID: 0}
@@ -36000,6 +35996,7 @@ MonoBehaviour:
   openMapSound: {fileID: 1780212954}
   closeMapSound: {fileID: 0}
   currentMap: {fileID: 1394678945}
+  mapIsOpen: 0
   firstFloor: 0
   mapAnimator: {fileID: 745026383}
   cover1_1: {fileID: 595715567}
@@ -36050,6 +36047,7 @@ MonoBehaviour:
   meetingUnlocked: 0
   coinUnlocked: 0
   kingsUnlocked: 0
+  player: {fileID: 2024493255}
 --- !u!82 &1780212954
 AudioSource:
   m_ObjectHideFlags: 0
@@ -36596,9 +36594,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2024493249}
     - target: {fileID: 4232964553878461502, guid: f1be4bf64473e954a8de213d109461aa, type: 3}
+      propertyPath: movement
+      value: 
+      objectReference: {fileID: 2024493255}
+    - target: {fileID: 4232964553878461502, guid: f1be4bf64473e954a8de213d109461aa, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4232964553878461502, guid: f1be4bf64473e954a8de213d109461aa, type: 3}
+      propertyPath: mapManager
+      value: 
+      objectReference: {fileID: 1780212953}
     - target: {fileID: 8069179711372027059, guid: f1be4bf64473e954a8de213d109461aa, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -39693,6 +39699,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.16299725
       objectReference: {fileID: 0}
+    - target: {fileID: 1295845556716787194, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: mapManager
+      value: 
+      objectReference: {fileID: 1780212953}
     - target: {fileID: 1437749310591797614, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -17.395071
@@ -39869,6 +39879,10 @@ PrefabInstance:
       propertyPath: EstherStep
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2701436946985437211, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+      propertyPath: mapManager
+      value: 
+      objectReference: {fileID: 1780212953}
     - target: {fileID: 2701436946985437211, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
       propertyPath: pauseScreen
       value: 
@@ -40653,6 +40667,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7574958412464988729, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
   m_PrefabInstance: {fileID: 2024493248}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2024493255 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2701436946985437211, guid: d9c2d29f2b1a74346bb949f4ab29efc7, type: 3}
+  m_PrefabInstance: {fileID: 2024493248}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2decc4d4c50aaa488cfb9b1ea119fe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2048484969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41205,7 +41230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.9547169, g: 0.9220408, b: 0.23597719, a: 1}
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 2.26
   precomputeOutline: 0
   bakeKeys: []

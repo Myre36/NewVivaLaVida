@@ -6439,6 +6439,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 1791614964127881323}
   player: {fileID: 2942975950488247311}
+  movement: {fileID: 2701436946985437211}
+  mapManager: {fileID: 0}
 --- !u!120 &1791614964127881323
 LineRenderer:
   serializedVersion: 2
@@ -14740,11 +14742,14 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   inMandatory: 0
+  inDialouge: 0
+  inventoryIsOpen: 0
   brightnessSlide: {fileID: 0}
   heartbeatSound: {fileID: 5189159803564584530}
   EstherDeathSound: {fileID: 2300006960355890567}
   EstherGrunt1Sound: {fileID: 7332837694656332198}
   EstherGrunt2Sound: {fileID: 0}
+  mapManager: {fileID: 0}
   healingCharges: 0
   healingChargeText: {fileID: 0}
   state: 0

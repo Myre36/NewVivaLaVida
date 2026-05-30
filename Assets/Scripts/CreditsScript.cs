@@ -14,6 +14,9 @@ public class CreditsScript : MonoBehaviour
 
     public VideoPlayer cutscene;
 
+    [SerializeField]
+    private RectTransform endPoint;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,7 +29,10 @@ public class CreditsScript : MonoBehaviour
     {
         if (started)
         {
-            rectTransform.anchoredPosition += new Vector2(0, scrollSpeed * Time.deltaTime);
+            if(rectTransform.anchoredPosition.y < endPoint.anchoredPosition.y)
+            {
+                rectTransform.anchoredPosition += new Vector2(0, scrollSpeed * Time.deltaTime);
+            }
         }
     }
 

@@ -34565,11 +34565,11 @@ MonoBehaviour:
   hanglock: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 1693102502}
-  doorlockedSound: {fileID: 1693102506}
+  doorlockedSound: {fileID: 1693102507}
   puzzlecompletedSound: {fileID: 0}
---- !u!82 &1693102506 stripped
+--- !u!82 &1693102507 stripped
 AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5839371826121784423, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6411679169783106190, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
   m_PrefabInstance: {fileID: 1693102499}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1697040187
@@ -35308,7 +35308,7 @@ MonoBehaviour:
   hanglock: {fileID: 648968391}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 1720635842}
-  doorlockedSound: {fileID: 1720635844}
+  doorlockedSound: {fileID: 1720635845}
   puzzlecompletedSound: {fileID: 0}
 --- !u!82 &1720635837
 AudioSource:
@@ -35504,9 +35504,9 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &1720635844 stripped
+--- !u!82 &1720635845 stripped
 AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5839371826121784423, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6411679169783106190, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
   m_PrefabInstance: {fileID: 1720635833}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1751209386

@@ -10167,7 +10167,7 @@ MonoBehaviour:
   hanglock: {fileID: 0}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 1934502475}
-  doorlockedSound: {fileID: 0}
+  doorlockedSound: {fileID: 1934502476}
   puzzlecompletedSound: {fileID: 0}
 --- !u!82 &1934502475
 AudioSource:
@@ -10266,6 +10266,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &1934502476 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6411679169783106190, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 1934502471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1976680696
 PrefabInstance:
   m_ObjectHideFlags: 0

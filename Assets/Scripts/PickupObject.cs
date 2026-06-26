@@ -85,6 +85,8 @@ public class PickupObject : MonoBehaviour
 
     private bool stopDialougeBug;
 
+    private bool smallDialougeCheck;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -414,6 +416,7 @@ public class PickupObject : MonoBehaviour
                         {
                             dialougeBox = GameObject.Find("SmallDialougeBox");
                             dialougeText = GameObject.Find("SmallDialougeText").GetComponent<TMP_Text>();
+                            smallDialougeCheck = true;
                             StartCoroutine(SmallDialouge());
                         }
                     }
@@ -432,6 +435,7 @@ public class PickupObject : MonoBehaviour
                         {
                             dialougeBox = GameObject.Find("SmallDialougeBox");
                             dialougeText = GameObject.Find("SmallDialougeText").GetComponent<TMP_Text>();
+                            smallDialougeCheck = true;
                             StartCoroutine(SmallDialouge());
                         }
                     }
@@ -842,8 +846,9 @@ public class PickupObject : MonoBehaviour
                 }
             }
         }
-        else if(inDialouge && !playerInRange)
+        else if(inDialouge && !playerInRange && !smallDialougeCheck)
         {
+            Debug.Log("Check for small dialouge");
             CloseDialouge();
         }
     }
@@ -903,11 +908,14 @@ public class PickupObject : MonoBehaviour
                 }
             }
         }
+        Debug.Log("Dialouge is closed");
         Destroy(gameObject);
     }
 
     IEnumerator SmallDialouge()
     {
+        Debug.Log("Small dialouge started");
+
         stopDialougeBug = true;
         playerInRange = false;
         GetComponent<Renderer>().enabled = false;
@@ -948,6 +956,7 @@ public class PickupObject : MonoBehaviour
         else
         {
             player.gameObject.GetComponentInChildren<GunScript>().ammoCount++;
+            Debug.Log("Recognised ammo");
             if (bullet1)
             {
                 gameManager.bullet1 = true;
@@ -1014,6 +1023,7 @@ public class PickupObject : MonoBehaviour
             }
         }
         yield return new WaitForSeconds(3);
+        Debug.Log("Dialouge box dissapears");
         dialougeBox.GetComponent<RawImage>().enabled = false;
         dialougeText.text = "You are not supposed to see this";
         dialougeText.enabled = false;

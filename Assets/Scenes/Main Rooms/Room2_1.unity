@@ -8432,7 +8432,7 @@ AudioSource:
     m_RotationOrder: 4
 --- !u!82 &1299704751 stripped
 AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5839371826121784423, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6411679169783106190, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
   m_PrefabInstance: {fileID: 1299704746}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1327049122

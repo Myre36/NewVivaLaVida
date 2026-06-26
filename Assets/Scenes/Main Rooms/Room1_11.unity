@@ -4371,7 +4371,7 @@ MonoBehaviour:
   doorlockedSound: {fileID: 1022360287}
 --- !u!82 &1022360287 stripped
 AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5839371826121784423, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6411679169783106190, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
   m_PrefabInstance: {fileID: 1022360284}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1102329850

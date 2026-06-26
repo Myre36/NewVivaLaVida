@@ -35065,6 +35065,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2947702720905370899, guid: 8a967e1db9c8661408db062544e70121, type: 3}
   m_PrefabInstance: {fileID: 1216722366}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1239674717 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6411679169783106190, guid: fd9da421811486e45bbe89db2b69ddd3, type: 3}
+  m_PrefabInstance: {fileID: 1734579201}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1262013481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38997,7 +39002,7 @@ MonoBehaviour:
   hanglock: {fileID: 857022823}
   dialougeText: {fileID: 0}
   unlockSound: {fileID: 1734579205}
-  doorlockedSound: {fileID: 0}
+  doorlockedSound: {fileID: 1239674717}
   puzzlecompletedSound: {fileID: 0}
 --- !u!4 &1734579204 stripped
 Transform:

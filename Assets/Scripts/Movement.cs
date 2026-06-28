@@ -87,8 +87,7 @@ public class Movement : MonoBehaviour
     public delegate void HealthChangedHandler(object source, float oldHealth, float newHealth);
     public event HealthChangedHandler OnHealthChanged;
 
-    [SerializeField]
-    float currentHealth;
+    public float currentHealth;
     float maxHealth = 0f;
     float damage = 0.2f;
     float healing = 0.2f;
@@ -485,8 +484,6 @@ public class Movement : MonoBehaviour
         animator.SetBool("isRunning", false);
         animator.SetBool("Aiming", false);
     }
-
-
 
 
 

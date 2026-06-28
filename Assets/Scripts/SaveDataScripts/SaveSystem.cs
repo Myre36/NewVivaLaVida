@@ -7,7 +7,7 @@ public static class SaveSystem
     public static void SavePlayerData(Movement player, GunScript gunScript, GameManager gameManager, PlanetPickerScript planetPicker, MapManager mapManager)
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/player.txt";
+        string path = Application.persistentDataPath + "/player.dat";
         FileStream stream = new FileStream(path, FileMode.Create);
 
         PlayerData data = new PlayerData(player, gunScript, gameManager, planetPicker, mapManager);
@@ -18,7 +18,7 @@ public static class SaveSystem
 
     public static PlayerData LoadPlayer()
     {
-        string path = Application.persistentDataPath + "/player.txt";
+        string path = Application.persistentDataPath + "/player.dat";
         if (File.Exists(path))
         {
             BinaryFormatter formatter = new BinaryFormatter();

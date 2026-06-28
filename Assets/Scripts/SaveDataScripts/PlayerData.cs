@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Linq;
 
 [System.Serializable]
 public class PlayerData
@@ -195,9 +196,11 @@ public class PlayerData
     public bool mapCoinUnlocked;
     public bool mapKingsUnlocked;
 
+    public string[] inventoryTexts;
+
     public PlayerData (Movement movement, GunScript gunScript, GameManager gameManager, PlanetPickerScript planetPicker, MapManager mapManager)
     {
-        playerHealth = movement.CurrentHealth;
+        playerHealth = movement.currentHealth;
         currentAmmo = gunScript.ammoCount;
         healingCharges = movement.healingCharges;
 
@@ -377,5 +380,7 @@ public class PlayerData
         mapMeetingUnlocked = mapManager.meetingUnlocked;
         mapCoinUnlocked = mapManager.coinUnlocked;
         mapKingsUnlocked = mapManager.kingsUnlocked;
+
+        inventoryTexts = movement.inventoryTexts.Select(tmp => tmp.text).ToArray();
     }
 }

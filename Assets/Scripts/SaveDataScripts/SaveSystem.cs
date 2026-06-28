@@ -4,13 +4,13 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem
 {
-    public static void SavePlayerData(Movement player, GunScript gunScript, GameManager gameManager)
+    public static void SavePlayerData(Movement player, GunScript gunScript, GameManager gameManager, PlanetPickerScript planetPicker, MapManager mapManager)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/player.txt";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        PlayerData data = new PlayerData(player, gunScript, gameManager);
+        PlayerData data = new PlayerData(player, gunScript, gameManager, planetPicker, mapManager);
 
         formatter.Serialize(stream, data);
         stream.Close();

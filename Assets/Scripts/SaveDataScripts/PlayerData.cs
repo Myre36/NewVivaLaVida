@@ -173,7 +173,29 @@ public class PlayerData
 
     public bool[] candleStates;
 
-    public PlayerData (Movement movement, GunScript gunScript, GameManager gameManager)
+    //Bools for if the player is holding all the planets
+    public bool hasSun;
+    public bool hasMercury;
+    public bool hasVenus;
+    public bool hasEarth;
+    public bool hasMars;
+    public bool hasJupiter;
+    public bool hasSaturn;
+    public bool hasUranus;
+
+    // For area unlock
+    public bool mapFirstUnlocked;
+    public bool mapHallwayUnlocked;
+    public bool mapTunnelUnlocked;
+    public bool mapServantsUnlocked;
+    public bool mapBasementUnlocked;
+    public bool mapSecondFloorUnlocked;
+    public bool mapPlanetariumUnlocked;
+    public bool mapMeetingUnlocked;
+    public bool mapCoinUnlocked;
+    public bool mapKingsUnlocked;
+
+    public PlayerData (Movement movement, GunScript gunScript, GameManager gameManager, PlanetPickerScript planetPicker, MapManager mapManager)
     {
         playerHealth = movement.CurrentHealth;
         currentAmmo = gunScript.ammoCount;
@@ -335,5 +357,25 @@ public class PlayerData
         stands = gameManager.stands;
 
         candleStates = gameManager.candleStates;
+
+        hasSun = planetPicker.hasSun;
+        hasMercury = planetPicker.hasMercury;
+        hasVenus = planetPicker.hasVenus;
+        hasEarth = planetPicker.hasEarth;
+        hasMars = planetPicker.hasMars;
+        hasJupiter = planetPicker.hasJupiter;
+        hasSaturn = planetPicker.hasSaturn;
+        hasUranus = planetPicker.hasUranus;
+
+        mapFirstUnlocked = mapManager.firstUnlocked;
+        mapHallwayUnlocked = mapManager.hallwayUnlocked;
+        mapTunnelUnlocked = mapManager.tunnelUnlocked;
+        mapServantsUnlocked = mapManager.servantsUnlocked;
+        mapBasementUnlocked = mapManager.basementUnlocked;
+        mapSecondFloorUnlocked = mapManager.secondFloorUnlocked;
+        mapPlanetariumUnlocked = mapManager.planetariumUnlocked;
+        mapMeetingUnlocked = mapManager.meetingUnlocked;
+        mapCoinUnlocked = mapManager.coinUnlocked;
+        mapKingsUnlocked = mapManager.kingsUnlocked;
     }
 }

@@ -63,7 +63,7 @@ public class MapManager : MonoBehaviour
 
     // For area unlock
     public bool firstUnlocked;
-    public bool hallwayUnlocked;
+    /*public bool hallwayUnlocked;
     public bool tunnelUnlocked;
     public bool servantsUnlocked;
     public bool basementUnlocked;
@@ -71,7 +71,36 @@ public class MapManager : MonoBehaviour
     public bool planetariumUnlocked;
     public bool meetingUnlocked;
     public bool coinUnlocked;
-    public bool kingsUnlocked;
+    public bool kingsUnlocked;*/
+    public bool unlocked1_2;
+    public bool unlocked1_3;
+    public bool unlocked1_4;
+    public bool unlocked1_5;
+    public bool unlocked1_6;
+    public bool unlocked1_7;
+    public bool unlocked1_8;
+    public bool unlocked1_9;
+    public bool unlocked1_10;
+    public bool unlocked1_11;
+    public bool unlocked1_12;
+    public bool unlocked1_13;
+    public bool unlocked1_14;
+
+    public bool unlockedKingsRoom;
+    public bool unlocked2_1;
+    public bool unlocked2_2;
+    public bool unlocked2_3;
+    public bool unlocked2_4;
+    public bool unlocked2_5;
+    public bool unlocked2_6;
+    public bool unlocked2_7;
+    public bool unlocked2_8;
+    public bool unlocked2_9;
+    public bool unlocked2_10;
+    public bool unlocked2_12;
+    public bool unlocked2_13;
+    public bool unlocked2_14;
+
 
     [SerializeField]
     private Movement player;
@@ -306,5 +335,131 @@ public class MapManager : MonoBehaviour
     public void StartCloseMap()
     {
         StartCoroutine(CloseMap());
+    }
+
+    public void LoadedMap()
+    {
+        if(firstUnlocked)
+        {
+            Destroy(cover1_1);
+        }
+        if(unlocked1_2)
+        {
+            Destroy(cover1_2);
+            ServantsDoor.SetActive(true);
+            Destroy(OrangeDoor);
+        }
+        if (unlocked1_3)
+        {
+            Destroy(cover1_3);
+        }
+        if (unlocked1_4)
+        {
+            Destroy(cover1_4);
+        }
+        if (unlocked1_5)
+        {
+            Destroy(cover1_5);
+        }
+        if (unlocked1_6)
+        {
+            Destroy(cover1_6);
+            Destroy(ServantsDoor);
+        }
+        if (unlocked1_7)
+        {
+            Destroy(cover1_7);
+        }
+        if (unlocked1_8)
+        {
+            Destroy(cover1_8);
+        }
+        if (unlocked1_9)
+        {
+            Destroy(cover1_9);
+        }
+        if (unlocked1_10)
+        {
+            Destroy(cover1_10);
+            Destroy(HorseDoor);
+        }
+        if (unlocked1_11)
+        {
+            Destroy(cover1_11);
+            Destroy(EmeraldDoor);
+        }
+        if (unlocked1_12)
+        {
+            Destroy(cover1_12);
+        }
+        if (unlocked1_13)
+        {
+            Destroy(cover1_13);
+            HorseDoor.SetActive(true);
+        }
+        if (unlocked1_14)
+        {
+            Destroy(cover1_14);
+        }
+        if (unlockedKingsRoom)
+        {
+            Destroy(coverkingsroom);
+            Destroy(RedCrownDoor);
+            Destroy(BlueCrownDoor);
+        }
+        if (unlocked2_1)
+        {
+            Destroy(cover2_1);
+        }
+        if (unlocked2_2)
+        {
+            Destroy(cover2_2);
+            SapphireDoor.SetActive(true);
+        }
+        if (unlocked2_3)
+        {
+            Destroy(cover2_3);
+            Destroy(SapphireDoor);
+        }
+        if (unlocked2_4)
+        {
+
+        }
+        if (unlocked2_5)
+        {
+
+        }
+        if (unlocked2_6)
+        {
+
+        }
+        if (unlocked2_7)
+        {
+
+        }
+        if (unlocked2_8)
+        {
+
+        }
+        if (unlocked2_9)
+        {
+
+        }
+        if (unlocked2_10)
+        {
+
+        }
+        if (unlocked2_12)
+        {
+
+        }
+        if (unlocked2_13)
+        {
+
+        }
+        if (unlocked2_14)
+        {
+
+        }
     }
 }

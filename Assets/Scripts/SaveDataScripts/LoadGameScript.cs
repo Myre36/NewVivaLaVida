@@ -37,7 +37,6 @@ public class LoadGameScript : MonoBehaviour
         if(dataLoading == null )
         {
             Destroy(gameObject);
-            Debug.Log("Object should destroy");
         }
         else
         {
@@ -216,7 +215,7 @@ public class LoadGameScript : MonoBehaviour
                 planetPicker.hasUranus = data.hasUranus;
 
                 mapManager.firstUnlocked = data.firstUnlocked;
-                mapManager.hallwayUnlocked = data.hallwayUnlocked;
+                /*mapManager.hallwayUnlocked = data.hallwayUnlocked;
                 mapManager.tunnelUnlocked = data.tunnelUnlocked;
                 mapManager.servantsUnlocked = data.servantsUnlocked;
                 mapManager.basementUnlocked = data.basementUnlocked;
@@ -224,7 +223,36 @@ public class LoadGameScript : MonoBehaviour
                 mapManager.planetariumUnlocked = data.planetariumUnlocked;
                 mapManager.meetingUnlocked = data.meetingUnlocked;
                 mapManager.coinUnlocked = data.coinUnlocked;
-                mapManager.kingsUnlocked = data.kingsUnlocked;
+                mapManager.kingsUnlocked = data.kingsUnlocked;*/
+                mapManager.unlocked1_2 = data.unlocked1_2;
+                mapManager.unlocked1_3 = data.unlocked1_3;
+                mapManager.unlocked1_4 = data.unlocked1_4;
+                mapManager.unlocked1_5 = data.unlocked1_5;
+                mapManager.unlocked1_6 = data.unlocked1_6;
+                mapManager.unlocked1_7 = data.unlocked1_7;
+                mapManager.unlocked1_8 = data.unlocked1_8;
+                mapManager.unlocked1_9 = data.unlocked1_9;
+                mapManager.unlocked1_10 = data.unlocked1_10;
+                mapManager.unlocked1_11 = data.unlocked1_11;
+                mapManager.unlocked1_12 = data.unlocked1_12;
+                mapManager.unlocked1_13 = data.unlocked1_13;
+                mapManager.unlocked1_14 = data.unlocked1_14;
+                mapManager.unlockedKingsRoom = data.unlockedKingsRoom;
+                mapManager.unlocked2_1 = data.unlocked2_1;
+                mapManager.unlocked2_2 = data.unlocked2_2;
+                mapManager.unlocked2_3 = data.unlocked2_3;
+                mapManager.unlocked2_4 = data.unlocked2_4;
+                mapManager.unlocked2_5 = data.unlocked2_5;
+                mapManager.unlocked2_6 = data.unlocked2_6;
+                mapManager.unlocked2_7 = data.unlocked2_7;
+                mapManager.unlocked2_8 = data.unlocked2_8;
+                mapManager.unlocked2_9 = data.unlocked2_9;
+                mapManager.unlocked2_10 = data.unlocked2_10;
+                mapManager.unlocked2_12 = data.unlocked2_12;
+                mapManager.unlocked2_13 = data.unlocked2_13;
+                mapManager.unlocked2_14 = data.unlocked2_14;
+
+                mapManager.LoadedMap();
 
                 int limit = Mathf.Min(data.inventoryTexts.Length, player.inventoryTexts.Length);
 
@@ -233,18 +261,19 @@ public class LoadGameScript : MonoBehaviour
                     player.inventoryTexts[i].text = data.inventoryTexts[i];
                 }
 
-                StartCoroutine(MovePlayer());
+                StartCoroutine(MoveLoadingPlayer());
+
+                Destroy(gameObject);
             }
             else
             {
                 Destroy(gameObject);
-                Debug.Log("Object should destroy");
             }
         }
     }
 
     //A coroutine for moving the player to the correct spot
-    IEnumerator MovePlayer()
+    IEnumerator MoveLoadingPlayer()
     {
         //Gets a refrence to the rigidbody
         Rigidbody rb = player.gameObject.GetComponent<Rigidbody>();

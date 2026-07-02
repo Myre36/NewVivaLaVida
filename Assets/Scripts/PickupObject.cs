@@ -916,6 +916,7 @@ public class PickupObject : MonoBehaviour
     {
         Debug.Log("Small dialouge started");
 
+        player.inDialouge = false;
         stopDialougeBug = true;
         playerInRange = false;
         GetComponent<Renderer>().enabled = false;

@@ -186,7 +186,7 @@ public class PlayerData
 
     // For area unlock
     public bool mapFirstUnlocked;
-    public bool mapHallwayUnlocked;
+    /*public bool mapHallwayUnlocked;
     public bool mapTunnelUnlocked;
     public bool mapServantsUnlocked;
     public bool mapBasementUnlocked;
@@ -194,7 +194,34 @@ public class PlayerData
     public bool mapPlanetariumUnlocked;
     public bool mapMeetingUnlocked;
     public bool mapCoinUnlocked;
-    public bool mapKingsUnlocked;
+    public bool mapKingsUnlocked;*/
+    public bool unlocked1_2;
+    public bool unlocked1_3;
+    public bool unlocked1_4;
+    public bool unlocked1_5;
+    public bool unlocked1_6;
+    public bool unlocked1_7;
+    public bool unlocked1_8;
+    public bool unlocked1_9;
+    public bool unlocked1_10;
+    public bool unlocked1_11;
+    public bool unlocked1_12;
+    public bool unlocked1_13;
+    public bool unlocked1_14;
+    public bool unlockedKingsRoom;
+    public bool unlocked2_1;
+    public bool unlocked2_2;
+    public bool unlocked2_3;
+    public bool unlocked2_4;
+    public bool unlocked2_5;
+    public bool unlocked2_6;
+    public bool unlocked2_7;
+    public bool unlocked2_8;
+    public bool unlocked2_9;
+    public bool unlocked2_10;
+    public bool unlocked2_12;
+    public bool unlocked2_13;
+    public bool unlocked2_14;
 
     public string[] inventoryTexts;
 
@@ -371,7 +398,7 @@ public class PlayerData
         hasUranus = planetPicker.hasUranus;
 
         mapFirstUnlocked = mapManager.firstUnlocked;
-        mapHallwayUnlocked = mapManager.hallwayUnlocked;
+        /*mapHallwayUnlocked = mapManager.hallwayUnlocked;
         mapTunnelUnlocked = mapManager.tunnelUnlocked;
         mapServantsUnlocked = mapManager.servantsUnlocked;
         mapBasementUnlocked = mapManager.basementUnlocked;
@@ -379,7 +406,34 @@ public class PlayerData
         mapPlanetariumUnlocked = mapManager.planetariumUnlocked;
         mapMeetingUnlocked = mapManager.meetingUnlocked;
         mapCoinUnlocked = mapManager.coinUnlocked;
-        mapKingsUnlocked = mapManager.kingsUnlocked;
+        mapKingsUnlocked = mapManager.kingsUnlocked;*/
+        unlocked1_2 = mapManager.unlocked1_2;
+        unlocked1_3 = mapManager.unlocked1_3;
+        unlocked1_4 = mapManager.unlocked1_4;
+        unlocked1_5 = mapManager.unlocked1_5;
+        unlocked1_6 = mapManager.unlocked1_6;
+        unlocked1_7 = mapManager.unlocked1_7;
+        unlocked1_8 = mapManager.unlocked1_8;
+        unlocked1_9 = mapManager.unlocked1_9;
+        unlocked1_10 = mapManager.unlocked1_10;
+        unlocked1_11 = mapManager.unlocked1_11;
+        unlocked1_12 = mapManager.unlocked1_12;
+        unlocked1_13 = mapManager.unlocked1_13;
+        unlocked1_14 = mapManager.unlocked1_14;
+        unlockedKingsRoom = mapManager.unlockedKingsRoom;
+        unlocked2_1 = mapManager.unlocked2_1;
+        unlocked2_2 = mapManager.unlocked2_2;
+        unlocked2_3 = mapManager.unlocked2_3;
+        unlocked2_4 = mapManager.unlocked2_4;
+        unlocked2_5 = mapManager.unlocked2_5;
+        unlocked2_6 = mapManager.unlocked2_6;
+        unlocked2_7 = mapManager.unlocked2_7;
+        unlocked2_8 = mapManager.unlocked2_8;
+        unlocked2_9 = mapManager.unlocked2_9;
+        unlocked2_10 = mapManager.unlocked2_10;
+        unlocked2_12 = mapManager.unlocked2_12;
+        unlocked2_13 = mapManager.unlocked2_13;
+        unlocked2_14 = mapManager.unlocked2_14;
 
         inventoryTexts = movement.inventoryTexts.Select(tmp => tmp.text).ToArray();
     }

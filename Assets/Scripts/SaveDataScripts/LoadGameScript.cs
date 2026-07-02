@@ -252,6 +252,8 @@ public class LoadGameScript : MonoBehaviour
                 mapManager.unlocked2_13 = data.unlocked2_13;
                 mapManager.unlocked2_14 = data.unlocked2_14;
 
+                Debug.Log("Before doing map things");
+
                 mapManager.LoadedMap();
 
                 int limit = Mathf.Min(data.inventoryTexts.Length, player.inventoryTexts.Length);
@@ -261,12 +263,19 @@ public class LoadGameScript : MonoBehaviour
                     player.inventoryTexts[i].text = data.inventoryTexts[i];
                 }
 
+                Debug.Log("Starting to move player");
+
                 StartCoroutine(MoveLoadingPlayer());
+
+                Debug.Log("Player should be moved");
+
+                Destroy(dataLoading.gameObject);
 
                 Destroy(gameObject);
             }
             else
             {
+                Destroy(dataLoading);
                 Destroy(gameObject);
             }
         }
@@ -286,10 +295,14 @@ public class LoadGameScript : MonoBehaviour
         //Sets the camera position
         playerCamera.transform.position = loadedCameraPosition.position;
 
+        Debug.Log("Starting move");
+
         //Waits for a bit
         yield return new WaitForSeconds(0.1f);
 
         //Makes the player not kinematic
         rb.isKinematic = false;
+
+        Debug.Log("Finished move");
     }
 }

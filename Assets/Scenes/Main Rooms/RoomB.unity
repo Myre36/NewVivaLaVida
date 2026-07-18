@@ -10927,6 +10927,7 @@ MonoBehaviour:
   plantSix: 0
   plantSeven: 0
   enemies: []
+  itemImage: {fileID: 2800000, guid: 17c47121f0d44884b8324a831d1c2039, type: 3}
 --- !u!82 &8766383971101672881
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10937,7 +10938,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: deefa95b19920ab4896e229c3b881413, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: deefa95b19920ab4896e229c3b881413, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

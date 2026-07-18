@@ -87,6 +87,9 @@ public class PickupObject : MonoBehaviour
 
     private bool smallDialougeCheck;
 
+    [SerializeField]
+    private Texture itemImage;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -904,6 +907,11 @@ public class PickupObject : MonoBehaviour
                 if (player.inventoryTexts[i].text == "")
                 {
                     player.inventoryTexts[i].text = gameObject.name;
+                    if(itemImage != null)
+                    {
+                        player.inventoryImages[i].enabled = true;
+                        player.inventoryImages[i].texture = itemImage;
+                    }
                     break;
                 }
             }

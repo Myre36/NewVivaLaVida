@@ -4825,6 +4825,7 @@ MonoBehaviour:
   enemies:
   - {fileID: 1998735922}
   - {fileID: 228937512}
+  itemImage: {fileID: 2800000, guid: 7d7e9911b7cf6d040a2efce31094da65, type: 3}
 --- !u!114 &773118751
 MonoBehaviour:
   m_ObjectHideFlags: 0

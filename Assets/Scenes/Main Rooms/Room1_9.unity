@@ -8824,6 +8824,7 @@ MonoBehaviour:
   plantSix: 0
   plantSeven: 0
   enemies: []
+  itemImage: {fileID: 2800000, guid: 594cbc53027f8d54b852cde1e3f1cd97, type: 3}
 --- !u!82 &8422252365192583615
 AudioSource:
   m_ObjectHideFlags: 0

@@ -48,6 +48,8 @@ public class Movement : MonoBehaviour
 
     public TMP_Text[] inventoryTexts;
 
+    public RawImage[] inventoryImages;
+
     private Camera mainCamera;
 
     private Vector3 pointToLook;

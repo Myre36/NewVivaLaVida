@@ -531,7 +531,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8cda58507c2310040a4d60861e9bdf9e, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 8cda58507c2310040a4d60861e9bdf9e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.13
@@ -2607,7 +2607,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8cda58507c2310040a4d60861e9bdf9e, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 8cda58507c2310040a4d60861e9bdf9e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.13
@@ -3218,7 +3218,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8cda58507c2310040a4d60861e9bdf9e, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 8cda58507c2310040a4d60861e9bdf9e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.13
@@ -27011,7 +27011,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8cda58507c2310040a4d60861e9bdf9e, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 8cda58507c2310040a4d60861e9bdf9e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.13
@@ -28618,7 +28618,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8cda58507c2310040a4d60861e9bdf9e, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 8cda58507c2310040a4d60861e9bdf9e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.13
@@ -29734,7 +29734,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: deefa95b19920ab4896e229c3b881413, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: deefa95b19920ab4896e229c3b881413, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -29882,6 +29882,7 @@ MonoBehaviour:
   plantSix: 0
   plantSeven: 0
   enemies: []
+  itemImage: {fileID: 2800000, guid: 3881f8193098e2d40940ba2138ed0ee0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
